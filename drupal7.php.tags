@@ -1,0 +1,4666 @@
+# format=pipe
+# Gerald Villorente of X-Team
+_aggregator_category_title||$category|
+_aggregator_characters||$length|
+_aggregator_get_variables|||
+_aggregator_has_categories|||
+_aggregator_items||$count|
+_aggregator_page_list||$items, $op, $feed_source = ''|
+_aggregator_parse_opml||$opml|
+_authorize_filetransfer_connection_settings||$backend|
+_authorize_filetransfer_connection_settings_set_defaults||&$element, $key, array $defaults|
+_batch_api_percentage||$total, $current|
+&_batch_current_set|||
+_batch_do|||
+_batch_finished|||
+_batch_next_set|||
+_batch_page|||
+_batch_populate_queue||&$batch, $set_id|
+_batch_process|||
+_batch_progress_page_js|||
+_batch_progress_page_nojs|||
+_batch_queue||$batch_set|
+_batch_shutdown|||
+_batch_start|||
+_batch_test_batch_0|||
+_batch_test_batch_1|||
+_batch_test_batch_2|||
+_batch_test_batch_3|||
+_batch_test_batch_4|||
+_batch_test_batch_5|||
+_batch_test_callback_1||$id, $sleep, &$context|
+_batch_test_callback_2||$start, $total, $sleep, &$context|
+_batch_test_callback_5||$id, $sleep, &$context|
+_batch_test_finished_0||$success, $results, $operations|
+_batch_test_finished_1||$success, $results, $operations|
+_batch_test_finished_2||$success, $results, $operations|
+_batch_test_finished_3||$success, $results, $operations|
+_batch_test_finished_4||$success, $results, $operations|
+_batch_test_finished_5||$success, $results, $operations|
+_batch_test_finished_helper||$batch_id, $success, $results, $operations|
+_batch_test_nested_batch_callback|||
+_batch_test_nested_drupal_form_submit_callback||$value|
+_batch_test_theme_callback|||
+_block_compare||$a, $b|
+_block_custom_theme||$theme = NULL|
+_block_get_cache_id||$block|
+_block_get_renderable_array||$list = array()|
+_block_load_blocks|||
+_block_rehash||$theme = NULL|
+_block_render_blocks||$region_blocks|
+_block_themes_access||$theme|
+_blog_post_exists||$account|
+_book_add_form_elements||&$form, &$form_state, $node|
+_book_admin_table||$node, &$form|
+_book_admin_table_tree||$tree, &$form|
+_book_flatten_menu||$tree, &$flat|
+_book_link_defaults||$nid|
+_book_outline_access||$node|
+_book_outline_remove_access||$node|
+_book_parent_depth_limit||$book_link|
+_book_parent_select||$book_link|
+_book_toc_recurse||$tree, $indent, &$toc, $exclude, $depth_limit|
+_book_update_outline||$node|
+_cache_get_object||$bin|
+_color_blend||$img, $hex1, $hex2, $alpha|
+_color_gd||$img, $hex|
+_color_hsl2rgb||$hsl|
+_color_html_alter||&$vars|
+_color_hue2rgb||$m1, $m2, $h|
+_color_pack||$rgb, $normalize = FALSE|
+_color_page_alter||&$vars|
+_color_render_images||$theme, &$info, &$paths, $palette|
+_color_rewrite_stylesheet||$theme, &$info, &$paths, $palette, $style|
+_color_rgb2hsl||$rgb|
+_color_save_stylesheet||$file, $style, &$paths|
+_color_shift||$given, $ref1, $ref2, $target|
+_color_theme_select_form_alter||&$form, &$form_state|
+_color_unpack||$hex, $normalize = FALSE|
+_comment_body_field_create||$info|
+_comment_get_modes|||
+_comment_per_page|||
+_comment_update_node_statistics||$nid|
+_contact_personal_tab_access||$account|
+_country_get_predefined_list|||
+_createIndexSql||$table, $name, $fields|
+_createKeySql||$fields|
+_createKeys||$table, $new_keys|
+_db_create_keys_sql||$spec|
+_dblog_get_message_types|||
+_drupal_bootstrap_configuration|||
+_drupal_bootstrap_database|||
+_drupal_bootstrap_full|||
+_drupal_bootstrap_page_cache|||
+_drupal_bootstrap_page_header|||
+_drupal_bootstrap_variables|||
+_drupal_build_css_path||$matches, $base = NULL|
+_drupal_decode_exception||$exception|
+_drupal_default_html_head|||
+_drupal_depth_first_search||&$graph, &$state, $start, &$component = NULL|
+_drupal_error_handler||$error_level, $message, $filename, $line, $context|
+_drupal_error_handler_real||$error_level, $message, $filename, $line, $context|
+_drupal_exception_handler||$exception|
+_drupal_flush_css_js|||
+_drupal_get_last_caller||$backtrace|
+_drupal_html_to_mail_urls||$match = NULL, $reset = FALSE|
+_drupal_html_to_text_clean||$indent|
+_drupal_html_to_text_pad||$text, $pad, $prefix = ''|
+_drupal_load_stylesheet||$matches|
+_drupal_load_stylesheet_content||$matches|
+_drupal_log_error||$error, $fatal = FALSE|
+_drupal_maintenance_theme|||
+_drupal_render_exception_safe||$exception|
+_drupal_schema_initialize||&$schema, $module, $remove_descriptions = TRUE|
+_drupal_session_close|||
+_drupal_session_delete_cookie||$name, $force_insecure = FALSE|
+_drupal_session_destroy||$sid|
+_drupal_session_garbage_collection||$lifetime|
+_drupal_session_open|||
+_drupal_session_read||$sid|
+_drupal_session_write||$sid, $value|
+_drupal_set_preferred_header_name||$name = NULL|
+_drupal_shutdown_function|||
+_drupal_theme_access||$theme|
+_drupal_theme_initialize||$theme, $base_theme = array(), $registry_callback = '_theme_load_registry'|
+_drupal_wrap_mail_line||&$line, $key, $values|
+_element_validate_integer||$element, &$form_state|
+_element_validate_integer_positive||$element, &$form_state|
+_element_validate_number||$element, &$form_state|
+_field_extra_fields_pre_render||$elements|
+_field_filter_items||$field, $items|
+_field_filter_xss_allowed_tags|||
+_field_filter_xss_display_allowed_tags|||
+_field_form_state_parents||$parents, $field_name, $langcode|
+_field_info_collate_fields||$reset = FALSE|
+_field_info_collate_types||$reset = FALSE|
+_field_info_prepare_extra_fields||$extra_fields, $entity_type, $bundle|
+_field_info_prepare_field||$field|
+_field_info_prepare_instance||$instance, $field|
+_field_info_prepare_instance_display||$field, $display|
+_field_info_prepare_instance_widget||$field, $widget|
+_field_invoke||$op, $entity_type, $entity, &$a = NULL, &$b = NULL, $options = array()|
+_field_invoke_default||$op, $entity_type, $entity, &$a = NULL, &$b = NULL, $options = array()|
+_field_invoke_get_instances||$entity_type, $bundle, $options|
+_field_invoke_multiple||$op, $entity_type, $entities, &$a = NULL, &$b = NULL, $options = array()|
+_field_invoke_multiple_default||$op, $entity_type, $entities, &$a = NULL, &$b = NULL, $options = array()|
+_field_language_suggestion||$available_languages, $language_suggestion, $field_name|
+_field_sort_items||$field, $items|
+_field_sort_items_helper||$a, $b|
+_field_sort_items_value_helper||$a, $b|
+_field_sql_storage_columnname||$name, $column|
+_field_sql_storage_indexname||$name, $index|
+_field_sql_storage_query_join_entity||SelectQuery $select_query, $entity_type, $field_base_table|
+_field_sql_storage_revision_tablename||$field|
+_field_sql_storage_schema||$field|
+_field_sql_storage_tablename||$field|
+_field_test_field_storage_query_sort_helper||$a, $b|
+_field_test_storage_data||$data = NULL|
+_field_ui_add_default_view_mode_settings||$entity_type, $bundle, $view_mode, &$settings|
+_field_ui_bundle_admin_path||$entity_type, $bundle_name|
+_field_ui_field_overview_form_validate_add_existing||$form, &$form_state|
+_field_ui_field_overview_form_validate_add_new||$form, &$form_state|
+_field_ui_reduce_order||$array, $a|
+_field_ui_view_mode_menu_access||$entity_type, $bundle, $view_mode, $access_callback|
+_field_write_instance||$instance, $update = FALSE|
+_file_field_get_description_from_element||$element|
+_file_generic_settings_extensions||$element, &$form_state|
+_file_generic_settings_file_directory_validate||$element, &$form_state|
+_file_generic_settings_max_filesize||$element, &$form_state|
+_file_test_form||$form, &$form_state|
+_file_test_form_submit||&$form, &$form_state|
+_file_test_get_return||$op|
+_file_test_log_call||$op, $args|
+_filter_autop||$text|
+_filter_autop_tips||$filter, $format, $long = FALSE|
+_filter_disable_format_access||$format|
+_filter_format_is_cacheable||$format|
+_filter_html||$text, $filter|
+_filter_html_escape||$text|
+_filter_html_escape_tips||$filter, $format, $long = FALSE|
+_filter_html_settings||$form, &$form_state, $filter, $format, $defaults|
+_filter_html_tips||$filter, $format, $long = FALSE|
+_filter_htmlcorrector||$text|
+_filter_list_cmp||$a, $b|
+_filter_tips||$format_id, $long = FALSE|
+_filter_url||$text, $filter|
+_filter_url_escape_comments||$match, $escape = NULL|
+_filter_url_parse_email_links||$match|
+_filter_url_parse_full_links||$match|
+_filter_url_parse_partial_links||$match|
+_filter_url_settings||$form, &$form_state, $filter, $format, $defaults|
+_filter_url_tips||$filter, $format, $long = FALSE|
+_filter_url_trim||$text, $length = NULL|
+_filter_xss_attributes||$attr|
+_filter_xss_split||$m, $store = FALSE|
+_fix_gpc_magic||&$item|
+_fix_gpc_magic_files||&$item, $key|
+_form_builder_handle_input_element||$form_id, &$element, &$form_state|
+_form_button_was_clicked||$element, &$form_state|
+_form_element_triggered_scripted_submission||$element, &$form_state|
+_form_options_flatten||$array|
+_form_set_class||&$element, $class = array()|
+_form_test_checkbox||$form, &$form_state|
+_form_test_checkbox_submit||$form, &$form_state|
+_form_test_checkboxes_zero_no_redirect||$form, &$form_state|
+_form_test_disabled_elements||$form, &$form_state|
+_form_test_disabled_elements_submit||$form, &$form_state|
+_form_test_input_forgery||$form, &$form_state|
+_form_test_input_forgery_submit||$form, &$form_state|
+_form_test_submit_values_json||$form, &$form_state|
+_form_test_tableselect_empty_form||$form, $form_state|
+_form_test_tableselect_form_builder||$form, $form_state, $element_properties|
+_form_test_tableselect_get_data|||
+_form_test_tableselect_js_select_form||$form, $form_state, $action|
+_form_test_tableselect_multiple_false_form||$form, $form_state|
+_form_test_tableselect_multiple_false_form_submit||$form, &$form_state|
+_form_test_tableselect_multiple_true_form||$form, $form_state|
+_form_test_tableselect_multiple_true_form_submit||$form, &$form_state|
+_form_test_vertical_tabs_form||$form, &$form_state|
+_form_validate||&$elements, &$form_state, $form_id = NULL|
+_format_date_callback||array $matches = NULL, $new_langcode = NULL|
+_forum_get_topic_order||$sortby|
+_forum_node_check_node_type||$node|
+_forum_parent_select||$tid, $title, $child_type|
+_forum_topics_unread||$term, $uid|
+_forum_update_forum_index||$nid|
+_forum_user_last_visit||$nid|
+_image_effect_definitions_sort||$a, $b|
+_image_field_resolution_validate||$element, &$form_state|
+_image_test_log_call||$op, $args|
+_install_configure_form||$form, &$form_state, &$install_state|
+_install_module_batch||$module, $module_name, &$context|
+_install_profile_modules_finished||$success, $results, $operations|
+_install_select_profile||$profiles|
+_list_values_in_use||$field, $values|
+_locale_batch_build||$files, $finished = NULL, $components = array()|
+_locale_batch_import||$filepath, &$context|
+_locale_batch_language_finished||$success, $results|
+_locale_batch_system_finished||$success, $results|
+_locale_export_get_strings||$language = NULL, $group = 'default'|
+_locale_export_po||$language = NULL, $output = NULL|
+_locale_export_po_generate||$language = NULL, $strings = array(), $header = NULL|
+_locale_export_remove_plural||$entry|
+_locale_export_string||$str|
+_locale_export_wrap||$str, $len|
+_locale_get_predefined_list|||
+_locale_import_append_plural||$entry, $key|
+_locale_import_message||$message, $file, $lineno = NULL|
+_locale_import_one_string||$op, $value = NULL, $mode = NULL, $lang = NULL, $file = NULL, $group = 'default'|
+_locale_import_one_string_db||&$report, $langcode, $context, $source, $translation, $textgroup, $location, $mode, $plid = 0, $plural = 0|
+_locale_import_parse_arithmetic||$string|
+_locale_import_parse_header||$header|
+_locale_import_parse_plural_forms||$pluralforms, $filepath|
+_locale_import_parse_quoted||$string|
+_locale_import_po||$file, $langcode, $mode, $group = NULL|
+_locale_import_read_po||$op, $file, $mode = NULL, $lang = NULL, $group = 'default'|
+_locale_import_shorten_comments||$comment|
+_locale_import_tokenize_formula||$formula|
+_locale_invalidate_js||$langcode = NULL|
+_locale_languages_common_controls||&$form, $language = NULL|
+_locale_languages_configure_form_language_table||&$form, $type|
+_locale_parse_js_file||$filepath|
+_locale_prepare_predefined_list|||
+_locale_rebuild_js||$langcode = NULL|
+_locale_translate_language_list||$translation, $limit_language|
+_locale_translate_seek|||
+_locale_translate_seek_query|||
+_lock_id|||
+_menu_build_tree||$menu_name, array $parameters = array()|
+_menu_check_access||&$item, $map|
+_menu_clear_page_cache|||
+_menu_delete_item||$item, $force = FALSE|
+_menu_find_router_path||$link_path|
+_menu_get_options||$menus, $available_menus, $item|
+_menu_item_localize||&$item, $map, $link_translate = FALSE|
+_menu_link_build||$item|
+_menu_link_find_parent||$menu_link|
+_menu_link_map_translate||&$map, $to_arg_functions|
+_menu_link_move_children||$item, $existing_item|
+_menu_link_parents_set||&$item, $parent|
+_menu_link_translate||&$item, $translate = FALSE|
+_menu_load_objects||&$item, &$map|
+_menu_navigation_links_rebuild||$menu|
+_menu_overview_tree_form||$tree|
+_menu_parent_depth_limit||$item|
+_menu_parents_recurse||$tree, $menu_name, $indent, &$options, $exclude, $depth_limit|
+_menu_router_build||$callbacks|
+_menu_router_cache||$new_menu = NULL|
+_menu_router_save||$menu, $masks|
+_menu_set_expanded_menus|||
+_menu_site_is_offline||$check_only = FALSE|
+_menu_translate||&$router_item, $map, $to_arg = FALSE|
+_menu_tree_check_access||&$tree|
+_menu_tree_data||&$links, $parents, $depth|
+_menu_update_parental_status||$item, $exclude = FALSE|
+_mime_header_decode||$matches|
+_module_build_dependencies||$files|
+_node_access_rebuild_batch_finished||$success, $results, $operations|
+_node_access_rebuild_batch_operation||&$context|
+_node_add_access|||
+_node_characters||$length|
+_node_extract_type||$node|
+_node_index_node||$node|
+_node_mass_update_batch_finished||$success, $results, $operations|
+_node_mass_update_batch_process||$nodes, $updates, &$context|
+_node_mass_update_helper||$nid, $updates|
+_node_query_node_access_alter||$query, $base_table, $type|
+_node_rankings||SelectQueryExtender $query|
+_node_revision_access||$node, $op = 'view'|
+_node_save_revision||$node, $uid, $update = NULL|
+_node_types_build||$rebuild = FALSE|
+_openid_create_message||$data|
+_openid_dh_base64_to_long||$str|
+_openid_dh_binary_to_long||$str|
+_openid_dh_long_to_base64||$str|
+_openid_dh_long_to_binary||$long|
+_openid_dh_rand||$stop|
+_openid_dh_xorsecret||$shared, $secret|
+_openid_encode_message||$message|
+_openid_get_bytes||$num_bytes|
+_openid_get_params||$str|
+_openid_hmac||$key, $text|
+_openid_is_xri||$identifier|
+_openid_link_href||$rel, $html|
+_openid_meta_httpequiv||$equiv, $html|
+_openid_nonce|||
+_openid_parse_message||$message|
+_openid_response||$str = NULL|
+_openid_select_service||array $services|
+_openid_signature||$association, $message_array, $keys_to_sign|
+_openid_test_endpoint_associate|||
+_openid_test_endpoint_authenticate|||
+_openid_url_normalize||$url|
+_openid_user_login_form_alter||&$form, &$form_state|
+_openid_xrds_discovery||$claimed_id|
+_openid_xrds_parse||$raw_xml|
+_openid_xri_discovery||$claimed_id|
+_openid_xri_normalize||$identifier|
+_options_form_to_storage||$element|
+_options_get_options||$field, $instance, $properties|
+_options_prepare_options||&$options, $properties|
+_options_properties||$type, $multiple, $required, $has_value|
+_options_storage_to_form||$items, $options, $column, $properties|
+_overlay_region_list||$type|
+_password_base64_encode||$input, $count|
+_password_crypt||$algo, $password, $setting|
+_password_enforce_log2_boundaries||$count_log2|
+_password_generate_salt||$count_log2|
+_password_get_count_log2||$setting|
+_password_itoa64|||
+_php_filter_tips||$filter, $format, $long = FALSE|
+_poll_choice_form||$key, $chid = NULL, $value = '', $votes = 0, $weight = 0, $size = 10|
+_poll_menu_access||$node, $perm, $inspect_allowvotes|
+_profile_field_serialize||$type = NULL|
+_profile_field_types||$type = NULL|
+_profile_form_explanation||$field|
+_profile_get_fields||$category, $register = FALSE|
+_profile_update_user_fields||$fields, $account|
+_rdf_get_default_mapping||$type|
+_rdf_mapping_load||$type, $bundle|
+_registry_check_code||$type, $name = NULL|
+_registry_parse_file||$filename, $contents, $module = '', $weight = 0|
+_registry_parse_files||$files|
+_registry_update|||
+_search_excerpt_match_filter||$var|
+_search_excerpt_replace||&$text|
+_search_get_module_names|||
+_search_index_truncate||&$text|
+_search_menu_access||$name|
+_session_test_get|||
+_session_test_id|||
+_session_test_id_from_cookie|||
+_session_test_is_logged_in|||
+_session_test_no_set||$value|
+_session_test_set||$value|
+_session_test_set_message|||
+_session_test_set_message_but_dont_save|||
+_session_test_set_not_started|||
+_shortcut_link_form_elements||$shortcut_link = NULL|
+_simpletest_batch_finished||$success, $results, $operations, $elapsed|
+_simpletest_batch_operation||$test_list_init, $test_id, &$context|
+_simpletest_format_summary_line||$summary|
+_simpletest_sort_by_title||$a, $b|
+_statistics_format_item||$title, $path|
+_statistics_link||$path, $width = 35|
+_system_batch_theme|||
+_system_date_format_types_build|||
+_system_date_formats_build|||
+_system_default_theme_features|||
+_system_info_add_path||$info, $path|
+_system_is_incompatible||&$incompatible, $files, $file|
+_system_modules_build_row||$info, $extra|
+_system_rebuild_module_data|||
+_system_rebuild_theme_data|||
+_system_sort_requirements||$a, $b|
+_system_test_first_shutdown_function||$arg1, $arg2|
+_system_test_second_shutdown_function||$arg1, $arg2|
+_system_theme_settings_validate_path||$path|
+_system_themes_access||$theme|
+_system_update_bootstrap_status|||
+_taxonomy_get_tid_from_term||$term|
+_template_preprocess_default_variables|||
+_text_sanitize||$instance, $langcode, $item, $column|
+_theme_build_registry||$theme, $base_theme, $theme_engine|
+_theme_custom_theme|||
+_theme_load_offline_registry||$theme, $base_theme = NULL, $theme_engine = NULL|
+_theme_load_registry||$theme, $base_theme = NULL, $theme_engine = NULL|
+_theme_process_registry||&$cache, $name, $type, $theme, $path|
+_theme_registry_callback||$callback = NULL, array $arguments = array()|
+_theme_save_registry||$theme, $registry|
+_theme_table_cell||$cell, $header = FALSE|
+_theme_test_alter|||
+_theme_test_load_registry|||
+_theme_test_suggestion|||
+_toolbar_is_collapsed|||
+_tracker_add||$nid, $uid, $changed|
+_tracker_calculate_changed||$nid|
+_tracker_myrecent_access||$account|
+_tracker_remove||$nid, $uid = NULL, $changed = NULL|
+_tracker_user_access||$account|
+_translation_tab_access||$node|
+_trigger_comment||$a1, $hook|
+_trigger_get_all_info|||
+_trigger_node||$node, $hook, $a3 = NULL, $a4 = NULL|
+_trigger_normalize_comment_context||$type, $comment|
+_trigger_normalize_node_context||$type, $node|
+_trigger_normalize_user_context||$type, $account|
+_trigger_tab_information|||
+_trigger_taxonomy||$hook, $array|
+_trigger_user||$hook, &$edit, $account, $category = NULL|
+_unicode_caseflip||$matches|
+_unicode_check|||
+_update_authorize_clear_update_status|||
+_update_batch_create_message||&$project_results, $message, $success = TRUE|
+_update_build_fetch_url||$project, $site_key = ''|
+_update_cache_clear||$cid = NULL, $wildcard = FALSE|
+_update_cache_get||$cid|
+_update_cache_set||$cid, $data, $expire|
+_update_create_fetch_task||$project|
+_update_cron_notify|||
+_update_fetch_data|||
+_update_get_cache_multiple||$cid_prefix|
+_update_get_cached_available_releases|||
+_update_get_fetch_url_base||$project|
+_update_manager_check_backends||&$form, $operation|
+_update_manager_extract_directory|||
+_update_message_text||$msg_type, $msg_reason, $report_link = FALSE, $language = NULL|
+_update_no_data|||
+_update_process_fetch_task||$project|
+_update_process_info_list||&$projects, $list, $project_type, $status|
+_update_project_status_sort||$a, $b|
+_update_refresh|||
+_user_cancel||$edit, $account, $method|
+_user_categories|||
+_user_mail_notify||$op, $account, $language = NULL|
+_user_mail_text||$key, $language = NULL, $variables = array(), $replace = TRUE|
+_user_sort||$a, $b|
+_xmlrpc||$url, $args, $options = array()|
+actions_actions_map||$actions|
+actions_delete||$aid|
+actions_do||$action_ids, $object = NULL, $context = NULL, $a1 = NULL, $a2 = NULL|
+actions_function_lookup||$hash|
+actions_get_all_actions|||
+actions_list||$reset = FALSE|
+actions_load||$aid|
+actions_loop_test_action_info|||
+actions_loop_test_init|||
+actions_loop_test_log|||
+actions_loop_test_trigger_info|||
+actions_loop_test_watchdog||array $log_entry|
+actions_save||$function, $type, $params, $label, $aid = NULL|
+actions_synchronize||$delete_orphans = FALSE|
+add||$file_path|
+addCondition||SelectQuery $select_query, $sql_field, $condition, $having = FALSE|
+addConnectionInfo||$key, $target, $info|
+addExpression||$expression, $alias = NULL, $arguments = array()|
+addField||$table, $field, $spec, $keys_new = array()|
+addField||$table, $field, $spec, $new_keys = array()|
+addField||$table_alias, $field, $alias = NULL|
+addField||$table, $field, $specification, $keys_new = array()|
+addIndex||$table, $name, $fields|
+addIndex||$table, $name, $fields|
+addIndex||$table, $name, $fields|
+addJoin||$type, $table, $alias = NULL, $condition = NULL, $arguments = array()|
+addMetaData||$key, $object|
+addMetaData||$key, $object|
+addPrimaryKey||$table, $fields|
+addPrimaryKey||$table, $fields|
+addPrimaryKey||$table, $fields|
+addScore||$score, $arguments = array(), $multiply = FALSE|
+addTag||$tag|
+addTag||$tag|
+addUniqueKey||$table, $name, $fields|
+addUniqueKey||$table, $name, $fields|
+addUniqueKey||$table, $name, $fields|
+age||$age|
+aggregator_admin_form||$form, $form_state|
+aggregator_admin_form_submit||$form, &$form_state|
+aggregator_admin_overview|||
+aggregator_admin_refresh_feed||$feed|
+aggregator_admin_remove_feed||$form, $form_state, $feed|
+aggregator_admin_remove_feed_submit||$form, &$form_state|
+aggregator_aggregator_fetch||$feed|
+aggregator_aggregator_fetch_info|||
+aggregator_aggregator_parse||$feed|
+aggregator_aggregator_parse_info|||
+aggregator_aggregator_process||$feed|
+aggregator_aggregator_process_info|||
+aggregator_aggregator_remove||$feed|
+aggregator_block_configure||$delta = ''|
+aggregator_block_info|||
+aggregator_block_save||$delta = '', $edit = array()|
+aggregator_block_view||$delta = ''|
+aggregator_categorize_items||$items, $feed_source = ''|
+aggregator_categorize_items_submit||$form, &$form_state|
+aggregator_category_load||$cid|
+aggregator_cron|||
+aggregator_cron_queue_info|||
+aggregator_element_data||$parser, $data|
+aggregator_element_end||$parser, $name|
+aggregator_element_start||$parser, $name, $attributes|
+aggregator_expire||$feed|
+aggregator_feed_items_load||$type, $data = NULL|
+aggregator_feed_load||$fid|
+aggregator_filter_xss||$value|
+aggregator_form_aggregator_admin_form_alter||&$form, $form_state|
+aggregator_form_category||$form, &$form_state, $edit = array('title' => '', 'description' => '', 'cid' => NULL)|
+aggregator_form_category_submit||$form, &$form_state|
+aggregator_form_category_validate||$form, &$form_state|
+aggregator_form_feed||$form, &$form_state, stdClass $feed = NULL|
+aggregator_form_feed_submit||$form, &$form_state|
+aggregator_form_feed_validate||$form, &$form_state|
+aggregator_form_opml||$form, &$form_state|
+aggregator_form_opml_submit||$form, &$form_state|
+aggregator_form_opml_validate||$form, &$form_state|
+aggregator_help||$path, $arg|
+aggregator_menu|||
+aggregator_page_categories|||
+aggregator_page_category||$category|
+aggregator_page_category_form||$form, $form_state, $category|
+aggregator_page_last|||
+aggregator_page_opml||$cid = NULL|
+aggregator_page_rss|||
+aggregator_page_source||$feed|
+aggregator_page_source_form||$form, $form_state, $feed|
+aggregator_page_sources|||
+aggregator_parse_feed||&$data, $feed|
+aggregator_parse_w3cdtf||$date_str|
+aggregator_permission|||
+aggregator_refresh||$feed|
+aggregator_remove||$feed|
+aggregator_sanitize_configuration|||
+aggregator_save_category||$edit|
+aggregator_save_feed||$edit|
+aggregator_save_item||$edit|
+aggregator_test_feed||$use_last_modified = FALSE, $use_etag = FALSE|
+aggregator_test_menu|||
+aggregator_theme|||
+aggregator_view|||
+ajax_base_page_theme|||
+ajax_command_after||$selector, $html, $settings = NULL|
+ajax_command_alert||$text|
+ajax_command_append||$selector, $html, $settings = NULL|
+ajax_command_before||$selector, $html, $settings = NULL|
+ajax_command_changed||$selector, $asterisk = ''|
+ajax_command_css||$selector, $argument|
+ajax_command_data||$selector, $name, $value|
+ajax_command_html||$selector, $html, $settings = NULL|
+ajax_command_insert||$selector, $html, $settings = NULL|
+ajax_command_invoke||$selector, $method, array $arguments = array()|
+ajax_command_prepend||$selector, $html, $settings = NULL|
+ajax_command_remove||$selector|
+ajax_command_replace||$selector, $html, $settings = NULL|
+ajax_command_restripe||$selector|
+ajax_command_settings||$argument, $merge = FALSE|
+ajax_deliver||$page_callback_result|
+ajax_footer|||
+ajax_form_callback|||
+ajax_forms_test_advanced_commands_after_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_alert_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_append_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_before_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_changed_asterisk_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_changed_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_css_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_data_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_html_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_insert_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_invoke_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_prepend_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_remove_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_restripe_callback||$form, $form_state|
+ajax_forms_test_advanced_commands_settings_callback||$form, $form_state|
+ajax_forms_test_ajax_commands_form||$form, &$form_state|
+ajax_forms_test_menu|||
+ajax_forms_test_simple_form||$form, &$form_state|
+ajax_forms_test_simple_form_checkbox_callback||$form, $form_state|
+ajax_forms_test_simple_form_select_callback||$form, $form_state|
+ajax_forms_test_validation_form||$form, &$form_state|
+ajax_forms_test_validation_form_callback||$form, $form_state|
+ajax_forms_test_validation_form_submit||$form, $form_state|
+ajax_get_form|||
+ajax_pre_render_element||$element|
+ajax_process_form||$element, &$form_state|
+ajax_render||$commands = array()|
+ajax_test_error|||
+ajax_test_link|||
+ajax_test_menu|||
+ajax_test_render|||
+alterTable||$table, $old_schema, $new_schema, array $mapping = array()|
+archiver_get_archiver||$file|
+archiver_get_extensions|||
+archiver_get_info|||
+arg||$index = NULL, $path = NULL|
+arguments|||
+arguments|||
+assert||$status, $message = '', $group = 'Other', array $caller = NULL|
+assertEqual||$first, $second, $message = '', $group = 'Other'|
+assertFalse||$value, $message = '', $group = 'Other'|
+assertField||$field, $message = '', $group = 'Other'|
+assertFieldById||$id, $value = '', $message = ''|
+assertFieldByName||$name, $value = '', $message = ''|
+assertFieldByXPath||$xpath, $value = NULL, $message = '', $group = 'Other'|
+assertFieldChecked||$id, $message = ''|
+assertIdentical||$first, $second, $message = '', $group = 'Other'|
+assertLink||$label, $index = 0, $message = '', $group = 'Other'|
+assertLinkByHref||$href, $index = 0, $message = '', $group = 'Other'|
+assertMail||$name, $value = '', $message = ''|
+assertMailPattern||$field_name, $regex, $message|
+assertMailString||$field_name, $string, $email_depth|
+assertNoDuplicateIds||$message = '', $group = 'Other', $ids_to_skip = array()|
+assertNoField||$field, $message = '', $group = 'Other'|
+assertNoFieldById||$id, $value = '', $message = ''|
+assertNoFieldByName||$name, $value = '', $message = ''|
+assertNoFieldByXPath||$xpath, $value = NULL, $message = '', $group = 'Other'|
+assertNoFieldChecked||$id, $message = ''|
+assertNoLink||$label, $message = '', $group = 'Other'|
+assertNoLinkByHref||$href, $message = '', $group = 'Other'|
+assertNoOptionSelected||$id, $option, $message = ''|
+assertNoPattern||$pattern, $message = '', $group = 'Other'|
+assertNoRaw||$raw, $message = '', $group = 'Other'|
+assertNoResponse||$code, $message = ''|
+assertNoText||$text, $message = '', $group = 'Other'|
+assertNoTitle||$title, $message = '', $group = 'Other'|
+assertNoUniqueText||$text, $message = '', $group = 'Other'|
+assertNotEqual||$first, $second, $message = '', $group = 'Other'|
+assertNotIdentical||$first, $second, $message = '', $group = 'Other'|
+assertNotNull||$value, $message = '', $group = 'Other'|
+assertNull||$value, $message = '', $group = 'Other'|
+assertOptionSelected||$id, $option, $message = ''|
+assertPattern||$pattern, $message = '', $group = 'Other'|
+assertRaw||$raw, $message = '', $group = 'Other'|
+assertResponse||$code, $message = ''|
+assertText||$text, $message = '', $group = 'Other'|
+assertTextHelper||$text, $message = '', $group, $not_exists|
+assertTitle||$title, $message = '', $group = 'Other'|
+assertTrue||$value, $message = '', $group = 'Other'|
+assertUniqueText||$text, $message = '', $group = 'Other'|
+assertUniqueTextHelper||$text, $message = '', $group, $be_unique|
+assertUrl||$path, array $options = array(), $message = '', $group = 'Other'|
+attachLoad||&$queried_entities, $revision_id = FALSE|
+attachLoad||&$comments, $revision_id = FALSE|
+attachLoad||&$entities, $revision_id = FALSE|
+attachLoad||&$nodes, $revision_id = FALSE|
+attachLoad||&$queried_users, $revision_id = FALSE|
+authorize_access_allowed|||
+authorize_access_denied_page|||
+authorize_filetransfer_form||$form, &$form_state|
+authorize_filetransfer_form_submit||$form, &$form_state|
+authorize_filetransfer_form_validate||$form, &$form_state|
+authorize_get_filetransfer||$backend, $settings = array()|
+authorize_run_operation||$filetransfer|
+bartik_drupal_alter_alter||&$data, &$arg2 = NULL, &$arg3 = NULL|
+bartik_field__taxonomy_term_reference||$variables|
+bartik_menu_tree||$variables|
+bartik_preprocess_block||&$variables|
+bartik_preprocess_html||&$variables|
+bartik_preprocess_maintenance_page||&$variables|
+bartik_preprocess_node||&$variables|
+bartik_process_html||&$variables|
+bartik_process_maintenance_page||&$variables|
+bartik_process_page||&$variables|
+base_path|||
+&batch_get|||
+batch_load||$id|
+batch_process||$redirect = NULL, $url = 'batch', $redirect_callback = 'drupal_goto'|
+batch_set||$batch_definition|
+batch_test_chained_form|||
+batch_test_chained_form_submit_1||$form, &$form_state|
+batch_test_chained_form_submit_2||$form, &$form_state|
+batch_test_chained_form_submit_3||$form, &$form_state|
+batch_test_chained_form_submit_4||$form, &$form_state|
+batch_test_large_percentage|||
+batch_test_menu|||
+batch_test_mock_form||$form, $form_state|
+batch_test_mock_form_submit||$form, &$form_state|
+batch_test_multistep_form||$form, &$form_state|
+batch_test_multistep_form_submit||$form, &$form_state|
+batch_test_nested_drupal_form_submit||$value = 1|
+batch_test_no_form|||
+batch_test_programmatic||$value = 1|
+batch_test_redirect_page|||
+batch_test_simple_form|||
+batch_test_simple_form_submit||$form, &$form_state|
+batch_test_stack||$data = NULL, $reset = FALSE|
+batch_test_theme_batch|||
+block_add_block_form||$form, &$form_state|
+block_add_block_form_submit||$form, &$form_state|
+block_add_block_form_validate||$form, &$form_state|
+block_admin_configure||$form, &$form_state, $module, $delta|
+block_admin_configure_submit||$form, &$form_state|
+block_admin_configure_validate||$form, &$form_state|
+block_admin_demo||$theme = NULL|
+block_admin_display||$theme = NULL|
+block_admin_display_form||$form, &$form_state, $blocks, $theme, $block_regions = NULL|
+block_admin_display_form_submit||$form, &$form_state|
+block_admin_display_prepare_blocks||$theme|
+block_admin_paths|||
+block_block_configure||$delta = 0|
+block_block_info|||
+block_block_list_alter||&$blocks|
+block_block_save||$delta = 0, $edit = array()|
+block_block_view||$delta = ''|
+block_custom_block_delete||$form, &$form_state, $module, $delta|
+block_custom_block_delete_submit||$form, &$form_state|
+block_custom_block_form||$edit = array()|
+block_custom_block_get||$bid|
+block_custom_block_save||$edit, $delta|
+block_flush_caches|||
+block_form_form_test_alter_form_alter||&$form, &$form_state|
+block_form_system_performance_settings_alter||&$form, &$form_state|
+block_form_user_profile_form_alter||&$form, &$form_state|
+block_get_blocks_by_region||$region|
+block_help||$path, $arg|
+block_list||$region|
+block_load||$module, $delta|
+block_menu|||
+block_menu_delete||$menu|
+block_modules_uninstalled||$modules|
+block_page_build||&$page|
+block_permission|||
+block_test_block_info|||
+block_test_block_view||$delta = 0|
+block_theme|||
+block_theme_initialize||$theme|
+block_themes_enabled||$theme_list|
+block_user_presave||&$edit, $account, $category|
+block_user_role_delete||$role|
+blocked_ip_load||$iid|
+blog_block_configure||$delta = ''|
+blog_block_info|||
+blog_block_save||$delta = '', $edit = array()|
+blog_block_view||$delta = ''|
+blog_feed_last|||
+blog_feed_user||$account|
+blog_form||$node, $form_state|
+blog_help||$path, $arg|
+blog_menu|||
+blog_menu_local_tasks_alter||&$data, $router_item, $root_path|
+blog_node_info|||
+blog_node_view||$node, $view_mode|
+blog_page_last|||
+blog_page_user||$account|
+blog_page_user_access||$account|
+blog_rdf_mapping|||
+blog_user_view||$account|
+blog_view||$node, $view_mode|
+book_admin_edit||$form, $form_state, $node|
+book_admin_edit_submit||$form, &$form_state|
+book_admin_edit_validate||$form, &$form_state|
+book_admin_overview|||
+book_admin_paths|||
+book_admin_settings|||
+book_admin_settings_validate||$form, &$form_state|
+book_block_configure||$delta = ''|
+book_block_info|||
+book_block_save||$delta = '', $edit = array()|
+book_block_view||$delta = ''|
+book_children||$book_link|
+book_entity_info_alter||&$info|
+book_export||$type, $nid|
+book_export_html||$nid|
+book_export_traverse||$tree, $visit_func|
+book_form_node_delete_confirm_alter||&$form, $form_state|
+book_form_node_form_alter||&$form, &$form_state, $form_id|
+book_form_update||$form, $form_state|
+book_get_books|||
+book_get_flat_menu||$book_link|
+book_help||$path, $arg|
+book_link_load||$mlid|
+book_menu|||
+book_menu_name||$bid|
+book_menu_subtree_data||$link|
+book_next||$book_link|
+book_node_delete||$node|
+book_node_export||$node, $children = ''|
+book_node_insert||$node|
+book_node_load||$nodes, $types|
+book_node_prepare||$node|
+book_node_presave||$node|
+book_node_type_update||$type|
+book_node_update||$node|
+book_node_view||$node, $view_mode|
+book_node_view_link||$node, $view_mode|
+book_outline||$node|
+book_outline_form||$form, &$form_state, $node|
+book_outline_form_submit||$form, &$form_state|
+book_page_alter||&$page|
+book_permission|||
+book_pick_book_nojs_submit||$form, &$form_state|
+book_prev||$book_link|
+book_remove_button_submit||$form, &$form_state|
+book_remove_form||$form, &$form_state, $node|
+book_remove_form_submit||$form, &$form_state|
+book_render|||
+book_theme|||
+book_toc||$bid, $depth_limit, $exclude = array()|
+book_type_is_allowed||$type|
+book_update_bid||$book_link|
+bootstrap_hooks|||
+bootstrap_invoke_all||$hook|
+buildQuery||$ids, $conditions = array(), $revision_id = FALSE|
+buildQuery||$ids, $conditions = array(), $revision_id = FALSE|
+buildQuery||$ids, $conditions = array(), $revision_id = FALSE|
+buildQuery||$ids, $conditions = array(), $revision_id = FALSE|
+buildTableNameCondition||$table_name, $operator = '=', $add_prefix = TRUE|
+buildTableNameCondition||$table_name, $operator = '=', $add_prefix = TRUE|
+buildXPathQuery||$xpath, array $args = array()|
+cacheGet||$ids, $conditions = array()|
+cacheGet||$ids, $conditions = array()|
+cacheSet||$entities|
+cache_clear_all||$cid = NULL, $bin = NULL, $wildcard = FALSE|
+cache_get||$cid, $bin = 'cache'|
+cache_get_multiple||array &$cids, $bin = 'cache'|
+cache_is_empty||$bin|
+cache_set||$cid, $data, $bin = 'cache', $expire = CACHE_PERMANENT|
+canUpdate||$project_name|
+canUpdateDirectory||$directory|
+canUpdateDirectory||$directory|
+changeField||$table, $field, $field_new, $spec, $keys_new = array()|
+changeField||$table, $field, $field_new, $spec, $new_keys = array()|
+changeField||$table, $field, $field_new, $spec, $keys_new = array()|
+checkBinaryOutput|||
+checkBinaryOutputSuccess|||
+checkEncoding|||
+checkEngineVersion|||
+checkForMetaRefresh|||
+checkPHPVersion|||
+checkPermissions||array $permissions, $reset = FALSE|
+check_markup||$text, $format_id = NULL, $langcode = '', $cache = FALSE|
+check_plain||$text|
+check_url||$uri|
+chmod||$mode|
+chmodJailed||$path, $mode, $recursive|
+chmodJailed||$path, $mode, $recursive|
+chmodJailed||$path, $mode, $recursive|
+claimItem||$lease_time = 0|
+claimItem||$lease_time = 30|
+clear||$cid = NULL, $wildcard = FALSE|
+clear||$cid = NULL, $wildcard = FALSE|
+clear||$logging_key|
+clickLink||$label, $index = 0|
+closeConnection||$target = NULL, $key = NULL|
+color_form_system_theme_settings_alter||&$form, &$form_state|
+color_form_system_themes_alter||&$form, &$form_state|
+color_get_info||$theme|
+color_get_palette||$theme, $default = FALSE|
+color_help||$path, $arg|
+color_scheme_form||$complete_form, &$form_state, $theme|
+color_scheme_form_submit||$form, &$form_state|
+color_theme|||
+comment||$comment|
+comment_access||$op, $comment|
+comment_action_info|||
+comment_admin||$type = 'new'|
+comment_admin_overview||$form, &$form_state, $arg|
+comment_admin_overview_submit||$form, &$form_state|
+comment_admin_overview_validate||$form, &$form_state|
+comment_approve||$cid|
+comment_block_configure||$delta = ''|
+comment_block_info|||
+comment_block_save||$delta = '', $edit = array()|
+comment_block_view||$delta = ''|
+comment_build_content||$comment, $node, $view_mode = 'full', $langcode = NULL|
+comment_confirm_delete||$form, &$form_state, $comment|
+comment_confirm_delete_page||$cid|
+comment_confirm_delete_submit||$form, &$form_state|
+comment_count_unpublished|||
+comment_delete||$cid|
+comment_delete_multiple||$cids|
+comment_edit_page||$comment|
+comment_entity_info|||
+comment_field_extra_fields|||
+comment_file_download_access||$field, $entity_type, $entity|
+comment_form||$form, &$form_state, $comment|
+comment_form_build_preview||$form, &$form_state|
+comment_form_node_form_alter||&$form, $form_state|
+comment_form_node_type_form_alter||&$form, $form_state|
+comment_form_submit||$form, &$form_state|
+comment_form_submit_build_comment||$form, &$form_state|
+comment_form_validate||$form, &$form_state|
+comment_forms|||
+comment_get_display_ordinal||$cid, $node_type|
+comment_get_display_page||$cid, $node_type|
+comment_get_recent||$number = 10|
+comment_get_thread||$node, $mode, $comments_per_page|
+comment_help||$path, $arg|
+comment_links||$comment, $node|
+comment_load||$cid|
+comment_load_multiple||$cids = array(), $conditions = array()|
+comment_menu|||
+comment_menu_alter||&$items|
+comment_multiple_delete_confirm||$form, &$form_state|
+comment_multiple_delete_confirm_submit||$form, &$form_state|
+comment_new_page_count||$num_comments, $new_replies, $node|
+comment_node_delete||$node|
+comment_node_insert||$node|
+comment_node_load||$nodes, $types|
+comment_node_page_additions||$node|
+comment_node_prepare||$node|
+comment_node_search_result||$node|
+comment_node_type_delete||$info|
+comment_node_type_insert||$info|
+comment_node_type_load||$name|
+comment_node_type_update||$info|
+comment_node_update_index||$node|
+comment_node_view||$node, $view_mode|
+comment_num_new||$nid, $timestamp = 0|
+comment_permalink||$cid|
+comment_permission|||
+comment_prepare_thread||&$comments|
+comment_preview||$comment|
+comment_publish_action||$comment, $context = array()|
+comment_ranking|||
+comment_rdf_mapping|||
+comment_reply||$node, $pid = NULL|
+comment_save||$comment|
+comment_save_action||$comment|
+comment_submit||$comment|
+comment_theme|||
+comment_token_info|||
+comment_tokens||$type, $tokens, array $data = array(), array $options = array()|
+comment_unpublish_action||$comment, $context = array()|
+comment_unpublish_by_keyword_action||$comment, $context|
+comment_unpublish_by_keyword_action_form||$context|
+comment_unpublish_by_keyword_action_submit||$form, $form_state|
+comment_update_index|||
+comment_uri||$comment|
+comment_user_cancel||$edit, $account, $method|
+comment_user_delete||$account|
+comment_view||$comment, $node, $view_mode = 'full', $langcode = NULL|
+comment_view_multiple||$comments, $node, $view_mode = 'full', $weight = 0, $langcode = NULL|
+commit|||
+common_test_destination|||
+common_test_drupal_alter_alter||&$data, &$arg2 = NULL, &$arg3 = NULL|
+common_test_drupal_goto_alter||&$path, &$options, &$http_response_code|
+common_test_drupal_goto_land|||
+common_test_drupal_goto_land_fail|||
+common_test_drupal_goto_redirect|||
+common_test_drupal_goto_redirect_advanced|||
+common_test_js_and_css_querystring|||
+common_test_library|||
+common_test_library_alter||&$libraries, $module|
+common_test_menu|||
+common_test_theme|||
+compile||DatabaseConnection $connection, QueryPlaceholderInterface $queryPlaceholder = NULL|
+compile||DatabaseConnection $connection, QueryPlaceholderInterface $queryPlaceholder = NULL|
+condition||$field, $value = NULL, $operator = NULL|
+condition||$field, $value = NULL, $operator = NULL|
+conditionTable||$table|
+&conditions|||
+&conditions|||
+conf_path||$require_settings = TRUE, $reset = FALSE|
+confirm_form||$form, $question, $path, $description = NULL, $yes = NULL, $no = NULL, $name = 'confirm'|
+connect|||
+connect|||
+connect|||
+connect|||
+constraintExists||$table, $name|
+constructFieldXpath||$attribute, $value|
+contact_category_delete_form||$form, &$form_state, array $contact|
+contact_category_delete_form_submit||$form, &$form_state|
+contact_category_edit_form||$form, &$form_state, array $category = array()|
+contact_category_edit_form_submit||$form, &$form_state|
+contact_category_edit_form_validate||$form, &$form_state|
+contact_category_list|||
+contact_form_user_admin_settings_alter||&$form, &$form_state|
+contact_form_user_profile_form_alter||&$form, &$form_state|
+contact_help||$path, $arg|
+contact_load||$cid|
+contact_mail||$key, &$message, $params|
+contact_menu|||
+contact_permission|||
+contact_personal_form||$form, &$form_state, $recipient|
+contact_personal_form_submit||$form, &$form_state|
+contact_personal_form_validate||$form, &$form_state|
+contact_site_form||$form, &$form_state|
+contact_site_form_submit||$form, &$form_state|
+contact_site_form_validate||$form, &$form_state|
+contact_user_presave||&$edit, $account, $category|
+contextual_element_info|||
+contextual_help||$path, $arg|
+contextual_library|||
+contextual_permission|||
+contextual_pre_render_links||$element|
+contextual_preprocess||&$variables, $hook|
+copyDirectoryJailed||$source, $destination|
+copyDirectoryJailed||$source, $destination|
+copyFileJailed||$source, $destination|
+copyFileJailed||$source, $destination|
+copyFileJailed||$source, $destination|
+count|||
+count|||
+countQuery|||
+countQuery|||
+country_get_list|||
+createColumsSql||$tablename, $schema|
+createDirectoryJailed||$directory|
+createDirectoryJailed||$directory|
+createDirectoryJailed||$directory|
+createFieldSql||$name, $spec|
+createFieldSql||$name, $spec|
+createFieldSql||$name, $spec|
+createIndexSql||$tablename, $schema|
+createItem||$data|
+createKeySql||$fields|
+createKeySql||$fields|
+createKeysSql||$spec|
+createKeysSqlHelper||$fields|
+createQueue|||
+createTable||$name, $table|
+createTableSql||$name, $table|
+createTableSql||$name, $table|
+createTableSql||$name, $table|
+cronRun|||
+curlClose|||
+curlExec||$curl_options, $redirect = FALSE|
+curlHeaderCallback||$curlHandler, $header|
+curlInitialize|||
+current|||
+current|||
+current_path|||
+dashboard_admin||$launch_customize = FALSE|
+dashboard_admin_blocks|||
+dashboard_block_info_alter||&$blocks, $theme, $code_blocks|
+dashboard_block_list_alter||&$blocks|
+dashboard_dashboard_regions|||
+dashboard_form_block_add_block_form_alter||&$form, &$form_state|
+dashboard_form_block_admin_configure_alter||&$form, &$form_state|
+dashboard_form_block_admin_display_form_alter||&$form, &$form_state, $form_id|
+dashboard_form_dashboard_admin_display_form_alter||&$form, &$form_state|
+dashboard_forms|||
+dashboard_help||$path, $arg|
+dashboard_is_visible|||
+dashboard_menu|||
+dashboard_page_build||&$page|
+dashboard_permission|||
+dashboard_region_descriptions|||
+dashboard_regions|||
+dashboard_show_block_content||$module, $delta|
+dashboard_show_disabled|||
+dashboard_system_info_alter||&$info, $file, $type|
+dashboard_theme|||
+dashboard_update|||
+databaseType|||
+databaseType|||
+databaseType|||
+database_test_db_query_temporary|||
+database_test_even_pager_query||$limit|
+database_test_menu|||
+database_test_odd_pager_query||$limit|
+database_test_query_alter||QueryAlterableInterface $query|
+database_test_query_database_test_alter_remove_range_alter||QueryAlterableInterface $query|
+database_test_tablesort|||
+database_test_tablesort_first|||
+database_test_theme_tablesort||$form, &$form_state|
+date_iso8601||$date|
+date_validate||$form|
+db_add_field||$table, $field, $spec, $keys_new = array()|
+db_add_index||$table, $name, $fields|
+db_add_primary_key||$table, $fields|
+db_add_unique_key||$table, $name, $fields|
+db_and|||
+db_change_field||$table, $field, $field_new, $spec, $keys_new = array()|
+db_close||array $options = array()|
+db_condition||$conjunction|
+db_create_table||$name, $table|
+db_delete||$table, array $options = array()|
+db_driver|||
+db_drop_field||$table, $field|
+db_drop_index||$table, $name|
+db_drop_primary_key||$table|
+db_drop_table||$table|
+db_drop_unique_key||$table, $name|
+db_escape_field||$field|
+db_escape_table||$table|
+db_field_exists||$table, $field|
+db_field_names||$fields|
+db_field_set_default||$table, $field, $default|
+db_field_set_no_default||$table, $field|
+db_find_tables||$table_expression|
+db_ignore_slave|||
+db_index_exists||$table, $name|
+db_insert||$table, array $options = array()|
+db_installer_object||$driver|
+db_like||$string|
+db_merge||$table, array $options = array()|
+db_next_id||$existing_id = 0|
+db_or|||
+db_query||$query, array $args = array(), array $options = array()|
+db_query_range||$query, $from, $count, array $args = array(), array $options = array()|
+db_query_temporary||$query, array $args = array(), array $options = array()|
+db_rename_table||$table, $new_name|
+db_run_tasks||$driver|
+db_select||$table, $alias = NULL, array $options = array()|
+db_set_active||$key = 'default'|
+db_table_exists||$table|
+db_transaction||$name = NULL, array $options = array()|
+db_truncate||$table, array $options = array()|
+db_update||$table, array $options = array()|
+db_xor|||
+dblog_build_filter_query|||
+dblog_clear_log_form||$form|
+dblog_clear_log_submit|||
+dblog_cron|||
+dblog_event||$id|
+dblog_filter_form||$form|
+dblog_filter_form_submit||$form, &$form_state|
+dblog_filter_form_validate||$form, &$form_state|
+dblog_filters|||
+dblog_form_system_logging_settings_alter||&$form, $form_state|
+dblog_help||$path, $arg|
+dblog_init|||
+dblog_menu|||
+dblog_overview|||
+dblog_theme|||
+dblog_top||$type|
+dblog_watchdog||array $log_entry|
+debug||$data, $label = NULL, $print_r = FALSE|
+decode_entities||$text|
+defaultOptions|||
+delete||$table, array $options = array()|
+deleteAssert||$message_id|
+deleteItem||$item|
+deleteQueue|||
+deleted||$deleted = TRUE|
+dir_closedir|||
+dir_opendir||$uri, $options|
+dir_readdir|||
+dir_rewinddir|||
+dirname||$uri = NULL|
+distinct||$distinct = TRUE|
+driver|||
+driver|||
+driver|||
+dropField||$table, $field|
+dropField||$table, $field|
+dropField||$table, $field|
+dropIndex||$table, $name|
+dropIndex||$table, $name|
+dropIndex||$table, $name|
+dropPrimaryKey||$table|
+dropPrimaryKey||$table|
+dropPrimaryKey||$table|
+dropTable||$table|
+dropTable||$table|
+dropTable||$table|
+dropUniqueKey||$table, $name|
+dropUniqueKey||$table, $name|
+dropUniqueKey||$table, $name|
+drupalCompareFiles||$file1, $file2|
+drupalCreateContentType||$settings = array()|
+drupalCreateNode||$settings = array()|
+drupalCreateRole||array $permissions, $name = NULL|
+drupalCreateUser||$permissions = array('access comments', 'access content', 'post comments', 'skip comment approval')|
+drupalGet||$path, array $options = array(), array $headers = array()|
+drupalGetAJAX||$path, array $options = array(), array $headers = array()|
+drupalGetContent|||
+drupalGetHeader||$name, $all_requests = FALSE|
+drupalGetHeaders||$all_requests = FALSE|
+drupalGetMails||$filter = array()|
+drupalGetNodeByTitle||$title, $reset = FALSE|
+drupalGetSettings|||
+drupalGetTestFiles||$type, $size = NULL|
+drupalGetToken||$value = ''|
+drupalHead||$path, array $options = array(), array $headers = array()|
+drupalLogin||stdClass $user|
+drupalLogout|||
+drupalPost||$path, $edit, $submit, array $options = array(), array $headers = array(), $form_html_id = NULL, $extra_post = NULL|
+drupalPostAJAX||$path, $edit, $triggering_element, $ajax_path = NULL, array $options = array(), array $headers = array(), $form_html_id = NULL, $ajax_settings = NULL|
+drupalSetContent||$content, $url = 'internal:'|
+drupalSetSettings||$settings|
+drupal_access_denied|||
+drupal_add_css||$data = NULL, $options = NULL|
+drupal_add_feed||$url = NULL, $title = ''|
+drupal_add_html_head||$data = NULL, $key = NULL|
+drupal_add_html_head_link||$attributes, $header = FALSE|
+drupal_add_http_header||$name, $value, $append = FALSE|
+drupal_add_js||$data = NULL, $options = NULL|
+drupal_add_library||$module, $name, $every_page = NULL|
+drupal_add_region_content||$region = NULL, $data = NULL|
+drupal_add_tabledrag||$table_id, $action, $relationship, $group, $subgroup = NULL, $source = NULL, $hidden = TRUE, $limit = 0|
+drupal_aggregate_css||&$css_groups|
+drupal_alter||$type, &$data, &$context1 = NULL, &$context2 = NULL|
+drupal_anonymous_user|||
+drupal_array_get_nested_value||array &$array, array $parents, &$key_exists = NULL|
+drupal_array_merge_deep|||
+drupal_array_merge_deep_array||$arrays|
+drupal_array_nested_key_exists||array $array, array $parents|
+drupal_array_set_nested_value||array &$array, array $parents, $value, $force = FALSE|
+drupal_attributes||array $attributes = array()|
+drupal_autoload_class||$class|
+drupal_autoload_interface||$interface|
+drupal_block_denied||$ip|
+drupal_bootstrap||$phase = NULL, $new_phase = TRUE|
+drupal_build_css_cache||$css|
+drupal_build_form||$form_id, &$form_state|
+drupal_build_js_cache||$files|
+drupal_cache_system_paths|||
+drupal_check_incompatibility||$v, $current_version|
+drupal_check_module||$module|
+drupal_check_profile||$profile|
+drupal_chmod||$uri, $mode = NULL|
+drupal_clean_css_identifier||$identifier, $filter = array(' ' => '-', '_' => '-', '\/' => '-', '[' => '-', ']' => '')|
+drupal_clear_css_cache|||
+drupal_clear_js_cache|||
+drupal_clear_path_cache||$source = NULL|
+drupal_common_theme|||
+drupal_convert_to_utf8||$data, $encoding|
+drupal_cron_cleanup|||
+drupal_cron_run|||
+drupal_delete_file_if_stale||$uri|
+drupal_deliver_html_page||$page_callback_result|
+drupal_deliver_page||$page_callback_result, $default_delivery_callback = NULL|
+drupal_depth_first_search||&$graph|
+drupal_detect_baseurl||$file = 'install.php'|
+drupal_detect_database_types|||
+drupal_dirname||$uri|
+drupal_encode_path||$path|
+drupal_environment_initialize|||
+drupal_error_levels|||
+drupal_exit||$destination = NULL|
+drupal_explode_tags||$tags|
+drupal_find_theme_functions||$cache, $prefixes|
+drupal_find_theme_templates||$cache, $extension, $path|
+drupal_flush_all_caches|||
+drupal_form_submit||$form_id, &$form_state|
+drupal_generate_test_ua||$prefix|
+drupal_get_bootstrap_phase|||
+drupal_get_breadcrumb|||
+drupal_get_css||$css = NULL, $skip_alter = FALSE|
+drupal_get_database_types|||
+drupal_get_destination|||
+drupal_get_feeds||$delimiter = "\\n"|
+drupal_get_filename||$type, $name, $filename = NULL|
+drupal_get_filetransfer_info|||
+drupal_get_form||$form_id|
+drupal_get_hash_salt|||
+drupal_get_html_head|||
+drupal_get_http_header||$name = NULL|
+drupal_get_installed_schema_version||$module, $reset = FALSE, $array = FALSE|
+drupal_get_js||$scope = 'header', $javascript = NULL, $skip_alter = FALSE|
+drupal_get_library||$module, $name = NULL|
+drupal_get_messages||$type = NULL, $clear_queue = TRUE|
+drupal_get_normal_path||$path, $path_language = NULL|
+drupal_get_path||$type, $name|
+drupal_get_path_alias||$path = NULL, $path_language = NULL|
+drupal_get_private_key|||
+drupal_get_profile|||
+drupal_get_query_array||$query|
+drupal_get_query_parameters||array $query = NULL, array $exclude = array('q'), $parent = ''|
+drupal_get_rdf_namespaces|||
+drupal_get_region_content||$region = NULL, $delimiter = ' '|
+drupal_get_schema||$table = NULL, $rebuild = FALSE|
+drupal_get_schema_unprocessed||$module, $table = NULL|
+drupal_get_schema_versions||$module|
+drupal_get_title|||
+drupal_get_token||$value = ''|
+drupal_get_updaters|||
+drupal_get_user_timezone|||
+drupal_goto||$path = '', array $options = array(), $http_response_code = 302|
+drupal_group_css||$css|
+drupal_hash_base64||$data|
+drupal_help_arg||$arg = array()|
+drupal_hmac_base64||$data, $key|
+drupal_html_class||$class|
+drupal_html_id||$id|
+drupal_html_to_text||$string, $allowed_tags = NULL|
+drupal_http_build_query||array $query, $parent = ''|
+drupal_http_header_attributes||array $attributes = array()|
+drupal_http_request||$url, array $options = array()|
+drupal_implode_tags||$tags|
+drupal_install_fix_file||$file, $mask, $message = TRUE|
+drupal_install_mkdir||$file, $mask, $message = TRUE|
+drupal_install_profile_distribution_name|||
+drupal_install_schema||$module|
+drupal_install_system|||
+drupal_installation_attempted|||
+drupal_is_cli|||
+drupal_is_denied||$ip|
+drupal_is_front_page|||
+drupal_js_defaults||$data = NULL|
+drupal_json_decode||$var|
+drupal_json_encode||$var|
+drupal_json_output||$var = NULL|
+drupal_language_initialize|||
+drupal_language_types|||
+drupal_load||$type, $name|
+drupal_load_stylesheet||$file, $optimize = NULL, $reset_basepath = TRUE|
+drupal_load_stylesheet_content||$contents, $optimize = FALSE|
+drupal_load_updates|||
+drupal_lookup_path||$action, $path = '', $path_language = NULL|
+drupal_mail||$module, $key, $to, $language, $params = array(), $from = NULL, $send = TRUE|
+drupal_mail_system||$module, $key|
+drupal_maintenance_theme|||
+drupal_map_assoc||$array, $function = NULL|
+drupal_match_path||$path, $patterns|
+drupal_mkdir||$uri, $mode = NULL, $recursive = FALSE, $context = NULL|
+drupal_multilingual|||
+drupal_not_found|||
+drupal_override_server_variables||$variables = array()|
+drupal_page_footer|||
+drupal_page_get_cache||$check_only = FALSE|
+drupal_page_header|||
+drupal_page_is_cacheable||$allow_caching = NULL|
+drupal_page_set_cache|||
+drupal_parse_dependency||$dependency|
+drupal_parse_info_file||$filename|
+drupal_parse_info_format||$data|
+drupal_parse_url||$url|
+drupal_path_alias_whitelist_rebuild||$source = NULL|
+drupal_path_initialize|||
+drupal_placeholder||$text|
+drupal_pre_render_conditional_comments||$elements|
+drupal_pre_render_link||$element|
+drupal_pre_render_links||$element|
+drupal_pre_render_markup||$elements|
+drupal_pre_render_styles||$elements|
+drupal_prepare_form||$form_id, &$form, &$form_state|
+drupal_process_attached||$elements, $group = JS_DEFAULT, $dependency_check = FALSE, $every_page = NULL|
+drupal_process_form||$form_id, &$form, &$form_state|
+drupal_process_states||&$elements|
+drupal_random_bytes||$count|
+drupal_realpath||$uri|
+drupal_rebuild_form||$form_id, &$form_state, $old_form = NULL|
+drupal_redirect_form||$form_state|
+drupal_region_class||$region|
+&drupal_register_shutdown_function||$callback = NULL|
+drupal_render||&$elements|
+drupal_render_cache_by_query||$query, $function, $expire = CACHE_TEMPORARY, $granularity = NULL|
+drupal_render_cache_get||$elements|
+drupal_render_cache_set||&$markup, $elements|
+drupal_render_children||&$element, $children_keys = NULL|
+drupal_render_cid_create||$elements|
+drupal_render_cid_parts||$granularity = NULL|
+drupal_render_page||$page|
+drupal_required_modules|||
+drupal_requirements_severity||&$requirements|
+drupal_retrieve_form||$form_id, &$form_state|
+drupal_rewrite_settings||$settings = array(), $prefix = ''|
+drupal_rmdir||$uri, $context = NULL|
+drupal_save_session||$status = NULL|
+drupal_schema_fields_sql||$table, $prefix = NULL|
+drupal_send_headers||$default_headers = array(), $only_default = FALSE|
+drupal_serve_page_from_cache||stdClass $cache|
+drupal_session_commit|||
+drupal_session_destroy_uid||$uid|
+drupal_session_initialize|||
+drupal_session_regenerate|||
+drupal_session_start|||
+drupal_session_started||$set = NULL|
+drupal_set_breadcrumb||$breadcrumb = NULL|
+drupal_set_installed_schema_version||$module, $version|
+drupal_set_message||$message = NULL, $type = 'status', $repeat = TRUE|
+drupal_set_page_content||$content = NULL|
+drupal_set_time_limit||$time_limit|
+drupal_set_title||$title = NULL, $output = CHECK_PLAIN|
+drupal_settings_initialize|||
+drupal_site_offline|||
+drupal_sort_css_js||$a, $b|
+drupal_sort_title||$a, $b|
+drupal_sort_weight||$a, $b|
+&drupal_static||$name, $default_value = NULL, $reset = FALSE|
+drupal_static_reset||$name = NULL|
+drupal_strip_dangerous_protocols||$uri|
+drupal_strlen||$text|
+drupal_strtolower||$text|
+drupal_strtoupper||$text|
+drupal_substr||$text, $start, $length = NULL|
+drupal_system_listing||$mask, $directory, $key = 'name', $min_depth = 1|
+drupal_tempnam||$directory, $prefix|
+drupal_theme_access||$theme|
+drupal_theme_initialize|||
+drupal_theme_rebuild|||
+drupal_truncate_bytes||$string, $len|
+drupal_ucfirst||$text|
+drupal_uninstall_modules||$module_list = array(), $uninstall_dependents = TRUE|
+drupal_uninstall_schema||$module|
+drupal_unlink||$uri, $context = NULL|
+drupal_unpack||$obj, $field = 'data'|
+drupal_valid_http_host||$host|
+drupal_valid_path||$path, $dynamic_allowed = FALSE|
+drupal_valid_test_ua|||
+drupal_valid_token||$token, $value = '', $skip_anonymous = FALSE|
+drupal_validate_form||$form_id, &$form, &$form_state|
+drupal_validate_utf8||$text|
+drupal_var_export||$var, $prefix = ''|
+drupal_verify_install_file||$file, $mask = NULL, $type = 'file'|
+drupal_verify_profile||$install_state|
+drupal_wrap_mail||$text, $indent = ''|
+drupal_write_record||$table, &$record, $primary_keys = array()|
+drupal_xml_parser_create||&$data|
+element||$element|
+element_child||$key|
+element_children||&$elements, $sort = FALSE|
+element_get_visible_children||array $elements|
+element_info||$type|
+element_info_property||$type, $property_name, $default = NULL|
+element_properties||$element|
+element_property||$key|
+element_set_attributes||array &$element, array $map|
+element_sort||$a, $b|
+element_sort_by_title||$a, $b|
+end||$logging_key|
+ensureElement|||
+entityCondition||$name, $value, $operator = NULL|
+entityOrderBy||$name, $direction = 'ASC'|
+entity_cache_test_dependency_entity_info|||
+entity_cache_test_watchdog||$log_entry|
+entity_create_stub_entity||$entity_type, $ids|
+entity_crud_hook_test_comment_delete|||
+entity_crud_hook_test_comment_insert|||
+entity_crud_hook_test_comment_load|||
+entity_crud_hook_test_comment_presave|||
+entity_crud_hook_test_comment_update|||
+entity_crud_hook_test_entity_delete||$entity, $type|
+entity_crud_hook_test_entity_insert||$entity, $type|
+entity_crud_hook_test_entity_load||array $entities, $type|
+entity_crud_hook_test_entity_presave||$entity, $type|
+entity_crud_hook_test_entity_update||$entity, $type|
+entity_crud_hook_test_file_delete|||
+entity_crud_hook_test_file_insert|||
+entity_crud_hook_test_file_load|||
+entity_crud_hook_test_file_presave|||
+entity_crud_hook_test_file_update|||
+entity_crud_hook_test_node_delete|||
+entity_crud_hook_test_node_insert|||
+entity_crud_hook_test_node_load|||
+entity_crud_hook_test_node_presave|||
+entity_crud_hook_test_node_update|||
+entity_crud_hook_test_taxonomy_term_delete|||
+entity_crud_hook_test_taxonomy_term_insert|||
+entity_crud_hook_test_taxonomy_term_load|||
+entity_crud_hook_test_taxonomy_term_presave|||
+entity_crud_hook_test_taxonomy_term_update|||
+entity_crud_hook_test_taxonomy_vocabulary_delete|||
+entity_crud_hook_test_taxonomy_vocabulary_insert|||
+entity_crud_hook_test_taxonomy_vocabulary_load|||
+entity_crud_hook_test_taxonomy_vocabulary_presave|||
+entity_crud_hook_test_taxonomy_vocabulary_update|||
+entity_crud_hook_test_user_delete|||
+entity_crud_hook_test_user_insert|||
+entity_crud_hook_test_user_load|||
+entity_crud_hook_test_user_presave|||
+entity_crud_hook_test_user_update|||
+entity_extract_ids||$entity_type, $entity|
+entity_form_field_validate||$entity_type, $form, &$form_state|
+entity_form_submit_build_entity||$entity_type, $entity, $form, &$form_state|
+entity_get_controller||$entity_type|
+entity_get_info||$entity_type = NULL|
+entity_info_cache_clear|||
+entity_label||$entity_type, $entity|
+entity_load||$entity_type, $ids = FALSE, $conditions = array(), $reset = FALSE|
+entity_load_unchanged||$entity_type, $id|
+entity_prepare_view||$entity_type, $entities|
+entity_uri||$entity_type, $entity|
+error||$message = '', $group = 'Other', array $caller = NULL|
+errorHandler||$severity, $message, $file = NULL, $line = NULL|
+error_displayable||$error = NULL|
+error_test_generate_warnings||$collect_errors = FALSE|
+error_test_menu|||
+error_test_trigger_exception|||
+error_test_trigger_pdo_exception|||
+escapeAlias||$field|
+escapeField||$field|
+escapeLike||$string|
+escapeTable||$table|
+exceptionHandler||$exception|
+execute||$args = array(), $options = array()|
+execute|||
+execute|||
+execute||$args = array(), $options = array()|
+execute|||
+execute|||
+execute||$args = array(), $options = array()|
+execute|||
+execute|||
+execute|||
+executeFirstPass|||
+exists||SelectQueryInterface $select|
+exists||SelectQueryInterface $select|
+expandArguments||&$query, &$args|
+expression||$field, $expression, array $arguments = NULL|
+extend||$extender_name|
+extract||$path, Array $files = array()|
+factory||$jail, $settings|
+factory||$jail, $settings|
+factory||$jail, $settings|
+factory||$jail, $settings|
+factory||$source|
+factory|||
+factory|||
+fail||$message|
+fail||$message = NULL, $group = 'Other'|
+fetch||$mode = NULL, $cursor_orientation = NULL, $cursor_offset = NULL|
+fetch||$fetch_style = NULL, $cursor_orientation = PDO::FETCH_ORI_NEXT, $cursor_offset = NULL|
+fetchAll||$mode = NULL, $column_index = NULL, array $constructor_arguments = array()|
+fetchAll||$fetch_style = NULL, $fetch_column = NULL, $constructor_args = NULL|
+fetchAllAssoc||$key, $fetch = NULL|
+fetchAllAssoc||$key, $fetch_style = NULL|
+fetchAllKeyed||$key_index = 0, $value_index = 1|
+fetchAllKeyed||$key_index = 0, $value_index = 1|
+fetchAssoc|||
+fetchAssoc|||
+fetchCol||$index = 0|
+fetchCol||$index = 0|
+fetchField||$index = 0|
+fetchField||$index = 0|
+fetchObject|||
+fetchObject||$class_name = NULL, $constructor_args = array()|
+fieldCondition||$field, $column = NULL, $value = NULL, $operator = NULL, $delta_group = NULL, $language_group = NULL|
+fieldExists||$table, $column|
+fieldExists||$table, $column|
+fieldExists||$table, $column|
+fieldNames||$fields|
+fieldOrderBy||$field, $column, $direction = 'ASC'|
+fieldSetDefault||$table, $field, $default|
+fieldSetDefault||$table, $field, $default|
+fieldSetDefault||$table, $field, $default|
+fieldSetNoDefault||$table, $field|
+fieldSetNoDefault||$table, $field|
+fieldSetNoDefault||$table, $field|
+field_access||$op, $field, $entity_type, $entity = NULL, $account = NULL|
+field_add_more_js||$form, $form_state|
+field_add_more_submit||$form, &$form_state|
+field_associate_fields||$module|
+field_attach_create_bundle||$entity_type, $bundle|
+field_attach_delete||$entity_type, $entity|
+field_attach_delete_bundle||$entity_type, $bundle|
+field_attach_delete_revision||$entity_type, $entity|
+field_attach_form||$entity_type, $entity, &$form, &$form_state, $langcode = NULL|
+field_attach_form_validate||$entity_type, $entity, $form, &$form_state|
+field_attach_insert||$entity_type, $entity|
+field_attach_load||$entity_type, $entities, $age = FIELD_LOAD_CURRENT, $options = array()|
+field_attach_load_revision||$entity_type, $entities, $options = array()|
+field_attach_prepare_translation||$entity_type, $entity, $langcode, $source_entity, $source_langcode|
+field_attach_prepare_view||$entity_type, $entities, $view_mode|
+field_attach_preprocess||$entity_type, $entity, $element, &$variables|
+field_attach_presave||$entity_type, $entity|
+field_attach_rename_bundle||$entity_type, $bundle_old, $bundle_new|
+field_attach_submit||$entity_type, $entity, $form, &$form_state|
+field_attach_update||$entity_type, $entity|
+field_attach_validate||$entity_type, $entity|
+field_attach_view||$entity_type, $entity, $view_mode, $langcode = NULL|
+field_available_languages||$entity_type, $field|
+field_behaviors_widget||$op, $instance|
+field_bundle_settings||$entity_type, $bundle, $settings = NULL|
+field_cache_clear|||
+field_content_languages|||
+field_create_field||$field|
+field_create_instance||$instance|
+field_cron|||
+field_default_extract_form_values||$entity_type, $entity, $field, $instance, $langcode, &$items, $form, &$form_state|
+field_default_form||$entity_type, $entity, $field, $instance, $langcode, $items, &$form, &$form_state, $get_delta = NULL|
+field_default_form_errors||$entity_type, $entity, $field, $instance, $langcode, $items, $form, &$form_state|
+field_default_insert||$entity_type, $entity, $field, $instance, $langcode, &$items|
+field_default_prepare_translation||$entity_type, $entity, $field, $instance, $langcode, &$items, $source_entity, $source_langcode|
+field_default_prepare_view||$entity_type, $entities, $field, $instances, $langcode, &$items, $display|
+field_default_submit||$entity_type, $entity, $field, $instance, $langcode, &$items, $form, &$form_state|
+field_default_validate||$entity_type, $entity, $field, $instance, $langcode, $items, &$errors|
+field_default_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+field_delete_field||$field_name|
+field_delete_instance||$instance, $field_cleanup = TRUE|
+field_extra_fields_get_display||$entity_type, $bundle, $view_mode|
+field_extract_bundle||$entity_type, $bundle|
+field_filter_xss||$string|
+field_flush_caches|||
+field_form_element_after_build||$element, &$form_state|
+field_form_get_state||$parents, $field_name, $langcode, &$form_state|
+field_form_set_state||$parents, $field_name, $langcode, &$form_state, $field_state|
+field_get_default_value||$entity_type, $entity, $field, $instance, $langcode = NULL|
+field_get_display||$instance, $view_mode, $entity|
+field_get_items||$entity_type, $entity, $field_name, $langcode = NULL|
+field_has_data||$field|
+field_has_translation_handler||$entity_type, $handler = NULL|
+field_help||$path, $arg|
+field_info_bundles||$entity_type = NULL|
+field_info_cache_clear|||
+field_info_extra_fields||$entity_type, $bundle, $context|
+field_info_field||$field_name|
+field_info_field_by_id||$field_id|
+field_info_field_by_ids|||
+field_info_field_settings||$type|
+field_info_field_types||$field_type = NULL|
+field_info_fields|||
+field_info_formatter_settings||$type|
+field_info_formatter_types||$formatter_type = NULL|
+field_info_instance||$entity_type, $field_name, $bundle_name|
+field_info_instance_settings||$type|
+field_info_instances||$entity_type = NULL, $bundle_name = NULL|
+field_info_max_weight||$entity_type, $bundle, $context|
+field_info_storage_settings||$type|
+field_info_storage_types||$storage_type = NULL|
+field_info_widget_settings||$type|
+field_info_widget_types||$widget_type = NULL|
+field_is_translatable||$entity_type, $field|
+field_language||$entity_type, $entity, $field_name = NULL, $langcode = NULL|
+field_modules_disabled||$modules|
+field_modules_enabled||$modules|
+field_modules_uninstalled||$modules|
+field_multilingual_settings_changed|||
+field_multiple_value_form||$field, $instance, $langcode, $items, &$form, &$form_state|
+field_purge_batch||$batch_size|
+field_purge_data||$entity_type, $entity, $field, $instance|
+field_purge_field||$field|
+field_purge_instance||$instance|
+field_read_field||$field_name, $include_additional = array()|
+field_read_fields||$params = array(), $include_additional = array()|
+field_read_instance||$entity_type, $field_name, $bundle, $include_additional = array()|
+field_read_instances||$params = array(), $include_additional = array()|
+field_sql_storage_field_attach_rename_bundle||$entity_type, $bundle_old, $bundle_new|
+field_sql_storage_field_storage_create_field||$field|
+field_sql_storage_field_storage_delete||$entity_type, $entity, $fields|
+field_sql_storage_field_storage_delete_field||$field|
+field_sql_storage_field_storage_delete_instance||$instance|
+field_sql_storage_field_storage_delete_revision||$entity_type, $entity, $fields|
+field_sql_storage_field_storage_details||$field|
+field_sql_storage_field_storage_info|||
+field_sql_storage_field_storage_load||$entity_type, $entities, $age, $fields, $options|
+field_sql_storage_field_storage_purge||$entity_type, $entity, $field, $instance|
+field_sql_storage_field_storage_purge_field||$field|
+field_sql_storage_field_storage_query||EntityFieldQuery $query|
+field_sql_storage_field_storage_update_field||$field, $prior_field, $has_data|
+field_sql_storage_field_storage_write||$entity_type, $entity, $op, $fields|
+field_sql_storage_field_update_forbid||$field, $prior_field, $has_data|
+field_sql_storage_help||$path, $arg|
+field_test_create_bundle||$bundle, $text = NULL|
+field_test_create_stub_entity||$id = 1, $vid = 1, $bundle = 'test_bundle', $label = ''|
+field_test_default_value||$entity_type, $entity, $field, $instance|
+field_test_delete_bundle||$bundle|
+field_test_dummy_field_storage_query||EntityFieldQuery $query|
+field_test_entity_add||$fttype|
+field_test_entity_edit||$entity|
+field_test_entity_form||$form, &$form_state, $entity, $add = FALSE|
+field_test_entity_form_submit||$form, &$form_state|
+field_test_entity_form_submit_build_test_entity||$form, &$form_state|
+field_test_entity_form_validate||$form, &$form_state|
+field_test_entity_info|||
+field_test_entity_info_alter||&$entity_info|
+field_test_entity_info_translatable||$entity_type = NULL, $translatable = NULL|
+field_test_entity_label_callback||$entity|
+field_test_entity_nested_form||$form, &$form_state, $entity_1, $entity_2|
+field_test_entity_nested_form_submit||$form, &$form_state|
+field_test_entity_nested_form_validate||$form, &$form_state|
+field_test_entity_query_alter||&$query|
+field_test_entity_save||&$entity|
+field_test_entity_test_load||$ftid, $ftvid = NULL|
+field_test_field_access||$op, $field, $entity_type, $entity, $account|
+field_test_field_attach_create_bundle||$bundle|
+field_test_field_attach_delete_bundle||$entity_type, $bundle, $instances|
+field_test_field_attach_rename_bundle||$bundle_old, $bundle_new|
+field_test_field_attach_view_alter||&$output, $context|
+field_test_field_available_languages_alter||&$languages, $context|
+field_test_field_create_field||$field|
+field_test_field_delete||$entity_type, $entity, $field, $instance, $items|
+field_test_field_formatter_info|||
+field_test_field_formatter_prepare_view||$entity_type, $entities, $field, $instances, $langcode, &$items, $displays|
+field_test_field_formatter_settings_form||$field, $instance, $view_mode, $form, &$form_state|
+field_test_field_formatter_settings_summary||$field, $instance, $view_mode|
+field_test_field_formatter_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+field_test_field_info|||
+field_test_field_insert||$entity_type, $entity, $field, $instance, $items|
+field_test_field_instance_settings_form||$field, $instance|
+field_test_field_is_empty||$item, $field|
+field_test_field_language_alter||&$display_language, $context|
+field_test_field_load||$entity_type, $entities, $field, $instances, $langcode, &$items, $age|
+field_test_field_settings_form||$field, $instance, $has_data|
+field_test_field_storage_create_field||$field|
+field_test_field_storage_delete||$entity_type, $entity, $fields|
+field_test_field_storage_delete_field||$field|
+field_test_field_storage_delete_instance||$instance|
+field_test_field_storage_delete_revision||$entity_type, $entity, $fields|
+field_test_field_storage_details||$field|
+field_test_field_storage_details_alter||&$details, $field|
+field_test_field_storage_info|||
+field_test_field_storage_load||$entity_type, $entities, $age, $fields, $options|
+field_test_field_storage_purge||$entity_type, $entity, $field, $instance|
+field_test_field_storage_query||$field_id, $conditions, $count, &$cursor = NULL, $age|
+field_test_field_storage_write||$entity_type, $entity, $op, $fields|
+field_test_field_test_op||$entity_type, $entity, $field, $instance, $langcode, &$items|
+field_test_field_test_op_multiple||$entity_type, $entities, $field, $instances, $langcode, &$items|
+field_test_field_update||$entity_type, $entity, $field, $instance, $items|
+field_test_field_update_forbid||$field, $prior_field, $has_data|
+field_test_field_validate||$entity_type, $entity, $field, $instance, $langcode, $items, &$errors|
+field_test_field_widget_error||$element, $error, $form, &$form_state|
+field_test_field_widget_form||&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element|
+field_test_field_widget_info|||
+field_test_field_widget_settings_form||$field, $instance|
+field_test_memorize||$key = NULL, $value = NULL|
+field_test_menu|||
+field_test_permission|||
+field_test_rename_bundle||$bundle_old, $bundle_new|
+field_test_widget_multiple_validate||$element, &$form_state|
+field_theme|||
+field_ui_default_value_widget||$field, $instance, &$form, &$form_state|
+field_ui_display_overview_form||$form, &$form_state, $entity_type, $bundle, $view_mode|
+field_ui_display_overview_form_submit||$form, &$form_state|
+field_ui_display_overview_multistep_js||$form, &$form_state|
+field_ui_display_overview_multistep_submit||$form, &$form_state|
+field_ui_display_overview_row_region||$row|
+field_ui_element_info|||
+field_ui_existing_field_options||$entity_type, $bundle|
+field_ui_field_attach_create_bundle||$entity_type, $bundle|
+field_ui_field_delete_form||$form, &$form_state, $instance|
+field_ui_field_delete_form_submit||$form, &$form_state|
+field_ui_field_edit_form||$form, &$form_state, $instance|
+field_ui_field_edit_form_submit||$form, &$form_state|
+field_ui_field_edit_form_validate||$form, &$form_state|
+field_ui_field_edit_instance_pre_render||$element|
+field_ui_field_overview_form||$form, &$form_state, $entity_type, $bundle|
+field_ui_field_overview_form_submit||$form, &$form_state|
+field_ui_field_overview_form_validate||$form, &$form_state|
+field_ui_field_overview_row_region||$row|
+field_ui_field_settings_form||$form, &$form_state, $instance|
+field_ui_field_settings_form_submit||$form, &$form_state|
+field_ui_field_type_options|||
+field_ui_fields_list|||
+field_ui_form_node_type_form_alter||&$form, $form_state|
+field_ui_form_node_type_form_submit||$form, &$form_state|
+field_ui_formatter_options||$field_type = NULL|
+field_ui_get_destinations||$destinations|
+field_ui_help||$path, $arg|
+field_ui_inactive_instances||$entity_type, $bundle_name = NULL|
+field_ui_inactive_message||$entity_type, $bundle|
+field_ui_menu|||
+field_ui_menu_load||$field_name, $entity_type, $bundle_name, $bundle_pos, $map|
+field_ui_menu_title||$instance|
+field_ui_next_destination||$entity_type, $bundle|
+field_ui_table_pre_render||$elements|
+field_ui_theme|||
+field_ui_widget_type_form||$form, &$form_state, $instance|
+field_ui_widget_type_form_submit||$form, &$form_state|
+field_ui_widget_type_options||$field_type = NULL, $by_label = FALSE|
+field_update_field||$field|
+field_update_instance||$instance|
+field_valid_language||$langcode, $default = TRUE|
+field_view_field||$entity_type, $entity, $field_name, $display = array(), $langcode = NULL|
+field_view_mode_settings||$entity_type, $bundle|
+field_view_value||$entity_type, $entity, $field_name, $item, $display = array(), $langcode = NULL|
+field_widget_field||$element, $form_state|
+field_widget_instance||$element, $form_state|
+fields||array $fields|
+fields||array $fields, array $values = array()|
+fields||$table_alias, array $fields = array()|
+file_ajax_progress||$key|
+file_ajax_upload|||
+file_build_uri||$path|
+file_copy||stdClass $source, $destination = NULL, $replace = FILE_EXISTS_RENAME|
+file_create_filename||$basename, $directory|
+file_create_htaccess||$directory, $private = TRUE|
+file_create_url||$uri|
+file_default_mimetype_mapping|||
+file_default_scheme|||
+file_delete||stdClass $file, $force = FALSE|
+file_destination||$destination, $replace|
+file_directory_temp|||
+file_download|||
+file_element_info|||
+file_ensure_htaccess|||
+file_field_delete||$entity_type, $entity, $field, $instance, $langcode, &$items|
+file_field_delete_file||$item, $field, $entity_type, $id, $count = 1|
+file_field_delete_revision||$entity_type, $entity, $field, $instance, $langcode, &$items|
+file_field_displayed||$item, $field|
+file_field_formatter_info|||
+file_field_formatter_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+file_field_info|||
+file_field_insert||$entity_type, $entity, $field, $instance, $langcode, &$items|
+file_field_instance_settings_form||$field, $instance|
+file_field_is_empty||$item, $field|
+file_field_load||$entity_type, $entities, $field, $instances, $langcode, &$items, $age|
+file_field_prepare_view||$entity_type, $entities, $field, $instances, $langcode, &$items|
+file_field_presave||$entity_type, $entity, $field, $instance, $langcode, &$items|
+file_field_settings_form||$field, $instance, $has_data|
+file_field_update||$entity_type, $entity, $field, $instance, $langcode, &$items|
+file_field_widget_form||&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element|
+file_field_widget_info|||
+file_field_widget_process||$element, &$form_state, $form|
+file_field_widget_process_multiple||$element, &$form_state, $form|
+file_field_widget_settings_form||$field, $instance|
+file_field_widget_submit||$form, &$form_state|
+file_field_widget_upload_validators||$field, $instance|
+file_field_widget_uri||$field, $instance, $account = NULL|
+file_field_widget_value||$element, $input = FALSE, $form_state|
+file_file_delete||$file|
+file_file_download||$uri, $field_type = 'file'|
+file_get_content_headers||$file|
+file_get_file_references||$file, $field = NULL, $age = FIELD_LOAD_REVISION, $field_type = 'file'|
+file_get_mimetype||$uri, $mapping = NULL|
+file_get_stream_wrappers||$filter = STREAM_WRAPPERS_ALL|
+file_help||$path, $arg|
+file_icon_map||$file|
+file_icon_path||$file, $icon_directory = NULL|
+file_icon_url||$file, $icon_directory = NULL|
+file_load||$fid|
+file_load_multiple||$fids = array(), $conditions = array()|
+file_managed_file_pre_render||$element|
+file_managed_file_process||$element, &$form_state, $form|
+file_managed_file_save_upload||$element|
+file_managed_file_submit||$form, &$form_state|
+file_managed_file_validate||&$element, &$form_state|
+file_managed_file_value||&$element, $input = FALSE, $form_state = NULL|
+file_menu|||
+file_mimetype_mapping|||
+file_module_test_form||$form, &$form_state, $tree = TRUE, $extended = FALSE, $default_fid = NULL|
+file_module_test_form_submit||$form, &$form_state|
+file_module_test_menu|||
+file_move||stdClass $source, $destination = NULL, $replace = FILE_EXISTS_RENAME|
+file_munge_filename||$filename, $extensions, $alerts = TRUE|
+file_prepare_directory||&$directory, $options = FILE_MODIFY_PERMISSIONS|
+file_progress_implementation|||
+file_save||stdClass $file|
+file_save_data||$data, $destination = NULL, $replace = FILE_EXISTS_RENAME|
+file_save_upload||$source, $validators = array(), $destination = FALSE, $replace = FILE_EXISTS_RENAME|
+file_scan_directory||$dir, $mask, $options = array(), $depth = 0|
+file_space_used||$uid = NULL, $status = FILE_STATUS_PERMANENT|
+file_stream_wrapper_get_class||$scheme|
+file_stream_wrapper_get_instance_by_scheme||$scheme|
+file_stream_wrapper_get_instance_by_uri||$uri|
+file_stream_wrapper_uri_normalize||$uri|
+file_stream_wrapper_valid_scheme||$scheme|
+file_test_file_copy||$file, $source|
+file_test_file_delete||$file|
+file_test_file_download||$uri|
+file_test_file_insert||$file|
+file_test_file_load||$files|
+file_test_file_mimetype_mapping_alter||&$mapping|
+file_test_file_move||$file, $source|
+file_test_file_update||$file|
+file_test_file_url_alter||&$uri|
+file_test_file_validate||$file|
+file_test_get_all_calls|||
+file_test_get_calls||$op|
+file_test_menu|||
+file_test_reset|||
+file_test_set_return||$op, $value|
+file_test_stream_wrappers|||
+file_theme|||
+file_transfer||$uri, $headers|
+file_unmanaged_copy||$source, $destination = NULL, $replace = FILE_EXISTS_RENAME|
+file_unmanaged_delete||$path|
+file_unmanaged_delete_recursive||$path|
+file_unmanaged_move||$source, $destination = NULL, $replace = FILE_EXISTS_RENAME|
+file_unmanaged_save_data||$data, $destination = NULL, $replace = FILE_EXISTS_RENAME|
+file_unmunge_filename||$filename|
+file_upload_max_size|||
+file_uri_scheme||$uri|
+file_uri_target||$uri|
+file_usage_add||stdClass $file, $module, $type, $id, $count = 1|
+file_usage_delete||stdClass $file, $module, $type = NULL, $id = NULL, $count = 1|
+file_usage_list||stdClass $file|
+file_valid_uri||$uri|
+file_validate||stdClass &$file, $validators = array()|
+file_validate_extensions||stdClass $file, $extensions|
+file_validate_image_resolution||stdClass $file, $maximum_dimensions = 0, $minimum_dimensions = 0|
+file_validate_is_image||stdClass $file|
+file_validate_name_length||stdClass $file|
+file_validate_size||stdClass $file, $file_limit = 0, $user_limit = 0|
+filter_access||$format, $account = NULL|
+filter_admin_disable||$form, &$form_state, $format|
+filter_admin_disable_submit||$form, &$form_state|
+filter_admin_format_form||$form, &$form_state, $format|
+filter_admin_format_form_submit||$form, &$form_state|
+filter_admin_format_form_validate||$form, &$form_state|
+filter_admin_format_page||$format = NULL|
+filter_admin_format_title||$format|
+filter_admin_overview||$form|
+filter_admin_overview_submit||$form, &$form_state|
+filter_default_format||$account = NULL|
+filter_dom_load||$text|
+filter_dom_serialize||$dom_document|
+filter_dom_serialize_escape_cdata_element||$dom_document, $dom_element, $comment_start = '\/\/', $comment_end = ''|
+filter_element_info|||
+filter_fallback_format|||
+filter_fallback_format_title|||
+filter_filter_info|||
+filter_form_access_denied||$element|
+filter_format_allowcache||$format_id|
+filter_format_disable||$format|
+filter_format_exists||$format_id|
+filter_format_load||$format_id|
+filter_format_save||$format|
+filter_formats||$account = NULL|
+filter_formats_reset|||
+filter_get_filters|||
+filter_get_formats_by_role||$rid|
+filter_get_roles_by_format||$format|
+filter_help||$path, $arg|
+filter_list_format||$format_id|
+filter_menu|||
+filter_modules_disabled||$modules|
+filter_modules_enabled||$modules|
+filter_permission|||
+filter_permission_name||$format|
+filter_process_format||$element|
+filter_test_filter_format_disable||$format|
+filter_test_filter_format_insert||$format|
+filter_test_filter_format_update||$format|
+filter_test_filter_info|||
+filter_test_replace||$text, $filter, $format, $langcode, $cache, $cache_id|
+filter_theme|||
+filter_tips_long|||
+filter_xss||$string, $allowed_tags = array('a', 'em', 'strong', 'cite', 'blockquote', 'code', 'ul', 'ol', 'li', 'dl', 'dt', 'dd')|
+filter_xss_admin||$string|
+filter_xss_bad_protocol||$string, $decode = TRUE|
+findCaller|||
+findChroot|||
+findInfoFile||$directory|
+findTables||$table_expression|
+findTables||$table_expression|
+finishQuery||$select_query, $id_key = 'entity_id'|
+fix_gpc_magic|||
+flood_clear_event||$name, $identifier = NULL|
+flood_is_allowed||$name, $threshold, $window = 3600, $identifier = NULL|
+flood_register_event||$name, $window = 3600, $identifier = NULL|
+forUpdate||$set = TRUE|
+forUpdate||$set = TRUE|
+form_builder||$form_id, &$element, &$form_state|
+form_clear_error|||
+form_error||&$element, $message = ''|
+form_execute_handlers||$type, &$form, &$form_state|
+form_get_cache||$form_build_id, &$form_state|
+form_get_error||$element|
+form_get_errors|||
+form_get_options||$element, $key|
+form_label_test_form|||
+form_load_include||&$form_state, $type, $module, $name = NULL|
+form_options_flatten||$array|
+form_pre_render_conditional_form_element||$element|
+form_pre_render_fieldset||$element|
+form_process_actions||$element, &$form_state|
+form_process_checkbox||$element, $form_state|
+form_process_checkboxes||$element|
+form_process_container||$element, &$form_state|
+form_process_date||$element|
+form_process_fieldset||&$element, &$form_state|
+form_process_machine_name||$element, &$form_state|
+form_process_password_confirm||$element|
+form_process_radios||$element|
+form_process_select||$element|
+form_process_tableselect||$element|
+form_process_vertical_tabs||$element, &$form_state|
+form_process_weight||$element|
+form_select_options||$element, $choices = NULL|
+form_set_cache||$form_build_id, $form, $form_state|
+form_set_error||$name = NULL, $message = '', $limit_validation_errors = NULL|
+form_set_value||$element, $value, &$form_state|
+form_state_defaults|||
+form_state_keys_no_cache|||
+form_state_values_clean||&$form_state|
+form_storage_test_form_continue_submit||$form, &$form_state|
+form_test_alter_form||$form, &$form_state|
+form_test_checkbox_type_juggling||$form, $form_state, $default_value, $return_value|
+form_test_checkboxes_radios||$form, &$form_state, $customize = FALSE|
+form_test_checkboxes_zero||$form, &$form_state, $json = TRUE|
+form_test_clicked_button||$form, &$form_state|
+form_test_clicked_button_submit||$form, &$form_state|
+form_test_clicked_button_validate||$form, &$form_state|
+form_test_element_validate_name||&$element, &$form_state|
+form_test_form_alter||&$form, &$form_state, $form_id|
+form_test_form_form_test_alter_form_alter||&$form, &$form_state|
+form_test_form_form_test_state_persist_alter||&$form, &$form_state|
+form_test_form_rebuild_preserve_values_form||$form, &$form_state|
+form_test_form_rebuild_preserve_values_form_add_more||$form, &$form_state|
+form_test_form_rebuild_preserve_values_form_submit||$form, &$form_state|
+form_test_form_state_values_clean_form||$form, &$form_state|
+form_test_form_state_values_clean_form_submit||$form, &$form_state|
+form_test_form_user_register_form_alter||&$form, &$form_state|
+form_test_limit_validation_errors_element_validate_test||&$element, &$form_state|
+form_test_limit_validation_errors_form||$form, &$form_state|
+form_test_limit_validation_errors_form_partial_submit||$form, $form_state|
+form_test_load_include_custom||$form, &$form_state|
+form_test_load_include_menu||$form, &$form_state|
+form_test_load_include_menu_ajax||$form|
+form_test_load_include_submit||$form, $form_state|
+form_test_menu|||
+form_test_programmatic_form||$form, &$form_state|
+form_test_programmatic_form_submit||$form, &$form_state|
+form_test_programmatic_form_validate||$form, &$form_state|
+form_test_select||$form, &$form_state|
+form_test_select_submit||$form, &$form_state|
+form_test_state_persist||$form, &$form_state|
+form_test_state_persist_submit||$form, &$form_state|
+form_test_storage_element_validate_value_cached||$element, &$form_state|
+form_test_storage_form||$form, &$form_state|
+form_test_storage_form_submit||$form, &$form_state|
+form_test_two_instances|||
+form_test_user_register_form_rebuild||$form, &$form_state|
+form_test_validate_form||$form, &$form_state|
+form_test_validate_form_validate||&$form, &$form_state|
+form_test_wrapper_callback||$form_id|
+form_test_wrapper_callback_form||$form, &$form_state|
+form_test_wrapper_callback_wrapper||$form, &$form_state|
+form_type_checkbox_value||$element, $input = FALSE|
+form_type_checkboxes_value||$element, $input = FALSE|
+form_type_image_button_value||$form, $input, $form_state|
+form_type_password_confirm_value||$element, $input = FALSE|
+form_type_select_value||$element, $input = FALSE|
+form_type_tableselect_value||$element, $input = FALSE|
+form_type_textfield_value||$element, $input = FALSE|
+form_type_token_value||$element, $input = FALSE|
+form_validate_machine_name||&$element, &$form_state|
+format||array $message|
+format_date||$timestamp, $type = 'medium', $format = '', $timezone = NULL, $langcode = NULL|
+format_interval||$timestamp, $granularity = 2, $langcode = NULL|
+format_plural||$count, $singular, $plural, array $args = array(), array $options = array()|
+format_rss_channel||$title, $link, $description, $items, $langcode = NULL, $args = array()|
+format_rss_item||$title, $link, $description, $args = array()|
+format_size||$size, $langcode = NULL|
+format_username||$account|
+format_xml_elements||$array|
+forum_admin_settings||$form|
+forum_block_configure||$delta = ''|
+forum_block_info|||
+forum_block_save||$delta = '', $edit = array()|
+forum_block_view||$delta = ''|
+forum_block_view_pre_render||$elements|
+forum_comment_delete||$comment|
+forum_comment_publish||$comment|
+forum_comment_unpublish||$comment|
+forum_comment_update||$comment|
+forum_confirm_delete||$form, &$form_state, $tid|
+forum_confirm_delete_submit||$form, &$form_state|
+forum_entity_info_alter||&$info|
+forum_field_storage_pre_insert||$entity_type, $entity, &$skip_fields|
+forum_field_storage_pre_update||$entity_type, $entity, &$skip_fields|
+forum_form||$node, $form_state|
+forum_form_alter||&$form, $form_state, $form_id|
+forum_form_container||$form, &$form_state, $edit = array()|
+forum_form_forum||$form, &$form_state, $edit = array()|
+forum_form_main||$type, $edit = array()|
+forum_form_submit||$form, &$form_state|
+forum_forum_load||$tid = NULL|
+forum_get_topics||$tid, $sortby, $forum_per_page|
+forum_help||$path, $arg|
+forum_menu|||
+forum_menu_local_tasks_alter||&$data, $router_item, $root_path|
+forum_node_delete||$node|
+forum_node_info|||
+forum_node_insert||$node|
+forum_node_load||$nodes|
+forum_node_presave||$node|
+forum_node_update||$node|
+forum_node_validate||$node, $form|
+forum_node_view||$node, $view_mode|
+forum_overview||$form, &$form_state|
+forum_page||$forum_term = NULL|
+forum_permission|||
+forum_rdf_mapping|||
+forum_taxonomy_term_delete||$tid|
+forum_theme|||
+forum_uri||$forum|
+from||SelectQueryInterface $query|
+ftp_chmod||$ftp_stream, $mode, $filename|
+garbageCollection|||
+garland_breadcrumb||$variables|
+garland_form_system_theme_settings_alter||&$form, &$form_state|
+garland_preprocess_block||&$vars|
+garland_preprocess_comment||&$vars|
+garland_preprocess_html||&$vars|
+garland_preprocess_maintenance_page||&$vars|
+garland_preprocess_node||&$vars|
+garland_preprocess_page||&$vars|
+garland_preprocess_region||&$vars|
+garland_process_html||&$vars|
+garland_process_page||&$vars|
+generatePermutations||$parameters|
+generateTemporaryTableName|||
+get||$cid|
+get||$cid|
+get||$logging_key|
+get||$name, $reliable = FALSE|
+getAbsoluteUrl||$path|
+getAllItems|||
+getAllOptions||SimpleXMLElement $element|
+getArchive|||
+getArguments||QueryPlaceholderInterface $queryPlaceholder = NULL|
+getAssertionCall|||
+getBackupDir|||
+getComment||$table, $column = NULL|
+getComment||$table, $column = NULL|
+&getComments|||
+getConnectionOptions|||
+getCountQuery|||
+getDirectoryPath|||
+getDirectoryPath|||
+getDriverClass||$class, array $files = array(), $use_autoload = FALSE|
+&getExpressions|||
+getExternalUrl|||
+getExternalUrl|||
+getExternalUrl|||
+getFieldTypeMap|||
+getFieldTypeMap|||
+getFieldTypeMap|||
+&getFields|||
+getFormOptions||$database|
+getFormOptions||$database|
+&getGroupBy|||
+getInstallArgs||$overrides = array()|
+getInstallDirectory|||
+getInternalUri|||
+getKey|||
+getLocalPath||$uri = NULL|
+getLogger|||
+getMetaData||$key|
+getMimeType||$uri, $mapping = NULL|
+getMultiple||&$cids|
+getMultiple||&$cids|
+&getOrderBy|||
+getPrefixInfo||$table = 'default', $add_prefix = TRUE|
+getPrefixInfo||$table = 'default', $add_prefix = TRUE|
+getProjectName||$directory|
+getProjectTitle||$directory|
+getQueryParameters|||
+getQueryString|||
+getQueryString|||
+getSchemaUpdates|||
+getSelectedItem||SimpleXMLElement $element|
+getSettingsForm|||
+getSettingsForm|||
+getSettingsForm|||
+getSettingsForm|||
+getSettingsForm|||
+getSort|||
+getStatement||$query, &$args = array()|
+getStatement||$query, &$args = array()|
+&getTables|||
+getTarget|||
+getTarget||$uri = NULL|
+&getUnion|||
+getUpdaterFromDirectory||$directory|
+getUri|||
+getUrl|||
+get_t|||
+groupBy||$field|
+handleForm||&$post, &$edit, &$upload, $submit, $form|
+hasAllTags|||
+hasAnyTag|||
+hasPdoDriver|||
+hasTag||$tag|
+having||$snippet, $args = array()|
+havingArguments|||
+havingCompile||DatabaseConnection $connection|
+havingCondition||$field, $value = NULL, $operator = '='|
+havingCondition||$field, $value = NULL, $operator = NULL|
+&havingConditions|||
+havingExists||SelectQueryInterface $select|
+havingIsNotNull||$field|
+havingIsNull||$field|
+havingNotExists||SelectQueryInterface $select|
+help_help||$path, $arg|
+help_links_as_list|||
+help_main|||
+help_menu|||
+help_page||$name|
+hide||&$element|
+hook_action_info|||
+hook_action_info_alter||&$actions|
+hook_actions_delete||$aid|
+hook_admin_paths|||
+hook_admin_paths_alter||&$paths|
+hook_aggregator_fetch||$feed|
+hook_aggregator_fetch_info|||
+hook_aggregator_parse||$feed|
+hook_aggregator_parse_info|||
+hook_aggregator_process||$feed|
+hook_aggregator_process_info||$feed|
+hook_aggregator_remove||$feed|
+hook_ajax_render_alter||$commands|
+hook_archiver_info|||
+hook_archiver_info_alter||&$info|
+hook_batch_alter||&$batch|
+hook_block_configure||$delta = ''|
+hook_block_info|||
+hook_block_info_alter||&$blocks, $theme, $code_blocks|
+hook_block_list_alter||&$blocks|
+hook_block_save||$delta = '', $edit = array()|
+hook_block_view||$delta = ''|
+hook_block_view_MODULE_DELTA_alter||&$data, $block|
+hook_block_view_alter||&$data, $block|
+hook_boot|||
+hook_comment_delete||$comment|
+hook_comment_insert||$comment|
+hook_comment_load||$comments|
+hook_comment_presave||$comment|
+hook_comment_publish||$comment|
+hook_comment_unpublish||$comment|
+hook_comment_update||$comment|
+hook_comment_view||$comment, $view_mode, $langcode|
+hook_comment_view_alter||&$build|
+hook_contextual_links_view_alter||&$element, $items|
+hook_countries_alter||&$countries|
+hook_cron|||
+hook_cron_queue_info|||
+hook_cron_queue_info_alter||&$queues|
+hook_css_alter||&$css|
+hook_custom_theme|||
+hook_dashboard_regions|||
+hook_dashboard_regions_alter||$regions|
+hook_date_format_types|||
+hook_date_format_types_alter||&$types|
+hook_date_formats|||
+hook_date_formats_alter||&$formats|
+hook_delete||$node|
+hook_disable|||
+hook_drupal_goto_alter||&$path, &$options, &$http_response_code|
+hook_element_info|||
+hook_element_info_alter||&$type|
+hook_enable|||
+hook_entity_delete||$entity, $type|
+hook_entity_info|||
+hook_entity_info_alter||&$entity_info|
+hook_entity_insert||$entity, $type|
+hook_entity_load||$entities, $type|
+hook_entity_prepare_view||$entities, $type|
+hook_entity_presave||$entity, $type|
+hook_entity_query_alter||$query|
+hook_entity_update||$entity, $type|
+hook_entity_view||$entity, $type, $view_mode, $langcode|
+hook_entity_view_alter||&$build, $type|
+hook_exit||$destination = NULL|
+hook_field_access||$op, $field, $entity_type, $entity, $account|
+hook_field_attach_create_bundle||$entity_type, $bundle|
+hook_field_attach_delete||$entity_type, $entity|
+hook_field_attach_delete_bundle||$entity_type, $bundle, $instances|
+hook_field_attach_delete_revision||$entity_type, $entity|
+hook_field_attach_form||$entity_type, $entity, &$form, &$form_state, $langcode|
+hook_field_attach_insert||$entity_type, $entity|
+hook_field_attach_load||$entity_type, &$entities, $age, $options|
+hook_field_attach_prepare_translation_alter||&$entity, $context|
+hook_field_attach_preprocess_alter||&$variables, $context|
+hook_field_attach_presave||$entity_type, $entity|
+hook_field_attach_purge||$entity_type, $entity, $field, $instance|
+hook_field_attach_rename_bundle||$entity_type, $bundle_old, $bundle_new|
+hook_field_attach_submit||$entity_type, $entity, $form, &$form_state|
+hook_field_attach_update||$entity_type, $entity|
+hook_field_attach_validate||$entity_type, $entity, &$errors|
+hook_field_attach_view_alter||&$output, $context|
+hook_field_available_languages_alter||&$languages, $context|
+hook_field_create_field||$field|
+hook_field_create_instance||$instance|
+hook_field_delete||$entity_type, $entity, $field, $instance, $langcode, &$items|
+hook_field_delete_field||$field|
+hook_field_delete_instance||$instance|
+hook_field_delete_revision||$entity_type, $entity, $field, $instance, $langcode, &$items|
+hook_field_display_ENTITY_TYPE_alter||&$display, $context|
+hook_field_display_alter||&$display, $context|
+hook_field_extra_fields|||
+hook_field_extra_fields_alter||&$info|
+hook_field_extra_fields_display_alter||&$displays, $context|
+hook_field_formatter_info|||
+hook_field_formatter_info_alter||&$info|
+hook_field_formatter_prepare_view||$entity_type, $entities, $field, $instances, $langcode, &$items, $displays|
+hook_field_formatter_settings_form||$field, $instance, $view_mode, $form, &$form_state|
+hook_field_formatter_settings_summary||$field, $instance, $view_mode|
+hook_field_formatter_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+hook_field_info|||
+hook_field_info_alter||&$info|
+hook_field_info_max_weight||$entity_type, $bundle, $context|
+hook_field_insert||$entity_type, $entity, $field, $instance, $langcode, &$items|
+hook_field_instance_settings_form||$field, $instance|
+hook_field_is_empty||$item, $field|
+hook_field_language_alter||&$display_language, $context|
+hook_field_load||$entity_type, $entities, $field, $instances, $langcode, &$items, $age|
+hook_field_prepare_translation||$entity_type, $entity, $field, $instance, $langcode, &$items, $source_entity, $source_langcode|
+hook_field_prepare_view||$entity_type, $entities, $field, $instances, $langcode, &$items|
+hook_field_presave||$entity_type, $entity, $field, $instance, $langcode, &$items|
+hook_field_purge_field||$field|
+hook_field_purge_field_instance||$instance|
+hook_field_read_field||&$field|
+hook_field_read_instance||$instance|
+hook_field_schema||$field|
+hook_field_settings_form||$field, $instance, $has_data|
+hook_field_storage_create_field||$field|
+hook_field_storage_delete||$entity_type, $entity, $fields|
+hook_field_storage_delete_field||$field|
+hook_field_storage_delete_instance||$instance|
+hook_field_storage_delete_revision||$entity_type, $entity, $fields|
+hook_field_storage_details||$field|
+hook_field_storage_details_alter||&$details, $field|
+hook_field_storage_info|||
+hook_field_storage_info_alter||&$info|
+hook_field_storage_load||$entity_type, &$entities, $age, $fields, $options|
+hook_field_storage_pre_insert||$entity_type, $entity, &$skip_fields|
+hook_field_storage_pre_load||$entity_type, $entities, $age, &$skip_fields, $options|
+hook_field_storage_pre_update||$entity_type, $entity, &$skip_fields|
+hook_field_storage_purge||$entity_type, $entity, $field, $instance|
+hook_field_storage_purge_field||$field|
+hook_field_storage_purge_field_instance||$instance|
+hook_field_storage_query||$query|
+hook_field_storage_update_field||$field, $prior_field, $has_data|
+hook_field_storage_write||$entity_type, $entity, $op, $fields|
+hook_field_update||$entity_type, $entity, $field, $instance, $langcode, &$items|
+hook_field_update_field||$field, $prior_field, $has_data|
+hook_field_update_forbid||$field, $prior_field, $has_data|
+hook_field_update_instance||$instance, $prior_instance|
+hook_field_validate||$entity_type, $entity, $field, $instance, $langcode, $items, &$errors|
+hook_field_widget_error||$element, $error, $form, &$form_state|
+hook_field_widget_form||&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element|
+hook_field_widget_info|||
+hook_field_widget_info_alter||&$info|
+hook_field_widget_properties_ENTITY_TYPE_alter||&$widget, $context|
+hook_field_widget_properties_alter||&$widget, $context|
+hook_field_widget_settings_form||$field, $instance|
+hook_file_copy||$file, $source|
+hook_file_delete||$file|
+hook_file_download||$uri|
+hook_file_download_access||$field, $entity_type, $entity|
+hook_file_download_access_alter||&$grants, $field, $entity_type, $entity|
+hook_file_insert||$file|
+hook_file_load||$files|
+hook_file_mimetype_mapping_alter||&$mapping|
+hook_file_move||$file, $source|
+hook_file_presave||$file|
+hook_file_update||$file|
+hook_file_url_alter||&$uri|
+hook_file_validate||&$file|
+hook_filetransfer_info|||
+hook_filetransfer_info_alter||&$filetransfer_info|
+hook_filter_FILTER_prepare||$text, $filter, $format, $langcode, $cache, $cache_id|
+hook_filter_FILTER_process||$text, $filter, $format, $langcode, $cache, $cache_id|
+hook_filter_FILTER_settings||$form, &$form_state, $filter, $format, $defaults, $filters|
+hook_filter_FILTER_tips||$filter, $format, $long|
+hook_filter_format_disable||$format|
+hook_filter_format_insert||$format|
+hook_filter_format_update||$format|
+hook_filter_info|||
+hook_filter_info_alter||&$info|
+hook_flush_caches|||
+hook_form||$node, &$form_state|
+hook_form_BASE_FORM_ID_alter||&$form, &$form_state, $form_id|
+hook_form_FORM_ID_alter||&$form, &$form_state, $form_id|
+hook_form_alter||&$form, &$form_state, $form_id|
+hook_form_system_theme_settings_alter||&$form, &$form_state|
+hook_forms||$form_id, $args|
+hook_help||$path, $arg|
+hook_hook_info|||
+hook_hook_info_alter||&$hooks|
+hook_html_head_alter||&$head_elements|
+hook_image_default_styles|||
+hook_image_effect_info|||
+hook_image_effect_info_alter||&$effects|
+hook_image_style_delete||$style|
+hook_image_style_flush||$style|
+hook_image_style_save||$style|
+hook_image_styles_alter||&$styles|
+hook_image_toolkits|||
+hook_init|||
+hook_insert||$node|
+hook_install|||
+hook_install_tasks|||
+hook_install_tasks_alter||&$tasks, $install_state|
+hook_js_alter||&$javascript|
+hook_language_fallback_candidates_alter||array &$fallback_candidates|
+hook_language_init|||
+hook_language_negotiation_info|||
+hook_language_negotiation_info_alter||array &$language_providers|
+hook_language_switch_links_alter||array &$links, $type, $path|
+hook_language_types_info|||
+hook_language_types_info_alter||array &$language_types|
+hook_library|||
+hook_library_alter||&$libraries, $module|
+hook_load||$nodes|
+hook_locale||$op = 'groups'|
+hook_mail||$key, &$message, $params|
+hook_mail_alter||&$message|
+hook_menu|||
+hook_menu_alter||&$items|
+hook_menu_breadcrumb_alter||&$active_trail, $item|
+hook_menu_contextual_links_alter||&$links, $router_item, $root_path|
+hook_menu_delete||$menu|
+hook_menu_get_item_alter||&$router_item, $path, $original_map|
+hook_menu_insert||$menu|
+hook_menu_link_alter||&$item|
+hook_menu_link_delete||$link|
+hook_menu_link_insert||$link|
+hook_menu_link_update||$link|
+hook_menu_local_tasks_alter||&$data, $router_item, $root_path|
+hook_menu_site_status_alter||&$menu_site_status, $path|
+hook_menu_update||$menu|
+hook_module_implements_alter||&$implementations, $hook|
+hook_modules_disabled||$modules|
+hook_modules_enabled||$modules|
+hook_modules_installed||$modules|
+hook_modules_uninstalled||$modules|
+hook_multilingual_settings_changed|||
+hook_node_access||$node, $op, $account|
+hook_node_access_records||$node|
+hook_node_access_records_alter||&$grants, $node|
+hook_node_delete||$node|
+hook_node_grants||$account, $op|
+hook_node_grants_alter||&$grants, $account, $op|
+hook_node_info|||
+hook_node_insert||$node|
+hook_node_load||$nodes, $types|
+hook_node_operations|||
+hook_node_prepare||$node|
+hook_node_presave||$node|
+hook_node_revision_delete||$node|
+hook_node_search_result||$node|
+hook_node_submit||$node, $form, &$form_state|
+hook_node_type_delete||$info|
+hook_node_type_insert||$info|
+hook_node_type_update||$info|
+hook_node_update||$node|
+hook_node_update_index||$node|
+hook_node_validate||$node, $form, &$form_state|
+hook_node_view||$node, $view_mode, $langcode|
+hook_node_view_alter||&$build|
+hook_openid||$op, $request|
+hook_openid_discovery_method_info|||
+hook_openid_discovery_method_info_alter||&$methods|
+hook_openid_normalization_method_info|||
+hook_openid_normalization_method_info_alter||&$methods|
+hook_openid_response||$response, $account|
+hook_options_list||$field|
+hook_overlay_child_initialize|||
+hook_overlay_parent_initialize|||
+hook_page_alter||&$page|
+hook_page_build||&$page|
+hook_page_delivery_callback_alter||&$callback|
+hook_path_delete||$path|
+hook_path_insert||$path|
+hook_path_update||$path|
+hook_permission|||
+hook_prepare||$node|
+hook_preprocess||&$variables, $hook|
+hook_preprocess_HOOK||&$variables|
+hook_process||&$variables, $hook|
+hook_process_HOOK||&$variables|
+hook_query_TAG_alter||QueryAlterableInterface $query|
+hook_query_alter||QueryAlterableInterface $query|
+hook_ranking|||
+hook_rdf_mapping|||
+hook_rdf_namespaces|||
+hook_registry_files_alter||&$files, $modules|
+hook_requirements||$phase|
+hook_schema|||
+hook_schema_alter||&$schema|
+hook_search_access|||
+hook_search_admin|||
+hook_search_execute||$keys = NULL, $conditions = NULL|
+hook_search_info|||
+hook_search_page||$results|
+hook_search_preprocess||$text|
+hook_search_reset|||
+hook_search_status|||
+hook_shortcut_default_set||$account|
+hook_simpletest_alter||&$groups|
+hook_stream_wrappers|||
+hook_stream_wrappers_alter||&$wrappers|
+hook_system_info_alter||&$info, $file, $type|
+hook_system_themes_page_alter||&$theme_groups|
+hook_taxonomy_term_delete||$term|
+hook_taxonomy_term_insert||$term|
+hook_taxonomy_term_load||$terms|
+hook_taxonomy_term_presave||$term|
+hook_taxonomy_term_update||$term|
+hook_taxonomy_term_view_alter||&$build|
+hook_taxonomy_vocabulary_delete||$vocabulary|
+hook_taxonomy_vocabulary_insert||$vocabulary|
+hook_taxonomy_vocabulary_load||$vocabularies|
+hook_taxonomy_vocabulary_presave||$vocabulary|
+hook_taxonomy_vocabulary_update||$vocabulary|
+hook_test_finished||$results|
+hook_test_group_finished|||
+hook_test_group_started|||
+hook_theme||$existing, $type, $theme, $path|
+hook_theme_registry_alter||&$theme_registry|
+hook_themes_disabled||$theme_list|
+hook_themes_enabled||$theme_list|
+hook_token_info|||
+hook_token_info_alter||&$data|
+hook_tokens||$type, $tokens, array $data = array(), array $options = array()|
+hook_tokens_alter||array &$replacements, array $context|
+hook_translated_menu_link_alter||&$item, $map|
+hook_trigger_info|||
+hook_trigger_info_alter||&$triggers|
+hook_uninstall|||
+hook_update||$node|
+hook_update_N||&$sandbox|
+hook_update_dependencies|||
+hook_update_index|||
+hook_update_last_removed|||
+hook_update_projects_alter||&$projects|
+hook_update_status_alter||&$projects|
+hook_updater_info|||
+hook_updater_info_alter||&$updaters|
+hook_url_inbound_alter||&$path, $original_path, $path_language|
+hook_url_outbound_alter||&$path, &$options, $original_path|
+hook_user_cancel||$edit, $account, $method|
+hook_user_cancel_methods_alter||&$methods|
+hook_user_categories|||
+hook_user_delete||$account|
+hook_user_insert||&$edit, $account, $category|
+hook_user_load||$users|
+hook_user_login||&$edit, $account|
+hook_user_logout||$account|
+hook_user_operations|||
+hook_user_presave||&$edit, $account, $category|
+hook_user_role_delete||$role|
+hook_user_role_insert||$role|
+hook_user_role_update||$role|
+hook_user_update||&$edit, $account, $category|
+hook_user_view||$account, $view_mode, $langcode|
+hook_user_view_alter||&$build|
+hook_username_alter||&$name, $account|
+hook_validate||$node, $form, &$form_state|
+hook_verify_update_archive||$project, $archive_file, $directory|
+hook_view||$node, $view_mode|
+hook_watchdog||array $log_entry|
+hook_xmlrpc|||
+hook_xmlrpc_alter||&$methods|
+ignoreTarget||$key, $target|
+image_crop||stdClass $image, $x, $y, $width, $height|
+image_crop_effect||&$image, $data|
+image_crop_form||$data|
+image_default_style_revert||$style|
+image_default_style_save||$style|
+image_desaturate||stdClass $image|
+image_desaturate_effect||&$image, $data|
+image_effect_apply||$image, $effect|
+image_effect_color_validate||$element, &$form_state|
+image_effect_definition_load||$effect, $style_name = NULL|
+image_effect_definitions|||
+image_effect_delete||$effect|
+image_effect_delete_form||$form, &$form_state, $style, $effect|
+image_effect_delete_form_submit||$form, &$form_state|
+image_effect_form||$form, &$form_state, $style, $effect|
+image_effect_form_submit||$form, &$form_state|
+image_effect_integer_validate||$element, &$form_state|
+image_effect_load||$ieid, $style_name, $include = NULL|
+image_effect_save||$effect|
+image_effect_scale_validate||$element, &$form_state|
+image_effects|||
+image_field_delete||$entity_type, $entity, $field, $instance, $langcode, &$items|
+image_field_delete_revision||$entity_type, $entity, $field, $instance, $langcode, &$items|
+image_field_formatter_info|||
+image_field_formatter_settings_form||$field, $instance, $view_mode, $form, &$form_state|
+image_field_formatter_settings_summary||$field, $instance, $view_mode|
+image_field_formatter_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+image_field_info|||
+image_field_insert||$entity_type, $entity, $field, $instance, $langcode, &$items|
+image_field_instance_settings_form||$field, $instance|
+image_field_is_empty||$item, $field|
+image_field_load||$entity_type, $entities, $field, $instances, $langcode, &$items, $age|
+image_field_prepare_view||$entity_type, $entities, $field, $instances, $langcode, &$items|
+image_field_presave||$entity_type, $entity, $field, $instance, $langcode, &$items|
+image_field_settings_form||$field, $instance|
+image_field_update||$entity_type, $entity, $field, $instance, $langcode, &$items|
+image_field_widget_form||&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element|
+image_field_widget_info|||
+image_field_widget_process||$element, &$form_state, $form|
+image_field_widget_settings_form||$field, $instance|
+image_file_delete||$file|
+image_file_download||$uri|
+image_file_move||$file, $source|
+image_filter_keyword||$value, $current_pixels, $new_pixels|
+image_flush_caches|||
+image_form_system_file_system_settings_alter||&$form, &$form_state|
+image_gd_check_settings|||
+image_gd_create_tmp||stdClass $image, $width, $height|
+image_gd_crop||stdClass $image, $x, $y, $width, $height|
+image_gd_desaturate||stdClass $image|
+image_gd_get_info||stdClass $image|
+image_gd_load||stdClass $image|
+image_gd_resize||stdClass $image, $width, $height|
+image_gd_rotate||stdClass $image, $degrees, $background = NULL|
+image_gd_save||stdClass $image, $destination|
+image_gd_settings|||
+image_gd_settings_validate||$form, &$form_state|
+image_get_available_toolkits|||
+image_get_info||$filepath, $toolkit = FALSE|
+image_get_toolkit|||
+image_help||$path, $arg|
+image_image_default_styles|||
+image_image_effect_info|||
+image_image_style_delete||$style|
+image_image_style_save||$style|
+image_load||$file, $toolkit = FALSE|
+image_menu|||
+image_module_test_file_download||$uri|
+image_path_flush||$path|
+image_permission|||
+image_resize||stdClass $image, $width, $height|
+image_resize_effect||&$image, $data|
+image_resize_form||$data|
+image_rotate||stdClass $image, $degrees, $background = NULL|
+image_rotate_effect||&$image, $data|
+image_rotate_form||$data|
+image_save||stdClass $image, $destination = NULL|
+image_scale||stdClass $image, $width = NULL, $height = NULL, $upscale = FALSE|
+image_scale_and_crop||stdClass $image, $width, $height|
+image_scale_and_crop_effect||&$image, $data|
+image_scale_effect||&$image, $data|
+image_scale_form||$data|
+image_style_add_form||$form, &$form_state|
+image_style_add_form_submit||$form, &$form_state|
+image_style_create_derivative||$style, $source, $destination|
+image_style_delete||$style, $replacement_style_name = ''|
+image_style_delete_form||$form, $form_state, $style|
+image_style_delete_form_submit||$form, &$form_state|
+image_style_deliver||$style, $scheme|
+image_style_effects||$style|
+image_style_flush||$style|
+image_style_form||$form, &$form_state, $style|
+image_style_form_add_submit||$form, &$form_state|
+image_style_form_add_validate||$form, &$form_state|
+image_style_form_override_submit||$form, &$form_state|
+image_style_form_submit||$form, &$form_state|
+image_style_list|||
+image_style_load||$name = NULL, $isid = NULL, $include = NULL|
+image_style_name_validate||$element, $form_state|
+image_style_options||$include_empty = TRUE|
+image_style_path||$style_name, $uri|
+image_style_revert_form||$form, $form_state, $style|
+image_style_revert_form_submit||$form, &$form_state|
+image_style_save||$style|
+image_style_url||$style_name, $path|
+image_styles|||
+image_system_file_system_settings_submit||$form, &$form_state|
+image_test_crop||stdClass $image, $x, $y, $width, $height|
+image_test_desaturate||stdClass $image|
+image_test_get_all_calls|||
+image_test_get_info||stdClass $image|
+image_test_image_toolkits|||
+image_test_load||stdClass $image|
+image_test_reset|||
+image_test_resize||stdClass $image, $width, $height|
+image_test_rotate||stdClass $image, $degrees, $background = NULL|
+image_test_save||stdClass $image, $destination|
+image_test_settings|||
+image_theme|||
+image_toolkit_invoke||$method, stdClass $image, array $params = array()|
+inTransaction|||
+indexExists||$table, $name|
+indexExists||$table, $name|
+indexExists||$table, $name|
+init|||
+initializeDatabase|||
+initializePager|||
+innerJoin||$table, $alias = NULL, $condition = NULL, $arguments = array()|
+insert||$table, array $options = array()|
+insertAssert||$test_id, $test_class, $status, $message = '', $group = 'Other', array $caller = array()|
+insertFields||array $fields, array $values = array()|
+install||&$filetransfer, $overrides = array()|
+install_already_done_error|||
+install_begin_request||&$install_state|
+install_bootstrap_full||&$install_state|
+install_check_requirements||$install_state|
+install_configure_form||$form, &$form_state, &$install_state|
+install_configure_form_submit||$form, &$form_state|
+install_configure_form_validate||$form, &$form_state|
+install_database_errors||$database, $settings_file|
+install_display_output||$output, $install_state|
+install_drupal||$settings = array()|
+install_find_locales||$profilename|
+install_find_profiles|||
+install_finished||&$install_state|
+install_full_redirect_url||$install_state|
+install_goto||$path|
+install_import_locales||&$install_state|
+install_import_locales_remaining||&$install_state|
+install_load_profile||&$install_state|
+install_no_profile_error|||
+install_profile_info||$profile, $locale = 'en'|
+install_profile_modules||&$install_state|
+install_redirect_url||$install_state|
+install_run_task||$task, &$install_state|
+install_run_tasks||&$install_state|
+install_select_locale||&$install_state|
+install_select_locale_form||$form, &$form_state, $locales, $profilename|
+install_select_profile||&$install_state|
+install_select_profile_form||$form, &$form_state, $profile_files|
+install_settings_form||$form, &$form_state, &$install_state|
+install_settings_form_submit||$form, &$form_state|
+install_settings_form_validate||$form, &$form_state|
+install_state_defaults|||
+install_system_module||&$install_state|
+install_tasks||$install_state|
+install_tasks_to_display||$install_state|
+install_tasks_to_perform||$install_state|
+install_verify_completed_task|||
+install_verify_pdo|||
+install_verify_requirements||&$install_state|
+install_verify_settings|||
+installable|||
+int2vancode||$i = 0|
+introspectSchema||$table|
+ip_address|||
+isDirectory||$path|
+isDirectory||$path|
+isDirectory||$path|
+isEmpty|||
+isEmpty|||
+isFile||$path|
+isFile||$path|
+isFile||$path|
+isInstalled|||
+isNotNull||$field|
+isNotNull||$field|
+isNotNull||$field|
+isNull||$field|
+isNull||$field|
+isNull||$field|
+isPrepared|||
+join||$table, $alias = NULL, $condition = NULL, $arguments = array()|
+key|||
+key|||
+key||array $fields, array $values = array()|
+l||$text, $path, array $options = array()|
+language_default||$property = NULL|
+language_fallback_get_candidates||$type = LANGUAGE_TYPE_CONTENT|
+language_from_default|||
+language_initialize||$type|
+language_list||$field = 'language'|
+language_negotiation_get||$type, $provider_id = NULL|
+language_negotiation_get_any||$provider_id|
+language_negotiation_get_switch_links||$type, $path|
+language_negotiation_info|||
+language_negotiation_set||$type, $language_providers|
+language_provider_invoke||$provider_id, $provider = NULL|
+language_provider_weight||$provider|
+language_types|||
+language_types_configurable||$stored = TRUE|
+language_types_disable||$types|
+language_types_info|||
+language_url_split_prefix||$path, $languages|
+leftJoin||$table, $alias = NULL, $condition = NULL, $arguments = array()|
+limit||$limit = 10|
+listContents|||
+list_allowed_values||$field|
+list_allowed_values_setting_validate||$element, &$form_state|
+list_allowed_values_string||$values|
+list_boolean_allowed_values_callback||$element, $input, $form_state|
+list_extract_allowed_values||$string, $field_type, $generate_keys|
+list_field_formatter_info|||
+list_field_formatter_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+list_field_info|||
+list_field_is_empty||$item, $field|
+list_field_settings_form||$field, $instance, $has_data|
+list_field_update_field||$field, $prior_field, $has_data|
+list_field_update_forbid||$field, $prior_field, $has_data|
+list_field_validate||$entity_type, $entity, $field, $instance, $langcode, $items, &$errors|
+list_field_widget_info_alter||&$info|
+list_help||$path, $arg|
+list_options_list||$field|
+list_test_allowed_values_callback||$field|
+list_themes||$refresh = FALSE|
+load||$ids = array(), $conditions = array()|
+loadDriverFile||$driver, array $files = array()|
+locale||$string = NULL, $context = NULL, $langcode = NULL|
+locale_add_language||$langcode, $name = NULL, $native = NULL, $direction = LANGUAGE_LTR, $domain = '', $prefix = '', $enabled = TRUE, $default = FALSE|
+locale_batch_by_component||$components, $finished = '_locale_batch_system_finished'|
+locale_batch_by_language||$langcode, $finished = NULL, $skip = array()|
+locale_block_info|||
+locale_block_view||$type|
+locale_css_alter||&$css|
+locale_date_format_form||$form, &$form_state, $langcode|
+locale_date_format_form_submit||$form, &$form_state|
+locale_date_format_language_overview_page|||
+locale_date_format_reset_form||$form, &$form_state, $langcode|
+locale_date_format_reset_form_submit||$form, &$form_state|
+locale_date_format_save||$langcode, $type, $format|
+locale_entity_info_alter||&$entity_info|
+locale_field_language_alter||&$display_language, $context|
+locale_field_language_fallback||&$display_language, $entity, $langcode|
+locale_field_node_form_submit||$form, &$form_state|
+locale_form_alter||&$form, &$form_state, $form_id|
+locale_form_comment_form_alter||&$form, &$form_state, $form_id|
+locale_form_node_form_alter||&$form, &$form_state|
+locale_form_node_type_form_alter||&$form, &$form_state|
+locale_form_path_admin_form_alter||&$form, &$form_state|
+locale_get_localized_date_format||$languages|
+locale_get_plural||$count, $langcode = NULL|
+locale_help||$path, $arg|
+locale_init|||
+locale_js_alter||&$javascript|
+locale_language_from_browser||$languages|
+locale_language_from_interface|||
+locale_language_from_session||$languages|
+locale_language_from_url||$languages|
+locale_language_from_user||$languages|
+locale_language_list||$field = 'name', $all = FALSE|
+locale_language_name||$lang|
+locale_language_negotiation_info|||
+locale_language_providers_session_form||$form, &$form_state|
+locale_language_providers_url_form||$form, &$form_state|
+locale_language_selector_form||&$form, &$form_state, $user|
+locale_language_switcher_session||$type, $path|
+locale_language_switcher_url||$type, $path|
+locale_language_types_info|||
+locale_language_url_fallback||$language = NULL, $language_type = LANGUAGE_TYPE_INTERFACE|
+locale_language_url_rewrite_session||&$path, &$options|
+locale_language_url_rewrite_url||&$path, &$options|
+locale_languages_add_screen|||
+locale_languages_configure_form|||
+locale_languages_configure_form_submit||$form, &$form_state|
+locale_languages_custom_form||$form|
+locale_languages_delete_form||$form, &$form_state, $langcode|
+locale_languages_delete_form_submit||$form, &$form_state|
+locale_languages_edit_form||$form, &$form_state, $langcode|
+locale_languages_edit_form_submit||$form, &$form_state|
+locale_languages_edit_form_validate||$form, &$form_state|
+locale_languages_overview_form|||
+locale_languages_overview_form_submit||$form, &$form_state|
+locale_languages_predefined_form||$form|
+locale_languages_predefined_form_submit||$form, &$form_state|
+locale_languages_predefined_form_validate||$form, &$form_state|
+locale_library_alter||&$libraries, $module|
+locale_locale||$op = 'groups'|
+locale_menu|||
+locale_multilingual_node_type||$type_name|
+locale_permission|||
+locale_reset|||
+locale_string_is_safe||$string|
+locale_system_update||$components|
+locale_test_boot|||
+locale_test_language_types_info_alter||array &$language_types|
+locale_test_locale||$op = 'groups'|
+locale_theme|||
+locale_translate_delete_form||$form, &$form_state, $source|
+locale_translate_delete_form_submit||$form, &$form_state|
+locale_translate_delete_page||$lid|
+locale_translate_edit_form||$form, &$form_state, $lid|
+locale_translate_edit_form_submit||$form, &$form_state|
+locale_translate_edit_form_validate||$form, &$form_state|
+locale_translate_export_po_form||$form, &$form_state, $names|
+locale_translate_export_po_form_submit||$form, &$form_state|
+locale_translate_export_pot_form|||
+locale_translate_export_screen|||
+locale_translate_import_form||$form|
+locale_translate_import_form_submit||$form, &$form_state|
+locale_translate_overview_screen|||
+locale_translate_seek_screen|||
+locale_translation_filter_form|||
+locale_translation_filter_form_submit||$form, &$form_state|
+locale_translation_filter_form_validate||$form, &$form_state|
+locale_translation_filters|||
+locale_url_outbound_alter||&$path, &$options, $original_path|
+lock_acquire||$name, $timeout = 30.0|
+lock_initialize|||
+lock_may_be_available||$name|
+lock_release||$name|
+lock_release_all||$lock_id = NULL|
+lock_wait||$name, $delay = 30|
+log||DatabaseStatementInterface $statement, $args, $time|
+mail||array $message|
+makeBackup||&$filetransfer, $from, $to|
+makeSequenceName||$table, $field|
+makeWorldReadable||&$filetransfer, $path, $recursive = TRUE|
+mapConditionOperator||$operator|
+mapConditionOperator||$operator|
+mapConditionOperator||$operator|
+mapConditionOperator||$operator|
+mapKeyDefinition||array $key_definition, array $mapping|
+map_month||$month|
+menu_block_info|||
+menu_block_view||$delta = ''|
+menu_block_view_alter||&$data, $block|
+menu_build_tree||$menu_name, array $parameters = array()|
+menu_cache_clear||$menu_name = 'navigation'|
+menu_cache_clear_all|||
+menu_configure|||
+menu_contextual_links||$module, $parent_path, $args|
+menu_custom_delete_submit||$form, &$form_state|
+menu_delete||$menu|
+menu_delete_links||$menu_name|
+menu_delete_menu_confirm||$form, &$form_state, $menu|
+menu_delete_menu_confirm_submit||$form, &$form_state|
+menu_delete_menu_page||$menu|
+menu_edit_item||$form, &$form_state, $type, $item, $menu|
+menu_edit_item_submit||$form, &$form_state|
+menu_edit_item_validate||$form, &$form_state|
+menu_edit_menu||$form, &$form_state, $type, $menu = array()|
+menu_edit_menu_name_exists||$value|
+menu_edit_menu_submit||$form, &$form_state|
+menu_enable|||
+menu_execute_active_handler||$path = NULL, $deliver = TRUE|
+menu_form_node_form_alter||&$form, $form_state|
+menu_form_node_type_form_alter||&$form, $form_state|
+menu_get_active_breadcrumb|||
+menu_get_active_help|||
+menu_get_active_menu_names|||
+menu_get_active_title|||
+menu_get_active_trail|||
+menu_get_ancestors||$parts|
+menu_get_custom_theme||$initialize = FALSE|
+menu_get_item||$path = NULL, $router_item = NULL|
+menu_get_menus||$all = TRUE|
+menu_get_names|||
+menu_get_object||$type = 'node', $position = 1, $path = NULL|
+menu_get_router|||
+menu_help||$path, $arg|
+menu_item_delete_form||$form, &$form_state, $item|
+menu_item_delete_form_submit||$form, &$form_state|
+menu_item_delete_page||$item|
+menu_item_delete_submit||$form, &$form_state|
+menu_link_children_relative_depth||$item|
+menu_link_delete||$mlid, $path = NULL|
+menu_link_get_preferred||$path = NULL|
+menu_link_load||$mlid|
+menu_link_maintain||$module, $op, $link_path, $link_title|
+menu_link_save||&$item|
+menu_links_clone||$links, $menu_name = NULL|
+menu_list_system_menus|||
+menu_load||$menu_name|
+menu_load_all|||
+menu_load_links||$menu_name|
+menu_local_actions|||
+menu_local_tabs|||
+menu_local_tasks||$level = 0|
+menu_login_callback|||
+menu_main_menu|||
+menu_menu|||
+menu_navigation_links||$menu_name, $level = 0|
+menu_node_delete||$node|
+menu_node_insert||$node|
+menu_node_prepare||$node|
+menu_node_save||$node|
+menu_node_submit||$node, $form, $form_state|
+menu_node_update||$node|
+menu_overview_form||$form, &$form_state, $menu|
+menu_overview_form_submit||$form, &$form_state|
+menu_overview_page|||
+menu_overview_title||$menu|
+menu_parent_options||$menus, $item|
+menu_parent_options_js|||
+menu_permission|||
+menu_primary_local_tasks|||
+menu_rebuild|||
+menu_reset_item||$link|
+menu_reset_item_confirm||$form, &$form_state, $item|
+menu_reset_item_confirm_submit||$form, &$form_state|
+menu_reset_static_cache|||
+menu_router_build|||
+menu_save||$menu|
+menu_secondary_local_tasks|||
+menu_secondary_menu|||
+menu_set_active_item||$path|
+menu_set_active_menu_names||$menu_names = NULL|
+menu_set_active_trail||$new_trail = NULL|
+menu_set_custom_theme|||
+menu_set_item||$path, $router_item|
+menu_tab_root_path|||
+menu_tail_load||$arg, &$map, $index|
+menu_tail_to_arg||$arg, $map, $index|
+menu_test_argument_load||$arg1|
+menu_test_callback|||
+menu_test_custom_theme|||
+menu_test_menu|||
+menu_test_menu_link_delete||$item|
+menu_test_menu_link_insert||$item|
+menu_test_menu_link_update||$item|
+menu_test_menu_name||$new_name = ''|
+menu_test_menu_site_status_alter||&$menu_site_status, $path|
+menu_test_other_argument_load||$arg1|
+menu_test_static_variable||$value = NULL|
+menu_test_theme_callback||$argument|
+menu_test_theme_page_callback||$inherited = FALSE|
+menu_test_title_callback||$title, $case_no = 3|
+menu_theme|||
+menu_tree||$menu_name|
+menu_tree_all_data||$menu_name, $link = NULL, $max_depth = NULL|
+menu_tree_check_access||&$tree, $node_links = array()|
+menu_tree_collect_node_links||&$tree, &$node_links|
+menu_tree_data||array $links, array $parents = array(), $depth = 1|
+menu_tree_output||$tree|
+menu_tree_page_data||$menu_name, $max_depth = NULL, $only_active_trail = FALSE|
+menu_unserialize||$data, $map|
+merge||$table, array $options = array()|
+mime_header_decode||$header|
+mime_header_encode||$string|
+minimumVersion|||
+minimumVersion|||
+minimumVersion|||
+minimumVersion|||
+mkdir||$uri, $mode, $options|
+module_disable||$module_list, $disable_dependents = TRUE|
+module_enable||$module_list, $enable_dependencies = TRUE|
+module_exists||$module|
+module_hook||$module, $hook|
+module_hook_info|||
+module_implements||$hook, $sort = FALSE, $reset = FALSE|
+module_implements_write_cache|||
+module_invoke|||
+module_invoke_all|||
+module_list||$refresh = FALSE, $bootstrap_refresh = FALSE, $sort = FALSE, $fixed_list = NULL|
+module_load_all||$bootstrap = FALSE|
+module_load_all_includes||$type, $name = NULL|
+module_load_include||$type, $module, $name = NULL|
+module_load_install||$module|
+module_test_hook_dynamic_loading_invoke|||
+module_test_hook_dynamic_loading_invoke_all|||
+module_test_hook_info|||
+module_test_menu|||
+module_test_modules_disabled||$modules|
+module_test_modules_enabled||$modules|
+module_test_modules_uninstalled||$modules|
+module_test_permission|||
+module_test_system_info_alter||&$info, $file, $type|
+module_test_test_hook|||
+name|||
+name|||
+name|||
+name|||
+next|||
+next|||
+next|||
+nextId||$existing_id = 0|
+nextId||$existing = 0|
+nextId||$existing_id = 0|
+nextIdDelete|||
+nextPlaceholder|||
+nextPlaceholder|||
+nextPlaceholder|||
+node_access||$op, $node, $account = NULL|
+node_access_acquire_grants||$node, $delete = TRUE|
+node_access_entity_test_page|||
+node_access_grants||$op, $account = NULL|
+node_access_needs_rebuild||$rebuild = NULL|
+node_access_rebuild||$batch_mode = FALSE|
+node_access_test_menu|||
+node_access_test_node_access_records||$node|
+node_access_test_node_grants||$account, $op|
+node_access_test_page|||
+node_access_test_permission|||
+node_access_view_all_nodes||$account = NULL|
+node_access_write_grants||$node, $grants, $realm = NULL, $delete = TRUE|
+node_action_info|||
+node_add||$type|
+node_add_body_field||$type, $label = 'Body'|
+node_add_page|||
+node_admin_content||$form, $form_state|
+node_admin_nodes|||
+node_admin_nodes_submit||$form, &$form_state|
+node_admin_nodes_validate||$form, &$form_state|
+node_admin_paths|||
+node_assign_owner_action||$node, $context|
+node_assign_owner_action_form||$context|
+node_assign_owner_action_submit||$form, $form_state|
+node_assign_owner_action_validate||$form, $form_state|
+node_block_configure||$delta = ''|
+node_block_info|||
+node_block_list_alter||&$blocks|
+node_block_save||$delta = '', $edit = array()|
+node_block_view||$delta = ''|
+node_build_content||$node, $view_mode = 'full', $langcode = NULL|
+node_build_filter_query||SelectQueryInterface $query|
+node_configure_rebuild_confirm|||
+node_configure_rebuild_confirm_submit||$form, &$form_state|
+node_content_form||$node, $form_state|
+node_cron|||
+node_delete||$nid|
+node_delete_confirm||$form, &$form_state, $node|
+node_delete_confirm_submit||$form, &$form_state|
+node_delete_multiple||$nids|
+node_entity_info|||
+node_feed||$nids = FALSE, $channel = array()|
+node_field_display_node_alter||&$display, $context|
+node_field_extra_fields|||
+node_file_download_access||$field, $entity_type, $entity|
+node_filter_form|||
+node_filter_form_submit||$form, &$form_state|
+node_filters|||
+node_form||$form, &$form_state, $node|
+node_form_block_add_block_form_alter||&$form, &$form_state|
+node_form_block_admin_configure_alter||&$form, &$form_state|
+node_form_block_admin_configure_submit||$form, &$form_state|
+node_form_block_custom_block_delete_alter||&$form, &$form_state|
+node_form_block_custom_block_delete_submit||$form, &$form_state|
+node_form_build_preview||$form, &$form_state|
+node_form_delete_submit||$form, &$form_state|
+node_form_search_form_alter||&$form, $form_state|
+node_form_submit||$form, &$form_state|
+node_form_submit_build_node||$form, &$form_state|
+node_form_validate||$form, &$form_state|
+node_forms|||
+node_get_recent||$number = 10|
+node_help||$path, $arg|
+node_hook||$node, $hook|
+node_invoke||$node, $hook, $a2 = NULL, $a3 = NULL, $a4 = NULL|
+node_is_page||$node|
+node_last_changed||$nid|
+node_last_viewed||$nid|
+node_list_permissions||$type|
+node_load||$nid = NULL, $vid = NULL, $reset = FALSE|
+node_load_multiple||$nids = array(), $conditions = array(), $reset = FALSE|
+node_make_sticky_action||$node, $context = array()|
+node_make_unsticky_action||$node, $context = array()|
+node_mark||$nid, $timestamp|
+node_mass_update||$nodes, $updates|
+node_menu|||
+node_menu_local_tasks_alter||&$data, $router_item, $root_path|
+node_modules_enabled||$modules|
+node_modules_uninstalled||$modules|
+node_multiple_delete_confirm||$form, &$form_state, $nodes|
+node_multiple_delete_confirm_submit||$form, &$form_state|
+node_node_access||$node, $op, $account|
+node_node_operations|||
+node_node_type_insert||$info|
+node_node_type_update||$info|
+node_object_prepare||$node|
+node_overview_types|||
+node_page_default|||
+node_page_edit||$node|
+node_page_title||$node|
+node_page_view||$node|
+node_permission|||
+node_permissions_get_configured_types|||
+node_preview||$node|
+node_promote_action||$node, $context = array()|
+node_publish_action||$node, $context = array()|
+node_query_entity_field_access_alter||QueryAlterableInterface $query|
+node_query_node_access_alter||QueryAlterableInterface $query|
+node_ranking|||
+node_rdf_mapping|||
+node_requirements||$phase|
+node_revision_delete||$revision_id|
+node_revision_delete_confirm||$form, $form_state, $node_revision|
+node_revision_delete_confirm_submit||$form, &$form_state|
+node_revision_list||$node|
+node_revision_overview||$node|
+node_revision_revert_confirm||$form, $form_state, $node_revision|
+node_revision_revert_confirm_submit||$form, &$form_state|
+node_save||$node|
+node_save_action||$node|
+node_search_access|||
+node_search_admin|||
+node_search_execute||$keys = NULL, $conditions = NULL|
+node_search_info|||
+node_search_reset|||
+node_search_status|||
+node_search_validate||$form, &$form_state|
+node_show||$node, $message = FALSE|
+node_submit||$node|
+node_tag_new||$node|
+node_test_exception_node_insert||$node|
+node_test_node_access_records||$node|
+node_test_node_access_records_alter||&$grants, $node|
+node_test_node_grants||$account, $op|
+node_test_node_grants_alter||&$grants, $account, $op|
+node_test_node_load||$nodes, $types|
+node_test_node_presave||$node|
+node_test_node_update||$node|
+node_test_node_view||$node, $view_mode|
+node_theme|||
+node_title_list||$result, $title = NULL|
+node_token_info|||
+node_tokens||$type, $tokens, array $data = array(), array $options = array()|
+node_type_cache_reset|||
+node_type_delete||$type|
+node_type_delete_confirm||$form, &$form_state, $type|
+node_type_delete_confirm_submit||$form, &$form_state|
+node_type_form||$form, &$form_state, $type = NULL|
+node_type_form_submit||$form, &$form_state|
+node_type_form_validate||$form, &$form_state|
+node_type_get_base||$node|
+node_type_get_name||$node|
+node_type_get_names|||
+node_type_get_type||$node|
+node_type_get_types|||
+node_type_load||$name|
+node_type_page_title||$type|
+node_type_reset||$type|
+node_type_save||$info|
+node_type_set_defaults||$info = array()|
+node_type_update_nodes||$old_type, $type|
+node_types_rebuild|||
+node_unpromote_action||$node, $context = array()|
+node_unpublish_action||$node, $context = array()|
+node_unpublish_by_keyword_action||$node, $context|
+node_unpublish_by_keyword_action_form||$context|
+node_unpublish_by_keyword_action_submit||$form, $form_state|
+node_update_index|||
+node_uri||$node|
+node_user_cancel||$edit, $account, $method|
+node_user_delete||$account|
+node_validate||$node, $form, &$form_state|
+node_view||$node, $view_mode = 'full', $langcode = NULL|
+node_view_multiple||$nodes, $view_mode = 'teaser', $weight = 0, $langcode = NULL|
+notExists||SelectQueryInterface $select|
+notExists||SelectQueryInterface $select|
+numberOfItems|||
+number_field_formatter_info|||
+number_field_formatter_settings_form||$field, $instance, $view_mode, $form, &$form_state|
+number_field_formatter_settings_summary||$field, $instance, $view_mode|
+number_field_formatter_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+number_field_info|||
+number_field_instance_settings_form||$field, $instance|
+number_field_is_empty||$item, $field|
+number_field_presave||$entity_type, $entity, $field, $instance, $langcode, &$items|
+number_field_settings_form||$field, $instance, $has_data|
+number_field_validate||$entity_type, $entity, $field, $instance, $langcode, $items, &$errors|
+number_field_widget_error||$element, $error, $form, &$form_state|
+number_field_widget_form||&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element|
+number_field_widget_info|||
+number_field_widget_validate||$element, &$form_state|
+number_help||$path, $arg|
+openid_admin_paths|||
+openid_association||$op_endpoint|
+openid_association_request||$public|
+openid_authentication||$response|
+openid_authentication_page|||
+openid_authentication_request||$claimed_id, $identity, $return_to = '', $assoc_handle = '', $service|
+openid_begin||$claimed_id, $return_to = '', $form_values = array()|
+openid_complete||$response = array()|
+openid_cron|||
+openid_discovery||$claimed_id|
+openid_extract_ax_values||$values, $uris|
+openid_extract_namespace||$response, $extension_namespace, $fallback_prefix = NULL|
+openid_form_user_login_alter||&$form, &$form_state|
+openid_form_user_login_block_alter||&$form, &$form_state|
+openid_form_user_register_form_alter||&$form, &$form_state|
+openid_help||$path, $arg|
+openid_login_validate||$form, &$form_state|
+openid_menu|||
+openid_menu_site_status_alter||&$menu_site_status, $path|
+openid_normalize||$identifier|
+openid_openid_discovery_method_info|||
+openid_openid_normalization_method_info|||
+openid_redirect||$url, $message|
+openid_redirect_form||$form, &$form_state, $url, $message|
+openid_redirect_http||$url, $message|
+openid_test_endpoint|||
+openid_test_html_openid1|||
+openid_test_html_openid2|||
+openid_test_menu|||
+openid_test_menu_site_status_alter||&$menu_site_status, $path|
+openid_test_yadis_http_equiv|||
+openid_test_yadis_x_xrds_location|||
+openid_test_yadis_xrds|||
+openid_user_add|||
+openid_user_add_submit||$form, &$form_state|
+openid_user_add_validate||$form, &$form_state|
+openid_user_delete_form||$form, $form_state, $account, $aid = 0|
+openid_user_delete_form_submit||$form, &$form_state|
+openid_user_identities||$account|
+openid_user_insert||&$edit, $account, $category|
+openid_user_login||&$edit, $account|
+openid_user_logout||$account|
+openid_verify_assertion||$service, $response|
+openid_verify_assertion_nonce||$service, $response|
+openid_verify_assertion_return_url||$service, $response|
+openid_verify_assertion_signature||$service, $association, $response|
+options_array_flatten||$array|
+options_array_transpose||$array|
+options_field_widget_error||$element, $error, $form, &$form_state|
+options_field_widget_form||&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element|
+options_field_widget_info|||
+options_field_widget_settings_form||$field, $instance|
+options_field_widget_validate||$element, &$form_state|
+options_help||$path, $arg|
+options_theme|||
+order|||
+orderBy||$field, $direction = 'ASC'|
+orderBy||$field, $direction = 'ASC'|
+orderByHeader||Array $header|
+orderRandom|||
+orderRandom|||
+overlay_admin_paths|||
+overlay_ajax_render_region||$region|
+overlay_batch_alter||&$batch|
+overlay_block_list_alter||&$blocks|
+overlay_close_dialog||$redirect = NULL, $redirect_options = array()|
+overlay_deliver_empty_page|||
+overlay_disable_message|||
+overlay_display_empty_page||$value = NULL|
+overlay_drupal_goto_alter||&$path, &$options, &$http_response_code|
+overlay_exit|||
+overlay_form_user_profile_form_alter||&$form, &$form_state|
+overlay_get_mode|||
+overlay_get_regions_to_render|||
+overlay_get_rendered_content|||
+overlay_help||$path, $arg|
+overlay_init|||
+overlay_library|||
+overlay_menu|||
+overlay_overlay_child_initialize|||
+overlay_overlay_parent_initialize|||
+overlay_page_alter||&$page|
+overlay_page_delivery_callback_alter||&$callback|
+overlay_permission|||
+overlay_preprocess_html||&$variables|
+overlay_preprocess_maintenance_page||&$variables|
+overlay_preprocess_page||&$variables|
+overlay_regions|||
+overlay_render_region||$region|
+overlay_request_page_refresh|||
+overlay_request_refresh||$region|
+overlay_set_mode||$mode = NULL|
+overlay_set_regions_to_render||$regions = NULL|
+overlay_store_rendered_content||$id = NULL, $content = NULL|
+overlay_supplemental_regions|||
+overlay_system_info_alter||&$info, $file, $type|
+overlay_theme|||
+overlay_trigger_refresh|||
+overlay_user_dismiss_message|||
+overlay_user_presave||&$edit, $account, $category|
+pager||$limit = 10, $element = NULL|
+pager_default_initialize||$total, $limit, $element = 0|
+pager_find_page||$element = 0|
+pager_get_query_parameters|||
+pager_load_array||$value, $element, $old_array|
+parse|||
+parseSearchExpression|||
+parseWord||$word|
+parse_size||$size|
+pass||$message|
+pass||$message = NULL, $group = 'Other'|
+password_confirm_validate||$element, &$element_state|
+path_admin_delete_confirm||$form, &$form_state, $path|
+path_admin_delete_confirm_submit||$form, &$form_state|
+path_admin_edit||$path = array()|
+path_admin_filter_form||$form, &$form_state, $keys = ''|
+path_admin_filter_form_submit_filter||$form, &$form_state|
+path_admin_filter_form_submit_reset||$form, &$form_state|
+path_admin_form||$form, &$form_state, $path = array('source' => '', 'alias' => '', 'language' => LANGUAGE_NONE, 'pid' => NULL)|
+path_admin_form_delete_submit||$form, &$form_state|
+path_admin_form_submit||$form, &$form_state|
+path_admin_form_validate||$form, &$form_state|
+path_admin_overview||$keys = NULL|
+path_delete||$criteria|
+path_form_element_validate||$element, &$form_state, $complete_form|
+path_form_node_form_alter||&$form, $form_state|
+path_form_taxonomy_form_term_alter||&$form, $form_state|
+path_get_admin_paths|||
+path_help||$path, $arg|
+path_is_admin||$path|
+path_load||$conditions|
+path_menu|||
+path_node_delete||$node|
+path_node_insert||$node|
+path_node_update||$node|
+path_permission|||
+path_save||&$path|
+path_taxonomy_term_delete||$term|
+path_taxonomy_term_insert||$term|
+path_taxonomy_term_update||$term|
+path_to_theme|||
+php_eval||$code|
+php_filter_info|||
+php_help||$path, $arg|
+php_permission|||
+phptemplate_init||$template|
+phptemplate_theme||$existing, $type, $theme, $path|
+poll_block_info|||
+poll_block_latest_poll_view||$node|
+poll_block_view||$delta = ''|
+poll_cancel||$form, &$form_state|
+poll_cancel_form||$form, &$form_state, $nid|
+poll_choice_js||$form, $form_state|
+poll_cron|||
+poll_delete||$node|
+poll_field_attach_prepare_translation_alter||&$entity, $context|
+poll_field_extra_fields|||
+poll_form||$node, &$form_state|
+poll_help||$path, $arg|
+poll_insert||$node|
+poll_load||$nodes|
+poll_menu|||
+poll_more_choices_submit||$form, &$form_state|
+poll_node_form_submit||&$form, &$form_state|
+poll_node_info|||
+poll_page|||
+poll_permission|||
+poll_rdf_mapping|||
+poll_results||$node|
+poll_teaser||$node|
+poll_theme|||
+poll_token_info|||
+poll_tokens||$type, $tokens, array $data = array(), array $options = array()|
+poll_update||$node|
+poll_user_cancel||$edit, $account, $method|
+poll_user_delete||$account|
+poll_validate||$node, $form|
+poll_view||$node, $view_mode|
+poll_view_results||$node, $view_mode, $block = FALSE|
+poll_view_voting||$form, &$form_state, $node, $block = FALSE|
+poll_view_voting_validate||$form, &$form_state|
+poll_vote||$form, &$form_state|
+poll_votes||$node|
+popTransaction||$name|
+popTransaction||$name|
+postInstall|||
+postInstall|||
+postInstallTasks|||
+postInstallTasks|||
+postUpdate|||
+postUpdateTasks|||
+postUpdateTasks|||
+preExecute|||
+preExecute||SelectQueryInterface $query = NULL|
+prefixNonTable||$table|
+prefixTables||$sql|
+preloadRegistry|||
+prepare||$query, $options = array()|
+prepareComment||$comment, $length = NULL|
+prepareComment||$comment, $length = NULL|
+prepareInstallDirectory||&$filetransfer, $directory|
+prepareItem||$cache|
+prepareQuery||$query|
+prepareQuery||$query|
+processField||$field|
+processField||$field|
+processField||$field|
+profile_admin_overview||$form|
+profile_admin_overview_submit||$form, &$form_state|
+profile_admin_settings_autocomplete||$string|
+profile_autocomplete||$field, $string|
+profile_block_configure||$delta = ''|
+profile_block_info|||
+profile_block_save||$delta = '', $edit = array()|
+profile_block_view||$delta = ''|
+profile_browse|||
+profile_category_access||$account, $category|
+profile_field_delete||$form, &$form_state, $fid|
+profile_field_delete_submit||$form, &$form_state|
+profile_field_form||$form, &$form_state, $arg = NULL|
+profile_field_form_submit||$form, &$form_state|
+profile_field_form_validate||$form, &$form_state|
+profile_form_alter||&$form, &$form_state, $form_id|
+profile_help||$path, $arg|
+profile_menu|||
+profile_save_profile||&$edit, $account, $category, $register = FALSE|
+profile_theme|||
+profile_user_cancel||&$edit, $account, $method|
+profile_user_categories|||
+profile_user_delete||$account|
+profile_user_form_validate||$form, &$form_state|
+profile_user_insert||&$edit, $account, $category|
+profile_user_load||$users|
+profile_user_presave||&$edit, $account, $category|
+profile_user_view||$account|
+profile_view_field||$account, $field|
+propertyCondition||$column, $value, $operator = NULL|
+propertyOrderBy||$column, $direction = 'ASC'|
+propertyQuery|||
+pushTransaction||$name|
+pushTransaction||$name|
+query||$query, array $args = array(), $options = array()|
+query||$query, array $args = array(), $options = array()|
+queryCallback|||
+queryFieldInformation||$table, $field|
+queryRange||$query, $from, $count, array $args = array(), array $options = array()|
+queryRange||$query, $from, $count, array $args = array(), array $options = array()|
+queryRange||$query, $from, $count, array $args = array(), array $options = array()|
+queryTableInformation||$table|
+queryTemporary||$query, array $args = array(), array $options = array()|
+queryTemporary||$query, array $args = array(), array $options = array()|
+queryTemporary||$query, array $args = array(), array $options = array()|
+randomName||$length = 8|
+randomString||$length = 8|
+range||$start = NULL, $length = NULL|
+range||$start = NULL, $length = NULL|
+rdf_comment_load||$comments|
+rdf_entity_info_alter||&$entity_info|
+rdf_entity_load||$entities, $type|
+rdf_field_attach_view_alter||&$output, $context|
+rdf_get_namespaces|||
+rdf_help||$path, $arg|
+rdf_mapping_delete||$type, $bundle|
+rdf_mapping_load||$type, $bundle = RDF_DEFAULT_BUNDLE|
+rdf_mapping_save||$mapping|
+rdf_modules_installed||$modules|
+rdf_modules_uninstalled||$modules|
+rdf_preprocess_comment||&$variables|
+rdf_preprocess_field||&$variables|
+rdf_preprocess_image||&$variables|
+rdf_preprocess_node||&$variables|
+rdf_preprocess_taxonomy_term||&$variables|
+rdf_preprocess_user_profile||&$variables|
+rdf_preprocess_username||&$variables|
+rdf_process||&$variables, $hook|
+rdf_rdf_namespaces|||
+rdf_rdfa_attributes||$mapping, $data = NULL|
+rdf_test_rdf_mapping|||
+rdf_test_rdf_namespaces|||
+rdf_theme|||
+realpath|||
+refreshVariables|||
+registry_get_parsed_files|||
+registry_rebuild|||
+registry_update|||
+releaseItem||$item|
+remove||$file_path|
+removeDirectoryJailed||$directory|
+removeDirectoryJailed||$directory|
+removeDirectoryJailed||$directory|
+removeFieldsInCondition||&$fields, QueryConditionInterface $condition|
+removeFileJailed||$destination|
+removeFileJailed||$file|
+removeFileJailed||$destination|
+rename||$from_uri, $to_uri|
+renameTable||$table, $new_name|
+renameTable||$table, $new_name|
+renameTable||$table, $new_name|
+render||&$element|
+request_path|||
+request_uri|||
+resetAll|||
+resetCache||array $ids = NULL|
+rewind|||
+rewind|||
+rightJoin||$table, $alias = NULL, $condition = NULL, $arguments = array()|
+rmdir||$uri, $options|
+rollback||$savepoint_name = 'drupal_transaction'|
+rollback|||
+rollback||$savepoint_name = 'drupal_transaction'|
+rowCount|||
+rowCount|||
+run||array $methods = array()|
+runTasks|||
+runTestQuery||$query, $pass, $fail, $fatal = FALSE|
+sample_search_conditions_callback||$keys|
+sanitizePath||$path|
+schema|||
+searchExpression||$expression, $module|
+search_admin_reindex_submit||$form, &$form_state|
+search_admin_settings||$form|
+search_admin_settings_submit||$form, &$form_state|
+search_admin_settings_validate||$form, &$form_state|
+search_block_info|||
+search_block_view||$delta = ''|
+search_box||$form, &$form_state, $form_id|
+search_box_form_submit||$form, &$form_state|
+search_comment_delete||$comment|
+search_comment_insert||$comment|
+search_comment_publish||$comment|
+search_comment_unpublish||$comment|
+search_comment_update||$comment|
+search_cron|||
+search_data||$keys, $module, $conditions = NULL|
+search_dirty||$word = NULL|
+search_embedded_form_form||$form, &$form_state|
+search_embedded_form_form_submit||$form, &$form_state|
+search_embedded_form_menu|||
+search_embedded_form_preprocess_search_result||&$variables|
+search_excerpt||$keys, $text|
+search_expand_cjk||$matches|
+search_expression_extract||$expression, $option|
+search_expression_insert||$expression, $option, $value = NULL|
+search_extra_type_conditions|||
+search_extra_type_search_execute||$keys = NULL, $conditions = NULL|
+search_extra_type_search_info|||
+search_extra_type_search_page||$results|
+search_form||$form, &$form_state, $action = '', $keys = '', $module = NULL, $prompt = NULL|
+search_form_submit||$form, &$form_state|
+search_form_validate||$form, &$form_state|
+search_forms|||
+search_get_default_module_info|||
+search_get_info||$all = FALSE|
+search_help||$path, $arg|
+search_index||$sid, $module, $text|
+search_index_split||$text|
+search_invoke_preprocess||&$text|
+search_is_active|||
+search_menu|||
+search_node_update||$node|
+search_node_update_index||$node|
+search_permission|||
+search_reindex||$sid = NULL, $module = NULL, $reindex = FALSE|
+search_reindex_confirm|||
+search_reindex_confirm_submit||&$form, &$form_state|
+search_simplify||$text|
+search_simplify_excerpt_match||$key, $text, $offset, $boundary|
+search_theme|||
+search_touch_node||$nid|
+search_update_totals|||
+search_view||$module = NULL, $keys = ''|
+select||$table, $alias = NULL, array $options = array()|
+session_test_boot|||
+session_test_drupal_goto_alter||&$path, &$options, &$http_response_code|
+session_test_form_user_login_alter||&$form|
+session_test_menu|||
+session_test_user_login||$edit = array(), $user = NULL|
+set||$cid, $data, $expire = CACHE_PERMANENT|
+set||$cid, $data, $expire = CACHE_PERMANENT|
+setChroot|||
+setCountQuery||SelectQueryInterface $query|
+setFetchMode||$mode, $a1 = NULL, $a2 = array()|
+setFetchMode||$fetchStyle, $a2 = NULL, $a3 = NULL|
+setKey||$key|
+setLogger||DatabaseLog $logger|
+setOption||$option, $column|
+setPrefix||$prefix|
+setTarget||$target = NULL|
+setUp|||
+setUri||$uri|
+seven_admin_block_content||$variables|
+seven_css_alter||&$css|
+seven_node_add_list||$variables|
+seven_preprocess_html||&$vars|
+seven_preprocess_maintenance_page||&$vars|
+seven_preprocess_page||&$vars|
+seven_tablesort_indicator||$variables|
+shortcut_admin_add_link||$shortcut_link, &$shortcut_set, $limit = NULL|
+shortcut_admin_paths|||
+shortcut_block_info|||
+shortcut_block_view||$delta = ''|
+shortcut_current_displayed_set||$account = NULL|
+shortcut_default_set||$account = NULL|
+shortcut_help||$path, $arg|
+shortcut_link_access||$menu_link|
+shortcut_link_add||$form, &$form_state, $shortcut_set|
+shortcut_link_add_inline||$shortcut_set|
+shortcut_link_add_submit||$form, &$form_state|
+shortcut_link_delete||$form, &$form_state, $shortcut_link|
+shortcut_link_delete_submit||$form, &$form_state|
+shortcut_link_edit||$form, &$form_state, $shortcut_link|
+shortcut_link_edit_submit||$form, &$form_state|
+shortcut_link_edit_validate||$form, &$form_state|
+shortcut_max_slots|||
+shortcut_menu|||
+shortcut_page_alter||&$page|
+shortcut_permission|||
+shortcut_preprocess_page||&$variables|
+shortcut_renderable_links||$shortcut_set = NULL|
+shortcut_set_add_form||$form, &$form_state|
+shortcut_set_add_form_submit||$form, &$form_state|
+shortcut_set_add_form_validate||$form, &$form_state|
+shortcut_set_admin|||
+shortcut_set_assign_user||$shortcut_set, $account|
+shortcut_set_customize||$form, &$form_state, $shortcut_set|
+shortcut_set_customize_submit||$form, &$form_state|
+shortcut_set_delete||$shortcut_set|
+shortcut_set_delete_access||$shortcut_set|
+shortcut_set_delete_form||$form, &$form_state, $shortcut_set|
+shortcut_set_delete_form_submit||$form, &$form_state|
+shortcut_set_edit_access||$shortcut_set = NULL|
+shortcut_set_edit_form||$form, &$form_state, $shortcut_set|
+shortcut_set_edit_form_submit||$form, &$form_state|
+shortcut_set_edit_form_validate||$form, &$form_state|
+shortcut_set_get_unique_name|||
+shortcut_set_load||$set_name|
+shortcut_set_name||$number|
+shortcut_set_reset_link_weights||&$shortcut_set|
+shortcut_set_save||&$shortcut_set|
+shortcut_set_switch||$form, &$form_state, $account = NULL|
+shortcut_set_switch_access||$account = NULL|
+shortcut_set_switch_submit||$form, &$form_state|
+shortcut_set_switch_validate||$form, &$form_state|
+shortcut_set_title||$shortcut_set|
+shortcut_set_title_exists||$title|
+shortcut_set_unassign_user||$account|
+shortcut_sets|||
+shortcut_theme|||
+shortcut_toolbar_pre_render||$toolbar|
+shortcut_valid_link||$path|
+show||&$element|
+simpletest_clean_database|||
+simpletest_clean_environment|||
+simpletest_clean_results_table||$test_id = NULL|
+simpletest_clean_temporary_directories|||
+simpletest_generate_file||$filename, $width, $lines, $type = 'binary-text'|
+simpletest_help||$path, $arg|
+simpletest_js_alter||&$javascript|
+simpletest_last_test_get||$test_id|
+simpletest_log_read||$test_id, $prefix, $test_class, $during_test = FALSE|
+simpletest_menu|||
+simpletest_permission|||
+simpletest_registry_files_alter||&$files, $modules|
+simpletest_result_form||$form, &$form_state, $test_id|
+simpletest_result_form_submit||$form, &$form_state|
+simpletest_result_get||$test_id|
+simpletest_result_status_image||$status|
+simpletest_run_tests||$test_list, $reporter = 'drupal'|
+simpletest_settings_form||$form, &$form_state|
+simpletest_test_form||$form|
+simpletest_test_form_submit||$form, &$form_state|
+simpletest_test_get_all|||
+simpletest_theme|||
+simpletest_verbose||$message, $original_file_directory = NULL, $test_class = NULL|
+sqlFunctionConcat|||
+sqlFunctionGreatest|||
+sqlFunctionIf||$condition, $expr1, $expr2 = NULL|
+sqlFunctionRand||$seed = NULL|
+sqlFunctionSubstring||$string, $from, $length|
+sqlFunctionSubstringIndex||$string, $delimiter, $count|
+st||$string, array $args = array(), array $options = array()|
+start||$logging_key|
+startTransaction||$name = ''|
+statistics_access_log||$aid|
+statistics_block_configure||$delta = ''|
+statistics_block_info|||
+statistics_block_save||$delta = '', $edit = array()|
+statistics_block_view||$delta = ''|
+statistics_cron|||
+statistics_exit|||
+statistics_get||$nid|
+statistics_help||$path, $arg|
+statistics_menu|||
+statistics_node_delete||$node|
+statistics_node_tracker|||
+statistics_node_view||$node, $view_mode|
+statistics_permission|||
+statistics_ranking|||
+statistics_recent_hits|||
+statistics_settings_form|||
+statistics_title_list||$dbfield, $dbrows|
+statistics_token_info|||
+statistics_tokens||$type, $tokens, array $data = array(), array $options = array()|
+statistics_top_pages|||
+statistics_top_referrers|||
+statistics_top_visitors|||
+statistics_update_index|||
+statistics_user_cancel||$edit, $account, $method|
+statistics_user_delete||$account|
+statistics_user_tracker|||
+stream_close|||
+stream_eof|||
+stream_flush|||
+stream_lock||$operation|
+stream_open||$uri, $mode, $options, &$opened_path|
+stream_read||$count|
+stream_seek||$offset, $whence|
+stream_stat|||
+stream_tell|||
+stream_write||$data|
+supportsTransactionalDDL|||
+supportsTransactions|||
+syslog_facility_list|||
+syslog_form_system_logging_settings_alter||&$form, &$form_state|
+syslog_help||$path, $arg|
+syslog_watchdog||array $log_entry|
+system_action_delete_orphans_post||$orphaned|
+system_action_info|||
+system_actions_configure||$form, &$form_state, $action = NULL|
+system_actions_configure_submit||$form, &$form_state|
+system_actions_configure_validate||$form, &$form_state|
+system_actions_delete_form||$form, &$form_state, $action|
+system_actions_delete_form_submit||$form, &$form_state|
+system_actions_manage|||
+system_actions_manage_form||$form, &$form_state, $options = array()|
+system_actions_manage_form_submit||$form, &$form_state|
+system_actions_remove_orphans|||
+system_add_date_format_type_form||$form, &$form_state|
+system_add_date_format_type_form_submit||$form, &$form_state|
+system_add_date_format_type_form_validate||$form, &$form_state|
+system_add_date_formats_form_submit||$form, &$form_state|
+system_add_date_formats_form_validate||$form, &$form_state|
+system_add_module_assets|||
+system_admin_compact_mode|||
+system_admin_compact_page||$mode = 'off'|
+system_admin_config_page|||
+system_admin_index|||
+system_admin_menu_block||$item|
+system_admin_menu_block_page|||
+system_admin_paths|||
+system_archiver_info|||
+system_authorized_batch_process|||
+system_authorized_get_url||array $options = array()|
+system_authorized_init||$callback, $file, $arguments = array(), $page_title = NULL|
+system_authorized_run||$callback, $file, $arguments = array(), $page_title = NULL|
+system_batch_page|||
+system_block_info|||
+system_block_ip_action|||
+system_block_view||$delta = ''|
+system_check_directory||$form_element|
+system_check_http_request|||
+system_clean_url_settings||$form, &$form_state|
+system_clear_cache_submit||$form, &$form_state|
+system_clear_page_cache_submit||$form, &$form_state|
+system_configure_date_formats_form||$form, &$form_state, $dfid = 0|
+system_cron|||
+system_cron_settings|||
+system_custom_theme|||
+system_date_delete_format_form||$form, &$form_state, $dfid|
+system_date_delete_format_form_submit||$form, &$form_state|
+system_date_format_delete||$dfid|
+system_date_format_locale||$langcode = NULL, $type = NULL|
+system_date_format_save||$date_format, $dfid = 0|
+system_date_format_type_delete||$type|
+system_date_format_type_save||$type|
+system_date_format_types|||
+system_date_formats|||
+system_date_formats_rebuild|||
+system_date_time_formats|||
+system_date_time_lookup|||
+system_date_time_settings|||
+system_default_date_formats|||
+system_default_region||$theme|
+system_delete_date_format_type_form||$form, &$form_state, $format_type|
+system_delete_date_format_type_form_submit||$form, &$form_state|
+system_element_info|||
+system_entity_info|||
+system_file_system_settings|||
+system_filetransfer_info|||
+system_find_base_themes||$themes, $key, $used_keys = array()|
+system_flush_caches|||
+system_form_form_test_alter_form_alter||&$form, &$form_state|
+system_form_user_profile_form_alter||&$form, &$form_state|
+system_form_user_register_form_alter||&$form, &$form_state|
+system_get_date_format||$dfid|
+system_get_date_formats||$type = NULL|
+system_get_date_types||$type = NULL|
+system_get_files_database||&$files, $type|
+system_get_info||$type, $name = NULL|
+system_get_module_admin_tasks||$module, $info|
+system_goto_action||$entity, $context|
+system_goto_action_form||$context|
+system_goto_action_submit||$form, $form_state|
+system_help||$path, $arg|
+system_hook_info|||
+system_image_toolkit_settings|||
+system_image_toolkits|||
+system_init|||
+system_ip_blocking||$default_ip = ''|
+system_ip_blocking_delete||$form, &$form_state, $iid|
+system_ip_blocking_delete_submit||$form, &$form_state|
+system_ip_blocking_form||$form, $form_state, $default_ip|
+system_ip_blocking_form_submit||$form, &$form_state|
+system_ip_blocking_form_validate||$form, &$form_state|
+system_library|||
+system_list||$type|
+system_list_reset|||
+system_logging_settings|||
+system_mail||$key, &$message, $params|
+system_menu|||
+system_message_action||&$entity, $context = array()|
+system_message_action_form||$context|
+system_message_action_submit||$form, $form_state|
+system_modules||$form, $form_state = array()|
+system_modules_confirm_form||$modules, $storage|
+system_modules_submit||$form, &$form_state|
+system_modules_uninstall||$form, $form_state = NULL|
+system_modules_uninstall_confirm_form||$storage|
+system_modules_uninstall_submit||$form, &$form_state|
+system_modules_uninstall_validate||$form, &$form_state|
+system_page_alter||&$page|
+system_performance_settings|||
+system_permission|||
+system_php|||
+system_preprocess_block||&$variables|
+system_rebuild_module_data|||
+system_rebuild_theme_data|||
+system_region_list||$theme_key, $show = REGIONS_ALL|
+system_regional_settings|||
+system_retrieve_file||$url, $destination = NULL, $managed = FALSE, $replace = FILE_EXISTS_RENAME|
+system_rss_feeds_settings|||
+system_run_automated_cron|||
+system_run_cron|||
+system_run_cron_submit||$form, &$form_state|
+system_send_email_action||$entity, $context|
+system_send_email_action_form||$context|
+system_send_email_action_submit||$form, $form_state|
+system_send_email_action_validate||$form, $form_state|
+system_settings_form||$form|
+system_settings_form_submit||$form, &$form_state|
+system_settings_overview|||
+system_site_information_settings|||
+system_site_information_settings_validate||$form, &$form_state|
+system_site_maintenance_mode|||
+system_sort_modules_by_info_name||$a, $b|
+system_sort_themes||$a, $b|
+system_status||$check = FALSE|
+system_stream_wrappers|||
+system_system_info_alter||&$info, $file, $type|
+system_test_authorize_init_page||$page_title|
+system_test_basic_auth_page|||
+system_test_boot|||
+system_test_exit|||
+system_test_filetransfer_info|||
+system_test_init|||
+system_test_lock_acquire|||
+system_test_lock_exit|||
+system_test_main_content_fallback|||
+system_test_menu|||
+system_test_modules_disabled||$modules|
+system_test_modules_enabled||$modules|
+system_test_modules_installed||$modules|
+system_test_modules_uninstalled||$modules|
+system_test_page_build||&$page|
+system_test_page_shutdown_functions||$arg1, $arg2|
+system_test_redirect||$code|
+system_test_redirect_invalid_scheme|||
+system_test_redirect_noparse|||
+system_test_redirect_noscheme|||
+system_test_set_header|||
+system_test_sleep||$seconds|
+system_test_system_info_alter||&$info, $file, $type|
+system_theme|||
+system_theme_default|||
+system_theme_disable|||
+system_theme_enable|||
+system_theme_settings||$form, &$form_state, $key = ''|
+system_theme_settings_submit||$form, &$form_state|
+system_theme_settings_validate||$form, &$form_state|
+system_themes_admin_form||$form, &$form_state, $theme_options|
+system_themes_admin_form_submit||$form, &$form_state|
+system_themes_page|||
+system_time_zones||$blank = NULL|
+system_timezone||$abbreviation = '', $offset = -1, $is_daylight_saving_time = NULL|
+system_token_info|||
+system_tokens||$type, $tokens, array $data = array(), array $options = array()|
+system_update_files_database||&$files, $type|
+system_updater_info|||
+system_user_login||&$edit, $account|
+system_user_timezone||&$form, &$form_state|
+t||$string, array $args = array(), array $options = array()|
+tableExists||$table|
+tableExists||$table|
+tableExists||$table|
+tablePrefix||$table = 'default'|
+tableSort||&$headers|
+tablesort_cell||$cell, $header, $ts, $i|
+tablesort_get_order||$headers|
+tablesort_get_query_parameters|||
+tablesort_get_sort||$headers|
+tablesort_header||$cell, $header, $ts|
+tablesort_init||$header|
+taxonomy_admin_paths|||
+taxonomy_admin_vocabulary_title_callback||$vocabulary|
+taxonomy_allowed_values||$field|
+taxonomy_autocomplete||$field_name, $tags_typed = ''|
+taxonomy_autocomplete_validate||$element, &$form_state|
+taxonomy_check_vocabulary_hierarchy||$vocabulary, $changed_term|
+taxonomy_entity_info|||
+taxonomy_field_extra_fields|||
+taxonomy_field_formatter_info|||
+taxonomy_field_formatter_prepare_view||$entity_type, $entities, $field, $instances, $langcode, &$items, $displays|
+taxonomy_field_formatter_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+taxonomy_field_info|||
+taxonomy_field_insert||$entity_type, $entity, $field, $instance, $langcode, &$items|
+taxonomy_field_is_empty||$item, $field|
+taxonomy_field_presave||$entity_type, $entity, $field, $instance, $langcode, &$items|
+taxonomy_field_settings_form||$field, $instance, $has_data|
+taxonomy_field_update||$entity_type, $entity, $field, $instance, $langcode, &$items|
+taxonomy_field_validate||$entity_type, $entity, $field, $instance, $langcode, $items, &$errors|
+taxonomy_field_widget_error||$element, $error, $form, &$form_state|
+taxonomy_field_widget_form||&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element|
+taxonomy_field_widget_info|||
+taxonomy_field_widget_info_alter||&$info|
+taxonomy_form_term||$form, &$form_state, $edit = array(), $vocabulary = NULL|
+taxonomy_form_term_submit||$form, &$form_state|
+taxonomy_form_term_submit_build_taxonomy_term||$form, &$form_state|
+taxonomy_form_term_validate||$form, &$form_state|
+taxonomy_form_vocabulary||$form, &$form_state, $edit = array()|
+taxonomy_form_vocabulary_submit||$form, &$form_state|
+taxonomy_get_children||$tid, $vid = 0|
+taxonomy_get_parents||$tid|
+taxonomy_get_parents_all||$tid|
+taxonomy_get_term_by_name||$name|
+taxonomy_get_tree||$vid, $parent = 0, $max_depth = NULL, $load_entities = FALSE|
+taxonomy_get_vocabularies|||
+taxonomy_help||$path, $arg|
+taxonomy_implode_tags||$tags, $vid = NULL|
+taxonomy_menu|||
+taxonomy_node_delete||$node|
+taxonomy_options_list||$field|
+taxonomy_overview_terms||$form, &$form_state, $vocabulary|
+taxonomy_overview_terms_submit||$form, &$form_state|
+taxonomy_overview_vocabularies||$form|
+taxonomy_overview_vocabularies_submit||$form, &$form_state|
+taxonomy_permission|||
+taxonomy_rdf_mapping|||
+taxonomy_select_nodes||$tid, $pager = TRUE, $limit = FALSE, $order = array('t.sticky' => 'DESC', 't.created' => 'DESC')|
+taxonomy_taxonomy_term_delete||$term|
+taxonomy_taxonomy_vocabulary_update||$vocabulary|
+taxonomy_term_confirm_delete||$form, &$form_state, $tid|
+taxonomy_term_confirm_delete_submit||$form, &$form_state|
+taxonomy_term_confirm_parents||$form, &$form_state, $vocabulary|
+taxonomy_term_delete||$tid|
+taxonomy_term_edit_access||$term|
+taxonomy_term_feed||$term|
+taxonomy_term_is_page||$term|
+taxonomy_term_load||$tid|
+taxonomy_term_load_multiple||$tids = array(), $conditions = array()|
+taxonomy_term_page||$term|
+taxonomy_term_save||$term|
+taxonomy_term_title||$term|
+taxonomy_term_uri||$term|
+taxonomy_term_view||$term, $view_mode = 'full', $langcode = NULL|
+taxonomy_terms_static_reset|||
+taxonomy_test_form_alter||&$form, $form_state, $form_id|
+taxonomy_test_get_antonym||$tid|
+taxonomy_test_taxonomy_term_delete||$term|
+taxonomy_test_taxonomy_term_insert||$term|
+taxonomy_test_taxonomy_term_load||$terms|
+taxonomy_test_taxonomy_term_update||$term|
+taxonomy_theme|||
+taxonomy_token_info|||
+taxonomy_tokens||$type, $tokens, array $data = array(), array $options = array()|
+taxonomy_vocabulary_confirm_delete||$form, &$form_state, $vid|
+taxonomy_vocabulary_confirm_delete_submit||$form, &$form_state|
+taxonomy_vocabulary_confirm_reset_alphabetical||$form, &$form_state, $vid|
+taxonomy_vocabulary_confirm_reset_alphabetical_submit||$form, &$form_state|
+taxonomy_vocabulary_delete||$vid|
+taxonomy_vocabulary_get_names|||
+taxonomy_vocabulary_load||$vid|
+taxonomy_vocabulary_load_multiple||$vids = array(), $conditions = array()|
+taxonomy_vocabulary_machine_name_load||$name|
+taxonomy_vocabulary_save||$vocabulary|
+tearDown|||
+template_preprocess||&$variables, $hook|
+template_preprocess_aggregator_feed_source||&$variables|
+template_preprocess_aggregator_item||&$variables|
+template_preprocess_aggregator_summary_item||&$variables|
+template_preprocess_aggregator_summary_items||&$variables|
+template_preprocess_aggregator_wrapper||&$variables|
+template_preprocess_block||&$variables|
+template_preprocess_block_admin_display_form||&$variables|
+template_preprocess_book_all_books_block||&$variables|
+template_preprocess_book_export_html||&$variables|
+template_preprocess_book_navigation||&$variables|
+template_preprocess_book_node_export_html||&$variables|
+template_preprocess_comment||&$variables|
+template_preprocess_comment_wrapper||&$variables|
+template_preprocess_dashboard_admin_display_form||&$variables|
+template_preprocess_field||&$variables, $hook|
+template_preprocess_forum_icon||&$variables|
+template_preprocess_forum_list||&$variables|
+template_preprocess_forum_submitted||&$variables|
+template_preprocess_forum_topic_list||&$variables|
+template_preprocess_forums||&$variables|
+template_preprocess_html||&$variables|
+template_preprocess_maintenance_page||&$variables|
+template_preprocess_menu_tree||&$variables|
+template_preprocess_node||&$variables|
+template_preprocess_overlay||&$variables|
+template_preprocess_page||&$variables|
+template_preprocess_poll_bar||&$variables|
+template_preprocess_poll_results||&$variables|
+template_preprocess_poll_vote||&$variables|
+template_preprocess_profile_block||&$variables|
+template_preprocess_profile_listing||&$variables|
+template_preprocess_profile_wrapper||&$variables|
+template_preprocess_region||&$variables|
+template_preprocess_search_block_form||&$variables|
+template_preprocess_search_result||&$variables|
+template_preprocess_search_results||&$variables|
+template_preprocess_taxonomy_term||&$variables|
+template_preprocess_user_picture||&$variables|
+template_preprocess_user_profile||&$variables|
+template_preprocess_user_profile_category||&$variables|
+template_preprocess_user_profile_item||&$variables|
+template_preprocess_username||&$variables|
+template_process||&$variables, $hook|
+template_process_field||&$variables, $hook|
+template_process_html||&$variables|
+template_process_maintenance_page||&$variables|
+template_process_overlay||&$variables|
+template_process_page||&$variables|
+template_process_username||&$variables|
+test_theme_breadcrumb__suggestion||$variables|
+test_theme_theme_test_alter_alter||&$data|
+text_field_formatter_info|||
+text_field_formatter_settings_form||$field, $instance, $view_mode, $form, &$form_state|
+text_field_formatter_settings_summary||$field, $instance, $view_mode|
+text_field_formatter_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+text_field_info|||
+text_field_instance_settings_form||$field, $instance|
+text_field_is_empty||$item, $field|
+text_field_load||$entity_type, $entities, $field, $instances, $langcode, &$items|
+text_field_prepare_translation||$entity_type, $entity, $field, $instance, $langcode, &$items, $source_entity, $source_langcode|
+text_field_settings_form||$field, $instance, $has_data|
+text_field_validate||$entity_type, $entity, $field, $instance, $langcode, $items, &$errors|
+text_field_widget_error||$element, $error, $form, &$form_state|
+text_field_widget_form||&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element|
+text_field_widget_info|||
+text_field_widget_settings_form||$field, $instance|
+text_filter_format_disable||$format|
+text_filter_format_update||$format|
+text_help||$path, $arg|
+text_summary||$text, $format = NULL, $size = NULL|
+theme||$hook, $variables = array()|
+theme_admin_block||$variables|
+theme_admin_block_content||$variables|
+theme_admin_page||$variables|
+theme_aggregator_block_item||$variables|
+theme_aggregator_categorize_items||$variables|
+theme_aggregator_page_opml||$variables|
+theme_aggregator_page_rss||$variables|
+theme_authorize_message||$variables|
+theme_authorize_report||$variables|
+theme_book_admin_table||$variables|
+theme_book_title_link||$variables|
+theme_breadcrumb||$variables|
+theme_button||$variables|
+theme_checkbox||$variables|
+theme_checkboxes||$variables|
+theme_color_scheme_form||$variables|
+theme_comment_block|||
+theme_comment_post_forbidden||$variables|
+theme_common_test_foo||$variables|
+theme_confirm_form||$variables|
+theme_container||$variables|
+theme_dashboard||$variables|
+theme_dashboard_admin||$variables|
+theme_dashboard_disabled_block||$variables|
+theme_dashboard_disabled_blocks||$variables|
+theme_dashboard_region||$variables|
+theme_date||$variables|
+theme_dblog_message||$variables|
+theme_disable||$theme_list|
+theme_enable||$theme_list|
+theme_exposed_filters||$variables|
+theme_feed_icon||$variables|
+theme_field||$variables|
+theme_field_multiple_value_form||$variables|
+theme_field_ui_table||$variables|
+theme_fieldset||$variables|
+theme_file||$variables|
+theme_file_formatter_table||$variables|
+theme_file_icon||$variables|
+theme_file_link||$variables|
+theme_file_managed_file||$variables|
+theme_file_upload_help||$variables|
+theme_file_widget||$variables|
+theme_file_widget_multiple||$variables|
+theme_filter_admin_format_filter_order||$variables|
+theme_filter_admin_overview||$variables|
+theme_filter_guidelines||$variables|
+theme_filter_tips||$variables|
+theme_filter_tips_more_info|||
+theme_form||$variables|
+theme_form_element||$variables|
+theme_form_element_label||$variables|
+theme_form_required_marker||$variables|
+theme_forum_form||$variables|
+theme_get_registry|||
+theme_get_setting||$setting_name, $theme = NULL|
+theme_get_suggestions||$args, $base, $delimiter = '__'|
+theme_hidden||$variables|
+theme_html_tag||$variables|
+theme_image||$variables|
+theme_image_anchor||$variables|
+theme_image_button||$variables|
+theme_image_crop_summary||$variables|
+theme_image_formatter||$variables|
+theme_image_resize_summary||$variables|
+theme_image_rotate_summary||$variables|
+theme_image_scale_summary||$variables|
+theme_image_style||$variables|
+theme_image_style_effects||$variables|
+theme_image_style_list||$variables|
+theme_image_style_preview||$variables|
+theme_image_widget||$variables|
+theme_indentation||$variables|
+theme_install_page||$variables|
+theme_item_list||$variables|
+theme_link||$variables|
+theme_links||$variables|
+theme_locale_date_format_form||$variables|
+theme_locale_languages_configure_form||$variables|
+theme_locale_languages_overview_form||$variables|
+theme_mark||$variables|
+theme_menu_admin_overview||$variables|
+theme_menu_link||array $variables|
+theme_menu_local_action||$variables|
+theme_menu_local_task||$variables|
+theme_menu_local_tasks||&$variables|
+theme_menu_overview_form||$variables|
+theme_menu_tree||$variables|
+theme_more_help_link||$variables|
+theme_more_link||$variables|
+theme_node_add_list||$variables|
+theme_node_admin_overview||$variables|
+theme_node_preview||$variables|
+theme_node_recent_block||$variables|
+theme_node_recent_content||$variables|
+theme_node_search_admin||$variables|
+theme_options_none||$variables|
+theme_overlay_disable_message||$variables|
+theme_pager||$variables|
+theme_pager_first||$variables|
+theme_pager_last||$variables|
+theme_pager_link||$variables|
+theme_pager_next||$variables|
+theme_pager_previous||$variables|
+theme_password||$variables|
+theme_poll_choices||$variables|
+theme_profile_admin_overview||$variables|
+theme_progress_bar||$variables|
+theme_radio||$variables|
+theme_radios||$variables|
+theme_rdf_metadata||$variables|
+theme_rdf_template_variable_wrapper||$variables|
+theme_render_template||$template_file, $variables|
+theme_select||$variables|
+theme_shortcut_set_customize||$variables|
+theme_simpletest_result_summary||$variables|
+theme_simpletest_test_table||$variables|
+theme_status_messages||$variables|
+theme_status_report||$variables|
+theme_submit||$variables|
+theme_system_admin_index||$variables|
+theme_system_compact_link|||
+theme_system_date_time_settings||$variables|
+theme_system_modules_fieldset||$variables|
+theme_system_modules_incompatible||$variables|
+theme_system_modules_uninstall||$variables|
+theme_system_powered_by|||
+theme_system_settings_form||$variables|
+theme_system_themes_page||$variables|
+theme_table||$variables|
+theme_tableselect||$variables|
+theme_tablesort_indicator||$variables|
+theme_task_list||$variables|
+theme_taxonomy_overview_terms||$variables|
+theme_taxonomy_overview_vocabularies||$variables|
+theme_test_exit|||
+theme_test_hook_init_page_callback|||
+theme_test_init|||
+theme_test_menu|||
+theme_test_preprocess_breadcrumb||&$variables|
+theme_text_format_wrapper||$variables|
+theme_textarea||$variables|
+theme_textfield||$variables|
+theme_toolbar_toggle||$variables|
+theme_trigger_display||$variables|
+theme_update_last_check||$variables|
+theme_update_manager_update_form||$variables|
+theme_update_page||$variables|
+theme_update_report||$variables|
+theme_update_status_label||$variables|
+theme_update_version||$variables|
+theme_user_admin_permissions||$variables|
+theme_user_admin_roles||$variables|
+theme_user_list||$variables|
+theme_user_permission_description||$variables|
+theme_user_signature||$variables|
+theme_username||$variables|
+theme_vertical_tabs||$variables|
+throwPDOException|||
+timer_read||$name|
+timer_start||$name|
+timer_stop||$name|
+token_find_with_prefix||array $tokens, $prefix, $delimiter = ':'|
+token_generate||$type, array $tokens, array $data = array(), array $options = array()|
+token_info|||
+token_replace||$text, array $data = array(), array $options = array()|
+token_scan||$text|
+toolbar_get_menu_tree|||
+toolbar_help||$path, $arg|
+toolbar_in_active_trail||$path|
+toolbar_menu|||
+toolbar_menu_navigation_links||$tree|
+toolbar_page_build||&$page|
+toolbar_permission|||
+toolbar_pre_render||$toolbar|
+toolbar_preprocess_html||&$vars|
+toolbar_preprocess_toolbar||&$variables|
+toolbar_system_info_alter||&$info, $file, $type|
+toolbar_theme||$existing, $type, $theme, $path|
+toolbar_toggle_page|||
+toolbar_view|||
+tracker_comment_delete||$comment|
+tracker_comment_publish||$comment|
+tracker_comment_unpublish||$comment|
+tracker_comment_update||$comment|
+tracker_cron|||
+tracker_help||$path, $arg|
+tracker_menu|||
+tracker_node_delete||$node, $arg = 0|
+tracker_node_insert||$node, $arg = 0|
+tracker_node_update||$node, $arg = 0|
+tracker_page||$account = NULL, $set_title = FALSE|
+transactionDepth|||
+translation_admin_paths|||
+translation_form_node_form_alter||&$form, &$form_state|
+translation_form_node_type_form_alter||&$form, &$form_state|
+translation_help||$path, $arg|
+translation_language_switch_links_alter||array &$links, $type, $path|
+translation_menu|||
+translation_node_delete||$node|
+translation_node_get_translations||$tnid|
+translation_node_insert||$node|
+translation_node_overview||$node|
+translation_node_prepare||$node|
+translation_node_update||$node|
+translation_node_validate||$node, $form|
+translation_node_view||$node, $view_mode|
+translation_path_get_translations||$path|
+translation_permission|||
+translation_remove_from_set||$node|
+translation_supported_type||$type|
+translation_test_node_insert||$node|
+trigger_actions_delete||$aid|
+trigger_assign||$module_to_display = NULL|
+trigger_assign_form||$form, $form_state, $module, $hook, $label|
+trigger_assign_form_submit||$form, &$form_state|
+trigger_assign_form_validate||$form, $form_state|
+trigger_comment_delete||$comment|
+trigger_comment_insert||$comment|
+trigger_comment_presave||$comment|
+trigger_comment_update||$comment|
+trigger_comment_view||$comment|
+trigger_cron|||
+trigger_forms|||
+trigger_get_assigned_actions||$hook|
+trigger_help||$path, $arg|
+trigger_menu|||
+trigger_node_delete||$node|
+trigger_node_insert||$node|
+trigger_node_presave||$node|
+trigger_node_update||$node|
+trigger_node_view||$node, $view_mode|
+trigger_taxonomy_term_delete||$term|
+trigger_taxonomy_term_insert||$term|
+trigger_taxonomy_term_update||$term|
+trigger_test_action_info|||
+trigger_test_generic_action||$context|
+trigger_test_generic_any_action||$context|
+trigger_test_system_cron_action|||
+trigger_test_system_cron_conf_action||$object, $context|
+trigger_test_system_cron_conf_action_form||$context|
+trigger_test_system_cron_conf_action_submit||$form, $form_state|
+trigger_test_trigger_info|||
+trigger_theme|||
+trigger_trigger_info|||
+trigger_unassign||$form, $form_state, $module, $hook = NULL, $aid = NULL|
+trigger_unassign_submit||$form, &$form_state|
+trigger_user_cancel||$edit, $account, $method|
+trigger_user_delete||$account|
+trigger_user_insert||&$edit, $account, $category|
+trigger_user_login||&$edit, $account, $category|
+trigger_user_logout||$account|
+trigger_user_update||&$edit, $account, $category|
+trigger_user_view||$account|
+truncate||$table, array $options = array()|
+truncate_utf8||$string, $max_length, $wordsafe = FALSE, $add_ellipsis = FALSE, $min_wordsafe_length = 1|
+unicode_check|||
+unicode_requirements|||
+union||SelectQueryInterface $query, $type = ''|
+unlink||$uri|
+update||$table, array $options = array()|
+update||&$filetransfer, $overrides = array()|
+updateFields||array $fields|
+update_access_allowed|||
+update_access_denied_page|||
+update_already_performed||$module, $number|
+update_authorize_batch_copy_project||$project, $updater_name, $local_url, $filetransfer, &$context|
+update_authorize_install_batch_finished||$success, $results|
+update_authorize_run_install||$filetransfer, $project, $updater_name, $local_url|
+update_authorize_run_update||$filetransfer, $projects|
+update_authorize_update_batch_finished||$success, $results|
+update_batch||$start, $redirect = NULL, $url = NULL, $batch = array(), $redirect_callback = 'drupal_goto'|
+update_build_dependency_graph||$update_functions|
+update_cache_clear_submit||$form, &$form_state|
+update_calculate_project_data||$available|
+update_calculate_project_update_status||$project, &$project_data, $available|
+update_check_incompatibility||$name, $type = 'module'|
+update_check_requirements|||
+update_clear_update_disk_cache|||
+update_create_fetch_task||$project|
+update_cron|||
+update_delete_file_if_stale||$path|
+update_do_one||$module, $number, $dependency_map, &$context|
+update_extra_requirements||$requirements = NULL|
+update_fetch_data|||
+update_fetch_data_batch||&$context|
+update_fetch_data_finished||$success, $results|
+update_filter_project_info||$info|
+update_finished||$success, $results, $operations|
+update_fix_compatibility|||
+update_fix_d7_block_deltas||&$sandbox, $renamed_deltas, $moved_deltas|
+update_fix_d7_install_profile|||
+update_fix_d7_requirements|||
+update_flush_caches|||
+update_form_system_modules_alter||&$form, $form_state|
+update_get_available||$refresh = FALSE|
+update_get_d6_session_name|||
+update_get_project_name||$file|
+update_get_projects|||
+update_get_update_function_list||$starting_updates|
+update_get_update_list|||
+update_help||$path, $arg|
+update_helpful_links|||
+update_info_page|||
+update_init|||
+update_is_missing||$module, $number, $update_functions|
+update_mail||$key, &$message, $params|
+update_manager_access|||
+update_manager_archive_extract||$file, $directory|
+update_manager_archive_verify||$project, $archive_file, $directory|
+update_manager_batch_project_get||$project, $url, &$context|
+update_manager_download_batch_finished||$success, $results|
+update_manager_file_get||$url|
+update_manager_install_form||$form, &$form_state, $context|
+update_manager_install_form_submit||$form, &$form_state|
+update_manager_install_form_validate||$form, &$form_state|
+update_manager_local_transfers_allowed|||
+update_manager_update_form||$form, $form_state = array(), $context|
+update_manager_update_form_submit||$form, &$form_state|
+update_manager_update_form_validate||$form, &$form_state|
+update_manager_update_ready_form||$form, &$form_state|
+update_manager_update_ready_form_submit||$form, &$form_state|
+update_manual_status|||
+update_menu|||
+update_parse_db_url||$db_url, $db_prefix|
+update_parse_xml||$raw_xml|
+update_prepare_d7_bootstrap|||
+update_process_project_info||&$projects|
+update_project_cache||$cid|
+update_refresh|||
+update_resolve_dependencies||$starting_updates|
+update_results_page|||
+update_retrieve_dependencies|||
+update_script_selection_form||$form, &$form_state|
+update_selection_page|||
+update_settings||$form|
+update_settings_submit||$form, $form_state|
+update_settings_validate||$form, &$form_state|
+update_status|||
+update_task_list||$active = NULL|
+update_test_archiver_info|||
+update_test_filetransfer_info|||
+update_test_menu|||
+update_test_mock_page||$project_name|
+update_test_system_info_alter||&$info, $file|
+update_test_update_status_alter||&$projects|
+update_theme|||
+update_themes_disabled||$themes|
+update_themes_enabled||$themes|
+update_verify_update_archive||$project, $archive_file, $directory|
+url||$path = NULL, array $options = array()|
+url_alter_test_foo|||
+url_alter_test_menu|||
+url_alter_test_url_inbound_alter||&$path, $original_path, $path_language|
+url_alter_test_url_outbound_alter||&$path, &$options, $original_path|
+url_is_external||$path|
+url_stat||$uri, $flags|
+useDefaults||array $fields|
+user_access||$string, $account = NULL|
+user_account_form||&$form, &$form_state|
+user_account_form_validate||$form, &$form_state|
+user_action_info|||
+user_admin||$callback_arg = ''|
+user_admin_account|||
+user_admin_account_submit||$form, &$form_state|
+user_admin_account_validate||$form, &$form_state|
+user_admin_paths|||
+user_admin_permissions||$form, $form_state, $rid = NULL|
+user_admin_permissions_submit||$form, &$form_state|
+user_admin_role||$form, $form_state, $role|
+user_admin_role_delete_confirm||$form, &$form_state, $role|
+user_admin_role_delete_confirm_submit||$form, &$form_state|
+user_admin_role_delete_submit||$form, &$form_state|
+user_admin_role_submit||$form, &$form_state|
+user_admin_role_validate||$form, &$form_state|
+user_admin_roles||$form, $form_state|
+user_admin_roles_order_submit||$form, &$form_state|
+user_admin_settings|||
+user_authenticate||$name, $password|
+user_autocomplete||$string = ''|
+user_block_configure||$delta = ''|
+user_block_info|||
+user_block_save||$delta = '', $edit = array()|
+user_block_user_action||&$entity, $context = array()|
+user_block_view||$delta = ''|
+user_build_content||$account, $view_mode = 'full', $langcode = NULL|
+user_build_filter_query||SelectQuery $query|
+user_cancel||$edit, $uid, $method|
+user_cancel_access||$account|
+user_cancel_confirm||$account, $timestamp = 0, $hashed_pass = ''|
+user_cancel_confirm_form||$form, &$form_state, $account|
+user_cancel_confirm_form_submit||$form, &$form_state|
+user_cancel_methods|||
+user_cancel_url||$account|
+user_category_load||$uid, &$map, $index|
+user_check_password||$password, $account|
+user_comment_view||$comment|
+user_cookie_delete||$cookie_name|
+user_cookie_save||array $values|
+user_delete||$uid|
+user_delete_multiple||array $uids|
+user_edit_access||$account|
+user_edit_cancel_submit||$form, &$form_state|
+user_element_info|||
+user_entity_info|||
+user_external_load||$authname|
+user_external_login_register||$name, $module|
+user_field_extra_fields|||
+user_field_info_alter||&$info|
+user_file_delete||$file|
+user_file_download||$uri|
+user_file_download_access||$field, $entity_type, $entity|
+user_file_move||$file, $source|
+user_filter_form|||
+user_filter_form_submit||$form, &$form_state|
+user_filters|||
+user_form_field_ui_field_edit_form_alter||&$form, &$form_state, $form_id|
+user_form_field_ui_field_edit_form_submit||$form, &$form_state|
+user_form_process_password_confirm||$element|
+user_form_test_current_password||$form, &$form_state, $account|
+user_form_test_current_password_submit||$form, &$form_state|
+user_form_test_menu|||
+user_forms|||
+user_get_authmaps||$authname = NULL|
+user_hash_password||$password, $count_log2 = 0|
+user_help||$path, $arg|
+user_image_style_delete||$style|
+user_image_style_save||$style|
+user_is_anonymous|||
+user_is_blocked||$name|
+user_is_logged_in|||
+user_load||$uid, $reset = FALSE|
+user_load_by_mail||$mail|
+user_load_by_name||$name|
+user_load_multiple||$uids = array(), $conditions = array(), $reset = FALSE|
+user_login||$form, &$form_state|
+user_login_authenticate_validate||$form, &$form_state|
+user_login_block||$form|
+user_login_default_validators|||
+user_login_destination|||
+user_login_final_validate||$form, &$form_state|
+user_login_finalize||&$edit = array()|
+user_login_name_validate||$form, &$form_state|
+user_login_submit||$form, &$form_state|
+user_logout|||
+user_mail||$key, &$message, $params|
+user_mail_tokens||&$replacements, $data, $options|
+user_menu|||
+user_menu_link_alter||&$link|
+user_menu_site_status_alter||&$menu_site_status, $path|
+user_menu_title|||
+user_module_invoke||$type, &$edit, $account, $category = NULL|
+user_modules_installed||$modules|
+user_modules_uninstalled||$modules|
+user_multiple_cancel_confirm||$form, &$form_state|
+user_multiple_cancel_confirm_submit||$form, &$form_state|
+user_multiple_role_edit||$accounts, $operation, $rid|
+user_needs_new_hash||$account|
+user_node_load||$nodes, $types|
+user_page|||
+user_page_title||$account|
+user_pass|||
+user_pass_rehash||$password, $timestamp, $login|
+user_pass_reset||$form, &$form_state, $uid, $timestamp, $hashed_pass, $action = NULL|
+user_pass_reset_url||$account|
+user_pass_submit||$form, &$form_state|
+user_pass_validate||$form, &$form_state|
+user_password||$length = 10|
+user_permission|||
+user_permission_get_modules|||
+user_preferred_language||$account, $default = NULL|
+user_profile_form||$form, &$form_state, $account, $category = 'account'|
+user_profile_form_submit||$form, &$form_state|
+user_profile_form_validate||$form, &$form_state|
+user_rdf_mapping|||
+user_register_access|||
+user_register_form||$form, &$form_state|
+user_register_submit||$form, &$form_state|
+user_register_validate||$form, &$form_state|
+user_role_change_permissions||$rid, array $permissions = array()|
+user_role_delete||$role|
+user_role_edit_access||$role|
+user_role_grant_permissions||$rid, array $permissions = array()|
+user_role_load||$rid|
+user_role_load_by_name||$role_name|
+user_role_permissions||$roles = array()|
+user_role_revoke_permissions||$rid, array $permissions = array()|
+user_role_save||$role|
+user_roles||$membersonly = FALSE, $permission = NULL|
+user_save||$account, $edit = array(), $category = 'account'|
+user_search_access|||
+user_search_execute||$keys = NULL, $conditions = NULL|
+user_search_info|||
+user_set_authmaps||$account, $authmaps|
+user_system_info_alter||&$info, $file, $type|
+user_theme|||
+user_token_info|||
+user_tokens||$type, $tokens, array $data = array(), array $options = array()|
+user_translated_menu_link_alter||&$link|
+user_uid_only_optional_to_arg||$arg|
+user_uid_optional_load||$uid = NULL|
+user_uid_optional_to_arg||$arg|
+user_uri||$user|
+user_user_categories|||
+user_user_operations||$form = array(), $form_state = array()|
+user_user_operations_block||$accounts|
+user_user_operations_unblock||$accounts|
+user_user_presave||&$edit, $account, $category|
+user_user_view||$account|
+user_validate_current_pass||&$form, &$form_state|
+user_validate_mail||$mail|
+user_validate_name||$name|
+user_validate_picture||&$form, &$form_state|
+user_view||$account, $view_mode = 'full', $langcode = NULL|
+user_view_access||$account|
+user_view_page||$account|
+valid|||
+valid|||
+valid_email_address||$mail|
+valid_url||$url, $absolute = FALSE|
+validateDatabaseSettings||$database|
+validateDatabaseSettings||$database|
+values||array $values|
+vancode2int||$c = '00'|
+variable_del||$name|
+variable_get||$name, $default = NULL|
+variable_initialize||$conf = array()|
+variable_set||$name, $value|
+verbose||$message|
+verboseEmail||$count = 1|
+version|||
+watchdog||$type, $message, $variables = array(), $severity = WATCHDOG_NOTICE, $link = NULL|
+watchdog_exception||$type, Exception $exception, $message = NULL, $variables = array(), $severity = WATCHDOG_ERROR, $link = NULL|
+watchdog_severity_levels|||
+watchdog_skip_semaphore||$type, $message, $variables = array(), $severity = WATCHDOG_NOTICE, $link = NULL|
+weight_value||&$form|
+where||$snippet, $args = array()|
+where||$snippet, $args = array()|
+xmlrpc||$url, $args, $options = array()|
+xmlrpc_base64||$data|
+xmlrpc_base64_get_xml||$xmlrpc_base64|
+xmlrpc_clear_error|||
+xmlrpc_date||$time|
+xmlrpc_date_get_xml||$xmlrpc_date|
+xmlrpc_errno|||
+xmlrpc_error||$code = NULL, $message = NULL, $reset = FALSE|
+xmlrpc_error_get_xml||$xmlrpc_error|
+xmlrpc_error_msg|||
+xmlrpc_message||$message|
+xmlrpc_message_cdata||$parser, $cdata|
+xmlrpc_message_get|||
+xmlrpc_message_parse||$xmlrpc_message|
+xmlrpc_message_set||$value = NULL|
+xmlrpc_message_tag_close||$parser, $tag|
+xmlrpc_message_tag_open||$parser, $tag, $attr|
+xmlrpc_request||$method, $args|
+xmlrpc_server||$callbacks|
+xmlrpc_server_call||$xmlrpc_server, $methodname, $args|
+xmlrpc_server_error||$error, $message = FALSE|
+xmlrpc_server_get|||
+xmlrpc_server_get_capabilities|||
+xmlrpc_server_list_methods|||
+xmlrpc_server_method_help||$method|
+xmlrpc_server_method_signature||$methodname|
+xmlrpc_server_multicall||$methodcalls|
+xmlrpc_server_output||$xml|
+xmlrpc_server_set||$xmlrpc_server = NULL|
+xmlrpc_test_arrayOfStructsTest||$array|
+xmlrpc_test_countTheEntities||$string|
+xmlrpc_test_easyStructTest||$array|
+xmlrpc_test_echoStructTest||$array|
+xmlrpc_test_manyTypesTest||$number, $boolean, $string, $double, $dateTime, $base64|
+xmlrpc_test_message_sized_in_kb||$size|
+xmlrpc_test_moderateSizeArrayCheck||$array|
+xmlrpc_test_nestedStructTest||$array|
+xmlrpc_test_simpleStructReturnTest||$number|
+xmlrpc_test_xmlrpc|||
+xmlrpc_test_xmlrpc_alter||&$services|
+xmlrpc_value||$data, $type = FALSE|
+xmlrpc_value_calculate_type||$xmlrpc_value|
+xmlrpc_value_get_xml||$xmlrpc_value|
+xpath||$xpath, array $arguments = array()|
