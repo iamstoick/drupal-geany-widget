@@ -1,0 +1,1557 @@
+# format=pipe
+# Gerald Villorente of X-Team
+stylizer_permission|||
+stylizer_ctools_plugin_directory||$module, $plugin|
+stylizer_ctools_plugin_type|||
+stylizer_panels_dashboard_blocks||&$vars|
+stylizer_theme|||
+access||$op, $item|
+list_form||&$form, &$form_state|
+list_sort_options|||
+list_filter||$form_state, $item|
+list_search_fields|||
+list_build_row||$item, &$form_state, $operations|
+list_table_header|||
+init||$plugin|
+get_wizard_info||&$form_state|
+store_stylizer_info||&$form_state|
+edit_wizard_next||&$form_state|
+edit_wizard_finish||&$form_state|
+edit_form_type||&$form, &$form_state|
+edit_form_type_submit||&$form, &$form_state|
+ctools_custom_content_permission|||
+ctools_custom_content_ctools_plugin_directory||$module, $plugin|
+ctools_custom_content_get_pane_links_alter||&$links, $pane, $content_type|
+ctools_content_type_new||$set_defaults|
+ctools_custom_content_panels_dashboard_blocks||&$vars|
+edit_form||&$form, &$form_state|
+edit_form_submit||&$form, &$form_state|
+list_form||&$form, &$form_state|
+list_filter||$form_state, $item|
+list_sort_options|||
+list_build_row||$item, &$form_state, $operations|
+list_table_header|||
+bulk_export_permission|||
+bulk_export_menu|||
+bulk_export_export||$cli = FALSE, $options = array()|
+{$module_name}_$api_hook||\$module, \$api|
+bulk_export_export_form||$form, &$form_state|
+bulk_export_export_form_submit||$form, &$form_state|
+ctools_ajax_sample_menu|||
+ctools_ajax_simple_form|||
+ctools_ajax_simple_form_pane|||
+ctools_ajax_sample_theme|||
+ctools_ajax_sample_page|||
+ctools_ajax_sample_hello||$js = NULL|
+ctools_ajax_sample_tablenix||$js, $row|
+ctools_ajax_sample_login||$js = NULL|
+ctools_ajax_sample_login_success||$js, $action|
+ctools_ajax_sample_animal||$js = NULL, $step = NULL|
+theme_ctools_ajax_sample_container||$vars|
+ctools_ajax_sample_animals|||
+ctools_ajax_sample_cache_set||$id, $object|
+ctools_ajax_sample_cache_get||$id|
+ctools_ajax_sample_cache_clear||$id|
+ctools_ajax_sample_wizard_next||&$form_state|
+ctools_ajax_sample_wizard_finish||&$form_state|
+ctools_ajax_sample_wizard_cancel||&$form_state|
+ctools_ajax_sample_start||$form, &$form_state|
+ctools_ajax_sample_start_submit||&$form, &$form_state|
+ctools_ajax_sample_configure_sheep||$form, &$form_state|
+ctools_ajax_sample_configure_sheep_submit||&$form, &$form_state|
+ctools_ajax_sample_show_sheep||$object|
+ctools_ajax_sample_configure_lizard||$form, &$form_state|
+ctools_ajax_sample_configure_lizard_submit||&$form, &$form_state|
+ctools_ajax_sample_show_lizard||$object|
+ctools_ajax_sample_configure_raptor||$form, &$form_state|
+ctools_ajax_sample_configure_raptor_submit||&$form, &$form_state|
+ctools_ajax_sample_show_raptor||$object|
+ctools_ajax_sample_jump_menu_form|||
+ctools_ajax_sample_jump_menu_page|||
+ctools_ajax_sample_ajax_button_form|||
+ctools_export_test_default_ctools_export_tests|||
+ctools_export_test_ctools_plugin_api||$module, $api|
+ctools_plugin_test_plugin_array2_cached_test|||
+ctools_plugin_test_plugin_array_cached_test|||
+ctools_plugin_test_plugin_array2_not_cached_test|||
+ctools_plugin_test_plugin_array_not_cached_test|||
+ctools_plugin_test_ctools_plugin_directory||$module, $plugin|
+ctools_plugin_test_ctools_plugin_type|||
+ctools_plugin_test_ctools_plugin_test_big_hook_cached|||
+ctools_plugin_test_ctools_plugin_test_big_hook_not_cached|||
+ctools_plugin_test_hook_cached_test|||
+ctools_plugin_test_hook_not_cached_test|||
+ctools_drush_command|||
+ctools_drush_help||$section|
+ctools_drush_export||$module = 'foo'|
+_ctools_drush_selection_screen||array $tables = array()|
+_ctools_drush_file_delete||$path|
+ctools_drush_export_info|||
+ctools_drush_export_op_command|||
+ctools_drush_export_op||$op = '', $table_name = '', $exportables = NULL|
+_ctools_drush_export_op_command_logic||$op = '', $table_name = NULL, array $object_names = array()|
+_ctools_drush_export_info||array $table_names = array(), $load = FALSE|
+_ctools_drush_export_view||$table_name, $object|
+_ctools_drush_export_delete||$table_name, $object|
+_ctools_drush_export_enable||$table_name, $object|
+_ctools_drush_export_disable||$table_name, $object|
+_ctools_drush_export_module_filter||$exportables, $export_module|
+_ctools_drush_get_export_name||$table_name, $object|
+_ctools_drush_object_is_disabled||$object|
+_ctools_drush_object_is_enabled||$object|
+_ctools_drush_object_is_overridden||$object|
+_ctools_drush_object_is_not_overridden||$object|
+_ctools_drush_object_is_db_only||$object|
+_ctools_drush_object_is_not_db_only||$object|
+_ctools_drush_object_is_code_only||$object|
+_ctools_drush_object_is_not_code_only||$object|
+_ctools_drush_count_exportables||$exportables|
+_ctools_drush_filter_exportables||$exportables, $filter|
+_ctools_drush_export_op_alias||$op|
+_ctools_drush_explode_options||$drush_option|
+__construct|||
+getColouredOutput||$string, $foreground_colour = NULL, $background_colour = NULL|
+getForegroundColours|||
+getBackgroundColours|||
+ctools_access_ruleset_permission|||
+ctools_access_ruleset_ctools_plugin_directory||$module, $plugin|
+ctools_access_ruleset_panels_dashboard_blocks||&$vars|
+ctools_ruleset_ctools_access_merge_plugin||$plugin, $parent, $item|
+ctools_ruleset_ctools_access_get_child||$plugin, $parent, $child|
+ctools_ruleset_ctools_access_get_children||$plugin, $parent|
+ctools_ruleset_ctools_access_settings||&$form, &$form_state, $conf|
+ctools_ruleset_ctools_access_check||$conf, $context, $plugin|
+ctools_ruleset_ctools_access_summary||$conf, $context, $plugin|
+edit_form_context||&$form, &$form_state|
+edit_form_rules||&$form, &$form_state|
+edit_form_rules_submit||&$form, &$form_state|
+edit_form_submit||&$form, &$form_state|
+ctools_context_create_user||$empty, $data = NULL, $conf = FALSE|
+ctools_context_user_settings_form||$form, &$form_state|
+ctools_context_user_settings_form_validate||$form, &$form_state|
+ctools_context_user_settings_form_submit||$form, &$form_state|
+ctools_context_user_convert_list|||
+ctools_context_user_convert||$context, $type|
+ctools_context_create_vocabulary||$empty, $data = NULL, $conf = FALSE|
+ctools_context_vocabulary_settings_form||$form, &$form_state|
+ctools_context_vocabulary_settings_form_submit||$form, &$form_state|
+ctools_context_create_node_add_form||$empty, $data = NULL, $conf = FALSE|
+ctools_context_node_add_form_settings_form||$form, &$form_state|
+ctools_context_node_add_form_settings_form_submit||$form, &$form_state|
+ctools_context_node_add_form_convert||$context, $type|
+ctools_context_create_string||$empty, $data = NULL, $conf = FALSE|
+ctools_context_string_convert||$context, $type|
+ctools_context_string_settings_form||$form, &$form_state|
+ctools_context_string_settings_form_submit||$form, &$form_state|
+ctools_context_create_node||$empty, $data = NULL, $conf = FALSE|
+ctools_context_node_settings_form||$form, &$form_state|
+ctools_context_node_settings_form_validate||$form, &$form_state|
+ctools_context_node_settings_form_submit||$form, &$form_state|
+ctools_context_node_convert_list|||
+ctools_context_node_convert||$context, $type|
+ctools_context_create_node_edit_form||$empty, $node = NULL, $conf = FALSE|
+ctools_context_node_edit_form_settings_form||$form, &$form_state|
+ctools_context_node_edit_form_settings_form_validate||$form, &$form_state|
+ctools_context_node_edit_form_settings_form_submit||$form, &$form_state|
+ctools_context_node_edit_convert_list|||
+ctools_context_node_edit_convert||$context, $type|
+ctools_context_entity_get_child||$plugin, $parent, $child|
+ctools_context_entity_get_children||$plugin, $parent|
+ctools_context_create_entity||$empty, $data = NULL, $conf = FALSE, $plugin|
+ctools_context_entity_settings_form||$form, &$form_state|
+ctools_context_entity_settings_form_validate||$form, &$form_state|
+ctools_context_entity_settings_form_submit||$form, &$form_state|
+ctools_context_entity_convert_list||$plugin|
+ctools_context_entity_convert||$context, $type, $options = array()|
+ctools_context_create_token||$empty, $data = NULL, $conf = FALSE|
+ctools_context_token_convert_list|||
+ctools_context_token_convert||$context, $token|
+ctools_context_create_terms||$empty, $data = NULL, $conf = FALSE|
+ctools_context_terms_convert||$context, $type|
+ctools_context_create_term||$empty, $data = NULL, $conf = FALSE|
+ctools_context_term_settings_form||$form, &$form_state|
+ctools_context_term_settings_form_validate||$form, &$form_state|
+ctools_context_term_settings_form_submit||$form, &$form_state|
+ctools_context_term_convert||$context, $type|
+ctools_context_create_user_edit_form||$empty, $user = NULL, $conf = FALSE|
+ctools_context_user_edit_form_settings_form||$form, &$form_state|
+ctools_context_user_edit_form_settings_form_validate||$form, &$form_state|
+ctools_context_user_edit_form_settings_form_submit||$form, &$form_state|
+ctools_context_user_edit_convert_list|||
+ctools_context_user_edit_convert||$context, $type|
+ctools_term_vocabulary_ctools_access_settings||$form, &$form_state, $conf|
+ctools_term_vocabulary_ctools_access_settings_submit||$form, &$form_state|
+ctools_term_vocabulary_ctools_access_check||$conf, $context|
+ctools_term_vocabulary_ctools_access_summary||$conf, $context|
+_ctools_term_vocabulary_ctools_access_map_vids||&$conf|
+ctools_node_status_ctools_access_check||$conf, $context|
+ctools_node_status_ctools_access_summary||$conf, $context|
+ctools_path_visibility_ctools_access_settings||$form, &$form_state, $conf|
+ctools_path_visibility_ctools_access_check||$conf, $context|
+ctools_path_visibility_ctools_access_summary||$conf, $context|
+ctools_node_comment_ctools_access_check||$conf, $context|
+ctools_node_comment_ctools_access_summary||$conf, $context|
+ctools_compare_users_settings||$form, &$form_state, $conf|
+ctools_compare_users_access_check||$conf, $context|
+ctools_compare_users_ctools_access_summary||$conf, $context|
+ctools_string_length_ctools_access_settings||$form, &$form_state, $conf|
+ctools_string_length_ctools_access_check||$conf, $context|
+ctools_string_length_ctools_access_summary||$conf, $context|
+ctools_string_equal_ctools_access_settings||$form, &$form_state, $conf|
+ctools_string_equal_ctools_access_check||$conf, $context|
+ctools_string_equal_ctools_access_summary||$conf, $context|
+ctools_entity_bundle_ctools_access_get_child||$plugin, $parent, $child|
+ctools_entity_bundle_ctools_access_get_children||$plugin, $parent|
+ctools_entity_bundle_ctools_access_settings||$form, &$form_state, $conf|
+ctools_entity_bundle_ctools_access_settings_submit||$form, &$form_state|
+ctools_entity_bundle_ctools_access_check||$conf, $context, $plugin|
+ctools_entity_bundle_ctools_access_restrictions||$conf, &$context|
+ctools_entity_bundle_ctools_access_summary||$conf, $context, $plugin|
+ctools_site_language_ctools_access_settings||$form, &$form_state, $conf|
+ctools_site_language_ctools_access_check||$conf, $context|
+ctools_site_language_ctools_access_summary||$conf, $context|
+ctools_php_ctools_access_settings||$form, &$form_state, $conf|
+ctools_php_ctools_access_check||$__conf, $contexts|
+ctools_php_ctools_access_summary||$conf, $contexts|
+ctools_context_exists_ctools_access_settings||$form, &$form_state, $conf|
+ctools_context_exists_ctools_access_check||$conf, $context|
+ctools_context_exists_ctools_access_summary||$conf, $context|
+ctools_term_parent_ctools_access_settings||$form, &$form_state, $conf|
+ctools_term_parent_ctools_access_check||$conf, $context|
+ctools_term_parent_ctools_access_summary||$conf, $context|
+ctools_node_type_ctools_access_settings||$form, &$form_state, $conf|
+ctools_node_type_ctools_access_settings_submit||$form, &$form_state|
+ctools_node_type_ctools_access_check||$conf, $context|
+ctools_node_type_ctools_access_restrictions||$conf, &$context|
+ctools_node_type_ctools_access_summary||$conf, $context|
+ctools_entity_field_value_ctools_access_get_child||$plugin, $parent, $child|
+ctools_entity_field_value_ctools_access_get_children||$plugin, $parent|
+_ctools_entity_field_value_ctools_access_get_child||$plugin, $parent, $entity_type, $bundle_type, $field_name, $entity = NULL, $bundle = NULL, $field = NULL|
+ctools_entity_field_value_ctools_access_settings||$form, &$form_state, $conf|
+ctools_entity_field_value_ctools_access_settings_submit||$form, &$form_state|
+_ctools_entity_field_value_get_proper_form_items||$field, $form_items, $columns|
+_ctools_entity_field_value_filter_items_by_column||$items, $column|
+ctools_entity_field_value_ctools_access_check||$conf, $context, $plugin|
+_ctools_entity_field_value_ctools_access_get_conf_field_values||$values, $langcode = LANGUAGE_NONE|
+ctools_entity_field_value_ctools_access_summary||$conf, $context, $plugin|
+ctools_book_node_ctools_access_settings||$form, &$form_state, $conf|
+ctools_book_node_ctools_access_check||$conf, $context|
+ctools_book_node_ctools_access_summary||$conf, $context|
+ctools_theme_ctools_access_settings||$form, &$form_state, $conf|
+ctools_theme_ctools_access_check||$conf, $context|
+ctools_theme_ctools_access_summary||$conf, $context|
+ctools_perm_ctools_access_settings||$form, &$form_state, $conf|
+ctools_perm_ctools_access_check||$conf, $context|
+ctools_perm_ctools_access_summary||$conf, $context|
+ctools_role_ctools_access_settings||$form, &$form_state, $conf|
+ctools_role_ctools_access_settings_submit||$form, &$form_state|
+ctools_role_ctools_access_check||$conf, $context|
+ctools_role_ctools_access_summary||$conf, $context|
+ctools_node_access_ctools_access_settings||$form, &$form_state, $conf|
+ctools_node_access_ctools_access_check||$conf, $context|
+ctools_node_access_ctools_access_summary||$conf, $context|
+ctools_front_ctools_access_settings||$form, &$form_state, $conf|
+ctools_front_ctools_access_check||$conf, $context|
+ctools_front_ctools_access_summary||$conf, $context|
+ctools_node_language_ctools_access_settings||$form, &$form_state, $conf|
+ctools_node_language_ctools_access_check||$conf, $context|
+ctools_node_language_ctools_access_summary||$conf, $context|
+ctools_term_ctools_access_settings||$form, &$form_state, $conf|
+ctools_term_ctools_access_check||$conf, $context|
+ctools_term_ctools_access_summary||$conf, $context|
+ctools_term_has_parent_ctools_access_settings||$form, &$form_state, $conf|
+ctools_term_has_parent_ctools_access_settings_submit||$form, &$form_state|
+ctools_term_has_parent_ctools_access_check||$conf, $context|
+ctools_term_has_parent_ctools_access_summary||$conf, $context|
+ctools_cache_export_ui_cache_get||$plugin_name, $key|
+ctools_cache_export_ui_cache_set||$plugin_name, $key, $item|
+ctools_cache_simple_cache_get||$data, $key|
+ctools_cache_simple_cache_set||$data, $key, $object|
+ctools_cache_simple_cache_clear||$data, $key|
+ctools_node_add_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_argument_user_name_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_string_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_string_settings_form||&$form, &$form_state, $conf|
+ctools_string_path_placeholder||$argument|
+ctools_argument_entity_id_get_child||$plugin, $parent, $child|
+ctools_argument_entity_id_get_children||$original_plugin, $parent|
+ctools_argument_entity_id_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_argument_entity_id_settings_form||&$form, &$form_state, $conf|
+ctools_argument_entity_id_ctools_argument_placeholder||$conf|
+ctools_user_edit_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_node_edit_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_vid_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_argument_rid_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_terms_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_terms_settings_form||&$form, &$form_state, $conf|
+ctools_terms_breadcrumb||$conf, $context|
+ctools_argument_uid_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_term_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_term_settings_form||&$form, &$form_state, $conf|
+ctools_term_ctools_argument_placeholder||$conf|
+ctools_term_breadcrumb||$conf, $context|
+ctools_argument_nid_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+init||$plugin|
+get_page_title||$op, $item = NULL|
+load_item||$item_name|
+hook_menu||&$items|
+access||$op, $item|
+list_page||$js, $input|
+list_form||&$form, &$form_state|
+list_form_validate||&$form, &$form_state|
+list_form_submit||&$form, &$form_state|
+list_filter||$form_state, $item|
+list_search_fields|||
+list_sort_options|||
+list_css|||
+build_operations||$item|
+list_build_row||$item, &$form_state, $operations|
+list_table_header|||
+list_render||&$form_state|
+list_header||$form_state|
+list_footer||$form_state|
+redirect||$op, $item = NULL|
+add_page||$js, $input, $step = NULL|
+edit_page||$js, $input, $item, $step = NULL|
+clone_page||$js, $input, $original, $step = NULL|
+edit_execute_form||&$form_state|
+edit_execute_form_standard||&$form_state|
+get_wizard_info||&$form_state|
+edit_execute_form_wizard||&$form_state|
+edit_wizard_back||&$form_state|
+edit_wizard_next||&$form_state|
+edit_wizard_cancel||&$form_state|
+edit_wizard_finish||&$form_state|
+edit_cache_get||$item, $op = 'edit'|
+edit_cache_set||$item, $op = 'edit'|
+edit_cache_set_key||$item, $name|
+edit_cache_clear||$item, $op = 'edit'|
+edit_cache_get_key||$item, $op|
+edit_save_form||$form_state|
+edit_form||&$form, &$form_state|
+edit_form_validate||&$form, &$form_state|
+edit_finish_validate||&$form, &$form_state|
+edit_form_submit||&$form, &$form_state|
+enable_page||$js, $input, $item|
+disable_page||$js, $input, $item|
+set_item_state||$state, $js, $input, $item|
+delete_page||$js, $input, $item|
+delete_form_submit||&$form_state|
+export_page||$js, $input, $item|
+import_page||$js, $input, $step = NULL|
+edit_form_import||&$form, &$form_state|
+edit_form_import_validate||$form, &$form_state|
+edit_form_import_submit||$form, &$form_state|
+_ctools_export_ui_add_form_files||$form, &$form_state|
+ctools_export_ui_list_form||$form, &$form_state|
+ctools_export_ui_list_form_validate||&$form, &$form_state|
+ctools_export_ui_list_form_submit||&$form, &$form_state|
+ctools_export_ui_edit_item_form||$form, &$form_state|
+ctools_export_ui_edit_item_form_validate||&$form, &$form_state|
+ctools_export_ui_edit_item_form_submit||&$form, &$form_state|
+ctools_export_ui_edit_item_form_delete||&$form, &$form_state|
+ctools_export_ui_edit_name_validate||$element, &$form_state|
+ctools_export_ui_edit_name_exists||$name, $element, &$form_state|
+ctools_export_ui_delete_confirm_form||$form, &$form_state|
+ctools_export_ui_edit_item_wizard_form||$form, &$form_state|
+ctools_export_ui_edit_item_wizard_form_validate||&$form, &$form_state|
+ctools_export_ui_edit_item_wizard_form_submit||&$form, &$form_state|
+ctools_export_ui_wizard_back||&$form_state|
+ctools_export_ui_wizard_next||&$form_state|
+ctools_export_ui_wizard_cancel||&$form_state|
+ctools_export_ui_wizard_finish||&$form_state|
+ctools_node_edit_form_from_node_context||$context, $conf|
+ctools_book_parent_context||$context, $conf|
+ctools_book_parent_settings_form||$form, &$form_state|
+ctools_terms_from_node_context||$context, $conf|
+ctools_terms_from_node_settings_form||$form, &$form_state|
+ctools_term_from_node_context||$context, $conf|
+ctools_term_from_node_settings_form||$form, &$form_state|
+ctools_term_parent_context||$context, $conf|
+ctools_term_parent_settings_form||$form, &$form_state|
+ctools_user_from_node_context||$context, $conf|
+ctools_entity_from_schema_get_child||$plugin, $parent, $child|
+ctools_entity_from_schema_get_children||$parent_plugin, $parent|
+ctools_entity_from_schema_columns_filter||$columns, $value|
+ctools_entity_from_schema_context||$context, $conf|
+ctools_entity_from_field_get_child||$plugin, $parent, $child|
+ctools_entity_from_field_get_children||$parent_plugin, $parent|
+ctools_entity_from_field_context||$context, $conf|
+ctools_entity_from_field_edit_form||$form, &$form_state|
+ctools_user_category_edit_form_from_user_context||$context, $conf|
+ctools_vocabulary_terms_content_type_render||$subtype, $conf, $panel_args, $context|
+_ctools_content_vocabulary_terms||$vid, $max_depth, $depth = -1, $tid = 0|
+ctools_vocabulary_terms_content_type_admin_title||$subtype, $conf, $context|
+ctools_vocabulary_terms_content_type_edit_form||$form, &$form_state|
+ctools_vocabulary_terms_content_type_edit_form_submit||$form, &$form_state|
+ctools_user_profile_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_user_profile_content_type_admin_title||$subtype, $conf, $context|
+ctools_user_profile_content_type_edit_form||$form, &$form_state|
+ctools_user_profile_content_type_edit_form_submit||$form, &$form_state|
+ctools_user_picture_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_user_picture_content_type_admin_title||$subtype, $conf, $context|
+ctools_user_picture_content_type_edit_form||$form, &$form_state|
+ctools_user_signature_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_user_signature_content_type_admin_title||$subtype, $conf, $context|
+ctools_user_signature_content_type_edit_form||$form, &$form_state|
+ctools_profile_fields_content_type_render||$subtype, $conf, $panel_args, $context|
+_ctools_profile_fields_options|||
+ctools_profile_fields_content_type_edit_form||$form, &$form_state|
+ctools_profile_fields_content_type_edit_form_submit||$form, &$form_state|
+ctools_profile_fields_content_type_admin_title||$subtype, $conf, $context|
+ctools_profile_fields_content_type_theme||&$theme, $plugin|
+ctools_user_links_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_user_links_content_type_edit_form||$form, &$form_state|
+ctools_user_links_content_type_edit_form_submit||$form, &$form_state|
+ctools_user_links_content_type_admin_title||$subtype, $conf, $context|
+ctools_term_name_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_term_name_content_type_edit_form||$form, &$form_state|
+ctools_term_name_content_type_edit_form_submit||$form, &$form_state|
+ctools_term_name_content_type_admin_title||$subtype, $conf, $context|
+ctools_term_description_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_term_description_content_type_admin_title||$subtype, $conf, $context|
+ctools_term_description_content_type_edit_form||$form, &$form_state|
+ctools_term_list_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_admin_term_list_options|||
+ctools_term_list_content_type_edit_form||$form, &$form_state|
+ctools_term_list_content_type_admin_title||$subtype, $conf, $context|
+ctools_term_list_content_type_edit_form_submit||$form, &$form_state|
+ctools_token_content_type_content_type||$subtype|
+ctools_token_content_type_content_types|||
+ctools_token_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_token_content_type_edit_form||$form, &$form_state|
+ctools_token_content_type_edit_form_submit||$form, &$form_state|
+ctools_token_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_links_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_links_content_type_edit_form||$form, &$form_state|
+ctools_node_links_content_type_edit_form_submit||$form, &$form_state|
+ctools_node_links_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_comment_wrapper_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_comment_wrapper_content_type_edit_form||$form, &$form_state|
+ctools_node_comment_wrapper_content_type_edit_form_submit||$form, &$form_state|
+ctools_node_comment_wrapper_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_title_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_title_content_type_edit_form||$form, &$form_state|
+ctools_node_title_content_type_edit_form_submit||$form, &$form_state|
+ctools_node_title_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_content_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_content_render_node||$node, $conf|
+ctools_node_content_content_type_edit_form||$form, &$form_state|
+ctools_node_content_content_type_edit_form_submit||$form, &$form_state|
+ctools_node_content_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_updated_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_updated_content_type_edit_form||$form, &$form_state|
+ctools_node_updated_content_type_edit_form_submit||$form, &$form_state|
+ctools_node_updated_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_comment_form_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_comment_form_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_comment_form_content_type_edit_form||$form, &$form_state|
+ctools_node_comment_form_content_type_edit_form_submit||$form, &$form_state|
+ctools_form_comment_form_alter||&$form, &$form_state|
+ctools_node_comment_form_submit||&$form, &$form_state|
+ctools_node_type_desc_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_type_desc_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_type_desc_content_type_edit_form||$form, &$form_state|
+ctools_node_body_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_body_content_type_edit_form||$form, &$form_state|
+ctools_node_body_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_author_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_author_content_type_edit_form||$form, &$form_state|
+ctools_node_author_content_type_edit_form_submit||$form, &$form_state|
+ctools_node_author_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_terms_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_terms_content_type_edit_form||$form, &$form_state|
+ctools_node_terms_content_type_edit_form_submit||$form, &$form_state|
+ctools_node_terms_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_book_children_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_book_children_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_book_children_content_type_edit_form||$form, &$form_state|
+ctools_node_created_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_created_content_type_edit_form||$form, &$form_state|
+ctools_node_created_content_type_edit_form_submit||$form, &$form_state|
+ctools_node_created_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_book_nav_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_book_nav_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_book_nav_content_type_edit_form||$form, &$form_state|
+ctools_node_comments_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_comments_content_type_edit_form||$form, &$form_state|
+ctools_node_comments_content_type_edit_form_submit||$form, &$form_state|
+ctools_node_comments_content_type_admin_title||$subtype, $conf, $context|
+ctools_comment_render||$node, $conf|
+ctools_node_attachments_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_node_attachments_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_attachments_content_type_edit_form||$form, &$form_state|
+ctools_form_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_form_content_type_admin_title||$subtype, $conf, $context|
+ctools_form_content_type_edit_form||$form, &$form_state|
+ctools_entity_form_field_content_type_content_type||$subtype|
+ctools_entity_form_field_content_type_content_types|||
+ctools_entity_form_field_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_entity_form_field_content_type_admin_title||$subtype, $conf, $context|
+ctools_entity_form_field_content_type_edit_form||$form, &$form_state|
+ctools_page_logo_content_type_render||$subtype, $conf, $panel_args|
+ctools_page_help_content_type_render||$subtype, $conf, $panel_args|
+ctools_page_feed_icons_content_type_render||$subtype, $conf, $panel_args|
+ctools_page_breadcrumb_content_type_render||$subtype, $conf, $panel_args|
+ctools_page_title_content_type_render||$subtype, $conf, $panel_args|
+ctools_page_title_content_type_edit_form||$form, &$form_state|
+ctools_page_title_content_type_edit_form_submit||$form, &$form_state|
+ctools_page_title_content_type_token||&$variables, $tag, $id, $class|
+ctools_page_site_name_content_type_edit_form||$form, &$form_state|
+ctools_page_site_name_content_type_edit_form_submit||$form, &$form_state|
+ctools_page_site_name_content_type_render||$subtype, $conf, $panel_args|
+ctools_page_tabs_content_type_render||$subtype, $conf, $panel_args|
+ctools_page_tabs_content_type_edit_form||$form, &$form_state|
+ctools_page_tabs_content_type_edit_form_submit||$form, &$form_state|
+ctools_page_secondary_links_content_type_render||$subtype, $conf, $panel_args|
+ctools_page_secondary_links_content_type_edit_form||$form, &$form_state|
+ctools_page_slogan_content_type_render||$subtype, $conf, $panel_args|
+ctools_page_primary_links_content_type_render||$subtype, $conf, $panel_args|
+ctools_page_primary_links_content_type_edit_form||$form, &$form_state|
+ctools_page_messages_content_type_render||$subtype, $conf, $panel_args|
+ctools_page_actions_content_type_render||$subtype, $conf, $panel_args|
+ctools_comment_reply_form_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_comment_reply_form_content_type_admin_title||$subtype, $conf, $context|
+ctools_comment_reply_form_content_type_edit_form||$form, &$form_state|
+ctools_comment_reply_form_content_type_edit_form_submit||$form, &$form_state|
+ctools_comment_links_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_comment_links_content_type_edit_form||$form, &$form_state|
+ctools_comment_links_content_type_edit_form_submit||$form, &$form_state|
+ctools_comment_links_content_type_admin_title||$subtype, $conf, $context|
+ctools_custom_content_type_content_type||$subtype_id|
+ctools_custom_content_type_content_types|||
+_ctools_default_content_type_content_type|||
+_ctools_custom_content_type_content_type||$content|
+ctools_custom_content_type_get_conf||$subtype, $conf|
+ctools_custom_content_type_editable||$content_type, $subtype, $conf|
+ctools_custom_content_type_render||$subtype, $conf, $args, $contexts|
+ctools_custom_content_type_admin_title||$subtype, $conf|
+ctools_custom_content_type_admin_info||$subtype, $conf|
+ctools_custom_content_type_edit_form||$form, &$form_state|
+_ctools_custom_content_type_edit_save||&$content, $form_state|
+ctools_custom_content_type_edit_form_validate||&$form, &$form_state|
+ctools_custom_content_type_edit_form_submit||$form, &$form_state|
+ctools_entity_field_extra_content_type_content_type||$subtype|
+ctools_entity_field_extra_content_type_content_types|||
+ctools_entity_field_extra_content_type_edit_form||$form, &$form_state|
+ctools_entity_field_extra_content_type_edit_form_submit||$form, &$form_state|
+ctools_entity_field_extra_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_entity_field_extra_content_type_admin_title||$subtype, $conf, $context|
+ctools_entity_field_content_type_content_type||$subtype|
+ctools_entity_field_content_type_content_types|||
+ctools_entity_field_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_entity_field_content_type_formatter_options||$form, &$form_state|
+ctools_entity_field_content_type_formatter_options_submit||$form, &$form_state|
+ctools_entity_field_content_type_formatter_styles||$form, &$form_state|
+ctools_entity_field_content_type_formatter_styles_submit||$form, &$form_state|
+ctools_entity_field_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_content_type_render||$subtype, $conf, $panel_args|
+ctools_node_content_type_edit_form||$form, &$form_state|
+ ctools_node_content_type_edit_form_validate||&$form, &$form_state|
+ctools_node_content_type_edit_form_submit||$form, &$form_state|
+ctools_node_content_type_admin_title||$subtype, $conf|
+ctools_node_content_type_admin_info||$subtype, $conf|
+ctools_node_form_language_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_node_form_language_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_form_language_content_type_edit_form||$form, &$form_state|
+ctools_node_form_author_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_node_form_author_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_form_author_content_type_edit_form||$form, &$form_state|
+ctools_node_form_book_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_node_form_book_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_form_book_content_type_edit_form||$form, &$form_state|
+ctools_node_form_menu_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_node_form_menu_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_form_menu_content_type_edit_form||$form, &$form_state|
+ctools_node_form_log_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_node_form_log_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_form_log_content_type_edit_form||$form, &$form_state|
+ctools_node_form_buttons_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_node_form_buttons_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_form_buttons_content_type_edit_form||$form, &$form_state|
+ctools_node_form_comment_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_node_form_comment_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_form_comment_content_type_edit_form||$form, &$form_state|
+ctools_node_form_title_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_node_form_title_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_form_title_content_type_edit_form||$form, &$form_state|
+ctools_node_form_publishing_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_node_form_publishing_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_form_publishing_content_type_edit_form||$form, &$form_state|
+ctools_node_form_path_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_node_form_path_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_form_path_content_type_edit_form||$form, &$form_state|
+ctools_node_form_attachments_content_type_render||$subtype, $conf, $panel_args, &$context|
+ctools_node_form_attachments_content_type_admin_title||$subtype, $conf, $context|
+ctools_node_form_attachments_content_type_edit_form||$form, &$form_state|
+ctools_search_result_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_search_result_content_type_edit_form||$form, &$form_state|
+ctools_search_result_content_type_edit_form_submit||$form, &$form_state|
+ctools_search_result_content_type_admin_title||$subtype, $conf, $context|
+ctools_search_form_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_search_form_content_type_edit_form||$form, &$form_state|
+ctools_search_form_content_type_edit_form_submit||$form, &$form_state|
+ctools_search_form_content_type_admin_title||$subtype, $conf, $context|
+ctools_block_content_type_content_type||$subtype_id|
+ctools_block_content_type_content_types|||
+_ctools_block_content_type_content_type||$module, $delta, $block|
+_ctools_block_load_blocks|||
+_ctools_get_block_info||$module, $delta|
+ctools_block_content_type_render||$subtype, $conf|
+ctools_block_content_type_edit_form||$form, &$form_state|
+ctools_block_content_type_edit_form_submit||$form, &$form_state|
+ctools_block_content_type_edit_form||$id, $parents, $conf|
+ctools_admin_submit_block||&$form_values|
+ctools_admin_fix_block_tree||&$form, $key = NULL|
+ctools_block_content_type_admin_title||$subtype, $conf|
+ctools_block_content_type_admin_info||$subtype, $conf|
+_ctools_block_get_module_delta||$subtype, $conf|
+ctools_default_block_info||$module, $delta, &$info|
+menu_ctools_block_info||$module, $delta, &$info|
+forum_ctools_block_info||$module, $delta, &$info|
+profile_ctools_block_info||$module, $delta, &$info|
+book_ctools_block_info||$module, $delta, &$info|
+blog_ctools_block_info||$module, $delta, &$info|
+poll_ctools_block_info||$module, $delta, &$info|
+comment_ctools_block_info||$module, $delta, &$info|
+search_ctools_block_info||$module, $delta, &$info|
+node_ctools_block_info||$module, $delta, &$info|
+aggregator_ctools_block_info||$module, $delta, &$info|
+block_ctools_block_info||$module, $delta, &$info|
+user_ctools_block_info||$module, $delta, &$info|
+locale_ctools_block_info||$module, $delta, &$info|
+statistics_ctools_block_info||$module, $delta, &$info|
+system_ctools_block_info||$module, $delta, &$info|
+ctools_user_login_pane_render||$subtype, $conf, $panel_args, $contexts|
+ctools_user_contact_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_user_contact_content_type_edit_form||$form, &$form_state|
+ctools_user_contact_content_type_edit_form_submit||&$form, &$form_state|
+ctools_user_contact_content_type_admin_title||$subtype, $conf, $context|
+ctools_contact_content_type_render||$subtype, $conf, $panel_args, $context|
+ctools_contact_content_type_edit_form||$form, &$form_state|
+ctools_contact_content_type_edit_form_submit||$form, &$form_state|
+ctools_contact_content_type_admin_title||$subtype, $conf, $context|
+views_content_menu|||
+views_content_ctools_plugin_directory||$owner, $plugin_type|
+views_ctools_block_info||$module, $delta, &$info|
+views_content_exposed_form_pane_edit||$form, &$form_state|
+views_content_exposed_form_pane_edit_submit||$form, &$form_state|
+views_content_exposed_form_pane_render||$subtype, $conf, $panel_args, $contexts|
+views_content_views_api|||
+views_content_admin_page|||
+views_content_admin_form||&$form|
+views_content_context_get_view||&$context|
+views_content_context_get_output||&$context|
+views_content_get_display_title||$view, $display_id, $option = 'pane_title'|
+views_content_get_display_label||$view, $display_id|
+_views_content_get_context_from_display||$view, $id, $parent, $required = TRUE|
+views_content_get_pane_links_alter||&$links, $pane, $content_type|
+views_content_context_view_get_child||$plugin, $parent, $child|
+views_content_context_view_get_children||$plugin, $parent|
+views_content_context_view_create||$empty, $data = NULL, $conf = FALSE, $plugin = array()|
+views_content_context_view_settings_form||$form, &$form_state|
+views_content_context_view_settings_form_validate||$form, &$form_state|
+views_content_context_view_convert_list|||
+views_content_context_view_convert||$context, $type|
+views_content_node_from_view_context||$context, $conf, $placeholder = FALSE|
+views_content_node_from_view_settings_form||$form, &$form_state|
+views_content_node_from_view_settings_form_validate||$form, &$form_state|
+views_content_view_from_argument_get_child||$plugin, $parent, $child|
+views_content_view_from_argument_get_children||$plugin, $parent|
+views_content_view_from_argument_context||$contexts, $conf|
+views_content_user_from_view_context||$context, $conf, $placeholder = FALSE|
+views_content_user_from_view_settings_form||$form, &$form_state|
+views_content_user_from_view_settings_form_validate||$form, &$form_state|
+views_content_term_from_view_context||$context, $conf, $placeholder = FALSE|
+views_content_term_from_view_settings_form||$form, &$form_state|
+views_content_term_from_view_settings_form_validate||$form, &$form_state|
+views_content_views_plugins|||
+option_definition|||
+has_pane_conf|||
+set_pane_conf||$conf = array()|
+options_summary||&$categories, &$options|
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+get_argument_input|||
+use_more|||
+get_path|||
+get_url|||
+uses_exposed_form_in_block|||
+displays_exposed|||
+get_style_type|||
+defaultable_sections||$section = NULL|
+option_definition|||
+execute|||
+preview|||
+render|||
+options_summary||&$categories, &$options|
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+get_argument_input|||
+get_path|||
+render|||
+views_content_views_view_content_type_render||$subtype, $conf, $panel_args, $context|
+views_content_views_view_content_type_edit_form||$form, &$form_state|
+views_content_views_view_content_type_edit_form_submit||&$form, &$form_state|
+views_content_views_view_content_type_admin_title||$subtype, $conf, $context|
+views_content_views_content_type_content_types||$plugin|
+_views_content_views_content_type||$view|
+views_content_views_content_type_render||$subtype, $conf, $panel_args, $contexts|
+views_content_views_select_display||$form, &$form_state|
+views_content_views_select_display_submit||&$form, &$form_state|
+views_content_views_content_type_edit_form||$form, &$form_state|
+views_content_views_content_type_edit_form_submit||&$form, &$form_state|
+views_content_views_content_type_admin_title||$subtype, $conf|
+views_content_views_content_type_admin_info||$subtype, $conf, $contexts|
+_views_content_views_update_conf||&$conf, $subtype|
+views_content_views_panes_ctools_content_types|||
+views_content_views_panes_content_type_content_types||$plugin|
+views_content_views_panes_content_type_content_type||$subtype, $plugin|
+_views_content_panes_content_type||$view, $display|
+views_content_views_panes_content_type_render||$subtype, $conf, $panel_args, $contexts|
+views_content_views_panes_add_defaults||&$conf, $view|
+views_content_views_panes_content_type_edit_form||$form, &$form_state|
+views_content_views_panes_content_type_edit_form_submit||&$form, &$form_state|
+views_content_views_panes_content_type_admin_title||$subtype, $conf, $contexts|
+views_content_views_panes_content_type_admin_info||$subtype, $conf, $contexts|
+views_content_views_row_content_type_render||$subtype, $conf, $panel_args, $context|
+views_content_views_row_content_type_edit_form||$form, &$form_state|
+views_content_views_row_content_type_edit_form_submit||$form, &$form_state|
+views_content_views_row_edit||$form, &$form_state|
+views_content_views_row_edit_validate||&$form, &$form_state|
+views_content_views_row_edit_submit||&$form, &$form_state|
+views_content_views_row_content_type_admin_info||$subtype, $conf, $contexts|
+views_content_views_row_content_type_admin_title||$subtype, $conf, $context|
+views_content_views_footer_content_type_render||$subtype, $conf, $panel_args, $context|
+views_content_views_footer_content_type_edit_form||$form, &$form_state|
+views_content_views_footer_content_type_edit_form_submit||&$form, &$form_state|
+views_content_views_footer_content_type_admin_title||$subtype, $conf, $context|
+views_content_views_feed_content_type_render||$subtype, $conf, $panel_args, $context|
+views_content_views_feed_content_type_edit_form||$form, &$form_state|
+views_content_views_feed_content_type_edit_form_submit||&$form, &$form_state|
+views_content_views_feed_content_type_admin_title||$subtype, $conf, $context|
+views_content_views_exposed_content_type_render||$subtype, $conf, $panel_args, $context|
+views_content_views_exposed_content_type_edit_form||$form, &$form_state|
+views_content_views_exposed_content_type_edit_form_submit||&$form, &$form_state|
+views_content_views_exposed_content_type_admin_title||$subtype, $conf, $context|
+views_content_views_header_content_type_render||$subtype, $conf, $panel_args, $context|
+views_content_views_header_content_type_edit_form||$form, &$form_state|
+views_content_views_header_content_type_edit_form_submit||&$form, &$form_state|
+views_content_views_header_content_type_admin_title||$subtype, $conf, $context|
+views_content_views_attachments_content_type_render||$subtype, $conf, $panel_args, $context|
+views_content_views_attachments_content_type_edit_form||$form, &$form_state|
+views_content_views_attachments_content_type_edit_form_validate||&$form, &$form_state|
+views_content_views_attachments_content_type_edit_form_submit||&$form, &$form_state|
+views_content_views_attachments_content_type_admin_title||$subtype, $conf, $context|
+views_content_views_empty_content_type_render||$subtype, $conf, $panel_args, $context|
+views_content_views_empty_content_type_edit_form||$form, &$form_state|
+views_content_views_empty_content_type_edit_form_submit||&$form, &$form_state|
+views_content_views_empty_content_type_admin_title||$subtype, $conf, $context|
+views_content_views_pager_content_type_render||$subtype, $conf, $panel_args, $context|
+views_content_views_pager_content_type_edit_form||$form, &$form_state|
+views_content_views_pager_content_type_edit_form_submit||&$form, &$form_state|
+views_content_views_pager_content_type_admin_title||$subtype, $conf, $context|
+ctools_export_crud_new||$table, $set_defaults = TRUE|
+ctools_export_crud_load||$table, $name|
+ctools_export_crud_load_multiple||$table, array $names|
+ctools_export_crud_load_all||$table, $reset = FALSE|
+ctools_export_crud_save||$table, &$object|
+ctools_export_crud_delete||$table, $object|
+ctools_export_crud_export||$table, $object, $indent = ''|
+ctools_export_crud_import||$table, $code|
+ctools_export_crud_set_status||$table, $object, $status|
+ctools_export_crud_enable||$table, $object|
+ctools_export_crud_disable||$table, $object|
+ctools_export_load_object||$table, $type = 'all', $args = array()|
+ctools_export_load_object_reset||$table = NULL|
+ctools_get_default_object||$table, $name|
+_ctools_export_get_defaults||$table, $export|
+_ctools_export_get_defaults_from_cache||$table, $export|
+_ctools_export_get_some_defaults||$table, $export, $names|
+_ctools_export_unpack_object||$schema, $data, $object = 'stdClass'|
+ctools_export_unpack_object||$table, $data|
+ctools_var_export||$var, $prefix = ''|
+ctools_export_object||$table, $object, $indent = '', $identifier = NULL, $additions = array(), $additions2 = array()|
+ctools_export_get_schema||$table|
+ctools_export_get_schemas||$for_export = FALSE|
+_ctools_export_filter_export_tables||$schema|
+ctools_export_get_schemas_by_module||$modules = array(), $for_export = FALSE|
+ctools_export_set_status||$table, $name, $new_status = TRUE|
+ctools_export_set_object_status||$object, $new_status = TRUE|
+ctools_export_form||$form, &$form_state, $code, $title = ''|
+ctools_export_new_object||$table, $set_defaults = TRUE|
+ctools_export_to_hook_code||&$code, $table, $names = array(), $name = 'foo'|
+ctools_export_default_to_hook_code||$schema, $table, $names, $name|
+" . $name . "_{$export['default hook']}|||
+ctools_export_default_list||$table, $schema|
+ctools_css_store||$id, $css, $filter = TRUE|
+ctools_css_retrieve||$id|
+ctools_css_clear||$id|
+optionally filters the CSS ||always compressed, if so|
+ctools_css_cache||$css, $filter = TRUE|
+ctools_css_filter||$css, $compressed = TRUE|
+ctools_css_assemble||$css_data|
+ctools_css_compress||$css_data|
+ctools_css_disassemble||$css|
+_ctools_css_disassemble_selector||$selector_str|
+_ctools_css_disassemble_declaration||$declaration|
+ctools_css_filter_css_data||$css, $allowed_properties = array(), $allowed_values = array(), $allowed_values_regex = '', $disallowed_values_regex = ''|
+ctools_css_filter_css_data||$css, &$filtered = NULL, $allowed_properties = array(), $allowed_values = array(), $allowed_values_regex = '', $disallowed_values_regex = ''|
+ctools_css_filter_default_allowed_properties|||
+ctools_css_filter_default_allowed_values|||
+ctools_css_flush_caches|||
+ctools_context||$type = 'none', $data = NULL|
+is_type||$type|
+get_argument|||
+get_original_argument|||
+get_keyword|||
+get_identifier|||
+get_title|||
+get_page_title|||
+ctools_context_required||$title|
+filter||$contexts|
+select||$contexts, $context|
+ctools_context_optional|||
+add_empty||&$contexts|
+filter||$contexts|
+select||$contexts, $context|
+ctools_context_filter||$contexts, $required|
+_ctools_context_filter||$contexts, $required|
+ctools_context_selector||$contexts, $required, $default|
+_ctools_context_selector||$contexts, $required, $default, $num = 0|
+ctools_context_match_requirements||$contexts, $required|
+ctools_context_converter_selector||$contexts, $required, $default|
+_ctools_context_converter_selector||$contexts, $required, $default, $num = 0|
+ctools_context_get_converters||$cid, $context|
+_ctools_context_get_converters||$id, $plugin_name|
+= ctools_plugin_get_function||$plugin, 'convert list')|
+ctools_context_get_all_converters|||
+ctools_context_convert_context||$context, $converter, $converter_options = array()|
+= ctools_plugin_get_function||$plugin, 'convert')|
+ctools_context_select||$contexts, $required, $context|
+_ctools_context_select||$contexts, $required, $context|
+ctools_context_create||$type, $data = NULL, $conf = FALSE|
+= ctools_plugin_get_function||$plugin, 'context')|
+ctools_context_create_empty||$type|
+= ctools_plugin_get_function||$plugin, 'context')|
+ctools_context_keyword_substitute||$string, $keywords, $contexts, $converter_options = array()|
+ctools_context_id||$context, $type = 'context'|
+ctools_context_next_id||$objects, $name|
+ctools_get_argument||$argument|
+ctools_get_arguments|||
+ctools_context_get_context_from_argument||$argument, $arg, $empty = FALSE|
+= ctools_plugin_load_function||'ctools', 'arguments', $argument['name'], 'context')|
+ctools_context_get_placeholders_from_argument||$arguments|
+ctools_context_get_context_from_arguments||$arguments, &$contexts, $args|
+ctools_get_relationship||$relationship|
+ctools_get_relationships|||
+ctools_context_get_context_from_relationship||$relationship, $source_context, $placeholders = FALSE|
+= ctools_plugin_load_function||'ctools', 'relationships', $relationship['name'], 'context')|
+ctools_context_get_relevant_relationships||$contexts|
+ctools_context_get_context_from_relationships||$relationships, &$contexts, $placeholders = FALSE|
+ctools_get_context||$context|
+ctools_get_contexts|||
+ctools_context_get_context_from_context||$context, $type = 'context', $argument = NULL|
+= ctools_plugin_get_function||$plugin, 'context')|
+ctools_context_get_context_from_contexts||$contexts, $type = 'context', $placeholders = FALSE|
+ctools_context_match_required_contexts||$required, $contexts|
+ctools_context_load_contexts||$object, $placeholders = TRUE, $contexts = array()|
+ctools_context_get_form||$contexts|
+ctools_context_replace_placeholders||$contexts, $arguments|
+ctools_context_replace_form||&$form, $contexts|
+ctools_get_access_plugin||$name|
+ctools_get_access_plugins|||
+ctools_get_relevant_access_plugins||$contexts|
+ctools_access_get_loggedin_context|||
+ctools_access_summary||$plugin, $contexts, $test|
+= ctools_plugin_get_function||$plugin, 'summary')|
+ctools_access_group_summary||$access, $contexts|
+ctools_access||$settings, $contexts = array()|
+= ctools_plugin_get_function||$plugin, 'callback')|
+ctools_access_new_test||$plugin|
+ctools_access_add_restrictions||$settings, $contexts|
+= ctools_plugin_get_function||$plugin, 'restrictions')|
+ctools_wizard_theme||&$theme|
+theme_ctools_wizard_trail||$vars|
+ctools_export_ui_menu||&$items|
+ctools_object_cache_cron|||
+ctools_views_get_argument_context||$argument|
+ctools_cache_plugin_type||&$items|
+ctools_export_ui_plugin_type||&$items|
+ctools_context_theme||&$theme|
+theme_ctools_context_item_row||$vars|
+theme_ctools_context_item_form||$vars|
+theme_ctools_context_list||$vars|
+theme_ctools_context_list_no_table||$vars|
+ctools_content_menu||&$items|
+ctools_content_autocomplete_entity||$type, $string = ''|
+_ctools_buildQuery||$entity_type, $entity_info, $match = NULL, $match_operator = 'CONTAINS'|
+_ctools_getReferencableEntities||$entity_type, $entity_info, $match = NULL, $match_operator = 'LIKE', $limit = 0|
+ctools_access_admin_form||$form, &$form_state|
+ctools_access_admin_render_table||$access, $fragment, $contexts|
+theme_ctools_access_admin_add||$vars|
+ctools_access_admin_form_submit||$form, &$form_state|
+ctools_access_ajax_add||$fragment = NULL, $name = NULL|
+ctools_access_ajax_edit||$fragment = NULL, $id = NULL|
+ctools_access_ajax_edit_item||$form, &$form_state|
+= ctools_plugin_get_function||$plugin, 'settings form')|
+ctools_access_ajax_edit_item_validate||$form, &$form_state|
+= ctools_plugin_get_function||$form_state['plugin'], 'settings form validate')|
+ctools_access_ajax_edit_item_submit||$form, &$form_state|
+= ctools_plugin_get_function||$form_state['plugin'], 'settings form submit')|
+ctools_access_ajax_delete||$fragment = NULL, $id = NULL|
+clear||$cid = NULL, $wildcard = FALSE|
+get||$cid|
+getMultiple||&$cids|
+isEmpty|||
+set||$cid, $data, $expire = CACHE_PERMANENT|
+ctools_cleanstring||$string, $settings = array()|
+ctools_cleanstring_truncate||$string, $length, $separator|
+page_manager_get_page_wizard||$page_wizard|
+page_manager_get_page_wizards|||
+page_manager_get_wizard_cache||$plugin|
+page_manager_make_wizard_cache||$plugin|
+= ctools_plugin_get_function||$plugin, 'default cache')|
+page_manager_set_wizard_cache||$cache|
+page_manager_clear_wizard_cache||$name|
+page_manager_page_wizard||$name, $step = NULL|
+= ctools_plugin_get_function||$plugin, 'access callback'|
+= ctools_plugin_get_function||$form_state['plugin'], 'start')|
+page_manager_page_wizard_finish||&$form_state|
+= ctools_plugin_get_function||$form_state['plugin'], 'finish')|
+page_manager_page_wizard_next||&$form_state|
+= ctools_plugin_get_function||$form_state['plugin'], 'next')|
+page_manager_page_wizard_list||$type = NULL|
+ctools_ajax_image_button||$image, $dest, $alt, $class = ''|
+ctools_ajax_text_button||$text, $dest, $alt, $class = '', $type = 'use-ajax'|
+ctools_ajax_icon_text_button||$text, $image, $dest, $alt, $class = '', $type = 'use-ajax'|
+ctools_ajax_command_attr||$selector, $name, $value|
+ctools_ajax_command_redirect||$url, $delay = 0, $options = array()|
+ctools_ajax_command_reload|||
+ctools_ajax_command_submit||$selector|
+ctools_ajax_render_error||$error = ''|
+ctools_context_plugin_type||&$items|
+ctools_language_list||$field = 'name', $all = FALSE|
+ctools_language_list_all|||
+ctools_jump_menu||$form, &$form_state, $select, $options = array()|
+ctools_jump_menu_submit||$form, &$form_state|
+ctools_fields_fake_field_instance||$field_name, $view_mode = 'ctools', $formatter, $formatter_settings|
+for calling hook_field_formatter_settings_form|||
+ctools_fields_get_field_formatter_settings_form||$field, $formatter_type, &$form, $form_state, $view_mode = 'ctools'|
+ctools_fields_get_field_formatter_info||$fields|
+ctools_field_label||$field_name|
+ctools_field_invoke_field||$field_name, $op, $entity_type, $entity, &$a = NULL, &$b = NULL, $options = array()|
+ctools_field_invoke_field_default||$field_name, $op, $entity_type, $entity, &$a = NULL, &$b = NULL, $options = array()|
+ctools_fields_get_fields_by_type||$field_type|
+ctools_field_foreign_keys||$field_name|
+ctools_get_style_base||$style_base|
+ctools_get_style_bases|||
+ctools_get_style_base_types|||
+ctools_stylizer_print_style_icon||$plugin, $print_title = TRUE|
+theme_ctools_style_icon||$vars|
+ctools_stylizer_add_css||$plugin, $settings|
+ctools_stylizer_build_style||$plugin, $settings, $add_css = FALSE|
+ctools_stylizer_cleanup_style||$plugin, $settings|
+ctools_stylizer_recursive_delete||$path|
+ctools_stylizer_get_settings_name||$settings|
+ctools_stylizer_get_image_path||$plugin, $settings, $check = TRUE|
+ctools_stylizer_get_css_id||$plugin, $settings|
+ctools_stylizer_get_css_class||$plugin, $settings|
+execute||$path, $plugin, $settings|
+log||$message, $type = 'normal'|
+set_current_workspace||$workspace|
+command_new||$name, $width, $height|
+command_load||$name, $file|
+command_new_from||$name, $workspace|
+command_workspace||$name|
+command_merge_from||$workspace, $x = 0, $y = 0|
+command_merge_to||$workspace, $x = 0, $y = 0|
+command_merge_from_file||$file, $x = 0, $y = 0|
+command_fill||$color, $x, $y, $width, $height|
+command_gradient||$from, $to, $x, $y, $width, $height, $direction = 'down'|
+command_colorize||$color, $x = NULL, $y = NULL, $width = NULL, $height = NULL|
+command_hue||$color, $x = NULL, $y = NULL, $width = NULL, $height = NULL|
+command_slice||$file, $x = NULL, $y = NULL, $width = NULL, $height = NULL|
+&new_image||&$source, $width = NULL, $height = NULL|
+merge||&$from, &$to, $x, $y|
+ctools_stylizer_get_settings_cache||$name|
+ctools_stylizer_set_settings_cache||$name, $settings|
+ctools_stylizer_clear_settings_cache||$name|
+ctools_stylizer_edit_style||&$info, $js, $step = NULL|
+ctools_stylizer_add_plugin_forms||&$form_info, $plugin, $op|
+ctools_stylizer_edit_style_finish||&$form_state|
+ctools_stylizer_edit_style_next||&$form_state|
+ctools_stylizer_edit_style_cancel||&$form_state|
+ctools_stylizer_edit_style_form_choose||$form, &$form_state|
+ctools_stylizer_edit_style_form_choose_submit||$form, &$form_state|
+ctools_stylizer_edit_style_form_default||$form, &$form_state|
+theme_ctools_stylizer_color_scheme_form||$vars|
+theme_ctools_stylizer_preview_form||$vars|
+ctools_stylizer_edit_style_form_default_validate||$form, &$form_state|
+ctools_stylizer_edit_style_form_default_submit||$form, &$form_state|
+ctools_stylizer_font_selector_form||&$form, &$form_state, $label, $settings|
+ctools_stylizer_font_selector_form_submit||&$form, &$form_state, &$values, &$settings|
+ctools_stylizer_font_apply_style||&$stylesheet, $selector, $settings|
+ctools_stylizer_border_selector_form||&$form, &$form_state, $label, $settings|
+ctools_stylizer_border_selector_form_submit||&$form, &$form_state, &$values, &$settings|
+ctools_stylizer_border_apply_style||&$stylesheet, $selector, $settings, $color, $which = NULL|
+ctools_stylizer_padding_selector_form||&$form, &$form_state, $label, $settings|
+ctools_stylizer_padding_selector_form_submit||&$form, &$form_state, &$values, &$settings|
+ctools_stylizer_padding_apply_style||&$stylesheet, $selector, $settings|
+ctools_wizard_multistep_form||$form_info, $step, &$form_state|
+= ctools_plugin_get_function||$form_info, "$type callback")|
+ctools_wizard_wrapper||$form, &$form_state|
+ctools_wizard_submit||&$form, &$form_state|
+ctools_wizard_get_path||$form_info, $step|
+ctools_wizard_defaults||&$form_info|
+ctools_export_ui_process||&$plugin, $info|
+ctools_export_ui_get_handler||$plugin|
+ctools_export_ui_plugin_base_path||$plugin|
+ctools_export_ui_plugin_menu_path||$plugin, $item_id, $export_key = NULL|
+ctools_get_export_ui||$plugin_name|
+ctools_get_export_uis|||
+ctools_export_ui_switcher_page||$plugin_name, $op|
+ctools_object_cache_get||$obj, $name, $skip_cache = FALSE, $sid = NULL|
+ctools_object_cache_set||$obj, $name, $cache, $sid = NULL|
+ctools_object_cache_clear||$obj, $name, $sid = NULL|
+ctools_object_cache_test||$obj, $name, $sid = NULL|
+ctools_object_cache_test_objects||$obj, $names|
+ctools_object_cache_clear_all||$obj, $name|
+ctools_object_cache_clean||$age = NULL|
+ctools_collapsible_theme||&$items|
+theme_ctools_collapsible||$vars|
+theme_ctools_collapsible_remembered||$vars|
+ctools_dropbutton_theme||&$items|
+theme_links__ctools_dropbutton||$vars|
+ctools_dependent_example|||
+ctools_dependent_example_checkbox|||
+ctools_dependent_process||$element, &$form_state, &$form|
+ctools_dependent_pre_render||$element|
+ctools_dependent_element_info_alter||&$type|
+ctools_context_info||$type = NULL|
+ctools_context_get_plugin||$type, $name|
+ctools_context_add_argument_form||$module, &$form, &$form_state, &$form_location, $object, $cache_key = NULL|
+ctools_context_add_context_form||$module, &$form, &$form_state, &$form_location, $object, $cache_key = NULL|
+ctools_context_add_required_context_form||$module, &$form, &$form_state, &$form_location, $object, $cache_key = NULL|
+ctools_context_add_relationship_form||$module, &$form, &$form_state, &$form_location, $object, $cache_key = NULL|
+ctools_context_admin_includes|||
+ctools_context_add_item_table||$type, &$form, $available_contexts, $items|
+ctools_context_add_item_table_buttons||$type, $module, &$form, $available_contexts|
+ctools_context_add_item_to_form||$module, $type, $cache_key, &$form, $position, $item|
+ctools_context_ajax_item_add||$mechanism = NULL, $type = NULL, $cache_key = NULL, $name = NULL, $step = NULL|
+ctools_context_ajax_item_edit||$mechanism = NULL, $type = NULL, $cache_key = NULL, $position = NULL, $step = NULL|
+ctools_context_get_defaults||$plugin_definition, $object, $type|
+ctools_edit_context_form_defaults||$form, &$form_state|
+ctools_edit_context_form_defaults_submit||&$form, &$form_state|
+ctools_context_ajax_item_delete||$mechanism = NULL, $type = NULL, $cache_key = NULL, $position = NULL|
+ctools_save_context||$type, &$ref, $form_values|
+ctools_get_keyword||$page, $word|
+ctools_page_wizard_menu||&$items|
+ctools_modal_add_js|||
+ctools_modal_add_plugin_js||$plugins|
+ctools_modal_command_display||$title, $html|
+ctools_modal_command_dismiss|||
+ctools_modal_command_loading|||
+ctools_modal_image_button||$image, $dest, $alt, $class = ''|
+ctools_modal_text_button||$text, $dest, $alt, $class = ''|
+ctools_modal_form_wrapper||$form_id, &$form_state|
+ctools_modal_form_render||$form_state, $output|
+ctools_modal_render||$title, $output|
+ctools_context_handler_render||$task, $subtask, $contexts, $args|
+ctools_context_handler_get_render_handler||$task, $subtask, $handlers, $contexts, $args|
+ctools_context_handler_default_test||$handler, $base_contexts, $args|
+ctools_context_handler_render_handler||$task, $subtask, $handler, $contexts, $args, $page = TRUE|
+= ctools_plugin_get_function||$plugin, 'breadcrumb'))|
+ctools_task_handler_default_contextual_link||$handler, $plugin, $contexts, $args|
+ctools_context_handler_pre_render||$handler, $contexts, $args|
+ctools_context_handler_select||$handler, $contexts|
+ctools_context_handler_summary||$task, $subtask, $handler|
+ctools_context_handler_get_task_contexts||$task, $subtask, $args|
+ctools_context_handler_get_handler_contexts||$contexts, $handler|
+ctools_context_handler_get_all_contexts||$task, $subtask, $handler|
+ctools_context_handler_get_handler_object||$handler|
+ctools_context_handler_get_task_object||$task, $subtask, $handler|
+ctools_context_handler_get_base_contexts||$task, $subtask, $placeholders = FALSE|
+= ctools_plugin_get_function||$task, 'get base contexts')|
+ctools_context_handler_get_task_arguments||$task, $subtask|
+= ctools_plugin_get_function||$task, 'get arguments')|
+ctools_context_handler_set_access_restrictions||$task, $subtask, $handler, &$contexts|
+= ctools_plugin_get_function||$task, 'access restrictions')|
+ctools_context_handler_edit_criteria||$form, &$form_state|
+ctools_context_handler_edit_criteria_submit||&$form, &$form_state|
+ctools_context_handler_edit_context||$form, &$form_state|
+ctools_context_handler_edit_context_submit||&$form, &$form_state|
+ctools_dropdown_theme||&$items|
+theme_ctools_dropdown||$vars|
+ctools_content_plugin_type||&$items|
+ctools_cache_get||$mechanism, $key|
+ctools_cache_set||$mechanism, $key, $object|
+ctools_cache_clear||$mechanism, $key|
+ctools_cache_operation||$mechanism, $key, $op, $object = NULL|
+ctools_cache_find_plugin||$mechanism|
+ctools_plugin_configure_form||$form_info, &$form_state|
+_ctools_plugin_configure_create_form_info||&$form_info, $plugin_definition, $op|
+ctools_plugins_default_form_wrapper||$form, &$form_state|
+ctools_plugins_default_form_wrapper_submit||&$form, &$form_state|
+ctools_passthrough||$module, $type, &$items|
+= $module . '_' . str_replace ||'-', '_', $tool|
+_ctools_registry_files_alter||&$files, $indexed_modules|
+ctools_content_theme||&$theme|
+= ctools_plugin_get_function||$plugin, 'hook theme')|
+ctools_stylizer_theme||&$theme|
+_ctools_uuid_generate_com|||
+_ctools_uuid_generate_pecl|||
+_ctools_uuid_generate_php|||
+uuid_is_valid||$uuid|
+ctools_action_links_theme||&$items|
+theme_ctools_menu_local_actions_wrapper||$variables|
+ctools_context_menu||&$items|
+ctools_plugin_api_info||$owner, $api, $minimum_version, $current_version|
+ctools_plugin_api_include||$owner, $api, $minimum_version, $current_version|
+ctools_plugin_api_get_hook||$owner, $api|
+ctools_get_plugins||$module, $type, $id = NULL|
+ctools_plugin_get_plugin_type_info||$flush = FALSE|
+ctools_get_plugins_reset|||
+ctools_plugin_load_includes||$info, $filename = NULL|
+ctools_plugin_get_directories||$info|
+_ctools_list_themes|||
+ctools_find_base_themes||$themes, $key, $used_keys = array()|
+ctools_plugin_load_hooks||$info|
+ctools_plugin_process||$info, $module, $identifier, $path, $file = NULL, $base = NULL|
+_ctools_process_data||$result, $plugin_type_info, $module, $path, $file|
+= ctools_plugin_get_function||$plugin_type_info, 'process')|
+ctools_plugin_process_info||$info, $module, $file|
+ctools_plugin_get_info||$module, $type|
+ctools_plugin_get_function||$plugin_definition, $function_name|
+ctools_plugin_load_function||$module, $type, $id, $function_name|
+ctools_plugin_get_class||$plugin_definition, $class_name|
+ctools_plugin_load_class||$module, $type, $id, $class_name|
+ctools_plugin_sort||$a, $b|
+ctools_menu_add_tab||$link = NULL|
+ctools_menu_sort||$a, $b|
+_ctools_menu_add_dynamic_items||&$data, &$router_item, &$root_path|
+ctools_content_process||&$plugin, $info|
+ctools_get_content_type||$content_type|
+ctools_get_content_types|||
+ctools_content_get_subtypes||$type|
+ctools_content_get_subtype||$type, $subtype_id|
+ctools_content_prepare_subtype||&$subtype, $plugin|
+ctools_content_render||$type, $subtype, $conf, $keywords = array(), $args = array(), $context = array(), $incoming_content = ''|
+ctools_content_editable||$type, $subtype, $conf|
+= ctools_plugin_get_function||$subtype, 'check editable')|
+ctools_content_admin_title||$type, $subtype, $conf, $context = NULL|
+= ctools_plugin_get_function||$plugin, 'admin title')|
+ctools_content_admin_icon||$subtype|
+ctools_content_get_defaults||$plugin, $subtype|
+ctools_content_admin_info||$type, $subtype, $conf, $context = NULL|
+= ctools_plugin_get_function||$plugin, 'admin info')|
+ctools_content_configure_form_defaults||$form, &$form_state|
+ctools_content_configure_form_defaults_submit||&$form, &$form_state|
+ctools_content_form||$op, $form_info, &$form_state, $plugin, $subtype_name, $subtype, &$conf, $step = NULL|
+_ctools_content_create_form_info||&$form_info, $info, $plugin, $subtype, $op|
+ctools_content_get_available_types||$contexts = NULL, $has_content = FALSE, $allowed_types = NULL, $default_types = NULL|
+ctools_content_get_all_types|||
+ctools_content_select_context||$plugin, $subtype, $conf, $contexts|
+ctools_get_addressable_content||$address, $type = 'content'|
+ctools_math_expr|||
+e||$expr|
+evaluate||$expr|
+vars|||
+funcs|||
+nfx||$expr|
+pfx||$tokens, $vars = array()|
+trigger||$msg|
+push||$val|
+pop|||
+last||$n=1|
+ctools_plugin_example_default_page_manager_pages|||
+ctools_plugin_example_context_create_relcontext||$empty, $data = NULL, $conf = FALSE|
+relcontext_settings_form||$conf, $external = FALSE|
+ctools_plugin_example_context_create_simplecontext||$empty, $data = NULL, $conf = FALSE|
+simplecontext_settings_form||$conf, $external = FALSE|
+simplecontext_convert_list|||
+simplecontext_convert||$context, $type|
+ctools_plugin_example_example_role_ctools_access_settings||&$form, &$form_state, $conf|
+ctools_plugin_example_example_role_ctools_access_settings_submit||&$form, &$form_state|
+ctools_plugin_example_example_role_ctools_access_check||$conf, $context|
+ctools_plugin_example_example_role_ctools_access_summary||$conf, $context|
+ctools_plugin_example_arg_length_ctools_access_settings||&$form, &$form_state, $conf|
+ctools_plugin_example_arg_length_ctools_access_check||$conf, $context|
+ctools_plugin_example_arg_length_ctools_access_summary||$conf, $context|
+simplecontext_arg_context||$arg = NULL, $conf = NULL, $empty = FALSE|
+ctools_relcontext_from_simplecontext_context||$context = NULL, $conf|
+ctools_relcontext_from_simplecontext_settings_form||$conf|
+no_context_content_type_render||$subtype, $conf, $args, $context|
+no_context_content_type_edit_form||$form, &$form_state|
+no_context_content_type_edit_form_submit||$form, &$form_state|
+relcontext_content_type_render||$subtype, $conf, $args, $context|
+relcontext_edit_form||$form, &$form_state|
+relcontext_edit_form_submit||$form, &$form_state|
+ctools_plugin_example_simplecontext_content_type_admin_title||$subtype, $conf, $context = NULL|
+ctools_plugin_example_simplecontext_content_type_admin_info||$subtype, $conf, $context = NULL|
+simplecontext_content_type_render||$subtype, $conf, $args, $context|
+simplecontext_content_type_edit_form||$form, &$form_state|
+simplecontext_content_type_edit_form_submit||$form, &$form_state|
+ctools_plugin_example_default_panel_pages|||
+ctools_plugin_example_menu|||
+ctools_plugin_example_ctools_plugin_directory||$module, $plugin|
+ctools_plugin_example_ctools_plugin_api||$module, $api|
+ctools_plugin_example_explanation_page|||
+hook_ctools_plugin_type|||
+hook_ctools_plugin_directory||$owner, $plugin_type|
+hook_ctools_plugin_pre_alter||&$plugin, &$info|
+hook_ctools_plugin_post_alter||&$plugin, &$info|
+hook_ctools_api_hook_alter||&$list|
+hook_ctools_math_expression_functions_alter||&$functions|
+hook_ctools_render_alter||&$info, &$page, &$context|
+hook_ctools_content_subtype_alter||$subtype, $plugin|
+hook_ctools_entity_context_alter||&$plugin, &$entity, $plugin_id|
+hook_ctools_entity_contexts_alter||&$plugins|
+hook_ctools_cleanstring_alter||&$settings|
+hook_ctools_cleanstring_CLEAN_ID_alter||&$settings|
+term_depth_term_depth_ctools_access_settings||$form, &$form_state, $conf|
+term_depth_term_depth_ctools_access_settings_submit||$form, $form_state|
+term_depth_term_depth_ctools_access_check||$conf, $context|
+term_depth_term_depth_ctools_access_summary||$conf, $context|
+_term_depth||$tid|
+term_depth_ctools_plugin_directory||$owner, $plugin|
+page_manager_list_page||$js = NULL|
+page_manager_get_pages||$tasks, &$pages, $task_id = NULL|
+page_manager_list_pages_form||$form, &$form_state|
+page_manager_list_pages_form_submit||&$form, &$form_state|
+page_manager_edit_page||$page|
+page_manager_edit_page_operation|||
+page_manager_get_operations||$page, $operations = NULL|
+page_manager_get_handler_operations||&$page|
+page_manager_get_operation||$operations, $trail|
+page_manager_get_operation_content||$js, &$page, $trail, $operations|
+_page_manager_get_operation_content||$js, &$page, $active, $operation, $titles = array(), $args = array()|
+page_manager_operation_wrapper||$form, &$form_state|
+page_manager_edit_page_finish||&$form_state|
+page_manager_edit_page_next||&$form_state|
+page_manager_edit_page_cancel||&$form_state|
+page_manager_render_operations||&$page, $operations, $active_trail, $attributes, $location, $parents = array()|
+page_manager_save_page_form||$form, &$form_state|
+page_manager_save_page_form_submit||&$form, &$form_state|
+page_manager_save_page_form_cancel||$form, &$form_state|
+page_manager_handler_add||$form, &$form_state|
+page_manager_handler_add_submit||&$form, &$form_state|
+page_manager_handler_add_finish||&$form_state|
+page_manager_handler_add_cancel||&$form_state|
+page_manager_handler_add_form||$form, $form_state, $features = array()|
+page_manager_handler_check_machine_name||$name, $element, $form_state|
+page_manager_handler_import||$form, &$form_state|
+page_manager_handler_import_validate||$form, &$form_state|
+page_manager_handler_import_submit||&$form, &$form_state|
+page_manager_handler_rearrange||$form, &$form_state|
+page_manager_handler_rearrange_submit||&$form, &$form_state|
+_page_manager_handler_sort||$a, $b|
+page_manager_handler_delete||$form, &$form_state|
+page_manager_handler_delete_submit||&$form, &$form_state|
+page_manager_handler_export||$form, &$form_state|
+page_manager_handler_clone||$form, &$form_state|
+page_manager_handler_clone_submit||&$form, &$form_state|
+page_manager_handler_enable||$form, &$form_state|
+page_manager_handler_enable_submit||&$form, &$form_state|
+page_manager_handler_disable||$form, &$form_state|
+page_manager_handler_summary||$form, &$form_state|
+page_manager_handler_disable_submit||&$form, &$form_state|
+page_manager_break_lock||$form, &$form_state|
+page_manager_break_lock_submit||&$form, &$form_state|
+page_manager_enable_form||$form, &$form_state|
+page_manager_enable_form_submit||&$form, &$form_state|
+= ctools_plugin_get_function||$page->subtask, 'enable callback')|
+page_manager_disable_form||$form, &$form_state|
+page_manager_disable_form_submit||&$form, &$form_state|
+= ctools_plugin_get_function||$page->subtask, 'enable callback')|
+page_manager_page_summary||$form, &$form_state|
+page_manager_enable_page||$disable, $js, $page|
+= ctools_plugin_get_function||$page->subtask, 'enable callback')|
+template_preprocess_page_manager_edit_page||&$vars|
+theme_page_manager_handler_rearrange||$vars|
+theme_page_manager_lock||$vars|
+theme_page_manager_changed||$vars|
+page_manager_permission|||
+page_manager_ctools_plugin_directory||$owner, $plugin_type|
+page_manager_ctools_plugin_type|||
+page_manager_menu|||
+= ctools_plugin_get_function||$task, 'hook menu')|
+= ctools_plugin_get_function||$task, 'hook menu')|
+page_manager_admin_paths|||
+page_manager_menu_alter||&$items|
+= ctools_plugin_get_function||$task, 'hook menu alter')|
+= ctools_plugin_get_function||$subtask, 'hook menu alter')|
+page_manager_theme|||
+= ctools_plugin_get_function||$task, 'hook theme')|
+page_manager_get_page_cache||$task_name|
+page_manager_set_page_cache||$page|
+page_manager_clear_page_cache||$name|
+page_manager_save_page_cache||$cache|
+= ctools_plugin_get_function||$cache->task, 'save subtask callback')|
+page_manager_cache_load||$task_name|
+page_manager_handler_get_name||$task_name, $handlers, $handler|
+page_manager_handler_add_to_page||&$page, &$handler, $title = NULL|
+page_manager_load_task_handler||$task, $subtask_id, $name|
+page_manager_load_task_handlers||$task, $subtask_id = NULL, $default_handlers = NULL|
+page_manager_get_default_task_handlers||$task, $subtask_id|
+page_manager_compare_task_handlers||$result, $handlers, $name|
+page_manager_load_sorted_handlers||$task, $subtask_id = NULL, $enabled = FALSE|
+page_manager_sort_task_handlers||$a, $b|
+page_manager_save_task_handler||&$handler|
+= ctools_plugin_load_function||'page_manager', 'task_handlers', $handler->handler, 'save')|
+page_manager_delete_task_handler||$handler|
+= ctools_plugin_load_function||'page_manager', 'task_handlers', $handler->handler, 'delete')|
+page_manager_export_task_handler||$handler, $indent = ''|
+= ctools_plugin_load_function||'page_manager', 'task_handlers', $handler->handler, 'export')|
+page_manager_export_task_handler_load||$name|
+page_manager_new_task_handler||$plugin|
+page_manager_update_task_handler_weight||$handler, $weight|
+page_manager_get_tasks|||
+page_manager_get_task||$id|
+page_manager_get_tasks_by_type||$type|
+page_manager_get_task_subtasks||$task|
+= ctools_plugin_get_function||$task, 'subtasks callback')|
+page_manager_get_task_subtask||$task, $subtask_id|
+= ctools_plugin_get_function||$task, 'subtask callback')|
+page_manager_get_task_handlers|||
+page_manager_get_task_handler||$id|
+page_manager_get_task_handler_plugins||$task, $all = FALSE|
+page_manager_get_handler_title||$plugin, $handler, $task, $subtask_id|
+page_manager_get_handler_summary||$plugin, $handler, $page, $title = TRUE|
+= ctools_plugin_get_function||$plugin, 'admin summary')|
+page_manager_get_page_summary||$task, $subtask|
+= ctools_plugin_get_function||$subtask, 'admin summary')|
+page_manager_get_task_id||$task_name|
+page_manager_make_task_name||$task_id, $subtask_id|
+page_manager_get_renderer||$handler|
+pm_arg_load||$value, $subtask, $argument|
+pm_arg_tail_load||$value, $subtask, $argument, $map|
+pm_uid_arg_load||$value, $subtask, $argument|
+pm_uid_arg_to_arg||$arg|
+page_manager_page_ctools_access_get||$argument|
+page_manager_page_ctools_access_set||$argument, $access|
+page_manager_task_handler_ctools_access_get||$argument|
+page_manager_task_handler_ctools_access_set||$argument, $access|
+page_manager_edit_url||$task_name, $trail = array()|
+page_manager_menu_link_alter||&$item|
+page_manager_page_manager_handlers_list|||
+page_manager_page_manager_pages_to_hook_code||$names = array(), $name = 'foo'|
+" . $name . "_{$export['default hook']}|||
+page_manager_get_current_page||$page = NULL|
+page_manager_panels_dashboard_blocks||&$vars|
+page_manager_addressable_content||$address, $type|
+&& !$function||$task, $subtask_name, $contexts)|
+hook_page_manager_operations_alter||&$result, &$page|
+hook_page_manager_variant_operations_alter||&$operations, &$handler|
+page_manager_cache_page_manager_context_cache_get||$data, $key|
+page_manager_cache_page_manager_context_cache_set||$data, $key, $object|
+page_manager_cache_page_manager_context_cache_finalize||$data, $key, $object|
+page_manager_http_response_codes|||
+page_manager_http_response_admin_summary||$handler, $task, $subtask, $page, $show_title = TRUE|
+page_manager_http_response_title||$handler, $task, $subtask|
+page_manager_http_response_edit_settings||$form, &$form_state|
+page_manager_http_response_edit_settings_submit||$form, &$form_state|
+page_manager_http_response_render||$handler, $base_contexts, $args, $test = TRUE|
+page_manager_poll_page_manager_tasks|||
+page_manager_poll_menu_alter||&$items, $task|
+page_manager_poll|||
+page_manager_poll_enable||$cache, $status|
+page_manager_poll_access_check||$task, $subtask_id, $contexts|
+page_manager_comment_reply_page_manager_tasks|||
+page_manager_comment_reply_enable||$cache, $status|
+page_manager_comment_reply_get_arguments||$task, $subtask_id|
+page_manager_comment_reply_get_contexts||$task, $subtask_id|
+page_manager_comment_reply_menu_alter||&$items, $task|
+page_manager_comment_reply_access_check||$task, $subtask_id, $contexts|
+page_manager_contact_user_page_manager_tasks|||
+page_manager_contact_user_menu_alter||&$items, $task|
+page_manager_contact_user||$form_id, $account|
+page_manager_contact_user_get_arguments||$task, $subtask_id|
+page_manager_contact_user_get_contexts||$task, $subtask_id|
+page_manager_contact_user_enable||$cache, $status|
+page_manager_blog_contact_user_access_check||$task, $subtask_id, $contexts|
+page_manager_blog_user_page_manager_tasks|||
+page_manager_blog_user_menu_alter||&$items, $task|
+page_manager_blog_user||$account|
+page_manager_blog_user_get_arguments||$task, $subtask_id|
+page_manager_blog_user_get_contexts||$task, $subtask_id|
+page_manager_blog_user_enable||$cache, $status|
+page_manager_blog_user_access_check||$task, $subtask_id, $contexts|
+page_manager_node_view_page_manager_tasks|||
+page_manager_node_view_menu_alter||&$items, $task|
+page_manager_node_view_page||$node|
+page_manager_node_view_get_arguments||$task, $subtask_id|
+page_manager_node_view_get_contexts||$task, $subtask_id|
+page_manager_node_view_enable||$cache, $status|
+page_manager_node_view_access_check||$task, $subtask_id, $contexts|
+page_manager_user_edit_page_manager_tasks|||
+page_manager_user_edit_menu_alter||&$items, $task|
+page_manager_user_edit_page||$account, $category = 'account'|
+page_manager_user_edit_get_arguments||$task, $subtask_id|
+page_manager_user_edit_get_contexts||$task, $subtask_id|
+page_manager_user_edit_enable||$cache, $status|
+page_manager_user_edit_access_check||$task, $subtask_id, $contexts|
+page_manager_search_page_manager_tasks|||
+page_manager_search_menu_alter||&$items, $task|
+page_manager_search_page||$type|
+page_manager_search_get_arguments||$task, $subtask_id|
+page_manager_search_get_contexts||$task, $subtask_id|
+page_manager_search_enable||$cache, $status|
+page_manager_search_subtasks||$task|
+page_manager_search_subtask||$task, $subtask_id|
+page_manager_search_build_subtask||$task, $module|
+page_manager_search_access_check||$task, $subtask_id, $contexts|
+page_manager_contact_site_page_manager_tasks|||
+page_manager_contact_site_menu_alter||&$items, $task|
+page_manager_contact_site|||
+page_manager_contact_site_enable||$cache, $status|
+page_manager_contact_access_check||$task, $subtask_id, $contexts|
+page_manager_node_edit_page_manager_tasks|||
+page_manager_node_edit_menu_alter||&$items, $task|
+page_manager_node_edit||$node|
+page_manager_node_add||$type|
+page_manager_node_edit_get_arguments||$task, $subtask_id|
+page_manager_node_edit_get_contexts||$task, $subtask_id|
+page_manager_node_edit_enable||$cache, $status|
+page_manager_node_edit_access_check||$task, $subtask_id, $contexts|
+page_manager_page_page_manager_tasks|||
+page_manager_page_subtasks||$task|
+page_manager_page_subtask||$task, $subtask_id|
+page_manager_page_save_subtask||$subtask|
+page_manager_page_build_subtask||$task, $page|
+page_manager_page_theme||&$items, $task|
+page_manager_page_execute||$subtask_id|
+= ctools_plugin_get_function||$task, 'page callback')|
+page_manager_page_get_arguments||$task, $subtask|
+_page_manager_page_get_arguments||$page|
+page_manager_page_get_contexts||$task, $subtask|
+page_manager_page_access_restrictions||$task, $subtask, $contexts|
+page_manager_page_new|||
+page_manager_page_load||$name|
+page_manager_page_load_all||$task = NULL|
+page_manager_page_save||&$page|
+= ctools_plugin_get_function||$task, 'save')|
+page_manager_page_delete||$page|
+= ctools_plugin_get_function||$task, 'delete')|
+page_manager_page_export||$page, $with_handlers = FALSE, $indent = ''|
+= ctools_plugin_get_function||$task, 'export')|
+page_manager_page_get_named_arguments||$path|
+_pm_arg_load||$value, $subtask, $argument|
+page_manager_page_admin_summary||$task, $subtask|
+page_manager_page_enable||&$cache, $status|
+page_manager_page_recalculate_arguments||&$page|
+page_manager_page_new_page_cache||&$page, &$cache|
+page_manager_page_access_check||$task, $subtask_id, $contexts|
+page_manager_blog_page_manager_tasks|||
+page_manager_blog_menu_alter||&$items, $task|
+page_manager_blog|||
+page_manager_blog_enable||$cache, $status|
+page_manager_blog_access_check||$task, $subtask_id, $contexts|
+page_manager_user_view_page_manager_tasks|||
+page_manager_user_view_menu_alter||&$items, $task|
+page_manager_user_view_page||$account|
+page_manager_user_view_get_arguments||$task, $subtask_id|
+page_manager_user_view_get_contexts||$task, $subtask_id|
+page_manager_user_view_enable||$cache, $status|
+page_manager_user_view_access_check||$task, $subtask_id, $contexts|
+page_manager_term_view_page_manager_tasks|||
+page_manager_term_view_menu_alter||&$items, $task|
+page_manager_term_view_page||$term, $depth = NULL|
+page_manager_term_view_get_arguments||$task, $subtask_id|
+page_manager_term_view_get_contexts||$task, $subtask_id|
+page_manager_term_view_settings||$form, &$form_state|
+page_manager_term_view_settings_submit||&$form, &$form_state|
+page_manager_term_view_save||$subtask, $cache|
+page_manager_term_view_admin_settings||$form, $settings = array()|
+page_manager_term_view_enable||$cache, $status|
+page_manager_term_view_get_type|||
+page_manager_term_view_admin_summary||$task, $subtask|
+page_manager_term_view_access_check||$task, $subtask_id, $contexts|
+page_manager_page_menu||&$items, $task|
+page_manager_page_menu_item||$task, $menu, $access_arguments, $page_arguments, $load_arguments|
+page_manager_page_add_subtask||$task_name = NULL, $step = NULL|
+page_manager_page_add_subtask_finish||&$form_state|
+page_manager_page_add_subtask_next||&$form_state|
+page_manager_page_add_subtask_cancel||&$form_state|
+page_manager_page_form_basic||$form, &$form_state|
+page_manager_page_form_basic_validate_filter||$value|
+page_manager_page_form_basic_validate||&$form, &$form_state|
+page_manager_page_form_basic_submit||&$form, &$form_state|
+page_manager_page_form_menu||$form, &$form_state|
+page_manager_page_form_menu_validate||&$form, &$form_state|
+page_manager_page_form_menu_submit||&$form, &$form_state|
+page_manager_page_form_access||$form, &$form_state|
+page_manager_page_form_access_submit||&$form, &$form_state|
+page_manager_page_form_argument||$form, &$form_state|
+theme_page_manager_page_form_argument_table||$vars|
+page_manager_page_subtask_argument_ajax||$step = NULL, $task_name = NULL, $keyword = NULL|
+page_manager_page_argument_finish||&$form_state|
+page_manager_page_argument_next||&$form_state|
+page_manager_page_argument_cancel||&$form_state|
+page_manager_page_argument_form_change||$form, &$form_state|
+page_manager_page_argument_form_change_submit||&$form, &$form_state|
+page_manager_page_argument_form_settings||$form, &$form_state|
+= ctools_plugin_get_function||$plugin, 'settings form')|
+page_manager_page_argument_form_settings_validate||&$form, &$form_state|
+= ctools_plugin_get_function||$form_state['plugin'], 'settings form validate')|
+page_manager_page_argument_form_settings_submit||&$form, &$form_state|
+= ctools_plugin_get_function||$form_state['plugin'], 'settings form submit')|
+page_manager_page_import_subtask||$form, &$form_state, $task_name|
+page_manager_page_import_subtask_validate||&$form, &$form_state|
+page_manager_page_import_subtask_submit||$form, &$form_state|
+page_manager_page_form_export||$form, &$form_state|
+page_manager_page_form_clone||$form, &$form_state|
+page_manager_page_form_clone_validate||&$form, &$form_state|
+page_manager_page_form_clone_submit||&$form, &$form_state|
+page_manager_page_form_delete||$form, &$form_state|
+page_manager_page_form_delete_submit||&$form, &$form_state|
+MODULENAME_requirements||$phase|
+ctools_api_version||$minimum, $maximum = NULL|
+ctools_include||$file, $module = 'ctools', $dir = 'includes'|
+ctools_form_include||&$form_state, $file, $module = 'ctools', $dir = 'includes'|
+ctools_form_include_file||&$form_state, $filename|
+ctools_image_path||$image, $module = 'ctools', $dir = 'images'|
+ctools_add_css||$file, $module = 'ctools', $dir = 'css'|
+ctools_attach_css||$file, $module = 'ctools', $dir = 'css'|
+ctools_add_js||$file, $module = 'ctools', $dir = 'js'|
+ctools_attach_js||$file, $module = 'ctools', $dir = 'js'|
+ctools_get_roles|||
+ctools_break_phrase||$str|
+ctools_set_page_token||$token = NULL, $type = NULL, $argument = NULL|
+ctools_set_variable_token||$token|
+ctools_set_callback_token||$token, $callback|
+ctools_set_no_blocks||$blocks = FALSE|
+ctools_uuid_generate|||
+ctools_uuid_is_valid||$uuid = ''|
+ctools_class_add||$classes, $hook = 'html'|
+ctools_class_remove||$classes, $hook = 'html'|
+ctools_init|||
+ctools_shutdown_handler|||
+ctools_theme|||
+ctools_menu|||
+ctools_permission|||
+ctools_cron|||
+ctools_flush_caches|||
+ctools_element_info_alter||&$type|
+ctools_file_download||$filepath|
+ctools_registry_files_alter||&$files, $indexed_modules|
+ctools_ctools_plugin_directory||$owner, $plugin_type|
+ctools_ctools_plugin_type|||
+ctools_preprocess_node||&$vars|
+ctools_page_alter||&$page|
+ctools_page_token_processing||$children, $elements|
+ctools_process||&$variables, $hook|
+ctools_access_menu||$access|
+ctools_access_multiperm|||
+ctools_js_load||$js|
+ctools_js_to_arg||$arg|
+ctools_export_ui_load||$item_name, $plugin_name|
+ctools_export_ui_task_access||$plugin_name, $op, $item = NULL|
+ctools_export_ui_ctools_access_get||$argument|
+ctools_export_ui_ctools_access_set||$argument, $access|
+ctools_menu_local_tasks_alter||&$data, $router_item, $root_path|
+ctools_block_list_alter||&$blocks|
+ctools_modules_enabled||$modules|
+ctools_modules_disabled||$modules|
+ctools_ajax_theme_callback|||
+ctools_ctools_entity_context_alter||&$plugin, &$entity, $plugin_id|
