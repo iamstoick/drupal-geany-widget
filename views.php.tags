@@ -1,0 +1,2001 @@
+# format=pipe
+# Gerald Villorente of X-Team
+views_api_version|||
+views_forms||$form_id, $args|
+views_form_id||$view|
+views_api_minimum_version|||
+views_theme||$existing, $type, $theme, $path|
+_views_find_module_templates||$cache, $path|
+views_plugin_list|||
+views_preprocess_node||&$vars|
+views_preprocess_comment||&$vars|
+views_permission|||
+views_menu|||
+views_menu_alter||&$callbacks|
+views_arg_load||$value, $name, $display_id, $index|
+views_page||$name, $display_id|
+views_page_alter||&$page|
+views_preprocess_html||&$variables|
+views_preprocess_page||&$variables|
+views_contextual_links_view_alter||&$element, $items|
+views_block_info|||
+views_block_view||$delta|
+views_add_block_contextual_links||&$block, $view, $display_id, $block_type = 'block'|
+views_add_contextual_links||&$render_element, $location, $view, $display_id|
+views_language_list||$field = 'name', $all = FALSE|
+views_flush_caches|||
+views_field_create_instance||$instance|
+views_field_update_instance||$instance, $prior_instance|
+views_field_delete_instance||$instance|
+views_invalidate_cache|||
+views_import_access|||
+views_access|||
+views_check_perm||$perm, $account = NULL|
+views_check_roles||$rids, $account = NULL|
+&views_set_page_view||$view = NULL|
+&views_get_page_view|||
+&views_set_current_view||$view = NULL|
+&views_get_current_view|||
+views_include||$file|
+views_module_include||$api, $reset = FALSE|
+views_get_module_apis||$api = 'views', $reset = FALSE|
+views_add_css||$file|
+views_add_js||$file|
+views_include_handlers||$reset = FALSE|
+views_get_handler||$table, $field, $key, $override = NULL|
+views_fetch_data||$table = NULL, $move = TRUE, $reset = FALSE|
+views_fetch_plugin_data||$type = NULL, $plugin = NULL, $reset = FALSE|
+views_fetch_plugin_names||$type, $key = NULL, $base = array()|
+views_get_plugin||$type, $plugin, $reset = FALSE|
+views_get_localization_plugin|||
+views_get_all_templates|||
+views_new_view|||
+views_get_applicable_views||$type|
+views_get_all_views||$reset = FALSE|
+views_get_enabled_views|||
+views_get_disabled_views|||
+views_get_views_as_options||$views_only = FALSE, $filter = 'all', $exclude_view = NULL, $optgroup = FALSE, $sort = FALSE|
+views_view_is_enabled||$view|
+views_view_is_disabled||$view|
+views_get_view||$name, $reset = FALSE|
+views_move_table||$table|
+views_load_display_records||&$views|
+views_save_view||&$view|
+views_delete_view||&$view|
+views_export_view||&$view, $indent = ''|
+views_export_status||$view, $status|
+views_debug||$message, $placeholders = array()|
+vpr||$message, $placeholders = array()|
+vsm||$message|
+views_trace|||
+vsm_trace|||
+vpr_trace|||
+views_view_has_form_elements||$view|
+views_form||$form, &$form_state, $view, $output|
+views_form_views_form||$form, &$form_state, $view, $output|
+views_form_views_form_validate||$form, &$form_state|
+views_form_views_form_submit||$form, &$form_state|
+views_exposed_form||$form, &$form_state|
+views_form_views_exposed_form_alter||&$form, &$form_state|
+views_exposed_form_validate||&$form, &$form_state|
+views_exposed_form_submit||&$form, &$form_state|
+views_exposed_form_cache||$views_name, $display_name, $form_output = NULL|
+views_theme_functions||$hook, $view, $display = NULL|
+views_views_query_substitutions||$view|
+views_query_views_alter||QueryAlterableInterface $query|
+_views_query_tag_alter_condition||QueryAlterableInterface $query, &$conditions, $substitutions|
+views_embed_view||$name, $display_id = 'default'|
+views_get_view_result||$name, $display_id = NULL|
+views_var_export||$var, $prefix = '', $init = TRUE|
+views_clean_css_identifier||$identifier, $filter = array(' ' => '-', '/' => '-', '[' => '-', ']' => '')|
+views_views_exportables||$op = 'list', $views = NULL, $name = 'foo'|
+" . $name . "_views_default_views|||
+views_process_check_options||$element, &$form_state|
+views_trim_text||$alter, $value|
+views_array_key_plus||$array|
+views_ctools_plugin_api_hook_name|||
+views_views_api|||
+aggregator_views_api|||
+book_views_api|||
+comment_views_api|||
+field_views_api|||
+file_views_api|||
+filter_views_api|||
+image_views_api|||
+locale_views_api|||
+node_views_api|||
+poll_views_api|||
+profile_views_api|||
+search_views_api|||
+statistics_views_api|||
+system_views_api|||
+tracker_views_api|||
+taxonomy_views_api|||
+translation_views_api|||
+user_views_api|||
+contact_views_api|||
+access|||
+option_definition|||
+define_mapping|||
+filter_numeric_fields||&$fields|
+option_definition|||
+access||$account|
+get_access_callback|||
+option_definition|||
+access||$account|
+get_access_callback|||
+translate_string||$string, $keys = array(), $format = ''|
+export||$source|
+get_export_strings|||
+views_test_views_default_views|||
+views_test_permission|||
+views_test_views_api|||
+views_test_views_data|||
+views_test_views_plugins|||
+views_test_test_static_access_callback||$access|
+views_test_test_dynamic_access_callback||$access, $argument1, $argument2|
+views_test_views_pre_render||&$view|
+template_preprocess_views_view_mapping_test||&$variables|
+theme_views_view_mapping_test||$variables|
+views_drush_help||$section|
+views_drush_command|||
+views_revert_views|||
+views_revert_allviews||$views|
+views_revert_view||$view|
+views_development_settings|||
+drush_views_list|||
+drush_views_analyze|||
+drush_views_enable|||
+drush_views_disable|||
+_views_drush_changestatus||$viewnames = array(), $status = NULL|
+views_drush_cache_clear||&$types|
+_views_theme_functions||$hook, $view, $display = NULL|
+template_preprocess_views_view||&$vars|
+template_process_views_view||&$vars|
+template_preprocess_views_view_fields||&$vars|
+theme_views_view_grouping||$vars|
+template_preprocess_views_view_grouping||&$vars|
+theme_views_view_field||$vars|
+template_preprocess_views_view_field||&$vars|
+template_preprocess_views_view_summary||&$vars|
+template_preprocess_views_view_summary_unformatted||&$vars|
+template_preprocess_views_view_table||&$vars|
+template_preprocess_views_view_grid||&$vars|
+template_preprocess_views_view_unformatted||&$vars|
+template_preprocess_views_view_list||&$vars|
+template_preprocess_views_view_rss||&$vars|
+template_preprocess_views_view_row_rss||&$vars|
+template_preprocess_views_exposed_form||&$vars|
+theme_views_form_views_form||$variables|
+theme_views_mini_pager||$vars|
+theme_views_container||$variables|
+init||&$view, &$display, $options = NULL|
+destroy|||
+is_default_display|||
+uses_exposed|||
+displays_exposed|||
+use_ajax|||
+use_pager|||
+use_more|||
+use_group_by|||
+use_more_always|||
+use_more_text|||
+accept_attachments|||
+attach_to||$display_id|
+defaultable_sections||$section = NULL|
+option_definition|||
+has_path|||
+uses_link_display|||
+uses_exposed_form_in_block|||
+get_link_display|||
+get_path|||
+get_url|||
+uses_breadcrumb|||
+is_defaulted||$option|
+get_option||$option|
+uses_fields|||
+get_plugin||$type = 'style', $name = NULL|
+&get_handler||$type, $id|
+&get_handlers||$type|
+get_field_labels|||
+set_option||$option, $value|
+override_option||$option, $value|
+option_link||$text, $section, $class = '', $title = ''|
+get_arguments_tokens|||
+options_summary||&$categories, &$options|
+options_form||&$form, &$form_state|
+format_themes||$themes|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+options_override||$form, &$form_state|
+set_override||$section, $new_state = NULL|
+query|||
+render_filters|||
+render_pager|||
+render_more_link|||
+render_header|||
+render_footer|||
+render_empty|||
+hook_block_list||$delta = 0, $edit = array()|
+hook_menu|||
+render|||
+render_area||$area, $empty = FALSE|
+access||$account = NULL|
+pre_execute|||
+execute|||
+preview|||
+get_style_type|||
+validate|||
+is_identifier_unique||$id, $identifier|
+get_special_blocks|||
+view_special_blocks||$type|
+export_option||$indent, $prefix, $storage, $option, $definition, $parents|
+export_handler||$indent, $prefix, $storage, $option, $definition, $parents|
+export_style||$indent, $prefix, $storage, $option, $definition, $parents|
+export_plugin||$indent, $prefix, $storage, $option, $definition, $parents|
+unpack_style||$indent, $prefix, $storage, $option, $definition, $parents|
+unpack_plugin||&$translatable, $storage, $option, $definition, $parents|
+unpack_handler||&$translatable, $storage, $option, $definition, $parents|
+get_argument_text|||
+get_pager_text|||
+init||&$view, &$display|
+summary_title|||
+cache_expire||$type|
+cache_set_expire||$type|
+cache_set||$type|
+cache_get||$type|
+cache_flush|||
+post_render||&$output|
+cache_start|||
+gather_headers|||
+restore_headers|||
+get_results_key|||
+get_output_key|||
+get_cache_key||$key_data = array()|
+option_definition|||
+build_sort|||
+build_sort_post|||
+sanitize_columns||$columns, $fields = NULL|
+options_form||&$form, &$form_state|
+even_empty|||
+init||&$view, &$display, $options = array()|
+get_items_per_page|||
+set_items_per_page||$items|
+get_offset|||
+set_offset||$offset|
+get_current_page|||
+set_current_page||$number = NULL|
+get_total_items|||
+get_pager_id|||
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+summary_title|||
+use_pager|||
+use_count_query|||
+execute_count_query||&$count_query|
+update_page_info|||
+query|||
+pre_execute||&$query|
+post_execute||&$result|
+pre_render||&$result|
+render||$input|
+has_more_records|||
+exposed_form_alter||&$form, &$form_state|
+exposed_form_validate||&$form, &$form_state|
+exposed_form_submit||&$form, &$form_state, &$exclude|
+uses_exposed|||
+items_per_page_exposed|||
+offset_exposed|||
+summary_title|||
+option_definition|||
+options_form||&$form, &$form_state|
+validate|||
+render||$row|
+get_field||$index, $field_id|
+init||&$view, &$display|
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+summary_title|||
+access||$account|
+get_access_callback|||
+has_path|||
+uses_breadcrumb|||
+option_definition|||
+execute_hook_menu||$callbacks|
+execute|||
+options_summary||&$categories, &$options|
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+validate|||
+get_argument_text|||
+get_pager_text|||
+init||&$view, &$display, $options = NULL|
+destroy|||
+uses_row_plugin|||
+uses_row_class|||
+uses_fields|||
+uses_tokens|||
+get_row_class||$row_index|
+tokenize_value||$value, $row_index|
+even_empty|||
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+build_sort|||
+build_sort_post|||
+pre_render||$result|
+render|||
+render_grouping_sets||$sets, $level = 0|
+render_grouping||$records, $groupings = array(), $group_rendered = NULL|
+render_fields||$result|
+get_field||$index, $field|
+get_field_value||$index, $field|
+validate|||
+query|||
+init||&$view|
+translate||$source|
+translate_string||$string, $keys = array(), $format = ''|
+save||$source|
+save_string||$string, $keys = array(), $format = ''|
+delete||$source|
+export||$source|
+export_render||$indent = '  '|
+invoke_translation_process||&$value, $op|
+process_locale_strings||$op|
+option_definition|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+exposed_filter_applied|||
+pre_render||$values|
+query|||
+option_definition|||
+options_form||&$form, &$form_state|
+access|||
+convert_options||&$options|
+validate_argument||$argument|
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+summary_title|||
+get_lifespan||$type|
+cache_expire||$type|
+cache_set_expire||$type|
+option_definition|||
+options_form||&$form, &$form_state|
+convert_options||&$options|
+access|||
+get_argument|||
+options||&$options|
+options_form||&$form, &$form_state|
+init||&$view, &$display|
+options_definition_alter||&$options|
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+pre_execute|||
+query|||
+options_summary||&$categories, &$options|
+defaultable_sections||&$sections, $section = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+init||$base_table = 'node', $base_field = 'nid', $options|
+set_distinct||$value = TRUE, $pure_distinct = FALSE|
+set_count_field||$table, $field, $alias = NULL|
+set_header||$header|
+option_definition|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+add_relationship||$alias, $join, $base, $link_point = NULL|
+add_table||$table, $relationship = NULL, $join = NULL, $alias = NULL|
+to Views and add_table|||
+queue_table||$table, $relationship = NULL, $join = NULL, $alias = NULL|
+mark_table||$table, $relationship, $alias|
+ensure_table||$table, $relationship = NULL, $join = NULL|
+ensure_path||$table, $relationship = NULL, $join = NULL, $traced = array(), $add = array()|
+adjust_join||$join, $relationship|
+get_join_data||$table, $base_table|
+get_table_info||$table|
+add_field||$table, $field, $alias = '', $params = array()|
+clear_fields|||
+add_where||$group, $field, $value = NULL, $operator = NULL|
+add_where_expression||$group, $snippet, $args = array()|
+add_having||$group, $field, $value = NULL, $operator = NULL|
+add_having_expression||$group, $snippet, $args = array()|
+add_orderby||$table, $field = NULL, $order = 'ASC', $alias = '', $params = array()|
+add_groupby||$clause|
+get_field_alias||$table_alias, $field|
+add_tag||$tag|
+placeholder||$base = 'views'|
+build_condition||$where = 'where'|
+compile_fields||$fields_array, $query|
+query||$get_count = FALSE|
+get_where_args|||
+alter||&$view|
+build||&$view|
+execute||&$view|
+add_signature||&$view|
+get_aggregation_info|||
+get_result_entities||$results, $relationship = NULL|
+views_query_default_aggregation_method_simple||$group_type, $field|
+views_query_default_aggregation_method_distinct||$group_type, $field|
+views_element_validate_tags||$element, &$form_state|
+init||&$view, &$argument, $options|
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state, &$options = array()|
+convert_options||&$options|
+access|||
+check_access||&$form, $option_name|
+validate_argument||$arg|
+process_summary_arguments||&$args|
+access||$account|
+get_access_callback|||
+summary_title|||
+option_definition|||
+options_form||&$form, &$form_state|
+option_definition|||
+query|||
+options_form||&$form, &$form_state|
+render|||
+init||&$view, &$display, $options = array()|
+summary_title|||
+option_definition|||
+options_form||&$form, &$form_state|
+use_pager|||
+use_count_query|||
+get_items_per_page|||
+execute_count_query||&$count_query|
+post_execute||&$result|
+query|||
+get_argument|||
+init||&$view, &$argument, $options|
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state, &$options = array()|
+access|||
+check_access||&$form, $option_name|
+convert_options||&$options|
+option_definition|||
+options_form||&$form, &$form_state|
+get_argument|||
+init||$plugin|
+hook_menu||&$items|
+load_item||$item_name|
+list_form||&$form, &$form_state|
+list_filter||$form_state, $view|
+list_sort_options|||
+list_build_row||$view, &$form_state, $operations|
+list_render||&$form_state|
+tablesort_link||$label, $field, $class|
+clone_page||$js, $input, $item, $step = NULL|
+add_template_page||$js, $input, $name, $step = NULL|
+set_item_state||$state, $js, $input, $item|
+list_page||$js, $input|
+views_ui_clone_form||$form, &$form_state|
+option_definition|||
+options_form||&$form, &$form_state|
+get_argument|||
+convert_options||&$options|
+translate_string||$string, $keys = array(), $format = ''|
+save_string||$string, $keys = array(), $format = ''|
+delete||$source|
+export||$source|
+export_render||$indent = '  '|
+option_definition|||
+options_form||&$form, &$form_state|
+render|||
+option_definition |||
+execute|||
+attachment_positions||$position = NULL|
+options_summary||&$categories, &$options|
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+attach_to||$display_id|
+uses_exposed|||
+displays_exposed|||
+use_pager|||
+render_pager|||
+init||&$view, &$display, $options = NULL|
+uses_fields|||
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+query|||
+pre_render||$result|
+render||$row|
+validate_argument||$argument|
+is_default_display|||
+execute|||
+cache_start|||
+summary_title|||
+cache_get||$type|
+cache_set||$type|
+option_definition|||
+query|||
+options_form||&$form, &$form_state|
+render|||
+row_style_options||$type|
+build_form_style||&$form, &$form_state, $type|
+page_display_options||$form, $form_state|
+block_display_options||$form, $form_state|
+display_options_row||&$display_options, $row_plugin, $row_options|
+default_display_options||$form, $form_state|
+__construct||$plugin|
+build_form||$form, &$form_state|
+build_form_style||&$form, &$form_state, $type|
+row_style_options||$type|
+build_filters||&$form, &$form_state|
+build_sorts||&$form, &$form_state|
+instantiate_view||$form, &$form_state|
+build_display_options||$form, $form_state|
+alter_display_options||&$display_options, $form, $form_state|
+add_displays||$view, $display_options, $form, $form_state|
+default_display_options||$form, $form_state|
+default_display_filters||$form, $form_state|
+default_display_filters_user||$form, $form_state|
+default_display_sorts||$form, $form_state|
+default_display_sorts_user||$form, $form_state|
+page_display_options||$form, $form_state|
+block_display_options||$form, $form_state|
+page_feed_display_options||$form, $form_state|
+set_default_options||$options, $display, $default_display|
+set_override_options||$options, $display, $default_display|
+retrieve_validated_view||$form, $form_state, $unset = TRUE|
+set_validated_view||$form, $form_state, $view|
+validate||$form, &$form_state|
+create_view||$form, &$form_state|
+default_display_options||$form, $form_state|
+default_display_options||$form, $form_state|
+row_style_options||$type|
+build_form_style||&$form, &$form_state, $type|
+default_display_options||$form, $form_state|
+page_display_options||$form, $form_state|
+block_display_options||$form, $form_state|
+display_options_row||&$display_options, $row_plugin, $row_options|
+default_display_options||$form, $form_state|
+row_style_options||$type|
+default_display_options||$form, $form_state|
+summary_title|||
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+query|||
+render||$input|
+set_current_page||$number = NULL|
+get_pager_total|||
+update_page_info|||
+uses_exposed|||
+items_per_page_exposed|||
+offset_exposed|||
+exposed_form_alter||&$form, &$form_state|
+exposed_form_validate||&$form, &$form_state|
+option_definition|||
+execute_hook_block_list||$delta = 0, $edit = array()|
+execute|||
+options_summary||&$categories, &$options|
+block_caching_modes|||
+get_cache_type|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+uses_exposed|||
+update_block_bid||$name, $old_delta, $delta|
+save_block_cache||$delta, $cache_setting|
+summary_title|||
+option_definition|||
+options_form||&$form, &$form_state|
+render||$input|
+option_definition|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+init||&$view, &$display, $options = NULL|
+uses_breadcrumb|||
+get_style_type|||
+execute|||
+preview|||
+render|||
+defaultable_sections||$section = NULL|
+option_definition|||
+options_summary||&$categories, &$options|
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+attach_to||$display_id|
+uses_link_display|||
+option_definition|||
+options_form||&$form, &$form_state|
+render|||
+render_set||$title, $records|
+summary_title|||
+option_definition|||
+options_form||&$form, &$form_state|
+use_pager|||
+use_count_query|||
+query|||
+access||$account|
+get_access_callback|||
+summary_title|||
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+option_definition|||
+options_form||&$form, &$form_state|
+translate||$source|
+save||$source|
+delete||$source|
+option_definition|||
+options_form||&$form, &$form_state|
+init||&$view, &$display, $options = array()|
+option_definition|||
+options_form||&$form, &$form_state|
+render_exposed_form||$block = FALSE|
+query|||
+pre_render||$values|
+post_render||&$output|
+pre_execute|||
+post_execute|||
+exposed_form_alter||&$form, &$form_state|
+exposed_form_validate||&$form, &$form_state|
+exposed_form_submit||&$form, &$form_state, &$exclude|
+reset_form||&$form, &$form_state|
+attach_to||$display_id, $path, $title|
+option_definition|||
+options_form||&$form, &$form_state|
+get_channel_elements|||
+get_description|||
+render|||
+init||$base_table, $base_field, $options|
+query||$get_count = FALSE|
+alter||&$view|
+build||&$view|
+execute||&$view|
+add_signature||&$view|
+get_aggregation_info|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+summary_title|||
+set_limit||$limit|
+set_offset||$offset|
+render_pager||$exposed_input|
+set_where_group||$type = 'AND', $group = NULL, $where = 'where'|
+set_group_operator||$type = 'AND'|
+get_result_entities||$results, $relationship = NULL|
+get_value_options|||
+hook_views_data|||
+hook_views_data_alter||&$data|
+hook_field_views_data||$field|
+hook_field_views_data_alter||&$result, $field, $module|
+hook_field_views_data_views_data_alter||&$data, $field|
+hook_views_plugins|||
+hook_views_plugins_alter||&$plugins|
+hook_views_api|||
+hook_views_default_views|||
+hook_views_default_views_alter||&$views|
+hook_views_query_substitutions||$view|
+hook_views_form_substitutions|||
+hook_views_pre_view||&$view, &$display_id, &$args|
+hook_views_pre_build||&$view|
+hook_views_post_build||&$view|
+hook_views_pre_execute||&$view|
+hook_views_post_execute||&$view|
+hook_views_pre_render||&$view|
+hook_views_post_render||&$view, &$output, &$cache|
+hook_views_query_alter||&$view, &$query|
+hook_views_preview_info_alter||&$rows, $view|
+hook_views_ui_display_top_links_alter||&$links, $view, $display_id|
+hook_views_ajax_data_alter||&$commands, $view|
+hook_views_invalidate_cache|||
+views_ui_menu|||
+views_ui_theme|||
+views_ui_custom_theme|||
+views_ui_edit_page_title||$view|
+views_ui_cache_load||$name|
+views_ui_cache_set||&$view|
+views_ui_default_load||$name|
+views_ui_preprocess_views_view||&$vars|
+template_preprocess_views_ui_view_preview_section||&$vars|
+theme_views_ui_view_preview_section||$vars|
+views_ui_view_preview_section_handler_links||$view, $type, $title = FALSE|
+views_ui_view_preview_section_display_category_links||$view, $type, $title|
+views_ui_view_preview_section_rows_links||$view|
+views_ui_ctools_plugin_directory||$module, $plugin|
+views_ui_get_wizard||$wizard_type|
+views_ui_get_wizards|||
+views_ui_views_wizard_defaults|||
+views_ui_ctools_plugin_type|||
+views_ui_get_form_wizard_instance||$wizard|
+views_ui_views_plugins_alter||&$plugins|
+views_ui_contextual_links_view_alter||&$element, $items|
+views_ui_contextual_links_suppress||$set = NULL|
+views_ui_contextual_links_suppress_push|||
+views_ui_contextual_links_suppress_pop|||
+views_ui_ajax_get_form||$form_id|
+_views_ui_get_paths||$view|
+_views_ui_get_displays_list||$view|
+views_ui_library_alter||&$libraries, $module|
+views_ui_truncate||$string, $length|
+views_analyze_view||&$view|
+views_analyze_format_result||$view, $messages|
+views_ui_analysis||$message, $type = 'error'|
+views_ui_views_analyze||$view|
+views_ui_get_admin_css|||
+views_ui_add_admin_css|||
+views_ui_check_advanced_help|||
+views_ui_preview||$view, $display_id, $args = array()|
+views_ui_add_page|||
+views_ui_add_form||$form, &$form_state|
+views_element_validate_integer||$element, &$form_state|
+views_ui_get_selected||$form_state, $parents, $default_value, $element|
+views_ui_add_ajax_trigger||&$wrapping_element, $trigger_key, $refresh_parents|
+views_ui_add_limited_validation||$element, &$form_state|
+views_ui_add_ajax_wrapper||$element, &$form_state|
+views_ui_ajax_update_form||$form, $form_state|
+views_ui_nojs_submit||$form, &$form_state|
+views_ui_wizard_form_validate||$form, &$form_state|
+views_ui_add_form_save_submit||$form, &$form_state|
+views_ui_add_form_store_edit_submit||$form, &$form_state|
+views_ui_add_form_cancel_submit||$form, &$form_state|
+views_ui_taxonomy_autocomplete_validate||$element, &$form_state|
+theme_views_ui_view_info||$variables|
+views_ui_break_lock_confirm||$form, &$form_state, $view|
+views_ui_break_lock_confirm_submit||&$form, &$form_state|
+views_ui_edit_page_display||$view, $display_id|
+views_ui_edit_page||$view, $display_id = NULL|
+views_ui_build_preview||$view, $display_id, $render = TRUE|
+views_ui_edit_form||$form, &$form_state, $view, $display_id = NULL|
+views_ui_preview_form||$form, &$form_state, $view, $display_id = 'default'|
+views_ui_render_display_top||$view, $display_id|
+views_ui_get_default_ajax_message|||
+views_ui_edit_form_submit_add_display||$form, &$form_state|
+views_ui_edit_form_submit_duplicate_display||$form, &$form_state|
+views_ui_edit_form_submit_delete_display||$form, &$form_state|
+views_ui_edit_form_submit_undo_delete_display||$form, &$form_state|
+views_ui_edit_form_submit_enable_display||$form, &$form_state|
+views_ui_edit_form_submit_disable_display||$form, &$form_state|
+views_ui_edit_form_submit_preview||$form, &$form_state|
+views_ui_edit_form_submit_delay_destination||$form, &$form_state|
+can be called from hook_menu_local_tasks_alter|||
+views_ui_edit_page_display_tabs||$view, $display_id = NULL|
+views_ui_show_default_display||$view|
+views_ui_get_display_tab||$view, $display_id|
+views_ui_get_display_tab_details||$view, $display|
+views_ui_edit_form_get_build_from_option||$id, $option, $view, $display|
+template_preprocess_views_ui_display_tab_setting||&$variables|
+template_preprocess_views_ui_display_tab_bucket||&$variables|
+template_preprocess_views_ui_display_tab_column||&$variables|
+views_ui_pre_render_add_fieldset_markup||$form|
+views_ui_pre_render_flatten_data||$form|
+views_ui_pre_render_move_argument_options||$form|
+views_ui_process_container_radios||$element|
+views_ui_import_page||$form, &$form_state|
+views_ui_import_validate||$form, &$form_state|
+views_ui_import_submit||$form, &$form_state|
+views_ui_edit_view_form_validate||$form, &$form_state|
+views_ui_edit_view_form_submit||$form, &$form_state|
+views_ui_edit_view_form_cancel||$form, &$form_state|
+views_ui_edit_view_form_delete||$form, &$form_state|
+views_ui_edit_form_get_bucket||$type, $view, $display|
+views_ui_regenerate_tab||&$view, &$output, $display_id|
+views_ui_add_microweights||&$build|
+views_ui_standard_form_buttons||&$form, &$form_state, $form_id, $name = NULL, $third = NULL, $submit = NULL|
+views_ui_standard_submit||$form, &$form_state|
+views_ui_standard_override_values||$form, $form_state|
+views_ui_standard_cancel||$form, &$form_state|
+views_ui_standard_display_dropdown||&$form, &$form_state, $section|
+views_ui_get_form_progress||$view|
+views_ui_ajax_forms||$key = NULL|
+views_ui_build_identifier||$key, $view, $display_id, $args|
+views_ui_build_form_state||$js, $key, &$view, $display_id, $args|
+views_ui_build_form_url||$form_state|
+views_ui_add_form_to_stack||$key, &$view, $display_id, $args, $top = FALSE, $rebuild_keys = FALSE|
+views_ui_ajax_form||$js, $key, $view, $display_id = ''|
+views_ui_remove_display_form_restore||$form, &$form_state|
+views_ui_analyze_view_form||$form, &$form_state|
+views_ui_analyze_view_form_submit||$form, &$form_state|
+views_ui_reorder_displays_form||$form, &$form_state|
+_views_position_sort||$display1, $display2|
+views_ui_reorder_displays_form_submit||$form, &$form_state|
+theme_views_ui_reorder_displays_form||$vars|
+views_ui_edit_details_form||$form, &$form_state|
+views_ui_edit_details_form_submit||$form, &$form_state|
+views_ui_edit_display_form||$form, &$form_state|
+views_ui_edit_display_form_validate||$form, &$form_state|
+views_ui_edit_display_form_submit||$form, &$form_state|
+views_ui_edit_display_form_override||$form, &$form_state|
+views_ui_config_type_form||$form, &$form_state|
+views_ui_config_type_form_submit||$form, &$form_state|
+views_ui_rearrange_form||$form, &$form_state|
+theme_views_ui_rearrange_form||$variables|
+theme_views_ui_expose_filter_form||$variables|
+theme_views_ui_build_group_filter_form||$variables|
+views_ui_rearrange_form_submit||$form, &$form_state|
+views_ui_rearrange_filter_form||$form, &$form_state|
+theme_views_ui_rearrange_filter_form||&$vars|
+views_ui_rearrange_filter_form_submit||$form, &$form_state|
+views_ui_add_item_form||$form, &$form_state|
+views_ui_add_item_form_submit||$form, &$form_state|
+views_ui_config_item_form_build_group||$form, &$form_state|
+views_ui_config_item_form_add_group||$form, &$form_state|
+views_ui_config_item_form||$form, &$form_state|
+views_ui_config_item_form_validate||$form, &$form_state|
+views_ui_config_item_form_submit_temporary||$form, &$form_state|
+views_ui_config_item_form_submit||$form, &$form_state|
+views_ui_config_item_group_form||$type, &$form_state|
+views_ui_config_item_group_form_submit||$form, &$form_state|
+views_ui_config_item_form_remove||$form, &$form_state|
+views_ui_config_item_form_expose||$form, &$form_state|
+views_ui_config_item_extra_form||$form, &$form_state|
+views_ui_config_item_extra_form_validate||$form, &$form_state|
+views_ui_config_item_extra_form_submit||$form, &$form_state|
+views_ui_config_style_form||$form, &$form_state|
+views_ui_config_style_form_submit||$form, &$form_state|
+views_ui_get_roles|||
+views_ui_admin_settings_basic|||
+views_ui_admin_settings_advanced|||
+views_ui_tools_clear_cache|||
+views_ui_config_item_form_rescan||$form, &$form_state|
+views_ui_edit_display_form_change_theme||$form, &$form_state|
+views_ui_autocomplete_tag||$string = ''|
+_views_weight_sort||$a, $b|
+views_fetch_base_tables|||
+_views_sort_types||$a, $b|
+views_fetch_fields||$base, $type, $grouping = FALSE|
+theme_views_ui_style_plugin_table||$variables|
+views_ui_get_display_label||$view, $display_id, $check_changed = TRUE|
+views_ui_add_template_page|||
+views_ui_form_button_was_clicked||$element, &$form_state|
+views_ui_default_button||$element, &$form_state, $form|
+views_ui_field_list|||
+views_ui_plugin_list|||
+option_definition|||
+construct|||
+options||&$options|
+set_default_options|||
+_set_option_defaults||&$storage, $options, $level = 0|
+unpack_options||&$storage, $options, $definition = NULL, $all = TRUE, $check = TRUE, $localization_keys = array()|
+set_definition||$definition|
+destroy|||
+export_options||$indent, $prefix|
+export_option||$indent, $prefix, $storage, $option, $definition, $parents|
+export_option_always||$indent, $prefix, $storage, $option, $definition, $parents|
+unpack_translatables||&$translatable, $parents = array()|
+unpack_translatable||&$translatable, $storage, $option, $definition, $parents, $keys = array()|
+_views_create_handler||$definition, $type = 'handler', $handler_type = NULL|
+_views_prepare_handler||$definition, $data, $field, $type|
+views_get_table_join||$table, $base_table|
+init||&$view, &$options|
+option_definition|||
+ui_name||$short = FALSE|
+get_field||$field = NULL|
+sanitize_value||$value, $type = NULL|
+case_transform||$string, $option|
+options_validate||&$form, &$form_state|
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+use_group_by|||
+groupby_form||&$form, &$form_state|
+groupby_form_submit||&$form, &$form_state|
+has_extra_options|||
+extra_options||&$option|
+extra_options_form||&$form, &$form_state|
+extra_options_validate||$form, &$form_state|
+extra_options_submit||$form, &$form_state|
+can_expose|||
+expose_options|||
+exposed_info|||
+exposed_form||&$form, &$form_state|
+exposed_validate||&$form, &$form_state|
+exposed_submit||&$form, &$form_state|
+expose_form||&$form, &$form_state|
+expose_validate||$form, &$form_state|
+expose_submit||$form, &$form_state|
+show_expose_button||&$form, &$form_state|
+show_expose_form||&$form, &$form_state|
+access|||
+pre_query|||
+post_execute||&$values|
+placeholder|||
+set_relationship|||
+ensure_my_table|||
+admin_summary|||
+needs_style_plugin|||
+is_exposed|||
+is_a_group|||
+multiple_exposed_input|||
+accept_exposed_input||$input|
+store_exposed_input||$input, $status|
+get_join|||
+validate|||
+broken|||
+views_many_to_one_helper||&$handler|
+option_definition||&$options|
+options_form||&$form, &$form_state|
+get_field|||
+add_table||$join = NULL, $alias = NULL|
+get_join|||
+summary_join|||
+ensure_my_table|||
+placeholder|||
+add_filter|||
+views_break_phrase_string||$str, &$handler = NULL|
+views_break_phrase||$str, &$handler = NULL|
+views_get_timezone|||
+views_date_sql_field||$field, $field_type = 'int', $set_offset = NULL|
+views_date_sql_format||$format, $field, $field_type = 'int', $set_offset = NULL|
+views_date_sql_extract||$extract_type, $field, $field_type = 'int', $set_offset = NULL|
+construct||$table = NULL, $left_table = NULL, $left_field = NULL, $field = NULL, $extra = array(), $type = 'LEFT'|
+build_join||$select_query, $table, $view_query|
+construct||$table = NULL, $left_table = NULL, $left_field = NULL, $field = NULL, $extra = array(), $type = 'LEFT'|
+build_join||$select_query, $table, $view_query|
+construct||$table = NULL, $left_table = NULL, $left_field = NULL, $field = NULL, $extra = array(), $type = 'LEFT'|
+build_join||$select_query, $table, $view_query|
+views_ajax|||
+views_ajax_command_set_form||$output, $title, $url = NULL|
+views_ajax_command_dismiss_form|||
+views_ajax_command_hilite||$selector|
+views_ajax_command_add_tab||$id, $title, $body|
+views_ajax_command_scroll_top||$selector|
+views_ajax_command_show_buttons||$changed|
+views_ajax_command_trigger_preview|||
+views_ajax_command_replace_title||$title|
+views_ajax_error||$message|
+views_ajax_form_wrapper||$form_id, &$form_state|
+views_ajax_autocomplete_user||$string = ''|
+views_ajax_autocomplete_taxonomy||$vid, $tags_typed = ''|
+_views_fetch_data||$table = NULL, $move = TRUE, $reset = FALSE|
+_views_fetch_data_build|||
+_views_data_process_entity_types||&$data|
+_views_fetch_plugin_data||$type = NULL, $plugin = NULL, $reset = FALSE|
+views_cache_set||$cid, $data, $use_language = FALSE|
+views_cache_get||$cid, $use_language = FALSE|
+__construct|||
+update|||
+display_objects|||
+db_objects|||
+set_arguments||$args|
+set_current_page||$page|
+get_current_page|||
+get_items_per_page|||
+set_items_per_page||$items_per_page|
+get_offset|||
+set_offset||$offset|
+use_pager|||
+set_use_ajax||$use_ajax|
+set_exposed_input||$filters|
+get_exposed_input|||
+init_display||$reset = FALSE|
+choose_display||$displays|
+set_display||$display_id = NULL|
+init_style|||
+fix_missing_relationships|||
+init_handlers|||
+init_pager|||
+get_base_tables|||
+_pre_query|||
+_post_execute|||
+_init_handler||$key, $info|
+_build_arguments|||
+init_query|||
+build||$display_id = NULL|
+_build||$key|
+execute||$display_id = NULL|
+render||$display_id = NULL|
+render_field||$field, $row|
+execute_display||$display_id = NULL, $args = array()|
+preview||$display_id = NULL, $args = array()|
+pre_execute||$args = array()|
+post_execute|||
+attach_displays|||
+execute_hook_menu||$display_id = NULL, &$callbacks = array()|
+execute_hook_block_list||$display_id = NULL|
+access||$displays = NULL, $account = NULL|
+get_title|||
+set_title||$title|
+get_human_name|||
+build_title|||
+get_url||$args = NULL, $path = NULL|
+get_path|||
+get_breadcrumb||$set = FALSE|
+is_cacheable|||
+start_query_capture|||
+end_query_capture|||
+load_views|||
+save|||
+_save_rows||$key|
+delete||$clear = TRUE|
+export||$indent = ''|
+copy|||
+clone_view|||
+destroy|||
+validate|||
+init_localization|||
+is_translatable|||
+save_locale_strings|||
+delete_locale_strings|||
+export_locale_strings|||
+process_locale_strings||$op|
+init||$init = TRUE|
+save_row||$update = NULL|
+load_row||$data|
+export_row||$identifier = NULL, $indent = ''|
+add_display||$type = 'page', $title = NULL, $id = NULL|
+generate_display_id||$type|
+generate_item_id||$requested_id, $existing_items|
+&new_display||$type = 'page', $title = NULL, $id = NULL|
+add_item||$display_id, $type, $table, $field, $options = array(), $id = NULL|
+get_items||$type, $display_id = NULL|
+get_item||$display_id, $type, $id|
+set_item||$display_id, $type, $id, $item|
+set_item_option||$display_id, $type, $id, $option, $value|
+views_display||$init = TRUE|
+options||$type, $id, $title|
+views_object_types|||
+views_views_plugins|||
+views_discover_plugins|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+query|||
+theme_functions|||
+additional_theme_functions|||
+validate|||
+summary_title|||
+plugin_title|||
+views_get_enabled_display_extenders|||
+views_token_info|||
+views_tokens||$type, $tokens, array $data = array(), array $options = array()|
+init||&$view, &$options|
+option_definition|||
+admin_summary|||
+can_expose|||
+can_build_group|||
+is_a_group|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+show_operator_form||&$form, &$form_state|
+operator_form||&$form, &$form_state|
+operator_options|||
+operator_validate||$form, &$form_state|
+operator_submit||$form, &$form_state|
+show_value_form||&$form, &$form_state|
+value_form||&$form, &$form_state|
+value_validate||$form, &$form_state|
+value_submit||$form, &$form_state|
+show_build_group_form||&$form, &$form_state|
+show_build_group_button||&$form, &$form_state|
+show_expose_button||&$form, &$form_state|
+expose_form||&$form, &$form_state|
+expose_validate||$form, &$form_state|
+build_group_validate||$form, &$form_state|
+build_group_submit||$form, &$form_state|
+expose_options|||
+build_group_options|||
+group_form||&$form, &$form_state|
+exposed_form||&$form, &$form_state|
+build_group_form||&$form, &$form_state|
+exposed_translate||&$form, $type|
+prepare_filter_select_options||&$options|
+exposed_info|||
+convert_exposed_input||&$input, $selected_group_id = NULL|
+group_multiple_exposed_input||&$input|
+multiple_exposed_input|||
+store_group_input||$input, $status|
+accept_exposed_input||$input|
+store_exposed_input||$input, $status|
+query|||
+can_group|||
+ui_name||$short = FALSE|
+ensure_my_table|||
+query||$group_by = FALSE|
+options_form||&$form, &$form_state|
+broken|||
+_views_array_filter_zero||$var|
+init||&$view, &$options|
+query|||
+pre_render||&$values|
+get_value||$values, $field = NULL|
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+summary_query|||
+get_formula|||
+query||$group_by = FALSE|
+summary_argument||$data|
+get_sort_name|||
+title|||
+title_query|||
+summary_name||$data|
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+render||$values|
+option_definition|||
+render||$empty = FALSE|
+query|||
+construct|||
+allow_advanced_render|||
+init||&$view, &$options|
+query|||
+add_additional_fields||$fields = NULL|
+click_sort||$order|
+click_sortable|||
+label|||
+element_type||$none_supported = FALSE, $default_empty = FALSE, $inline = FALSE|
+element_label_type||$none_supported = FALSE, $default_empty = FALSE|
+element_wrapper_type||$none_supported = FALSE, $default_empty = FALSE|
+get_elements|||
+element_classes||$row_index = NULL|
+tokenize_value||$value, $row_index = NULL|
+element_label_classes||$row_index = NULL|
+element_wrapper_classes||$row_index = NULL|
+get_value||$values, $field = NULL|
+use_string_group_by|||
+option_definition|||
+options_submit||&$form, &$form_state|
+options_form||&$form, &$form_state|
+admin_summary|||
+pre_render||&$values|
+render||$values|
+advanced_render||$values|
+is_value_empty||$value, $empty_zero, $no_skip_empty = TRUE|
+render_text||$alter|
+render_altered||$alter, $tokens|
+render_trim_text||$alter, $value|
+render_as_link||$alter, $text, $tokens|
+get_render_tokens||$item|
+get_token_values_recursive||array $array, array $parent_keys = array()|
+add_self_tokens||&$tokens, $item|
+document_self_tokens||&$tokens|
+theme||$values|
+theme_functions|||
+ui_name||$short = FALSE|
+ui_name||$short = FALSE|
+ensure_my_table|||
+query||$group_by = FALSE|
+options_form||&$form, &$form_state|
+broken|||
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render||$values|
+option_definition|||
+options_form||&$form, &$form_state|
+default_actions||$which = NULL|
+validate_argument_basic||$arg|
+query||$group_by = FALSE|
+option_definition|||
+options_form||&$form, &$form_state|
+title|||
+title_query|||
+query||$group_by = FALSE|
+get_sort_name|||
+construct|||
+get_value_options|||
+expose_options|||
+expose_form||&$form, &$form_state|
+option_definition|||
+operators|||
+operator_options||$which = 'title'|
+operator_values||$values = 1|
+value_form||&$form, &$form_state|
+reduce_value_options||$input = NULL|
+accept_exposed_input||$input|
+value_submit||$form, &$form_state|
+admin_summary|||
+query|||
+op_simple|||
+op_empty|||
+validate|||
+query||$group_by = FALSE|
+ui_name||$short = FALSE|
+get_sort_name|||
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+query|||
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+views_handler_field_custom_pre_render_move_text||$form|
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+init||&$view, &$options|
+label|||
+option_definition|||
+admin_summary|||
+options_form||&$form, &$form_state|
+query|||
+render||$empty = FALSE|
+use_group_by|||
+ui_name||$short = FALSE|
+ensure_my_table|||
+query||$group_by = FALSE|
+render||$empty = FALSE|
+options_form||&$form, &$form_state|
+broken|||
+init||&$view, &$options|
+option_definition|||
+operators|||
+value_form||&$form, &$form_state|
+ensure_my_table|||
+op_helper|||
+can_expose|||
+option_definition|||
+fields_operator_options|||
+field_options|||
+options_form||&$form, &$form_state|
+query|||
+admin_summary|||
+get_value_options|||
+option_definition|||
+options_form||&$form, &$form_state|
+pre_render||&$values|
+render||$values|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_items||$items|
+get_items||$values|
+get_value||$values, $field = NULL, $raw = FALSE|
+allow_advanced_render|||
+option_definition|||
+operators|||
+operator_options||$which = 'title'|
+admin_summary|||
+operator_values||$values = 1|
+value_form||&$form, &$form_state|
+operator|||
+query|||
+op_equal||$field|
+op_contains||$field|
+op_word||$field|
+op_starts||$field|
+op_not_starts||$field|
+op_ends||$field|
+op_not_ends||$field|
+op_not||$field|
+op_shorter||$field|
+op_longer||$field|
+op_regex||$field|
+op_empty||$field|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$empty = FALSE|
+construct|||
+get_value_options|||
+option_definition|||
+operator_form||&$form, &$form_state|
+value_form||&$form, &$form_state|
+value_validate||$form, &$form_state|
+admin_summary|||
+expose_options|||
+query|||
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+render||$values|
+option_definition|||
+options_form||&$form, &$form_state|
+pre_render||&$values|
+render||$values|
+query|||
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+ensure_my_table|||
+query||$group_by = FALSE|
+title|||
+summary_query|||
+summary_argument||$data|
+title_query|||
+construct|||
+get_formula|||
+summary_query|||
+query||$group_by = FALSE|
+option_definition|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+render||$empty = FALSE|
+render_textarea||$value, $format|
+query|||
+op_between||$field|
+op_simple||$field|
+op_empty||$field|
+ui_name||$short = FALSE|
+can_group|||
+option_definition|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+render||$empty = FALSE|
+render_textarea_custom||$value|
+option_definition|||
+value_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+exposed_validate||&$form, &$form_state|
+validate_valid_time||&$form, $operator, $value|
+build_group_validate||$form, &$form_state|
+accept_exposed_input||$input|
+op_between||$field|
+op_simple||$field|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+operator_options|||
+value_form||&$form, &$form_state|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+query|||
+option_definition|||
+options_form||&$form, &$form_state|
+get_temporary_view|||
+options_form_submit||&$form, &$form_state|
+left_query||$options|
+alter_subquery_condition||QueryAlterableInterface $query, &$conditions|
+condition_namespace||$string|
+query|||
+construct|||
+render||$values|
+element_type||$none_supported = FALSE, $default_empty = FALSE, $inline = FALSE|
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+op_equal||$field|
+op_contains||$field|
+op_word||$field|
+op_starts||$field|
+op_not_starts||$field|
+op_ends||$field|
+op_not_ends||$field|
+op_not||$field|
+op_regex||$field|
+op_empty||$field|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$empty = FALSE|
+init||&$view, &$options|
+label|||
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+use_group_by|||
+ui_name||$short = FALSE|
+ensure_my_table|||
+query|||
+options_form||&$form, &$form_state|
+broken|||
+option_definition|||
+operators|||
+operator_options||$which = 'title'|
+operator_values||$values = 1|
+value_form||&$form, &$form_state|
+query|||
+op_between||$field|
+op_simple||$field|
+op_empty||$field|
+op_regex||$field|
+admin_summary|||
+accept_exposed_input||$input|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+option_definition|||
+init||&$view, &$options|
+options_form||&$form, &$form_state|
+render||$values|
+init||&$view, &$options|
+get_entity_type|||
+get_value_options|||
+query|||
+query|||
+options_form||&$form, &$form_state|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+construct|||
+init||&$view, &$options|
+set_breadcrumb||&$breadcrumb|
+uses_breadcrumb|||
+is_exception||$arg = NULL|
+exception_title|||
+needs_style_plugin|||
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+default_actions||$which = NULL|
+default_argument_form||&$form, &$form_state|
+default_summary_form||&$form, &$form_state|
+default_action||$info = NULL|
+validate_fail|||
+default_ignore|||
+default_not_found|||
+default_access_denied|||
+default_empty|||
+default_default|||
+has_default_argument|||
+get_default_argument|||
+process_summary_arguments||&$args|
+default_summary|||
+summary_query|||
+summary_name_field|||
+summary_basics||$count_field = TRUE|
+summary_sort||$order, $by = NULL|
+summary_argument||$data|
+summary_name||$data|
+query||$group_by = FALSE|
+title|||
+get_title|||
+validate_arg||$arg|
+validate_argument||$arg|
+validate_argument_basic||$arg|
+set_argument||$arg|
+get_value|||
+export_summary||$indent, $prefix, $storage, $option, $definition, $parents|
+export_validation||$indent, $prefix, $storage, $option, $definition, $parents|
+export_plugin||$indent, $prefix, $storage, $option, $definition, $parents|
+get_plugin||$type = 'argument default', $name = NULL|
+get_sort_name|||
+ui_name||$short = FALSE|
+ensure_my_table|||
+query||$group_by = FALSE|
+options_form||&$form, &$form_state|
+broken|||
+default_argument_form||&$form, &$form_state|
+get_default_argument||$raw = FALSE|
+export_plugin||$indent, $prefix, $storage, $option, $definition, $parents|
+get_sort_name|||
+init||&$view, &$options|
+query|||
+ui_name||$short = FALSE|
+can_expose|||
+query|||
+option_definition|||
+admin_summary|||
+options_form||&$form, &$form_state|
+show_expose_button||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+show_sort_form||&$form, &$form_state|
+sort_validate||&$form, &$form_state|
+sort_submit||&$form, &$form_state|
+sort_options|||
+expose_form||&$form, &$form_state|
+expose_options|||
+ui_name||$short = FALSE|
+ensure_my_table|||
+query||$group_by = FALSE|
+options_form||&$form, &$form_state|
+broken|||
+query||$group_by = FALSE|
+query|||
+query|||
+filter_views_data|||
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+render||$values|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+get_value_options|||
+render||$values|
+get_value_options|||
+title_query|||
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+summary_name||$data|
+_field_view_formatter_options||$field_type = NULL|
+init||&$view, &$options|
+access|||
+get_base_table|||
+query||$use_groupby = FALSE|
+add_field_table||$use_groupby|
+click_sortable|||
+click_sort||$order|
+option_definition|||
+options_form||&$form, &$form_state|
+multiple_options_form||&$form, &$form_state|
+groupby_form||&$form, &$form_state|
+groupby_form_submit||&$form, &$form_state|
+post_execute||&$values|
+render_items||$items|
+get_items||$values|
+get_value||$values, $field = NULL|
+set_items||$values, $row_id|
+render_item||$count, $item|
+document_self_tokens||&$tokens|
+add_self_tokens||&$tokens, $item|
+field_language||$entity_type, $entity|
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+summary_name||$data|
+init||&$view, &$options|
+get_value_options|||
+get_value_options|||
+init||&$view, &$options|
+query|||
+comment_views_default_views|||
+file_field_views_data||$field|
+file_field_views_data_views_data_alter||&$data, $field|
+construct|||
+query|||
+render||$values|
+construct|||
+summary_name||$data|
+title|||
+locale_group||$group|
+construct|||
+summary_name||$data|
+title|||
+locale_language||$langcode|
+get_value_options|||
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+construct|||
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+access|||
+render||$values|
+render_link||$data, $values|
+get_value_options|||
+get_value_options|||
+get_value_options|||
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render||$values|
+field_views_data|||
+field_views_data_alter||&$data|
+field_views_field_label||$field_name|
+field_views_field_default_views_data||$field|
+list_field_views_data||$field|
+user_views_data|||
+user_views_plugins|||
+user_views_query_substitutions||$view|
+comment_views_data|||
+comment_views_data_alter||&$data|
+comment_views_plugins|||
+template_preprocess_views_view_row_comment||&$vars|
+construct|||
+query|||
+pre_render||&$values|
+render_item||$count, $item|
+document_self_tokens||&$tokens|
+add_self_tokens||&$tokens, $item|
+option_definition|||
+options_form||&$form, &$form_state|
+convert_options||&$options|
+get_argument|||
+get_argument|||
+title_query|||
+construct|||
+query|||
+get_value_options|||
+operators|||
+render_link||$data, $values|
+render||$values|
+construct|||
+element_type||$none_supported = FALSE, $default_empty = FALSE, $inline = FALSE|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+get_value_options|||
+construct|||
+option_definition|||
+options_form||&$form, &$form_state|
+access|||
+query|||
+render||$values|
+render_link||$data, $values|
+render_link||$data, $values|
+title_query|||
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+init||&$view, &$data|
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+render||$values|
+option_definition|||
+options_form||&$form, &$form_state|
+options_form_summary_options|||
+summary_title|||
+pre_render||$values|
+render||$row|
+construct|||
+query|||
+pre_render||&$values|
+render_item||$count, $item|
+document_self_tokens||&$tokens|
+add_self_tokens||&$tokens, $item|
+render_link||$data, $values|
+value_form||&$form, &$form_state|
+value_validate||$form, &$form_state|
+accept_exposed_input||$input|
+exposed_validate||&$form, &$form_state|
+validate_user_strings||&$form, $values|
+value_submit||$form, &$form_state|
+get_value_options|||
+admin_summary|||
+init||&$view, &$data|
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+option_definition|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state, &$options = array()|
+convert_options||&$options|
+validate_argument||$argument|
+process_summary_arguments||&$args|
+contact_views_data_alter||&$data|
+profile_views_data|||
+profile_views_get_fields|||
+profile_views_fetch_field||$field|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$row|
+title_query|||
+construct|||
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+render||$values|
+construct|||
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_link||$data, $values|
+title_query|||
+get_value_options|||
+title_query|||
+render||$values|
+book_views_data|||
+book_views_plugins|||
+taxonomy_views_data|||
+taxonomy_views_data_alter||&$data|
+taxonomy_field_views_data||$field|
+taxonomy_field_views_data_views_data_alter||&$data, $field|
+taxonomy_views_plugins|||
+views_taxonomy_set_breadcrumb||&$breadcrumb, &$argument|
+taxonomy_views_default_views|||
+get_value_options|||
+options_form||&$form, &$form_state|
+query||$group_by = FALSE|
+pre_query|||
+title|||
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+title|||
+option_definition|||
+options_form||&$form, &$form_state|
+set_breadcrumb||&$breadcrumb|
+default_actions||$which = NULL|
+query||$group_by = FALSE|
+title|||
+operator_options||$which = 'title'|
+option_definition|||
+extra_options_form||&$form, &$form_state|
+query|||
+init||&$view, &$argument, $options|
+option_definition|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state, &$options = array()|
+convert_options||&$options|
+validate_argument||$argument|
+process_summary_arguments||&$args|
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+pre_render||&$values|
+render_item||$count, $item|
+document_self_tokens||&$tokens|
+add_self_tokens||&$tokens, $item|
+construct|||
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+render||$values|
+option_definition|||
+options_form||&$form, &$form_state|
+set_breadcrumb||&$breadcrumb|
+title_query|||
+construct|||
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+render||$values|
+get_value_options|||
+init||&$view, &$argument, $options|
+option_definition|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state, &$options = array()|
+get_argument|||
+init||&$view, &$options|
+has_extra_options|||
+get_value_options|||
+option_definition|||
+extra_options_form||&$form, &$form_state|
+value_form||&$form, &$form_state|
+value_validate||$form, &$form_state|
+accept_exposed_input||$input|
+exposed_validate||&$form, &$form_state|
+validate_term_strings||&$form, $values|
+value_submit||$form, &$form_state|
+expose_form||&$form, &$form_state|
+admin_summary|||
+title|||
+system_views_data|||
+_views_file_status||$choice = NULL|
+image_field_views_data||$field|
+image_field_views_data_views_data_alter||&$data, $field|
+translation_views_data_alter||&$data|
+statistics_views_default_views|||
+views_views_data|||
+tracker_views_data|||
+tracker_views_data_alter||&$data|
+node_views_templates|||
+title_query|||
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+construct|||
+query|||
+render||$values|
+render_link||$data, $values|
+admin_summary|||
+operator_form||&$form, &$form_state|
+can_expose|||
+query|||
+admin_summary|||
+option_definition|||
+operator_form||&$form, &$form_state|
+can_expose|||
+query|||
+render_link||$data, $values|
+poll_views_data|||
+access|||
+render_link||$data, $values|
+title|||
+default_actions||$which = NULL|
+query||$group_by = FALSE|
+get_sort_name|||
+query|||
+query|||
+query|||
+option_definition|||
+render||$values|
+access|||
+render_link||$data, $values|
+summary_title|||
+option_definition|||
+options_form||&$form, &$form_state|
+options_form_summary_options|||
+pre_render||$result|
+option_definition|||
+options_form||&$form, &$form_state|
+pre_render||$result|
+options_form_summary_options|||
+render||$row|
+query|||
+render||$values|
+query|||
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+init||&$view, &$data|
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+render||$values|
+query|||
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+render||$values|
+query|||
+access|||
+render_link||$data, $values|
+init||&$view, &$options|
+construct|||
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+pre_render||&$values|
+render_link||$data, $values|
+render||$values|
+construct|||
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+render||$values|
+construct|||
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+render||$values|
+render_link||$data, $values|
+get_value_options|||
+construct|||
+render||$values|
+render||$values|
+node_views_data|||
+node_views_plugins|||
+node_row_node_view_preprocess_node||&$vars|
+node_views_query_substitutions|||
+node_views_analyze||$view|
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_link||$data, $values|
+search_views_default_views|||
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+query||$group_by = FALSE|
+render_link||$node, $values|
+construct|||
+summary_name||$data|
+title|||
+node_language||$langcode|
+query||$group_by = FALSE|
+title_query|||
+access|||
+render_link||$data, $values|
+admin_summary|||
+operator_form||&$form, &$form_state|
+can_expose|||
+query|||
+option_definition|||
+construct|||
+options_form||&$form, &$form_state|
+query|||
+render||$values|
+access|||
+render_link||$data, $values|
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+render||$values|
+expose_form||&$form, &$form_state|
+value_form||&$form, &$form_state|
+query|||
+admin_summary|||
+construct|||
+summary_name||$data|
+title|||
+node_type||$type|
+get_argument|||
+construct|||
+summary_name||$data|
+title|||
+construct|||
+construct|||
+summary_name||$data|
+title|||
+construct|||
+summary_name||$data|
+title|||
+summary_argument||$data|
+construct|||
+summary_name||$data|
+title|||
+summary_argument||$data|
+construct|||
+summary_name||$data|
+option_definition|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state, &$options = array()|
+convert_options||&$options|
+validate_argument||$argument|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_link||$node, $values|
+title_query|||
+construct|||
+access|||
+render_link||$data, $values|
+get_revision_entity||$values, $op|
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+render_link||$data, $values|
+render||$values|
+option_definition|||
+init||&$view, &$display, $options = NULL|
+options_form||&$form, &$form_state|
+options_form_summary_options|||
+summary_title|||
+pre_render||$values|
+render||$row|
+get_value_options|||
+init||&$view, &$display, $options = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+options_form_summary_options|||
+summary_title|||
+pre_render||$values|
+render||$row|
+admin_summary|||
+operator_form||&$form, &$form_state|
+can_expose|||
+query|||
+option_definition|||
+options_form||&$form, &$form_state|
+render_name||$data, $values|
+render||$values|
+render_link||$node, $values|
+locale_views_data|||
+locale_views_data_alter||&$data|
+pre_render||&$values|
+render_item||$count, $item|
+document_self_tokens||&$tokens|
+add_self_tokens||&$tokens, $item|
+get_value_options|||
+options_form||&$form, &$form_state|
+render||$values|
+search_views_data|||
+search_views_plugins|||
+template_preprocess_views_view_row_search||&$vars|
+node_views_default_views|||
+query_parse_search_expression||$input|
+query||$group_by = FALSE|
+query|||
+option_definition|||
+options_form||&$form, &$form_state|
+operator_form||&$form, &$form_state|
+value_form||&$form, &$form_state|
+exposed_validate||&$form, &$form_state|
+query_parse_search_expression||$input|
+query|||
+&conditions|||
+words|||
+simple|||
+matches|||
+publicParseSearchExpression|||
+condition_replace_string||$search, $replace, &$condition|
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+render||$values|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$row|
+aggregator_views_data|||
+aggregator_views_plugins|||
+statistics_views_data|||
+options_form||&$form, &$form_state|
+access|||
+render_link||$data, $values|
+get_argument|||
