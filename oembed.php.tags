@@ -1,0 +1,157 @@
+# format=pipe
+oembed_oembed_response_alter||&$response|
+oembed_provider_process||&$plugin, $info|
+_oembed_specificity_compare||$a, $b|
+oembed_scheme_to_regex||$scheme, $capture_subpatterns = FALSE|
+hook_oembed_request_alter||&$parameters, &$provider, $url|
+hook_oembed_response_alter||&$response|
+hook_oembedprovider_formats_alter||&$formats|
+oembed_settings|||
+oembed_test||$form, &$form_state|
+oembed_test_validate||$form, &$form_state|
+oembed_test_submit||$form, &$form_state|
+getTarget||$uri = NULL|
+getMimeType||$uri, $mapping = NULL|
+getExternalUrl|||
+realpath|||
+setUri||$uri|
+getUri|||
+stream_open||$uri, $mode, $options, &$opened_url|
+stream_lock||$operation|
+stream_read||$count|
+stream_write||$data|
+stream_eof|||
+stream_seek||$offset, $whence|
+stream_flush|||
+stream_tell|||
+stream_stat|||
+stream_close|||
+url_stat||$url, $flags|
+dir_opendir||$url, $options|
+dir_readdir|||
+dir_rewinddir|||
+dir_closedir|||
+getDirectoryPath|||
+unlink||$uri|
+rename||$from_uri, $to_uri|
+mkdir||$uri, $mode, $options|
+rmdir||$uri, $options|
+chmod||$mode|
+dirname||$uri = NULL|
+oembedprovider_embed_alb_callback||$plugin, $url, $matches, $parameters|
+oembedprovider_embed_essence_callback||$plugin, $url, $matches, $parameters|
+oembedprovider_embed_omlex_callback||$plugin, $url, $matches, $parameters|
+oembedprovider_embed_embed_callback||$plugin, $url, $matches, $parameters|
+oembedprovider_embed_embedly2_callback||$plugin, $url, $matches, $parameters|
+oembedprovider_embed_oembedprovider|||
+oembedprovider_embed_init|||
+oembedprovider_embed_ctools_plugin_directory||$module, $plugin|
+oembed_media_parse||$url, $options = array()|
+oembed_media_internet_providers|||
+claim||$embedCode|
+validate|||
+getFileObject|||
+getOEmbed|||
+oembed_filter_info|||
+oembed_filter_oembed_legacy_settings||$form, &$form_state, $filter, $format, $defaults, $filters|
+oembed_filter_oembed_legacy_process||$text, $filter, $format, $langcode, $cache, $cache_id|
+oembed_filter_oembed_settings||$form, &$form_state, $filter, $format, $defaults, $filters|
+oembed_filter_oembed_prepare||$text, $filter, $format, $langcode, $cache, $cache_id|
+oembed_filter_oembed_process||$text, $filter, $format, $langcode, $cache, $cache_id|
+oembed_filter_oembed_tips||$filter, $format, $long|
+oembed_preg_tag_replace||$match|
+oembed_preg_auto_replace||$match|
+oembed_resolve_link||$url, $view_mode = 'full', $options = array()|
+oembed_parse_attr||$text|
+_oembed_field_extract_urls||$entity_type, $entity|
+_oembed_field_filter_urls||$match|
+oembed_field_attach_validate||$entity_type, $entity, array &$errors|
+oembed_entity_insert||$entity, $entity_type|
+oembed_entity_update||$entity, $entity_type|
+theme_oembed||$vars|
+theme_oembed__photo||$vars|
+theme_oembed__rich||$vars|
+theme_oembed__video||$vars|
+oembed_hook_info|||
+oembed_help||$path, $arg|
+oembed_permission|||
+oembed_flush_caches|||
+oembed_cron|||
+oembed_menu|||
+oembed_menu_alter||&$items|
+oembed_theme|||
+oembed_get_provider||$url, &$matches, $role = 'consumer'|
+oembed_providers_reset|||
+oembed_get_data||$url, $parameters = array()|
+oembed_oembed_fetch||$plugin, $url, $matches, $parameters = array()|
+oembed_element_info|||
+oembed_pre_render_thumbnail||$element|
+oembed_pre_render_image_helper||&$element, $prefix = ''|
+oembed_pre_render_wysiwyg||$element|
+oembed_pre_render_retheme||$element|
+oembed_pre_render_fetch||$element|
+oembed_render_element||$type, $url, $parameters = array()|
+oembed_alt_attr||$embed|
+oembed_ctools_plugin_directory||$module, $plugin|
+oembed_ctools_plugin_api||$module, $api|
+oembed_ctools_plugin_type|||
+oembed_preprocess_file_entity||&$vars, $hook|
+oembed_stream_wrappers|||
+oembed_file_formatter_view||$file, $display, $langcode|
+oembed_remote_file_formatter_view||$file, $display, $langcode|
+oembed_file_formatter_oembed_settings||$form, &$form_state, $settings|
+oembed_file_formatter_oembed_thumbnail_settings||$form, &$form_state, $settings|
+oembed_cache_clear||$fids|
+oembed_file_validator_type||stdClass $file|
+oembed_validate_response||$embed|
+oembed_url_to_file||$url, $create = FALSE|
+oembed_system_info_alter||&$info, $file, $type|
+oembed_field_formatter_info|||
+oembed_field_formatter_settings_form||$field, $instance, $view_mode, $form, &$form_state|
+oembed_field_formatter_settings_summary||$field, $instance, $view_mode|
+oembed_field_formatter_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+oembed_default_oembed_provider|||
+oembedprovider_settings|||
+_oembedprovider_handle_request|||
+oembedprovider_deliver_response||$page_callback_result|
+oembedprovider_formats||$reset = FALSE|
+_oembedprovider_formats_jsonp||$page_callback_result|
+_oembedprovider_formats_xml||$page_callback_result|
+oembedprovider_help||$path, $arg|
+oembedprovider_hook_info|||
+oembedprovider_menu|||
+oembedprovider_ctools_plugin_directory||$module, $plugin|
+_oembedprovider_result||$type, $props|
+oembedprovider_file_provider||$plugin, $url, $matches, $parameters|
+oembedprovider_node_provider||$plugin, $url, $matches, $parameters|
+edit_form||&$form, &$form_state|
+edit_form_submit||&$form, &$form_state|
+edit_form_import_submit||$form, &$form_state|
+delete_form_submit||&$form_state|
+set_item_state||$state, $js, $input, $item|
+oembed_default_provider_get_child||$plugin, $parent, $child|
+oembed_default_provider_scheme|||
+oembed_default_callback||$plugin, $url, $matches, $parameters|
+_oembed_filter_apply||$text, $filter, $format, $langcode, $cache, $cache_id|
+_oembed_filter_settings||$form, &$form_state, $filter, $format, $defaults|
+_oembed_preg_parse||$match|
+_oembed_resolve_link||$match, $prefix, $suffix|
+oembed_file_default_types_alter||&$types|
+oembed_file_formatter_info|||
+oembed_file_formatter_info_alter||&$info|
+oembed_file_mimetype_mapping_alter||&$mapping|
+oembed_file_operation_info|||
+oembed_file_presave||stdClass $file|
+oembed_file_load||$files|
+oembed_file_insert||$file|
+oembed_file_update||$file|
+oembed_image_dimensions||$file, $force = FALSE|
+oembedembedly_menu|||
+oembedembedly_providers|||
+oembedembedly_default_selected|||
+oembedembedly_ctools_plugin_directory||$module, $plugin|
+oembedembedly_embedly_provider_scheme|||
+oembedembedly_provider_get_child||$plugin, $parent, $child|
+oembedembedly_provider_callback||$plugin, $url, $matches, $parameters|
+oembedembedly_admin|||
+oembedembedly_admin_submit||$form, &$form_state|
