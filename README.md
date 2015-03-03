@@ -16,6 +16,7 @@ SUPPORTS
 3. Date
 4. Smart trim
 5. Ctools
+6. Oembed
 
 TODO
 ----
