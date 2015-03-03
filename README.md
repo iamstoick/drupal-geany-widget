@@ -21,12 +21,14 @@ TODO
 ----
 
 1. context
-2. ctools
-3. memcache
-4. libraries
-5. metatag
-6. references
-7. scheduler
-8. token
-9. transliteration
-10. nodequeue
+2. memcache
+3. libraries
+4. metatag
+5. references
+6. scheduler
+7. token
+8. transliteration
+9. nodequeue
+10. entity
+11. context
+12. pathauto
