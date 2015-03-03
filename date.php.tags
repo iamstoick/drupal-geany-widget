@@ -1,0 +1,483 @@
+# format=pipe
+_date_repeat_calc||$rrule, $start, $end, $exceptions, $timezone, $additions|
+date_repeat_adjust_rrule||$rrule, $start_date|
+date_repeat_add_dates||&$days, $current_day, $start_date, $end_date, $exceptions, $rrule|
+date_repeat_is_finished||$current_day, $days, $count, $end_date|
+date_repeat_set_month_day||$date_in, $day, $count = 1, $direction = '+', $timezone = 'UTC', $modify_time|
+date_repeat_set_year_day||$date_in, $month, $day, $count = 1, $direction = '+', $timezone = 'UTC', $modify_time|
+date_repeat_element_info|||
+date_repeat_theme|||
+date_repeat_freq_options|||
+date_repeat_interval_options|||
+date_repeat_dow_day_options||$translated = TRUE|
+date_repeat_dow_day_options_abbr||$translated = TRUE, $length = 3|
+date_repeat_dow_day_untranslated|||
+date_repeat_dow_day_options_ordered||$weekdays|
+date_repeat_dow_count_options|||
+date_repeat_dow_options|||
+date_repeat_dow2day||$dow|
+date_repeat_days_ordered||$week_start_day|
+date_repeat_rrule_description||$rrule, $format = 'D M d Y'|
+date_repeat_split_rrule||$rrule|
+date_repeat_calc||$rrule, $start, $end, $exceptions = array(), $timezone = NULL, $additions = array()|
+date_repeat_rrule_process||$element, &$form_state, $form|
+date_repeat_form_element_radios_process||$element|
+_date_repeat_rrule_process||$element, &$form_state, $form|
+date_repeat_add_exception_callback||$form, &$form_state|
+date_repeat_add_addition_callback||$form, &$form_state|
+date_repeat_add_exception||$form, &$form_state|
+date_repeat_add_addition||$form, &$form_state|
+date_repeat_merge||$form_values, $element|
+date_repeat_rrule_validate||$element, &$form_state|
+theme_date_repeat_current_exceptions||$vars|
+theme_date_repeat_current_additions||$rows = array()|
+theme_date_repeat_rrule||$vars|
+date_repeat_filter_non_zero_value||$value|
+for transforming the return value of checkbox||es|
+date_repeat_transform_checkbox_values_to_select_values||$values|
+hook_date_default_argument_alter||&$argument, &$value|
+hook_date_formatter_pre_view_alter||&$entity, &$variables|
+hook_date_formatter_dates_alter||&$dates, $context|
+hook_date_text_pre_validate_alter||&$element, &$form_state, &$input|
+hook_date_select_pre_validate_alter||&$element, &$form_state, &$input|
+hook_date_popup_pre_validate_alter||&$element, &$form_state, &$input|
+hook_date_combo_pre_validate_alter||&$element, &$form_state, $context|
+hook_date_combo_validate_date_start_alter||&$date, &$form_state, $context|
+hook_date_combo_validate_date_end_alter||&$date, &$form_state, $context|
+hook_date_text_process_alter||&$element, &$form_state, $context|
+hook_date_select_process_alter||&$element, &$form_state, $context|
+hook_date_popup_process_alter||&$element, &$form_state, $context|
+hook_date_combo_process_alter||&$element, &$form_state, $context|
+hook_date_timezone_process_alter||&$element, &$form_state, $context|
+hook_date_year_range_process_alter||&$element, &$form_state, $context|
+hook_date_field_settings_form_alter||&$form, $context|
+hook_date_field_instance_settings_form_alter||&$form, $context|
+hook_date_field_widget_settings_form_alter||&$form, $context|
+hook_date_field_formatter_settings_form_alter||&$form, &$form_state, $context|
+hook_date_field_formatter_settings_summary_alter||&$summary, $context|
+date_repeat_field_date_field_insert||&$items, $context|
+date_content_generate_key||$array|
+date_content_repeat_dow_options|||
+date_repeat_field_theme|||
+theme_date_repeat_display||$vars|
+date_repeat_field_menu|||
+date_repeat_field_permission|||
+date_repeat_field_show||$entity_type = 'node', $entity = NULL|
+date_repeat_field_page||$entity_type = 'node', $entity = NULL|
+date_repeat_field_bundles|||
+date_is_repeat_field||$field, $instance = NULL|
+date_repeat_field_date_field_insert_alter||&$items, $context|
+date_repeat_field_date_field_update_alter||&$items, $context|
+date_repeat_field_field_widget_form_alter||&$element, &$form_state, $context|
+date_repeat_field_widget_validate||$element, &$form_state|
+date_repeat_after_build||&$element, &$form_state|
+date_repeat_build_dates||$rrule = NULL, $rrule_values = NULL, $field, $item|
+date_repeat_field_date_combo_process_alter||&$element, &$form_state, $context|
+date_repeat_field_date_combo_pre_validate_alter||&$element, &$form_state, $context|
+date_repeat_field_field_info_alter||&$info|
+date_repeat_field_field_formatter_info_alter||&$info|
+date_repeat_field_field_widget_info_alter||&$info|
+date_repeat_field_date_field_settings_form_alter||&$form, $context|
+date_repeat_field_form_field_ui_field_edit_form_alter||&$form, &$form_state, $form_id|
+date_repeat_field_set_cardinality||$element, &$form_state|
+date_repeat_field_date_field_instance_settings_form_alter||&$form, $context|
+date_repeat_field_date_field_widget_settings_form_alter||&$form, $context|
+date_repeat_field_date_field_formatter_settings_form_alter||&$form, &$form_state, $context|
+date_repeat_field_date_field_formatter_settings_summary_alter||&$summary, $context|
+date_token_info|||
+date_tokens||$type, $tokens, array $data = array(), array $options = array()|
+_date_api_element_info|||
+date_default_date||$element|
+date_year_range_element_process||$element, &$form_state, $form|
+date_year_range_element_value_callback||$element, $input = FALSE, &$form_state = array()|
+date_year_range_validate||&$element, &$form_state|
+date_timezone_element_value_callback||$element, $input = FALSE, &$form_state = array()|
+date_timezone_element_process||$element, &$form_state, $form|
+date_timezone_validate||$element, &$form_state|
+date_text_element_value_callback||$element, $input = FALSE, &$form_state = array()|
+date_text_element_process||$element, &$form_state, $form|
+date_text_validate||$element, &$form_state|
+date_text_input_date||$element, $input|
+date_select_element_value_callback||$element, $input = FALSE, &$form_state = array()|
+date_select_element_process||$element, &$form_state, $form|
+date_parts_element||$element, $date, $format|
+ = strpos||$element['#date_format'], 'F'|
+date_select_validate||$element, &$form_state|
+date_select_input_date||$element, $input|
+date_ical_import||$filename|
+date_ical_parse||$icaldatafolded = array()|
+date_ical_parse_date||$field, $data|
+date_ical_parse_rrule||$field, $data|
+date_ical_parse_exceptions||$field, $data|
+date_ical_parse_duration||&$subgroup, $field = 'DURATION'|
+date_ical_parse_text||$field, $data|
+date_ical_parse_location||$field, $data|
+date_ical_date||$ical_date, $to_tz = FALSE|
+date_ical_escape_text||$text|
+date_api_ical_build_rrule||$form_values|
+_date_timezone_replacement||$old|
+date_sql_concat||$array|
+date_sql_coalesce||$array|
+date_sql_pad||$str, $size = 2, $pad = '0', $side = 'l'|
+__construct||$date_type = DATE_DATETIME, $local_timezone = NULL, $offset = '+00:00'|
+db_tz_support||$reset = FALSE|
+set_db_timezone||$offset = '+00:00'|
+get_offset||$comp_date = NULL|
+sql_field||$field, $offset = NULL, $comp_date = NULL|
+sql_offset||$field, $offset = NULL|
+sql_date_math||$field, $direction, $count, $granularity|
+sql_tz||$field, $offset = NULL, $comp_date = NULL|
+sql_format||$format, $field|
+sql_extract||$extract_type, $field|
+sql_where_date||$type, $field, $operator, $value, $adjustment = NULL|
+sql_where_extract||$part, $field, $operator, $value, $adjustment = NULL|
+sql_where_format||$format, $field, $operator, $value, $adjustment = NULL|
+date_parts||$limit = NULL|
+part_info||$op = NULL, $part = NULL|
+complete_date||$selected, $type = 'now'|
+format_help||$format|
+part_is_valid||$value, $type|
+views_formats||$granularity, $type = 'sql'|
+granularity_form||$granularity|
+arg_parts||$argument|
+arg_replace||$arg|
+arg_granularity||$arg|
+arg_range||$arg|
+theme_date_timezone||$variables|
+theme_date_select||$variables|
+theme_date_text||$variables|
+theme_date_select_element||$variables|
+theme_date_textfield_element||$variables|
+theme_date_part_hour_prefix||$variables|
+theme_date_part_minsec_prefix||$variables|
+theme_date_part_label_year||$variables|
+theme_date_part_label_month||$variables|
+theme_date_part_label_day||$variables|
+theme_date_part_label_hour||$variables|
+theme_date_part_label_minute||$variables|
+theme_date_part_label_second||$variables|
+theme_date_part_label_ampm||$variables|
+theme_date_part_label_timezone||$variables|
+theme_date_part_label_date||$variables|
+theme_date_part_label_time||$variables|
+theme_date_calendar_day||$variables|
+theme_date_time_ago||$variables|
+date_help||$path, $arg|
+date_api_status|||
+date_api_menu|||
+__sleep|||
+__wakeup|||
+__toString|||
+__construct||$time = 'now', $tz = NULL, $format = NULL|
+merge||FeedsDateTime $other|
+setTimezone||$tz, $force = FALSE|
+format||$format, $force = FALSE|
+addGranularity||$g|
+removeGranularity||$g|
+hasGranularity||$g = NULL|
+validGranularity||$granularity = NULL, $flexible = FALSE|
+hasTime|||
+completeDate|||
+limitGranularity||$granularity|
+setGranularityFromTime||$time, $tz|
+parse||$date, $tz, $format|
+toArray||$force = FALSE|
+toISO||$arr, $full = FALSE|
+setFuzzyDate||$date, $format = NULL, $default = 'first'|
+forceValid||$part, $value, $default = 'first', $month = NULL, $year = NULL|
+arrayErrors||$arr|
+difference||$date2_in, $measure = 'seconds', $absolute = TRUE|
+date_hidden_element||$element|
+date_type_format||$type|
+date_month_names_untranslated|||
+date_month_names||$required = FALSE|
+date_month_names_abbr||$required = FALSE, $length = 3|
+date_week_days_untranslated||$refresh = TRUE|
+date_week_days||$required = FALSE, $refresh = TRUE|
+date_week_days_abbr||$required = FALSE, $refresh = TRUE, $length = 3|
+date_week_days_ordered||$weekdays|
+date_years||$min = 0, $max = 0, $required = FALSE|
+date_days||$required = FALSE, $month = NULL, $year = NULL|
+date_hours||$format = 'H', $required = FALSE|
+date_minutes||$format = 'i', $required = FALSE, $increment = 1|
+date_seconds||$format = 's', $required = FALSE, $increment = 1|
+date_ampm||$required = FALSE|
+date_format_patterns||$strict = FALSE|
+date_granularity_names|||
+date_granularity_sorted||$granularity|
+date_granularity_array_from_precision||$precision|
+date_granularity_precision||$granularity_array|
+date_granularity_format||$granularity|
+date_timezone_names||$required = FALSE, $refresh = FALSE|
+date_timezone_abbr||$refresh = FALSE|
+date_format_date||$date, $type = 'medium', $format = '', $langcode = NULL|
+date_format_interval||$date, $granularity = 2, $display_ago = TRUE|
+date_now||$timezone = NULL, $reset = FALSE|
+date_timezone_is_valid||$timezone|
+date_default_timezone||$check_user = TRUE|
+date_default_timezone_object||$check_user = TRUE|
+date_days_in_month||$year, $month|
+date_days_in_year||$date = NULL|
+date_iso_weeks_in_year||$date = NULL|
+date_day_of_week||$date = NULL|
+date_day_of_week_name||$date = NULL, $abbr = TRUE|
+date_week_range||$week, $year|
+date_iso_week_range||$week, $year|
+date_weeks_in_year||$year|
+date_week||$date|
+date_pad||$value, $size = 2|
+date_has_time||$granularity|
+date_has_date||$granularity|
+date_part_format||$part, $format|
+date_limit_format||$format, $granularity|
+date_format_order||$format|
+date_nongranularity||$granularity|
+date_api_element_info|||
+date_api_theme||$existing, $type, $theme, $path|
+date_get_timezone||$handling, $timezone = ''|
+date_get_timezone_db||$handling, $timezone = NULL|
+date_order_translated|||
+date_order|||
+date_range_valid||$string|
+date_range_years||$string, $date = NULL|
+date_range_string||$years|
+date_api_database_info||$field, $revision = FIELD_LOAD_CURRENT|
+date_api_form_system_regional_settings_alter||&$form, &$form_state, $form_id|
+date_api_form_system_settings_validate||&$form, &$form_state|
+date_format_type_options|||
+date_example_date|||
+date_is_all_day||$string1, $string2, $granularity = 'second', $increment = 1|
+date_increment_round||&$date, $increment|
+date_is_date||$date|
+date_make_iso_valid||$iso_string|
+date_field_widget_form||&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $base|
+date_local_date||$item, $timezone, $field, $instance, $part = 'value'|
+date_default_value||$field, $instance, $langcode|
+date_default_value_part||$item, $field, $instance, $langcode, $part = 'value'|
+date_combo_element_process||$element, &$form_state, $form|
+date_element_empty||$element, &$form_state|
+date_combo_validate||$element, &$form_state|
+date_input_format||$element, $field, $instance|
+date_date_select_pre_validate_alter||&$element, &$form_state, &$input|
+date_date_text_pre_validate_alter||&$element, &$form_state, &$input|
+date_date_popup_pre_validate_alter||&$element, &$form_state, &$input|
+date_empty_end_date||&$element, &$form_state, &$input|
+date_context_context_node_condition_alter||$node, $op|
+date_context_context_plugins|||
+date_context_context_registry|||
+condition_values|||
+options_form||$context|
+execute||$entity, $op|
+date_get_entity_bundle||$entity_type, $entity|
+date_default_format||$type|
+date_input_date||$field, $instance, $element, $input|
+date_theme|||
+date_element_info|||
+date_formatter_process||$formatter, $entity_type, $entity, $field, $instance, $langcode, $item, $display|
+date_granularity||$field|
+date_process_values||$field|
+date_form_field_ui_field_edit_form_alter||&$form, &$form_state, $form_id|
+date_field_ui_field_edit_form_pre_render||$form|
+date_field_widget_error||$element, $error, $form, &$form_state|
+date_formatter_format||$formatter, $settings, $granularity = array(), $langcode = NULL|
+date_format_type_format||$format_type, $langcode = NULL|
+date_prepare_entity||$formatter, $entity_type, $entity, $field, $instance, $langcode, $item, $display|
+date_entity_metadata_property_info_alter||&$info, $entity_type, $field, $instance, $field_type|
+date_entity_metadata_field_getter||$entity, array $options, $name, $entity_type, &$context|
+date_entity_metadata_struct_getter||$item, array $options, $name, $type, $info|
+date_entity_metadata_duration_getter||$item, array $options, $name, $type, $info|
+date_entity_metadata_field_setter||&$entity, $name, $value, $langcode, $entity_type, $info|
+date_entity_metadata_struct_create||$name, $property_info|
+date_entity_metadata_struct_setter||&$item, $name, $value, $langcode, $type, $info|
+date_field_all_day||$field, $instance, $date1, $date2 = NULL|
+date_field_get_sql_handler||$field, $compare_tz = NULL|
+date_field_widget_properties_alter||&$widget, $context|
+date_views_menu|||
+date_views_settings||$form, &$form_state|
+date_views_theme|||
+date_views_views_api|||
+date_views_views_fetch_fields||$base, $type|
+date_views_fields||$base = 'node', $reset = FALSE|
+date_views_date_views_extra_tables|||
+date_views_base_tables|||
+date_views_date_views_fields||$field|
+date_pager_url||$view, $date_type = NULL, $date_arg = NULL, $force_view_url = FALSE, $absolute = TRUE|
+date_block_identifier||$view|
+date_views_field_views_data_alter||&$result, $field, $module|
+date_views_form_views_ui_edit_form_alter||&$form, &$form_state, $form_id|
+date_views_handler_is_date||$handler, $type = 'argument'|
+date_views_select_validate||&$form, &$form_state|
+date_views_date_formatter_pre_view_alter||&$entity, &$variables|
+_date_views_fields||$base = 'node'|
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+admin_summary|||
+default_actions||$which = NULL|
+query||$group_by = FALSE|
+get_query_fields|||
+init||&$view, &$options|
+option_definition|||
+op_between||$field|
+op_simple||$field|
+op_contains||$field|
+date_combine_conditions||$function|
+extra_options_form||&$form, &$form_state|
+extra_options_validate||$form, &$form_state|
+extra_options_submit||$form, &$form_state|
+admin_summary|||
+get_query_fields|||
+date_views_views_plugins|||
+date_views_views_data|||
+date_views_views_data_alter||&$data|
+date_views_set_timezone||&$date_handler, &$view, $field|
+date_views_querystring||$view, $extra_params = array()|
+use_count_query|||
+has_more_records|||
+summary_title|||
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+date_forbid||$argument|
+render||$input|
+init||&$view, &$options|
+format|||
+get_default_argument||$raw = FALSE|
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+summary_name||$data|
+title|||
+summary_argument||$data|
+summary_query|||
+query||$group_by = FALSE|
+date_forbid|||
+init||&$view, &$options|
+option_definition|||
+operators|||
+date_default_value||$prefix, $options = NULL|
+get_filter_value||$prefix, $input|
+accept_exposed_input||$input|
+op_between||$field|
+op_simple||$field|
+op_contains||$field|
+has_extra_options|||
+widget_options|||
+year_range|||
+extra_options_form||&$form, &$form_state|
+extra_options_validate||$form, &$form_state|
+value_form||&$form, &$form_state|
+date_parts_form||$form_state, $prefix, $source, $which, $operator_values, $identifier, $relative_id|
+value_validate||$form, &$form_state|
+validate_valid_time||&$form, $operator, $value|
+admin_summary|||
+date_views_preprocess_views_view||&$vars|
+template_preprocess_date_views_pager||&$vars|
+theme_date_nav_title||$params|
+template_preprocess_date_views_filter_form||&$vars|
+date_field_diff_view||$items, $context|
+date_field_diff_default_options||$field_type|
+date_field_diff_options_form||$field_type, $settings|
+date_all_day_theme|||
+date_all_day_date_formatter_dates_alter||&$dates, $context|
+theme_date_all_day||$vars|
+theme_date_all_day_label|||
+date_all_day_field||$field, $instance, $date1, $date2 = NULL|
+date_all_day_date_combo_process_alter||&$element, &$form_state, $context|
+date_all_day_date_text_process_alter||&$element, &$form_state, $context|
+date_all_day_date_select_process_alter||&$element, &$form_state, $context|
+date_all_day_date_popup_process_alter||&$element, &$form_state, $context|
+date_all_day_date_text_pre_validate_alter||&$element, &$form_state, &$input|
+date_all_day_date_select_pre_validate_alter||&$element, &$form_state, &$input|
+date_all_day_date_popup_pre_validate_alter||&$element, &$form_state, &$input|
+date_all_day_value||&$element, $form_state|
+date_all_day_date_combo_pre_validate_alter||&$element, &$form_state, $context|
+date_all_day_date_combo_validate_date_start_alter||&$date, &$form_state, $context|
+date_all_day_date_combo_validate_date_end_alter||&$date, &$form_state, $context|
+date_all_day_field_widget_info_alter||&$info|
+date_all_day_date_field_widget_settings_form_alter||&$form, $context|
+date_migrate_api|||
+__construct|||
+arguments||$timezone = 'UTC', $timezone_db = 'UTC', $rrule = NULL, $language = NULL|
+prepare||$entity, array $field_info, array $instance, array $values|
+fields||$migration = NULL|
+date_popup_add|||
+date_popup_get_wvega_path|||
+date_popup_get_preferred_timepicker|||
+date_popup_library|||
+date_popup_js_settings_id||$id, $func, $settings|
+date_popup_theme|||
+date_popup_element_info|||
+date_popup_date_granularity||$element|
+date_popup_time_granularity||$element|
+date_popup_date_format||$element|
+date_popup_time_format||$element|
+date_popup_element_value_callback||$element, $input = FALSE, &$form_state|
+date_popup_element_process||$element, &$form_state, $form|
+date_popup_process_date_part||&$element|
+date_popup_process_time_part||&$element|
+date_popup_validate||$element, &$form_state|
+date_popup_input_date||$element, $input, $auto_complete = FALSE|
+date_popup_time_formats||$with_seconds = FALSE|
+date_popup_formats|||
+date_popup_format_to_popup||$format|
+date_popup_format_to_popup_time||$format, $timepicker = NULL|
+date_popup_popup_to_format||$format|
+date_popup_timepicker_format_replacements||$timepicker = 'default'|
+date_popup_datepicker_format_replacements|||
+theme_date_popup||$vars|
+date_popup_menu|||
+date_popup_settings|||
+date_migrate_example_node_info|||
+__construct|||
+prepareRow||$current_row|
+date_migrate_example_migrate_api|||
+date_migrate_example_field_default_fields|||
+date_devel_generate||$entity, $field, $instance, $bundle|
+date_field_formatter_info|||
+date_field_formatter_settings_form||$field, $instance, $view_mode, $form, &$form_state|
+date_field_formatter_settings_summary||$field, $instance, $view_mode|
+date_field_formatter_view||$entity_type, $entity, $field, $instance, $langcode, $items, $display|
+date_field_is_empty||$item, $field|
+date_field_info|||
+date_field_widget_info|||
+date_field_load||$entity_type, $entities, $field, $instances, $langcode, &$items, $age|
+date_field_validate||$entity_type, $entity, $field, $instance, $langcode, $items, &$errors|
+date_field_presave||$entity_type, $entity, $field, $instance, $langcode, &$items|
+date_field_insert||$entity_type, $entity, $field, $instance, $langcode, &$items|
+date_field_update||$entity_type, $entity, $field, $instance, $langcode, &$items|
+date_field_instance_settings_form||$field, $instance|
+date_field_widget_settings_form||$field, $instance|
+date_field_settings_form||$field, $instance, $has_data|
+date_content_migrate_field_alter||&$field_value, $instance_value|
+date_content_migrate_instance_alter||&$instance_value, $field_value|
+date_old_formatter_get_settings||$field_name, $type_name, $context|
+date_default_formatter_settings_form||$field, $instance, $view_mode, $form, &$form_state|
+date_interval_formatter_settings_form||$field, $instance, $view_mode, $form, &$form_state|
+date_default_formatter_settings_summary||$field, $instance, $view_mode|
+date_interval_formatter_settings_summary||$field, $instance, $view_mode|
+_date_field_instance_settings_form||$field, $instance|
+date_field_instance_settings_form_validate||&$form, &$form_state|
+_date_field_widget_settings_form||$field, $instance|
+date_field_widget_settings_form_validate||&$form, &$form_state|
+_date_field_settings_form||$field, $instance, $has_data|
+date_field_settings_validate||&$form, &$form_state|
+date_timezone_handling_options|||
+date_tools_change_type_form|||
+date_tools_change_type_form_validate||$form, &$form_state|
+date_tools_change_type_form_submit||$form, &$form_state|
+date_tools_wizard_form|||
+date_tools_wizard_form_validate||&$form, &$form_state|
+date_tools_wizard_form_submit||&$form, &$form_state|
+date_tools_wizard_build||$form_values|
+date_tools_wizard_include|||
+date_tools_wizard_field_types|||
+date_tools_wizard_widget_types|||
+date_tools_wizard_tz_handling|||
+date_tools_wizard_create_content_type||$name, $bundle, $description, $type_settings = array()|
+date_tools_help||$section, $arg|
+date_tools_permission|||
+date_tools_menu|||
+date_tools_page|||
