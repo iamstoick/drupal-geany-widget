@@ -13,6 +13,8 @@ SUPPORTS
 
 1. Drupal core
 2. Views
+3. Date
+4. Smart trim
 
 TODO
 ----
