@@ -15,6 +15,7 @@ SUPPORTS
 2. Views
 3. Date
 4. Smart trim
+5. Ctools
 
 TODO
 ----
