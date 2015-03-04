@@ -17,6 +17,7 @@ SUPPORTS
 4. Smart trim
 5. Ctools
 6. Oembed
+7. Entity
 
 TODO
 ----
@@ -30,6 +31,5 @@ TODO
 7. token
 8. transliteration
 9. nodequeue
-10. entity
-11. context
-12. pathauto
+10. context
+11. pathauto
