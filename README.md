@@ -18,6 +18,7 @@ SUPPORTS
 5. Ctools
 6. Oembed
 7. Entity
+8. Nodequeue
 
 TODO
 ----
@@ -30,6 +31,5 @@ TODO
 6. scheduler
 7. token
 8. transliteration
-9. nodequeue
-10. context
-11. pathauto
+9. context
+10. pathauto
