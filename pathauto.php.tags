@@ -1,0 +1,82 @@
+# format=pipe
+pathauto_patterns_form||$form, $form_state|
+pathauto_settings_form||$form|
+_pathauto_validate_numeric_element||$element, &$form_state|
+pathauto_settings_form_validate||$form, &$form_state|
+pathauto_bulk_update_form|||
+pathauto_bulk_update_form_submit||$form, &$form_state|
+pathauto_bulk_update_batch_start||&$context|
+pathauto_bulk_update_batch_process||$callback, $settings, &$context|
+pathauto_bulk_update_batch_finished||$success, $results, $operations|
+pathauto_admin_delete|||
+pathauto_admin_delete_submit||$form, &$form_state|
+hook_path_alias_types|||
+hook_pathauto||$op|
+hook_pathauto_alias_alter||&$alias, array &$context|
+hook_pathauto_punctuation_chars_alter||array &$punctuation|
+pathauto_token_info|||
+pathauto_tokens||$type, $tokens, array $data = array(), array $options = array()|
+pathauto_path_alias_types|||
+pathauto_pathauto|||
+node_pathauto||$op|
+node_pathauto_bulk_update_batch_process||&$context|
+taxonomy_pathauto||$op|
+taxonomy_pathauto_bulk_update_batch_process||&$context|
+forum_pathauto||$op|
+forum_pathauto_bulk_update_batch_process||&$context|
+user_pathauto||$op|
+user_pathauto_bulk_update_batch_process||&$context|
+blog_pathauto||$op|
+blog_pathauto_bulk_update_batch_process||&$context|
+_pathauto_alias_exists||$alias, $source, $language = LANGUAGE_NONE|
+_pathauto_existing_alias_data||$source, $language = LANGUAGE_NONE|
+pathauto_cleanstring||$string|
+_pathauto_clean_separators||$string, $separator = NULL|
+pathauto_clean_alias||$alias|
+pathauto_create_alias||$module, $op, $source, $data, $type = NULL, $language = LANGUAGE_NONE|
+pathauto_alias_uniquify||&$alias, $source, $langcode|
+_pathauto_path_is_callback||$path|
+_pathauto_set_alias||array $path, $existing_alias = NULL, $op = NULL|
+_pathauto_verbose||$message = NULL, $op = NULL|
+pathauto_clean_token_values||&$replacements, $data = array(), $options = array()|
+pathauto_punctuation_chars|||
+_pathauto_get_schema_alias_maxlength|||
+pathauto_hook_info|||
+pathauto_module_implements_alter||&$implementations, $hook|
+pathauto_help||$path, $arg|
+pathauto_permission|||
+pathauto_menu|||
+pathauto_pattern_load_by_entity||$entity, $bundle = '', $language = LANGUAGE_NONE|
+pathauto_path_delete_multiple||$pids|
+pathauto_path_delete_all||$source|
+pathauto_entity_path_delete_all||$entity_type, $entity, $default_uri = NULL|
+pathauto_field_attach_rename_bundle||$entity_type, $bundle_old, $bundle_new|
+pathauto_field_attach_delete_bundle||$entity_type, $bundle|
+pathauto_field_attach_form||$entity_type, $entity, &$form, &$form_state, $langcode|
+pathauto_entity_presave||$entity, $type|
+pathauto_action_info|||
+pathauto_entity_language||$entity_type, $entity, $check_language_property = TRUE|
+path_field_extra_fields|||
+pathauto_node_insert||$node|
+pathauto_node_update||$node|
+pathauto_node_delete||$node|
+pathauto_form_node_form_alter||&$form, &$form_state|
+pathauto_node_operations|||
+pathauto_node_update_alias||stdClass $node, $op, array $options = array()|
+pathauto_node_update_alias_multiple||array $nids, $op, array $options = array()|
+pathauto_node_update_action||$node, $context = array()|
+pathauto_taxonomy_term_insert||$term|
+pathauto_taxonomy_term_update||$term|
+pathauto_taxonomy_term_delete||$term|
+pathauto_form_taxonomy_form_term_alter||&$form, $form_state|
+pathauto_taxonomy_term_update_alias||stdClass $term, $op, array $options = array()|
+pathauto_taxonomy_term_update_alias_multiple||array $tids, $op, array $options = array()|
+pathauto_taxonomy_term_update_action||$term, $context = array()|
+pathauto_user_insert||&$edit, $account, $category|
+pathauto_user_update||&$edit, $account, $category|
+pathauto_user_delete||$account|
+pathauto_user_operations|||
+pathauto_user_update_alias||stdClass $account, $op, array $options = array()|
+pathauto_user_update_alias_multiple||array $uids, $op, array $options = array()|
+pathauto_user_update_action||$account, $context = array()|
+pathauto_blog_update_alias||stdClass $account, $op, array $options = array()|
