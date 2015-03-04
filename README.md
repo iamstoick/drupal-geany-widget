@@ -20,6 +20,7 @@ SUPPORTS
 7. Entity
 8. Nodequeue
 9. Pathauto
+10. Token
 
 TODO
 ----
@@ -30,6 +31,5 @@ TODO
 4. metatag
 5. references
 6. scheduler
-7. token
-8. transliteration
-9. context
+7. transliteration
+8. context
