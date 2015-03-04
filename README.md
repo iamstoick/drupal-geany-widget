@@ -19,6 +19,7 @@ SUPPORTS
 6. Oembed
 7. Entity
 8. Nodequeue
+9. Pathauto
 
 TODO
 ----
@@ -32,4 +33,3 @@ TODO
 7. token
 8. transliteration
 9. context
-10. pathauto
