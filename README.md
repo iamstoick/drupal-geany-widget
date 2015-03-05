@@ -22,6 +22,7 @@ SUPPORTS
 9. Pathauto
 10. Token
 11. Panels
+12. Workbench
 
 TODO
 ----
