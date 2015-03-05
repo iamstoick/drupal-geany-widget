@@ -21,6 +21,7 @@ SUPPORTS
 8. Nodequeue
 9. Pathauto
 10. Token
+11. Panels
 
 TODO
 ----
