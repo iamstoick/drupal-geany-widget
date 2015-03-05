@@ -1,0 +1,25 @@
+# format=pipe
+workbench_admin|||
+hook_workbench_content_alter||&$output|
+hook_workbench_create_alter||&$output|
+hook_workbench_block|||
+workbench_myworkbench_page_manager_tasks|||
+workbench_myworkbench_menu_alter||&$items, $task|
+workbench_myworkbench|||
+workbench_myworkbench_enable||$cache, $status|
+workbench_menu|||
+workbench_permission|||
+workbench_block_info|||
+workbench_block_view||$delta = ''|
+workbench_views_api|||
+workbench_views_default_views|||
+workbench_load_all_exports||$module, $directory, $extension, $name = NULL|
+workbench_theme||$existing, $type, $theme, $path|
+workbench_preprocess_views_view_field||&$variables|
+workbench_ctools_plugin_directory||$owner, $plugin_type|
+workbench_ctools_plugin_api||$module, $api|
+workbench_default_page_manager_handlers|||
+workbench_content|||
+workbench_create|||
+_workbench_create|||
+theme_workbench_element||$variables|
