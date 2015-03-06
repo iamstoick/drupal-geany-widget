@@ -23,15 +23,15 @@ SUPPORTS
 10. Token
 11. Panels
 12. Workbench
+13. Libraries
 
 TODO
 ----
 
 1. context
 2. memcache
-3. libraries
-4. metatag
-5. references
-6. scheduler
-7. transliteration
-8. context
+3. metatag
+4. references
+5. scheduler
+6. transliteration
+7. context
