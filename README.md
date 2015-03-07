@@ -24,6 +24,7 @@ SUPPORTS
 11. Panels
 12. Workbench
 13. Libraries
+14. Diff
 
 TODO
 ----
