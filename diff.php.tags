@@ -1,0 +1,160 @@
+# format=pipe
+diff_token_info|||
+diff_tokens||$type, $tokens, array $data = array(), array $options = array()|
+reverse|||
+norig|||
+nclosing|||
+_DiffOp_Copy||$orig, $closing = FALSE|
+reverse|||
+_DiffOp_Delete||$lines|
+reverse|||
+_DiffOp_Add||$lines|
+reverse|||
+_DiffOp_Change||$orig, $closing|
+reverse|||
+MAX_XREF_LENGTH|||
+diff||$from_lines, $to_lines|
+_line_hash||$line|
+_diag||$xoff, $xlim, $yoff, $ylim, $nchunks|
+_lcs_pos||$ypos|
+_compareseq||$xoff, $xlim, $yoff, $ylim|
+_shift_boundaries||$lines, &$changed, $other_changed|
+Diff||$from_lines, $to_lines|
+reverse|||
+isEmpty|||
+lcs|||
+orig|||
+closing|||
+_check||$from_lines, $to_lines|
+MappedDiff||$from_lines, $to_lines, $mapped_from_lines, $mapped_to_lines|
+format||$diff|
+_block||$xbeg, $xlen, $ybeg, $ylen, &$edits|
+_start_diff|||
+_end_diff|||
+_block_header||$xbeg, $xlen, $ybeg, $ylen|
+_start_block||$header|
+_end_block|||
+_lines||$lines, $prefix = ' '|
+_context||$lines|
+_added||$lines|
+_deleted||$lines|
+_changed||$orig, $closing|
+_HWLDF_WordAccumulator|||
+_flushGroup||$new_tag|
+_flushLine||$new_tag|
+addWords||$words, $tag = ''|
+getLines|||
+MAX_LINE_LENGTH|||
+WordLevelDiff||$orig_lines, $closing_lines|
+_split||$lines|
+orig|||
+closing|||
+DrupalDiffFormatter|||
+_start_diff|||
+_end_diff|||
+_block_header||$xbeg, $xlen, $ybeg, $ylen|
+_start_block||$header|
+_end_block|||
+_lines||$lines, $prefix=' ', $color='white'|
+addedLine||$line|
+deletedLine||$line|
+contextLine||$line|
+emptyLine|||
+_added||$lines|
+_deleted||$lines|
+_context||$lines|
+_changed||$orig, $closing|
+__construct||$a, $b|
+render|||
+process_chunk||$chunk|
+process_edits||$edits|
+diff_admin_settings||$form, $form_state|
+diff_admin_global_entity_settings||$form, $form_state, $entity_type|
+diff_admin_field_overview|||
+diff_admin_global_field_settings||$form, $form_state, $type|
+diff_help||$path, $arg|
+diff_available_states||$entity_type = NULL|
+diff_menu|||
+diff_menu_alter||&$callbacks|
+diff_admin_paths_alter||&$paths|
+diff_node_revision_access||$node, $op = 'view'|
+diff_hook_info|||
+diff_entity_info_alter||&$entity_info|
+diff_block_info|||
+diff_block_configure||$delta = ''|
+diff_block_save||$delta = '', $edit = array()|
+diff_block_view||$delta|
+diff_node_view_alter||&$build|
+diff_form_node_form_alter||&$form, $form_state|
+diff_form_node_type_form_alter||&$form, $form_state|
+diff_node_type_update||$info|
+diff_node_type_delete||$info|
+diff_node_form_build_preview_changes||$form, &$form_state|
+diff_theme|||
+diff_get_rows||$a, $b, $show_header = FALSE, &$line_stats = NULL|
+diff_get_inline||$a, $b|
+diff_inline_form||$form, $form_state, $node, $revisions|
+diff_inline_ajax||$form, $form_state|
+diff_inline_form_submit||&$form, &$form_state|
+diff_normalise_text||$text|
+for filter_xss|||
+diff_filter_xss||$string|
+diff_build_attachments||$jscript = FALSE|
+hook_entity_diff||$old_entity, $new_entity, $context|
+hook_entity_diff_alter||$entity_diffs, $context|
+MODULE_field_diff_view_prepare||&$old_items, &$new_items, $context|
+MODULE_field_diff_view||$items, $context|
+hook_field_diff_view_prepare_alter||$old_items, $new_items, $context|
+hook_field_diff_view_alter||$values, $items, $context|
+diff_latest||$node|
+diff_diffs_overview||$node|
+diff_node_revisions||$form, $form_state, $node|
+diff_node_revisions_submit||$form, &$form_state|
+diff_node_revisions_validate||$form, &$form_state|
+diff_diffs_show||$node, $old_vid, $new_vid, $state = NULL|
+_diff_body_rows||$old_node, $new_node, $state = 'raw'|
+diff_compare_entities||$left_entity, $right_entity, $context|
+diff_process_state_lines||&$diff, $key|
+diff_markdown_state||&$diff, $state|
+_diff_get_next_vid||$node_revisions, $vid|
+_diff_get_previous_vid||$node_revisions, $vid|
+_diff_default_cols|||
+_diff_default_header||$old_header = '', $new_header = ''|
+diff_inline_show||$node, $vid = 0, $metadata = TRUE|
+file_field_diff_view_prepare||&$old_items, &$new_items, $context|
+file_field_diff_view||$items, $context|
+file_field_diff_default_options||$field_type|
+file_field_diff_options_form||$field_type, $settings|
+list_field_diff_view||$items, $context|
+list_field_diff_default_options||$field_type|
+list_field_diff_options_form||$field_type, $settings|
+number_field_diff_view||$items, $context|
+node_entity_diff||$old_node, $new_node, $context|
+text_field_diff_view||$items, $context|
+text_field_diff_default_options||$field_type|
+text_field_diff_options_form||$field_type, $settings|
+taxonomy_field_diff_view_prepare||&$old_items, &$new_items, $context|
+taxonomy_field_diff_view||$items, $context|
+uasort_taxonomy_field_diff_terms||$a, $b|
+taxonomy_field_diff_default_options||$field_type|
+taxonomy_field_diff_options_form||$field_type, $settings|
+image_field_diff_view_prepare||&$old_items, &$new_items, $context|
+image_field_diff_view||$items, $context|
+image_field_diff_default_options||$field_type|
+image_field_diff_options_form||$field_type, $settings|
+to invoke the depreciated hook_diff|||
+diff_entity_diff||$old_entity, $new_entity, $context|
+diff_entity_fields_diff||$old_entity, $new_entity, $context|
+diff_field_diff_view||$items, $context|
+diff_get_field_settings||$field_context|
+diff_global_settings_form||&$subform, $form_state, $type, $settings|
+_diff_field_default_settings||$module, $field_type, $settings = array()|
+_diff_autoload||$field_or_module|
+diff_extract_state||$diff, $state = 'raw'|
+theme_diff_node_revisions||$vars|
+theme_diff_header_line||$vars|
+theme_diff_content_line||$vars|
+theme_diff_empty_line||$vars|
+theme_diff_inline_form||$vars|
+theme_diff_inline_metadata||$vars|
+theme_diff_inline_chunk||$vars|
