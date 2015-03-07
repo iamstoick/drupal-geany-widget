@@ -25,14 +25,14 @@ SUPPORTS
 12. Workbench
 13. Libraries
 14. Diff
+15. Context
 
 TODO
 ----
 
-1. context
-2. memcache
-3. metatag
-4. references
-5. scheduler
-6. transliteration
-7. context
+1. memcache
+2. metatag
+3. references
+4. scheduler
+5. transliteration
+6. context
