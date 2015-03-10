@@ -16,6 +16,8 @@ SUPPORTS
 3. Date
 4. Smart trim
 5. Elysia cron
+6. Search API
+7. Profile2 
 
 TODO
 ----
