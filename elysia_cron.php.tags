@@ -1,0 +1,115 @@
+# format=pipe
+elysia_cron_version|||
+elysia_cron_menu||$_dcr_maycache = true|
+elysia_cron_menu_alter||&$items|
+elysia_cron_perm|||
+elysia_cron_permission|||
+elysia_cron_boot|||
+elysia_cron_init|||
+elysia_cron_cron|||
+elysia_cron_help||$section, $arg = false|
+_ec_variable_init|||
+_ec_variable_get||$name, $default|
+_ec_variable_set||$name, $value|
+_ec_variable_del||$name|
+_ec_semaphore_get||$name = 'elysia_cron_semaphore', $timeout = 120|
+_ec_get_name||$name|
+elysia_cron_set||$name, $channel = false, $values = array()|
+elysia_cron_get||$name, $channel = false, $key, $default, $refresh = false|
+elysia_cron_is_channel_disabled||$channel, $default = false, $refresh = false|
+elysia_cron_set_channel_disabled||$channel, $v|
+elysia_cron_reset_channel_disabled||$channel|
+elysia_cron_get_channel_rule||$channel, $default = '', $refresh = false|
+elysia_cron_set_channel_rule||$channel, $v|
+elysia_cron_reset_channel_rule||$channel|
+elysia_cron_is_channel_running||$channel, $default = 0, $refresh = false|
+elysia_cron_set_channel_running||$channel, $v|
+elysia_cron_get_channel_last_run||$channel, $default = false, $refresh = false|
+elysia_cron_set_channel_last_run||$channel, $v|
+elysia_cron_get_channel_last_aborted||$channel, $default = 0, $refresh = false|
+elysia_cron_set_channel_last_aborted||$channel, $v|
+elysia_cron_get_channel_abort_count||$channel, $default = 0, $refresh = false|
+elysia_cron_set_channel_abort_count||$channel, $v|
+elysia_cron_get_channel_last_abort_function||$channel, $default = '', $refresh = false|
+elysia_cron_set_channel_last_abort_function||$channel, $job|
+elysia_cron_get_channel_stats||$channel, $refresh = false|
+= -1, $data = array||)|
+elysia_cron_get_job_rule||$job, $default = '', $refresh = false|
+elysia_cron_set_job_rule||$job, $v|
+elysia_cron_reset_job_rule||$job|
+elysia_cron_get_job_weight||$job, $default = '', $refresh = false|
+elysia_cron_set_job_weight||$job, $v|
+elysia_cron_reset_job_weight||$job|
+elysia_cron_is_job_disabled||$job, $default = false, $refresh = false|
+elysia_cron_set_job_disabled||$job, $v|
+elysia_cron_reset_job_disabled||$job|
+elysia_cron_get_job_channel||$job, $default = '', $refresh = false|
+elysia_cron_set_job_channel||$job, $v|
+elysia_cron_reset_job_channel||$job|
+elysia_cron_is_job_running||$job, $default = 0, $refresh = false|
+elysia_cron_set_job_running||$job, $v|
+elysia_cron_get_job_last_run||$job, $default = 0, $refresh = false|
+elysia_cron_set_job_last_run||$job, $v|
+elysia_cron_get_job_stats||$job, $refresh = false|
+elysia_cron_last_channel|||
+elysia_cron_set_last_channel||$channel|
+elysia_cron_reset_stats|||
+elysia_cron_decode_script||$text, $apply = true|
+elysia_cron_module_jobs|||
+elysia_cron_initialize||$skipscript = false|
+_elysia_cron_sort||$a, $b|
+elysia_cron_run||$manual_run = false|
+elysia_cron_execute||$job|
+elysia_cron_execute_aborted||$channel|
+elysia_cron_cleanup|||
+elysia_cron_completed|||
+elysia_cron_active_jobs||$channel|
+elysia_cron_is_running|||
+elysia_cron_description||$job|
+elysia_cron_theme|||
+to provide your ||untranslated|
+theme_elysia_cron_description||$variables|
+elysia_cron_ping_page|||
+elysia_cron_admin_page|||
+!function', array||'!function' => $data['#data']['last_abort_function'])|
+elysia_cron_settings_form|||
+theme_elysia_cron_settings_form||$_dco_variables|
+_ec_select||editid, select|
+_ec_select||key, select|
+elysia_cron_settings_form_validate||$_dco_form, &$_dco_form_state|
+elysia_cron_settings_form_submit||$_dco_form, &$_dco_form_state|
+elysia_cron_date||$timestamp|
+elysia_cron_run_form|||
+elysia_cron_run_form_submit||$_dco_form, &$_dco_form_state|
+elysia_cron_execute_page||$job = false|
+elysia_cron_execute_page_cleanup|||
+elysia_cron_maintenance_page|||
+elysia_cron_reset_statistics_form|||
+elysia_cron_reset_statistics_form_submit||$_dco_form, &$_dco_form_state|
+elysia_cron_reset_page|||
+elysia_cron_should_run||$conf, $now = -1|
+_cronT||$time, $d = -1, $h = -1, $m = -1|
+_cronMonDaysFromWeekDays||$year, $mon, $weekdays|
+_cronDecodeRule||$rule, $min, $max|
+test_elysia_cron_should_run|||
+elysia_cron_drush_command|||
+drush_elysia_cron_run_wrapper|||
+elysia_cron_get_ctools_defaults|||
+elysia_cron_ctools_export_load||$name|
+elysia_cron_ctools_export_load_all|||
+_elysia_cron_ctools_export_load_object_db_and_code||$object, $code_object, $export|
+_elysia_cron_ctools_export_load_object_db||$object, $export|
+_elysia_cron_ctools_export_load_object_code||$object, $export|
+elysia_cron_ctools_export_object_factory||$schema, $data|
+elysia_cron_ctools_export_callback||$object, $indent|
+elysia_cron_ctools_to_hook_code||$names, $name|
+" . $name . "_{$export['default hook']}|||
+elysia_cron_should_run||$conf, $now = -1|
+_elysia_cron_next_run||$conf|
+__cronDecodeDate||$timestamp, $min_diff = 0|
+__cronEncodeDate||$date|
+__cronNextOrEqual||$el, $arr, $range_start, $range_end|
+__cronDecodeRule||$rule, $min, $max|
+__cronDecodeRuleMday||$rule, $month, $year|
+__cronMonDaysFromWeekDays||$year, $mon, $weekdays, $offset = 0|
+test_elysia_cron_should_run|||
