@@ -1,0 +1,48 @@
+# format=pipe
+_libraries_test_module_example_2|||
+_libraries_test_module_example_4|||
+_libraries_test_module_example_1|||
+_libraries_test_module_example_3|||
+libraries_test_theme_libraries_info|||
+libraries_test_theme_libraries_info_alter||&$libraries|
+_libraries_test_theme_integration_file|||
+_libraries_test_module_integration_file_post_load|||
+libraries_test_module_libraries_info|||
+libraries_test_module_libraries_info_alter||&$libraries|
+libraries_test_module_libraries_info_file_paths|||
+_libraries_test_module_return_version||$library, $version|
+_libraries_test_module_get_version||$library, $file, $pattern, $lines = 20, $cols = 200|
+_libraries_test_module_return_installed||$library, $name, $installed|
+_libraries_test_module_info_callback||&$library, $version, $variant|
+_libraries_test_module_pre_detect_callback||&$library, $version, $variant|
+_libraries_test_module_post_detect_callback||&$library, $version, $variant|
+_libraries_test_module_pre_dependencies_load_callback||&$library, $version, $variant|
+_libraries_test_module_pre_load_callback||&$library, $version, $variant|
+_libraries_test_module_post_load_callback||&$library, $version, $variant|
+_libraries_test_module_callback||&$library, $version, $variant, $group|
+libraries_test_module_menu|||
+_libraries_test_module_load||$library, $variant = NULL|
+libraries_test_module_system_theme_info|||
+_libraries_test_module_integration_file|||
+libraries_drush_command|||
+libraries_drush_help||$section|
+libraries_drush_list|||
+libraries_drush_download||$name|
+libraries_flush_caches|||
+libraries_get_path||$name, $base_path = FALSE|
+libraries_get_libraries|||
+libraries_scan_info_files|||
+libraries_invoke||$group, &$library|
+libraries_traverse_library||&$library, $callback|
+libraries_prepare_files||&$library, $version = NULL, $variant = NULL|
+libraries_detect_dependencies||&$library, $version = NULL, $variant = NULL|
+&libraries_info||$name = NULL|
+libraries_info_defaults||&$library, $name|
+libraries_detect||$name|
+libraries_load||$name, $variant = NULL|
+libraries_load_files||$library|
+_libraries_require_once||$file_path|
+libraries_get_version||$library, $options|
+hook_libraries_info|||
+hook_libraries_info_alter||&$libraries|
+hook_libraries_paths|||

@@ -1,0 +1,175 @@
+# format=pipe
+nodequeue_generate_menu|||
+nodequeue_generate_form|||
+nodequeue_generate_form_validate||$form, &$form_state|
+nodequeue_generate_form_submit||$form, &$form_state|
+nodequeue_generate_repopulate_queues||$qids, $nodes_limit = 10|
+nodequeue_generate_rehash|||
+nodequeue_nodequeue_generate||$queue, $limit|
+smartqueue_taxonomy_nodequeue_generate||$queue, $limit|
+nodequeue_generate_drush_command|||
+nodequeue_generate_drush_help||$section|
+drush_nodequeue_generate|||
+drush_nodequeue_generate_all|||
+drush_nodequeue_generate_rehash|||
+nodequeue_admin_settings||$form, &$form_state|
+nodequeue_admin_add_node||$queue, $subqueue, $node|
+nodequeue_admin_remove_node||$queue, $subqueue, $node|
+nodequeue_node_tab||$node|
+nodequeue_view_queues|||
+nodequeue_view_subqueues||$queue|
+nodequeue_edit_queue_form||$form, &$form_state, $queue|
+nodequeue_edit_queue_form_validate||$form, &$form_state|
+nodequeue_edit_queue_form_submit||$formid, &$form_state|
+nodequeue_edit_queue_form_delete_validate||$form, &$form_state|
+nodequeue_edit_queue_form_delete_submit||$formid, &$form_state|
+nodequeue_admin_delete||$form, &$form_state, $queue|
+nodequeue_admin_delete_submit||$formid, &$form_state|
+nodequeue_admin_view||$queue, $subqueue = array()|
+nodequeue_arrange_subqueue||$queue, $subqueue = NULL|
+_nodequeue_dragdrop_get_nodes||$queue, $subqueue|
+nodequeue_arrange_subqueue_form||$form, $form_state, $queue, $nodes, $subqueue|
+nodequeue_arrange_subqueue_form_validate||$form, &$form_state|
+nodequeue_arrange_subqueue_form_reverse_submit||$form, &$form_state|
+nodequeue_arrange_subqueue_form_shuffle_submit||$form, &$form_state|
+nodequeue_arrange_subqueue_form_submit||$form, &$form_state, $reverse = FALSE, $shuffle = FALSE|
+nodequeue_save_subqueue_order||$nodes, $qid, $sqid|
+nodequeue_arrange_subqueue_form_clear_submit||$form, &$form_state|
+nodequeue_arrange_subqueue_form_add_submit||$form, &$form_state|
+nodequeue_admin_remove||$queue, $subqueue, $pos|
+nodequeue_clear_confirm||$form, &$form_state, $queue, $subqueue|
+nodequeue_clear_confirm_submit||$form, &$form_state|
+nodequeue_autocomplete|||
+_nodequeue_autocomplete||$sqid, $string|
+summary_name_field|||
+summary_name||$data|
+query|||
+options||&$options|
+options_form||&$form, &$form_state|
+pre_render||$values|
+pre_render||$values|
+render||$values|
+init||&$view, &$options|
+option_definition|||
+options_form||&$form, &$form_state|
+query|||
+nodequeue_views_data|||
+nodequeue_views_data_alter||&$data|
+nodequeue_views_default_views|||
+render||$values|
+nodequeue_action_info|||
+nodequeue_add_action_form||$context|
+nodequeue_add_action_submit||$form, &$form_state|
+nodequeue_add_action||$node, $context|
+action_nodequeue_add||$op, $edit = array(), $node|
+nodequeue_remove_action_form||$context|
+nodequeue_remove_action_submit||$form, &$form_state|
+nodequeue_remove_action||$node, $context|
+action_nodequeue_remove||$op, $edit = array(), $node|
+nodequeue_service_permission|||
+nodequeue_service_service|||
+nodequeue_service_get_nodequeues|||
+nodequeue_service_get_subqueues||$qid|
+nodequeue_service_get_nodequeues_access|||
+nodequeue_permission|||
+nodequeue_init|||
+nodequeue_menu|||
+for a _menu_translate|||
+subqueue_to_arg|||
+nodequeue_admin_paths|||
+nodequeue_node_delete||$node|
+nodequeue_node_view||$node, $view_mode|
+nodequeue_forms||$form_id|
+nodequeue_theme|||
+nodequeue_element_info|||
+process_position||$element|
+position_value||&$form|
+nodequeue_views_api|||
+nodequeue_form_apachesolr_search_bias_form_alter||&$form, &$form_state, $form_id|
+nodequeue_apachesolr_update_index||&$document, $node|
+_nodequeue_solr_qid_key|||
+nodequeue_apachesolr_query_alter||DrupalSolrQueryInterface $query|
+nodequeue_queue||$type|
+nodequeue_load_queues_by_type||$type, $location = NULL, $account = NULL, $bypass_cache = FALSE|
+nodequeue_filter_qids||&$qids, $location|
+nodequeue_get_qids||$type, $account = NULL, $bypass_cache = FALSE|
+nodequeue_get_all_qids||$page_size = 0, $pager_element = 0, $bypass_cache = FALSE|
+nodequeue_load_queues||$qids = array(), $bypass_cache = FALSE|
+nodequeue_load||$qid|
+subqueue_load||$sqid|
+nodequeue_load_subqueues||$sqids, $bypass_cache = FALSE|
+nodequeue_load_subqueue||$sqid, $bypass_cache = FALSE|
+nodequeue_load_subqueues_by_queue||$qids, $page_size = 0|
+nodequeue_load_subqueues_by_reference||$references, $bypass_cache = FALSE|
+nodequeue_load_queue_by_name||$name|
+nodequeue_get_qid_map|||
+nodequeue_save||&$queue|
+nodequeue_delete||$qid|
+nodequeue_add_subqueue||&$queue, $title, $reference = NULL|
+nodequeue_subqueue_update_title||$sqid, $title|
+nodequeue_remove_subqueue||$sqid|
+nodequeue_subqueue_add||$queue, &$subqueue, $nid|
+nodequeue_subqueue_remove_node||$sqid, $nid|
+nodequeue_subqueue_remove||$sqid, $start, $end = NULL|
+nodequeue_queue_clear||$sqid|
+nodequeue_check_subqueue_size||$queue, &$subqueue, $size = NULL|
+nodequeue_check_subqueue_sizes||$queue|
+nodequeue_queue_swap||$subqueue, $pos1, $pos2|
+nodequeue_queue_up||$subqueue, $position|
+nodequeue_queue_down||$subqueue, $position|
+nodequeue_queue_front||$subqueue, $position|
+nodequeue_queue_back||$subqueue, $position|
+nodequeue_get_subqueue_position||$sqid, $nid|
+nodequeue_set_subqueue_positions||&$subqueues, $nid|
+nodequeue_get_subqueues_by_node||$queues, $node|
+nodequeue_subqueue_size_text||$max, $count, $long = TRUE|
+nodequeue_title_substitute||$text, $queue, $subqueue|
+nodequeue_subqueue_shuffle||$subqueue|
+nodequeue_nodequeue_info|||
+nodequeue_nodequeue_form_submit||&$queue, $form_state|
+nodequeue_node_titles||$sqid, $title = '', $backward = TRUE, $from = 0, $count = 0, $published_only = TRUE|
+nodequeue_node_links||$node|
+nodequeue_view_nodes||$sqid, $backward = TRUE, $teaser = TRUE, $links = TRUE, $from = 0, $count = 0|
+nodequeue_load_nodes||$sqid, $backward = FALSE, $from = 0, $count = 5, $published_only = TRUE|
+nodequeue_load_front||$sqid|
+nodequeue_load_back||$sqid, $teaser = TRUE, $links = TRUE|
+nodequeue_view_random_node||$sqid, $teaser = TRUE, $links = TRUE|
+nodequeue_load_random_node||$sqid|
+nodequeue_subqueue_position||$sqid, $nid|
+nodequeue_queue_position||$qid, $nid|
+nodequeue_api_queue_form||$queue, &$form|
+nodequeue_api_queue_form_validate||$queue, &$form_state, &$form|
+nodequeue_api_queue_form_submit||&$queue, &$form_state|
+nodequeue_api_queue_form_submit_finish||$queue, &$form_state|
+nodequeue_api_subqueues||&$queue, $node|
+nodequeue_api_autocomplete||$queue, $subqueue, $string|
+nodequeue_api_info|||
+nodequeue_api_queue_access||$queue, $account = NULL|
+nodequeue_api_subqueue_access||$subqueue, $account = NULL, $queue = NULL|
+nodequeue_get_query_string||$seed, $destination = FALSE, $query = array()|
+nodequeue_get_token||$nid|
+nodequeue_check_token||$seed|
+_nodequeue_access_admin_or_manipulate|||
+nodequeue_node_and_queue_access||$node, $queue, $subqueue = NULL|
+nodequeue_nodequeue_access||$type, $location = NULL, $account = NULL|
+nodequeue_queue_access||$queue, $subqueue = NULL, $account = NULL|
+nodequeue_node_tab_access||$node|
+nodequeue_js_output||$label, $href, $count = NULL, $sqid = NULL|
+nodequeue_get_content_id||$queue, $node|
+nodequeue_machine_name_exists||$machine_name|
+nodequeue_nids_visible||$sqid = -1, $account = NULL|
+theme_nodequeue_arrange_subqueue_form_table||$variables|
+theme_nodequeue_subqueue_empty_text|||
+theme_nodequeue_subqueue_full_text|||
+theme_nodequeue_subqueue_count_text||$variables|
+smartqueue_nodequeue_info|||
+smartqueue_taxonomy_nodequeue_form||$queue, &$form|
+smartqueue_taxonomy_nodequeue_form_validate||$queue, &$form_state, &$form|
+smartqueue_taxonomy_nodequeue_form_submit_finish||$queue, $form_state|
+smartqueue_taxonomy_nodequeue_subqueues||&$queue, $node|
+smartqueue_nodequeue_alter||&$data, $type|
+smartqueue_build_string||$arrays|
+smartqueue_taxonomy_nodequeue_subqueue_title||$queue, $reference|
+smartqueue_taxonomy_term_update||$term|
+smartqueue_taxonomy_term_delete||$term|
+smartqueue_taxonomy_get_parents||$tids|

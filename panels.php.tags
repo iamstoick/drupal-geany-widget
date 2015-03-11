@@ -1,0 +1,430 @@
+# format=pipe
+render|||
+add_meta|||
+render_pane||&$pane|
+render_pane_content||&$pane|
+render_region||$region_id, $panes|
+ipe_test_lock||$url, $break|
+ajax_unlock_ipe|||
+ajax_save_form||$break = NULL|
+ajax_change_layout||$break = NULL|
+ajax_set_layout||$layout|
+command_update_pane||$pid|
+command_add_pane||$pid|
+panels_ipe_edit_control_form||$form, &$form_state|
+panels_ipe_default_panels_renderer_pipeline|||
+panels_ipe_ctools_plugin_directory||$module, $plugin|
+panels_ipe_ctools_plugin_api||$owner, $api|
+panels_ipe_theme|||
+theme_panels_ipe_placeholder_pane||$vars|
+theme_panels_ipe_pane_wrapper||$vars|
+theme_panels_ipe_region_wrapper||$vars|
+theme_panels_ipe_add_pane_button||$vars|
+panels_ipe_get_cache_key||$key = NULL|
+panels_ipe_toolbar_add_button||$cache_key, $id, $button|
+panels_ipe_page_alter||&$page|
+theme_panels_ipe_toolbar||$vars|
+panels_simple_cache_get_cache||$conf, $display, $args, $contexts, $pane = NULL|
+panels_simple_cache_set_cache||$conf, $content, $display, $args, $contexts, $pane = NULL|
+panels_simple_cache_clear_cache||$display|
+panels_simple_cache_get_id||$conf, $display, $args, $contexts, $pane|
+panels_simple_cache_settings_form||$conf, $display, $pid|
+panels_region_rounded_shadow_style_settings||&$form, &$form_state|
+panels_region_rounded_shadow_style_settings_submit||&$form, &$form_state|
+panels_region_rounded_shadow_style_base_build||$plugin, $settings, &$css, $replacements|
+panels_region_plain_box_style_settings||&$form, &$form_state|
+panels_region_plain_box_style_settings_submit||&$form, &$form_state|
+panels_region_plain_box_style_base_build||$plugin, $settings, &$css, $replacements|
+template_preprocess_pane_rounded_shadow||&$vars|
+panels_pane_rounded_shadow_style_settings||&$form, &$form_state|
+panels_pane_rounded_shadow_style_settings_submit||&$form, &$form_state|
+panels_pane_rounded_shadow_style_base_build||$plugin, $settings, &$css, $replacements|
+panels_pane_plain_box_style_settings||&$form, &$form_state|
+panels_pane_plain_box_style_settings_submit||&$form, &$form_state|
+panels_pane_plain_box_style_base_build||$plugin, $settings, &$css, $replacements|
+hook_menu||&$items|
+edit_form||&$form, &$form_state|
+edit_form_submit||&$form, &$form_state|
+list_form||&$form, &$form_state|
+list_filter||$form_state, $item|
+list_sort_options|||
+list_build_row||$item, &$form_state, $operations|
+list_table_header|||
+option_definition|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+render||$row|
+panels_change_layout_button||$form, &$form_state|
+panels_views_plugins|||
+panels_panel_context_tab_operation||$handler, $contexts, $args|
+&panels_panel_context_get_display||&$handler|
+panels_panel_context_render||$handler, $base_contexts, $args, $test = TRUE|
+panels_panel_context_save||&$handler, $update|
+panels_panel_context_export||&$handler, $indent|
+panels_panel_context_clone||&$handler|
+panels_panel_context_delete||&$handler|
+panels_panel_context_title||$handler, $task, $subtask|
+panels_panel_context_admin_summary||$handler, $task, $subtask, $page, $show_title = TRUE|
+panels_panel_context_edit_choose||$form, &$form_state|
+panels_panel_context_edit_choose_validate||&$form, &$form_state|
+panels_panel_context_edit_choose_submit||&$form, &$form_state|
+panels_panel_context_edit_layout||$form, &$form_state|
+panels_panel_context_edit_layout_validate||&$form, &$form_state|
+panels_panel_context_edit_layout_submit||&$form, &$form_state|
+panels_panel_context_edit_move||$form, &$form_state|
+panels_panel_context_edit_content||$form, &$form_state|
+panels_panel_context_edit_content_validate||&$form, &$form_state|
+panels_panel_context_edit_content_submit||&$form, &$form_state|
+panels_panel_context_edit_settings||$form, &$form_state|
+panels_panel_context_edit_settings_submit||&$form, &$form_state|
+panels_panel_context_edit_preview||$form, &$form_state|
+panels_panel_context_edit_preview_submit||&$form, &$form_state|
+panels_panel_context_get_addressable||$task, $subtask_name, $handler, $address, $contexts, $arguments, $type|
+panels_landing_page_new_page||&$cache|
+panels_landing_page_basic||$form, &$form_state|
+panels_landing_page_basic_validate||&$form, &$form_state|
+panels_landing_page_basic_submit||&$form, &$form_state|
+panels_landing_page_content||$form, &$form_state|
+panels_landing_page_submit||&$form, &$form_state|
+panels_landing_page_finish||&$form_state|
+panels_flexible_merge_plugin||$plugin, $layout|
+panels_flexible_get_sublayout||$plugin, $layout_name, $sublayout_name|
+panels_flexible_get_sublayouts||$plugin, $layout_name|
+panels_flexible_convert_settings||&$settings, &$layout|
+panels_flexible_panels||$display, $settings, $layout|
+panels_flexible_create_renderer||$admin, $css_id, $content, $settings, &$display, $layout, $handler|
+theme_panels_flexible||$vars|
+theme_panels_flexible_admin||$vars|
+panels_flexible_render_items||$renderer, $list, $owner_id|
+panels_flexible_render_item||$renderer, $item, $content, $id, $position, $max, $clear = FALSE|
+panels_flexible_render_splitter||$renderer, $left_id, $right_id|
+panels_flexible_render_item_links||$renderer, $id, $item|
+panels_flexible_render_css||$renderer|
+panels_flexible_render_css_group||$renderer, $list, $owner_id, $type, $id|
+panels_flexible_get_css_group||&$css, $renderer, $list, $owner_id, $type, $item_id|
+panels_ajax_flexible_edit_settings||$handler, $id|
+panels_flexible_config_item_form||$form, &$form_state|
+panels_flexible_config_item_form_submit||&$form, &$form_state|
+panels_ajax_flexible_edit_add||$handler, $id, $location = 'left'|
+panels_flexible_add_item_form||$form, &$form_state|
+panels_flexible_add_item_form_submit||&$form, &$form_state|
+panels_ajax_flexible_edit_remove||$handler, $id|
+panels_ajax_flexible_edit_resize||$handler|
+panels_ajax_flexible_edit_reuse||$handler|
+panels_flexible_reuse_form||$form, &$form_state|
+panels_flexible_reuse_form_validate||&$form, &$form_state|
+panels_flexible_edit_name_exists||$name, $element, &$form_state|
+edit|||
+add_meta|||
+render|||
+render_region||$region_id, $panes|
+render_pane||&$pane|
+get_style_links||$type, $id = NULL|
+get_display_links|||
+get_region_links||$region_id|
+get_pane_links||$pane, $content_type|
+get_url|||
+ajax_show||$pid = NULL|
+ajax_hide||$pid = NULL|
+ajax_select_content||$region = NULL, $category = NULL|
+get_category||$content_type|
+get_categories||$content_types|
+ajax_add_pane||$region = NULL, $type_name = NULL, $subtype_name = NULL, $step = NULL|
+ajax_edit_pane||$pid = NULL, $step = NULL|
+ajax_panel_title||$pid = NULL|
+ajax_cache_method||$pid = NULL|
+ajax_cache_settings||$pid = 0|
+ajax_style_type||$type, $pid = NULL|
+= panels_plugin_get_function||'styles', $style, ($type == 'pane'|
+get_style||$type, $pid = ''|
+ajax_style_settings||$type, $pid = ''|
+ajax_pane_css||$pid = NULL|
+ajax_lock||$pid = NULL|
+ajax_access_settings||$pid = NULL|
+ajax_access_add_test||$pid = NULL|
+ajax_access_configure_test||$pid = NULL, $id = NULL|
+ajax_layout|||
+ajax_style|||
+command_update_pane||$pid|
+command_add_pane||$pid|
+command_update_display_links|||
+command_update_region_links||$id|
+panels_ajax_edit_pane_next||&$form_state|
+panels_ajax_edit_pane_finish||&$form_state|
+panels_ajax_edit_pane_cancel||&$form_state|
+panels_edit_cache_method_form||$form, &$form_state|
+panels_edit_cache_method_form_submit||$form, &$form_state|
+panels_edit_cache_settings_form||$form, &$form_state|
+panels_edit_cache_settings_form_validate||$form, &$form_state|
+= panels_plugin_get_function||'cache', $form_state['conf']['method'], 'settings form validate')|
+panels_edit_cache_settings_form_submit||$form, &$form_state|
+= panels_plugin_get_function||'cache', $form_state['conf']['method'], 'settings form submit')|
+panels_edit_style_type_form||$form, &$form_state|
+panels_edit_style_type_form_submit||$form, &$form_state|
+panels_edit_style_settings_form||$form, &$form_state|
+= panels_plugin_get_function||'styles', $style, ($type == 'pane'|
+panels_edit_style_settings_form_validate||$form, &$form_state|
+= panels_plugin_get_function||'styles', $form_state['style'], $name)|
+panels_edit_style_settings_form_submit||$form, &$form_state|
+= panels_plugin_get_function||'styles', $form_state['style'], $name)|
+panels_edit_configure_pane_css_form||$form, &$form_state|
+panels_edit_configure_pane_css_form_submit||$form, &$form_state|
+panels_edit_configure_pane_lock_form||$form, &$form_state|
+panels_edit_configure_pane_lock_form_after_build||$element, $form_state|
+panels_edit_configure_pane_lock_form_submit||$form, &$form_state|
+panels_edit_configure_access_settings_form||$form, &$form_state|
+panels_edit_configure_access_settings_form_submit||$form, &$form_state|
+panels_edit_add_access_test_form||$form, &$form_state|
+panels_edit_configure_access_test_form||$form, &$form_state|
+= ctools_plugin_get_function||$plugin, 'settings form')|
+panels_edit_configure_access_test_form_validate||&$form, &$form_state|
+= ctools_plugin_get_function||$form_state['plugin'], 'settings form validate')|
+panels_edit_configure_access_test_form_submit||&$form, &$form_state|
+= ctools_plugin_get_function||$form_state['plugin'], 'settings form submit')|
+render_regions|||
+render_panes|||
+prepare||$external_settings = NULL|
+init||$plugin, &$display|
+prepare||$external_settings = NULL|
+prepare_panes||$panes|
+prepare_regions||$region_pane_list, $settings|
+render|||
+render_layout|||
+add_meta|||
+add_css||$filename|
+render_panes|||
+render_pane||&$pane|
+render_pane_content||&$pane|
+render_regions|||
+render_region||$region_id, $panes|
+theme_panels_naked_style_render_region||$vars|
+theme_panels_naked_style_render_pane||$vars|
+theme_panels_rounded_corners_style_render_region||$vars|
+panels_add_rounded_corners_css||$display, $where|
+theme_panels_rounded_corners_style_render_pane||$vars|
+panels_rounded_corners_style_settings_form||$style_settings|
+panels_rounded_corners_css||$display|
+_panels_rounded_corners_css||$idstr|
+theme_panels_list_style_render_region||$vars|
+panels_list_style_settings_form||$style_settings|
+panels_stylizer_merge_plugin||$plugin, $style|
+panels_stylizer_get_substyle||$plugin, $style_name, $substyle_name|
+panels_stylizer_get_substyles||$plugin, $style_name|
+_panels_stylizer_get_style||$plugin, $style_settings|
+theme_panels_stylizer_stylizer_style_render_region||$vars|
+theme_panels_stylizer_stylizer_style_render_pane||$vars|
+panels_stylizer_stylizer_style_settings_form||$style_settings, $display, $pid, $type, $form_state|
+panels_stylizer_pane_add_style||&$renderer, $plugin, &$conf, $type, $pid, $step = NULL|
+panels_stylizer_edit_pane_style_form||&$form, &$form_state|
+panels_stylizer_edit_pane_style_form_validate||&$form, &$form_state|
+panels_stylizer_edit_pane_style_form_submit||&$form, &$form_state|
+theme_panels_default_style_render_region||$vars|
+theme_panels_block_style_render_pane||$vars|
+panels_mini_permission|||
+panels_mini_menu|||
+panels_mini_settings|||
+panels_mini_block_info|||
+panels_mini_block_view||$delta = 0|
+panels_mini_block_configure||$delta = 0|
+panels_mini_block_list_alter||&$blocks|
+panels_mini_get_id||$name|
+panels_mini_new||$set_defaults = TRUE|
+panels_mini_load||$name|
+panels_mini_load_all||$reset = FALSE|
+panels_mini_save||&$mini|
+panels_mini_delete||$mini|
+panels_mini_export||$mini, $indent = ''|
+panels_mini_ctools_block_info||$module, $delta, &$info|
+panels_mini_ctools_plugin_directory||$module, $plugin|
+_panels_mini_panels_cache_get||$key|
+panels_mini_panels_cache_get||$key|
+panels_mini_panels_cache_set||$key, $cache|
+panels_mini_panels_cache_clear||$key, $cache|
+panels_mini_panels_cache_save||$key, $cache|
+panels_mini_panels_cache_break_lock||$key, $cache|
+panels_mini_panels_dashboard_blocks||&$vars|
+init||$plugin|
+list_form||&$form, &$form_state|
+list_filter||$form_state, $item|
+list_sort_options|||
+list_build_row||$item, &$form_state, $operations|
+list_table_header|||
+edit_form||&$form, &$form_state|
+edit_form_basic_validate||$form, &$form_state|
+edit_form_submit||&$form, &$form_state|
+edit_form_context||&$form, &$form_state|
+edit_form_context_submit||&$form, &$form_state|
+edit_form_layout||&$form, &$form_state|
+edit_form_layout_validate||&$form, &$form_state|
+edit_form_layout_submit||&$form, &$form_state|
+edit_form_move||&$form, &$form_state|
+edit_form_move_submit||&$form, &$form_state|
+edit_form_content||&$form, &$form_state|
+edit_form_content_submit||&$form, &$form_state|
+panels_mini_panels_mini_ctools_content_types|||
+panels_mini_panels_mini_content_type_content_type||$subtype_id, $plugin|
+panels_mini_panels_mini_content_type_content_types||$plugin|
+_panels_mini_panels_mini_content_type_content_type||$mini|
+panels_mini_panels_mini_content_type_render||$subtype, $conf, $panel_args, &$contexts|
+panels_mini_panels_mini_content_type_edit_form||$form, &$form_state|
+panels_mini_panels_mini_content_type_admin_title||$subtype, $conf|
+panels_api_version|||
+panels_theme|||
+panels_menu|||
+panels_edit_cache_load||$cache_key|
+panels_init|||
+panels_permission|||
+panels_flush_caches|||
+panels_ctools_plugin_directory||$module, $plugin|
+panels_ctools_plugin_type|||
+panels_layout_process||&$plugin|
+panels_ctools_plugin_api||$owner, $api|
+panels_views_api|||
+panels_plugin_styles_process||&$plugin, $info|
+panels_ctools_style_base_types|||
+panels_stylizer_lipsum|||
+panels_stylizer_region_preview||$plugin, $settings|
+panels_stylizer_pane_preview||$plugin, $settings|
+panels_edit||$display, $destination = NULL, $content_types = NULL, $title = FALSE|
+panels_edit_layout||$display, $finish, $destination = NULL, $allowed_layouts = NULL|
+add_pane||&$pane, $location = NULL|
+duplicate_pane||$pid, $location = FALSE|
+clone_pane||$pid|
+next_new_pid|||
+get_title|||
+render||$renderer = NULL|
+panels_new_display|||
+panels_new_pane||$type, $subtype, $set_defaults = FALSE|
+panels_load_displays||$dids|
+panels_load_display||$did|
+panels_save_display||&$display|
+panels_delete_display||$display|
+panels_export_display||$display, $prefix = ''|
+panels_render_display||&$display, $renderer = NULL|
+theme_panels_render_display_form||$vars|
+panels_print_layout_icon||$id, $layout, $title = NULL|
+theme_panels_layout_icon||$vars|
+theme_panels_layout_link||$vars|
+panels_print_layout_link||$id, $layout, $link, $options = array(), $current_layout = FALSE|
+panels_get_legacy_state|||
+panels_get_current_page_display||$change = NULL|
+template_preprocess_panels_pane||&$vars|
+panels_ajax_router|||
+panels_cache_get||$obj, $did, $skip_cache = FALSE|
+panels_cache_set||$obj, $did, $cache|
+panels_cache_clear||$obj, $did|
+panels_edit_cache_get_default||&$display, $content_types = NULL, $title = FALSE|
+panels_edit_cache_get||$cache_key|
+panels_edit_cache_set||$cache|
+panels_edit_cache_save||$cache|
+panels_edit_cache_clear||$cache|
+panels_edit_cache_break_lock||$cache|
+panel_context_panels_cache_get||$key|
+_panel_context_panels_cache_get_page_cache||$key, $cache|
+panel_context_panels_cache_set||$key, $cache|
+panel_context_panels_cache_clear||$key, $cache|
+panel_context_panels_cache_save||$key, $cache|
+panel_context_panels_cache_break_lock||$key, $cache|
+panels_page_wizard_panels_cache_get||$key|
+panels_page_wizard_panels_cache_set||$key, $cache|
+panels_goto||$destination|
+panels_print_layout||$layout, $content, $meta = 'standard'|
+_panels_builder_filter||$layout|
+panels_get_path||$file, $base_path = FALSE, $module = 'panels'|
+panels_preprocess_html||&$vars|
+_panels_edit_layout||$display, $finish, $destination, $allowed_layouts|
+panels_choose_layout||$form, &$form_state|
+panels_choose_layout_submit||$form, &$form_state|
+panels_change_layout||$form, &$form_state|
+panels_change_layout_submit||$form, &$form_state|
+panels_choose_layout_back||$form, &$form_state|
+panels_page_wizard_add_layout||&$form, &$form_state|
+panels_page_wizard_add_content||&$form, &$form_state|
+panels_page_wizard_add_content_submit||&$form, &$form_state|
+_panels_edit||$display, $destination, $content_types, $title = FALSE|
+panels_edit_display_form||$form, &$form_state|
+panels_edit_display_form_validate||$form, &$form_state|
+panels_edit_display_form_submit||$form, &$form_state|
+panels_edit_display_form_preview||&$form, &$form_state|
+panels_edit_display_settings_form||$form, &$form_state|
+panels_edit_display_settings_form_validate||$form, &$form_state|
+= panels_plugin_get_function||'layout', $form_state['layout'], 'settings validate')|
+panels_edit_display_settings_form_submit||$form, &$form_state|
+= panels_plugin_get_function||'layout', $form_state['layout'], 'settings submit')|
+t|||
+getStatus|||
+determineStatus|||
+panels_default_panels_renderer_pipeline|||
+template_preprocess_panels_add_content_modal||&$vars|
+template_process_panels_add_content_modal||&$vars|
+template_preprocess_panels_add_content_link||&$vars|
+panels_admin_page|||
+panels_dashboard_final_blocks||&$vars|
+panels_panels_dashboard_blocks||&$vars|
+template_preprocess_panels_dashboard||&$vars|
+panels_admin_settings_page|||
+= ctools_plugin_get_function||$task, 'admin settings')|
+= ctools_plugin_get_function||$content, 'admin settings')|
+panels_admin_panel_context_page|||
+panels_pane_access||$pane, $display|
+panels_get_regions||$layout, $display|
+= ctools_plugin_get_function||$layout, 'regions function')|
+panels_get_cached_content||$display, $args, $context, $pane = NULL|
+panels_set_cached_content||$cache, $display, $args, $context, $pane = NULL|
+panels_clear_cached_content||$display|
+panels_cache_object|||
+add_content||$content|
+set_content||$content|
+cache|||
+restore|||
+panels_get_pane_title||&$pane, $context = array(), $incoming_content = NULL|
+panels_get_layout||$layout|
+panels_get_layouts|||
+panels_get_layout_builders|||
+panels_get_style||$style|
+panels_get_styles|||
+panels_get_cache||$cache|
+panels_get_caches|||
+panels_get_display_renderer||$renderer|
+panels_get_display_renderers|||
+panels_get_renderer_handler||$plugin, &$display|
+panels_get_renderer||$pipeline_name, &$display|
+_panels_renderer_pipeline_sort||$a, $b|
+panels_get_renderer_pipelines||$sort = TRUE|
+panels_plugin_get_function||$plugin, $which, $function_name|
+panels_allowed_layouts||$start_allowed = TRUE|
+docdemo_allowed_layouts|||
+set_allowed||$title = 'Panels: Allowed Layouts'|
+sync_with_available|||
+save|||
+list_layouts|||
+panels_common_settings||$form, &$form_state, $module_name = 'panels_common'|
+panels_common_settings_validate||$form, &$form_state|
+panels_common_settings_submit||$form, &$form_state|
+panels_common_get_allowed_types||$module, $contexts = array(), $has_content = FALSE, $default_defaults = array(), $default_allowed_types = array()|
+panels_common_allowed_layouts_form||&$form, &$form_state, $module_name|
+panels_common_allowed_layouts_form_validate||$form, &$form_state|
+panels_common_allowed_layouts_form_submit||$form, &$form_state|
+panels_common_get_allowed_layout_object||$module_name|
+panels_common_get_allowed_layouts||$module_name|
+theme_panels_common_content_list||$vars|
+panels_common_print_layout_links||$layouts, $base_path, $link_options = array(), $current_layout = NULL|
+panels_node_permission|||
+panels_node_menu|||
+panels_node_edit_node||$node|
+panels_node_add|||
+panels_node_node_info|||
+panels_node_node_access||$node, $op, $account|
+panels_node_hook_form||&$node, &$form_state|
+panels_node_hook_validate||$node, $form, &$form_state|
+panels_node_hook_load||$nodes|
+panels_node_hook_insert||&$node|
+panels_node_hook_delete||&$node|
+panels_node_hook_update||$node|
+panels_node_hook_view||$node, $view_mode|
+panels_node_settings|||
+panels_node_edit_layout||$node|
+panels_node_edit_content||$node|
+panels_node_get_context||&$node|
+panels_node_export_node_alter||&$node, $original_node, $method|
+panels_node_panels_dashboard_blocks||&$vars|

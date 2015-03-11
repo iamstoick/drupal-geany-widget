@@ -1,0 +1,234 @@
+# format=pipe
+template_preprocess_context_ui_editor||&$vars|
+template_preprocess_context_ui_plugins||&$vars|
+template_preprocess_context_ui_form||&$vars|
+context_ui_ctools_plugin_directory||$module, $plugin|
+context_ui_theme|||
+context_ui_block_info|||
+context_ui_block_view||$delta = ''|
+context_ui_permission|||
+context_ui_menu|||
+context_ui_help||$path, $arg|
+context_ui_editor||$form, &$form_state, $contexts|
+context_ui_editor_process||$values|
+context_ui_editor_submit||&$form, &$form_state|
+context_ui_editor_cancel||&$form, &$form_state|
+context_ui_settings||$form, &$form_state|
+context_ui_settings_submit||$form, &$form_state|
+context_ui_dialog_is_enabled|||
+context_ui_page_alter||&$page|
+context_ui_menu_contextual_links_alter||&$links, $router_item, $root_path|
+context_ui_activate|||
+context_ui_deactivate|||
+context_ui_init|||
+context_ui_page_build||&$page|
+context_ui_get_available_blocks|||
+list_form||&$form, &$form_state|
+list_css|||
+list_render||&$form_state|
+list_build_row||$item, &$form_state, $operations|
+edit_form_submit||&$form, &$form_state|
+edit_finish_validate||&$form, &$form_state|
+context_ui_form||&$form, &$form_state|
+_context_ui_rebuild_from_input||$context, $input, $conditions, $reactions|
+context_ui_form_process||$context, $form, $submit = TRUE|
+context_ui_form_submit||$form, &$form_state|
+context_ui_edit_name_validate||$element, &$form_state|
+context_help||$path, $arg|
+context_theme|||
+context_theme_registry_alter||&$theme_registry|
+context_ctools_render_alter||$info, $page, $data|
+context_entity_prepare_view||$prepare, $entity_type|
+context_node_view||$node, $view_mode|
+context_form_alter||&$form, $form_state, $form_id|
+context_form_alter_node_after_build||$form, &$form_state|
+context_admin_form_submit||&$form, $form_state|
+context_node_condition||&$node, $op|
+context_form_system_modules_form_alter||&$form, $form_state|
+context_form_user_profile_form_alter||&$form, $form_state|
+context_form_user_register_form_alter||&$form, $form_state|
+context_form_comment_form_alter||&$form, $form_state|
+context_views_pre_view||$view, $display|
+context_user_view||$account, $view_mode|
+context_page_build||&$page|
+context_links||$reset = FALSE|
+context_context_page_condition|||
+context_context_page_reaction|||
+context_preprocess_page||&$vars|
+context_page_delivery_callback_alter|||
+context_preprocess_html||&$vars|
+theme_context_block_form||$vars|
+theme_context_block_regions_form||$vars|
+theme_context_block_script_placeholder||$vars|
+template_preprocess_context_block_browser||&$vars|
+template_preprocess_context_block_browser_item||&$vars|
+theme_context_block_edit_wrap||$vars|
+is_enabled_region||$region|
+get_active_layout||$info = TRUE|
+add_layout_template||&$vars|
+add_layout_stylesheet|||
+editor_form||$context|
+editor_form_submit||&$context, $values|
+options_form||$context|
+options_form_submit||$values|
+get_layout_options||$theme_key = NULL|
+get_layout_regions||$theme_key = NULL|
+context_layouts_help||$path, $arg|
+context_layouts_context_plugins|||
+context_layouts_context_registry_alter||&$registry|
+context_layouts_theme|||
+context_layouts_context_page_reaction|||
+context_layouts_preprocess_page||&$vars|
+context_layouts_get_layouts||$theme = NULL, $reset = FALSE|
+context_layouts_get_active_layout||$info = TRUE|
+_context_context_registry|||
+_context_context_plugins|||
+condition_values|||
+editor_form||$context = NULL|
+execute||$value|
+options_form||$context|
+options_form_submit||$values|
+settings_form|||
+execute|||
+options_form||$context|
+execute|||
+execute||$node, $op|
+__clone|||
+__construct||$plugin, $info|
+options_form||$context|
+options_form_submit||$values|
+settings_form|||
+execute||$value|
+get_contexts|||
+fetch_from_context||$context|
+options_form||$context|
+options_form_submit||$values|
+editor_form||$context|
+editor_form_submit||&$context, $values|
+settings_form|||
+execute||&$page|
+is_enabled_region||$region|
+is_editable_region||$region, $reset = FALSE|
+editable_block||$block|
+editable_region||$region, $build|
+block_get_blocks_by_region||$region|
+block_list||$region|
+is_editable_check||$context_blocks|
+max_block_weight|||
+rebuild_needed||$set = NULL|
+get_blocks||$region = NULL, $context = NULL, $reset = FALSE|
+block_sort||$a, $b|
+json_decode||$json, $assoc = FALSE|
+render_ajax||$param|
+system_region_list||$theme_key, $show = REGIONS_ALL|
+context_block_ajax_rendering_allowed||$bid|
+editor_form||$context|
+editor_form_submit||$context, $values|
+options_form||$context|
+execute||&$vars|
+set_active_trail_from_link||$item|
+get_link_title||$item|
+condition_values|||
+condition_form||$context|
+execute||$node, $op|
+editor_form||$context|
+options_form||$context|
+execute||&$page|
+condition_values|||
+condition_form||$context|
+condition_form_submit||$values|
+execute|||
+match||$subject, $patterns, $path = FALSE|
+condition_values|||
+execute||$view|
+condition_values|||
+execute||$value|
+options_form||$context|
+execute||&$vars = NULL|
+condition_values|||
+options_form||$context|
+execute||$term, $op|
+condition_values|||
+options_form||$context|
+execute||$account, $op|
+execute|||
+options_form||$context|
+execute||&$vars|
+condition_values|||
+options_form||$context|
+execute||$node, $op|
+condition_values|||
+condition_form||$context|
+condition_form_submit||$values|
+execute|||
+__clone|||
+__construct||$plugin, $info|
+condition_values|||
+condition_form||$context|
+condition_form_submit||$values|
+options_form||$context|
+options_form_submit||$values|
+settings_form|||
+editor_form||$context = NULL|
+editor_form_submit||&$context, $values|
+execute||$value|
+condition_met||$context, $value = NULL|
+condition_used|||
+get_contexts||$value = NULL|
+fetch_from_context||$context, $key = NULL|
+execute|||
+condition_values|||
+execute||$node, $op|
+execute|||
+get_contexts||$value = NULL|
+condition_values|||
+editor_form||$context = NULL|
+execute|||
+options_form||$context|
+options_form_submit||$values|
+fetch_from_context||$context|
+execute||&$vars = NULL|
+set_active_trail_from_link||$item|
+get_active_paths|||
+condition_values|||
+execute||$account|
+hook_context_plugins|||
+hook_context_registry|||
+hook_context_page_condition|||
+hook_context_page_reaction|||
+hook_context_registry_alter||&$registry|
+hook_context_node_condition_alter||&$node, $op|
+hook_context_load_alter||&$context|
+hook_context_allow_ajax_block_access||$block_id|
+context_context||$op = CONTEXT_GET, $namespace = NULL, $attribute = NULL, $value = NULL|
+context_set||$namespace, $attribute = NULL, $value = NULL|
+context_get||$namespace = NULL, $attribute = NULL|
+context_isset||$namespace = NULL, $attribute = NULL|
+context_exists||$namespace = NULL, $attribute = NULL|
+context_clear|||
+context_ctools_plugin_type|||
+context_context_plugins|||
+context_context_registry|||
+context_init|||
+context_preprocess_menu_link||&$variables|
+context_load||$name = NULL, $reset = FALSE|
+context_save||$context|
+context_delete||$context|
+context_export||$context, $indent = ''|
+context_context_list|||
+context_cache_get||$key, $reset = FALSE|
+context_cache_set||$key, $value|
+context_enabled_contexts||$reset = FALSE|
+context_condition_met||$context, $condition, $reset = FALSE|
+context_active_contexts|||
+context_condition_map||$reset = FALSE|
+context_invalidate_cache|||
+context_flush_caches|||
+context_empty||$element|
+context_get_plugin||$type = 'condition', $key, $reset = FALSE|
+context_conditions||$reset = FALSE|
+context_reactions||$reset = FALSE|
+_context_registry||$key = NULL, $reset = FALSE|
+context_block_view_alter||&$data, $block|
+context_page_alter||&$page|
+context_preprocess_block||&$vars|

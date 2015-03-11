@@ -1,0 +1,545 @@
+# format=pipe
+entity_crud_hook_entity_info|||
+entity_metadata_hook_entity_info|||
+hook_entity_property_info|||
+hook_entity_property_info_alter||&$info|
+entity_hook_field_info|||
+hook_entity_views_field_handlers_alter||array &$field_handlers|
+__construct||$type|
+eventInfo|||
+entity_rules_events_variables||$type, $label, $update = FALSE|
+entity_rules_event_info|||
+entity_rules_integration_event_access||$type, $event_name|
+entity_entity_property_info|||
+entity_entity_property_info_alter||&$entity_info|
+_entity_metadata_core_modules|||
+__construct||$type|
+entityPropertyInfo|||
+bundleOptionsList||$name, $info|
+convertSchema|||
+entity_metadata_convert_schema||$table|
+_entity_metadata_convert_schema_type||$type|
+__construct||$type|
+fieldExtraFields|||
+generateExtraFieldInfo||$name, $property_info|
+entity_test_i18n_entity_info_alter||&$info|
+entity_test_i18n_entity_property_info_alter||&$info|
+entity_test_i18n_entity_test_type_insert||$test_type|
+entity_test_i18n_entity_test_type_update||$test_type|
+entity_test_i18n_entity_test_type_delete||$test_type|
+entity_feature_default_entity_test_type|||
+entity_test_entity_info|||
+entity_test_get_types||$name = NULL|
+entity_test_load_multiple||$pids = array(), $conditions = array(), $reset = FALSE|
+entity_test_delete_multiple||array $pids|
+__construct||array $values = array(), $entityType = NULL|
+buildContent||$view_mode = 'full', $langcode = NULL|
+defaultLabel|||
+defaultURI|||
+__construct||array $values = array(), $entityType = NULL|
+entity_test_entity_insert||$entity, $entity_type|
+entity_test_entity_update||$entity, $entity_type|
+entity_test_entity_delete||$entity, $entity_type|
+entity_test_entity_test_type_insert||$entity|
+entity_test_entity_test_type_update||$entity|
+entity_test_entity_test_type_delete||$entity|
+entity_test_entity_test_type_presave||$entity|
+entity_test_entity_property_info_alter||&$info|
+entity_test_entity_getter||$node|
+entity_test_entity_setter||$node, $property_name, $wrapper|
+theme_entity_property||$variables|
+template_preprocess_entity_property||&$variables, $hook|
+entity_property_default_render_value_by_type||EntityMetadataWrapper $property|
+template_process_entity_property||&$variables, $hook|
+theme_entity_status||$variables|
+template_preprocess_entity||&$variables|
+entity_entity_view_content_type_info||$entity_type|
+entity_entity_view_content_type_content_types|||
+entity_entity_view_content_type_edit_form||$form, &$form_state|
+entity_entity_view_content_type_edit_form_submit||&$form, &$form_state|
+entity_entity_view_content_type_render||$entity_type, $conf, $panel_args, $context|
+entity_entity_view_content_type_admin_title||$entity_type, $conf, $contexts|
+entity_type_supports||$entity_type, $op|
+entity_object_load||$entity_id, $entity_type|
+entity_ui_bundle_add_page||$entity_type|
+entity_ui_get_bundle_add_form||$entity_type, $bundle_name|
+entity_ui_entity_page_view||$entity|
+entity_ui_get_page_title||$op, $entity_type, $entity = NULL|
+entity_load_single||$entity_type, $id|
+entity_load_multiple_by_name||$entity_type, $names = FALSE, $conditions = array()|
+entity_save||$entity_type, $entity|
+entity_delete||$entity_type, $id|
+entity_delete_multiple||$entity_type, $ids|
+entity_revision_load||$entity_type, $revision_id|
+entity_revision_delete||$entity_type, $revision_id|
+entity_revision_is_default||$entity_type, $entity|
+entity_revision_set_default||$entity_type, $entity|
+entity_create||$entity_type, array $values|
+entity_export||$entity_type, $entity, $prefix = ''|
+entity_import||$entity_type, $export|
+entity_type_is_fieldable||$entity_type|
+entity_build_content||$entity_type, $entity, $view_mode = 'full', $langcode = NULL|
+entity_id||$entity_type, $entity|
+entity_view||$entity_type, $entities, $view_mode = 'full', $langcode = NULL, $page = NULL|
+entity_access||$op, $entity_type, $entity = NULL, $account = NULL|
+entity_form||$entity_type, $entity|
+entity_key_array_by_property||array $entities, $property|
+entity_crud_get_info|||
+entity_has_status||$entity_type, $entity, $status|
+entity_var_export||$var, $prefix = ''|
+entity_var_json_export||$var, $prefix = ''|
+entity_defaults_rebuild||$entity_types = NULL|
+_entity_defaults_rebuild||$entity_type|
+entity_modules_installed||$modules|
+entity_modules_uninstalled||$modules|
+entity_modules_enabled||$modules|
+entity_modules_disabled||$modules|
+_entity_modules_get_default_types||$modules|
+entity_exportable_schema_fields||$module_col = 'module', $status_col = 'status'|
+entity_flush_caches|||
+entity_theme|||
+entity_class_label||$entity|
+entity_class_uri||$entity|
+entity_file_download_access||$field, $entity_type, $entity|
+entity_ui_controller||$type = NULL|
+entity_menu|||
+entity_forms||$form_id, $args|
+entity_ui_get_form||$entity_type, $entity, $op = 'edit', $form_state = array()|
+entity_ui_get_action_title||$op, $entity_type, $bundle_name = NULL|
+entity_i18n_string||$name, $default, $langcode = NULL|
+entity_views_api|||
+entity_field_extra_fields|||
+entity_get_extra_fields_controller||$type = NULL|
+entity_metadata_wrapper||$type, $data = NULL, array $info = array()|
+entity_metadata_site_wrapper|||
+entity_module_implements_alter||&$implementations, $hook|
+entity_entity_info_alter||&$entity_info|
+_entity_info_add_metadata||&$entity_info|
+entity_ctools_plugin_directory||$module, $plugin|
+init||&$view, &$display, $options = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+pre_render||$values|
+get_value||$values, $field = NULL|
+render||$values|
+query|||
+click_sort||$order|
+pre_render||&$values|
+get_value||$values, $field = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_single_value||$value, $values|
+option_definition|||
+options_form||&$form, &$form_state|
+admin_summary|||
+render||$empty = FALSE|
+render_entity||$entity_type, $entity_id, $view_mode|
+option_definition|||
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+query|||
+option_definition||$handler|
+options_form||$handler, &$form, &$form_state|
+query||$handler|
+get_selector_field_name||$selector|
+click_sort||$handler, $order|
+pre_render||$handler, &$values, $load_always = FALSE|
+construct_property_selector||$handler, $complete = FALSE|
+extract_property_multiple||array $wrappers, $selector|
+get_value||$handler, $values, $field = NULL, $default = NULL|
+extract_list_wrapper_values||array $wrappers, $field|
+render||$handler, $values|
+render_list||$handler, $list, $values|
+render_entity_link||$handler, $value, $values|
+render_single_value||$handler, $value, $values|
+query|||
+click_sort||$order|
+pre_render||&$values|
+get_value||$values, $field = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_single_value||$value, $values|
+query|||
+click_sort||$order|
+pre_render||&$values|
+get_value||$values, $field = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_single_value||$value, $values|
+query|||
+click_sort||$order|
+pre_render||&$values|
+get_value||$values, $field = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_single_value||$value, $values|
+query|||
+click_sort||$order|
+pre_render||&$values|
+get_value||$values, $field = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_single_value||$value, $values|
+query|||
+click_sort||$order|
+pre_render||&$values|
+get_value||$values, $field = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_single_value||$value, $values|
+options_form||&$form, &$form_state|
+query|||
+query|||
+click_sort||$order|
+pre_render||&$values|
+get_value||$values, $field = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_single_value||$value, $values|
+init||&$view, &$options|
+query|||
+click_sort||$order|
+pre_render||&$values|
+get_value||$values, $field = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+render||$values|
+render_entity_link||$entity, $values|
+render_single_value||$entity, $values|
+access|||
+query||$use_groupby = FALSE|
+click_sort||$order|
+post_execute||&$values|
+pre_render||&$values|
+get_items||$values|
+multiple_options_form||&$form, &$form_state|
+entity_views_data|||
+entity_views_table_definition||$type, $exclude = TRUE|
+entity_views_field_definition||$field, array $property_info, array &$table, $title_prefix = ''|
+entity_views_get_field_handlers|||
+_entity_views_field_identifier||$field, array $table|
+entity_views_plugins|||
+__construct||$type|
+views_data|||
+schema_fields|||
+schema_revision_fields|||
+map_from_schema_info||$property_name, $schema_field_info, $property_info|
+getRelationshipHandlerClass||$entity_type, $left_type|
+optionsListCallback||$type, $selector, $op = 'view'|
+entity_get_property_info||$entity_type = NULL|
+entity_property_info_defaults|||
+entity_get_all_property_info||$entity_type = NULL|
+entity_property_query||$entity_type, $property, $value, $limit = 30|
+entity_property_info_cache_clear|||
+entity_hook_info|||
+entity_field_info_alter||&$field_info|
+entity_field_create_instance|||
+entity_field_delete_instance|||
+entity_field_update_instance|||
+entity_property_verify_data_type||$data, $type|
+entity_property_values_create_entity||$entity_type, $values = array()|
+entity_property_list_extract_type||$type|
+entity_property_extract_innermost_type||$type|
+entity_property_verbatim_get||$data, array $options, $name, $type, $info|
+entity_property_verbatim_date_get||$data, array $options, $name, $type, $info|
+entity_property_verbatim_set||&$data, $name, $value, $langcode, $type, $info|
+entity_property_getter_method||$object, array $options, $name|
+entity_property_setter_method||$object, $name, $value|
+entity_property_get_list||$data, array $options, $name|
+entity_property_validate_integer_positive||$value|
+entity_property_validate_integer_non_negative||$value|
+entity_property_create_array||$property_name, $context|
+entity_property_options_flatten||$options|
+entity_property_text_formatted_info|||
+entity_property_field_item_textsummary_info|||
+entity_property_field_item_file_info|||
+entity_property_field_item_image_info|||
+entity_metadata_verbatim_get||$data, array $options, $name|
+entity_metadata_verbatim_set||$data, $name, $value|
+entity_metadata_getter_method||$object, array $options, $name|
+entity_metadata_setter_method||$object, $name, $value|
+entity_metadata_get_list||$data, array $options, $name|
+entity_metadata_validate_integer_positive||$value|
+entity_metadata_validate_integer_non_negative||$value|
+entity_metadata_text_formatted_properties|||
+__construct||$entityType|
+buildQuery||$ids, $conditions = array(), $revision_id = FALSE|
+query||$ids, $conditions, $revision_id = FALSE|
+load||$ids = array(), $conditions = array()|
+resetCache||array $ids = NULL|
+invoke||$hook, $entity|
+delete||$ids, DatabaseTransaction $transaction = NULL|
+deleteRevision||$revision_id|
+save||$entity, DatabaseTransaction $transaction = NULL|
+saveRevision||$entity|
+create||array $values = array()|
+export||$entity, $prefix = ''|
+import||$export|
+buildContent||$entity, $view_mode = 'full', $langcode = NULL, $content = array()|
+renderEntityProperty||$wrapper, $name, $property, $view_mode, $langcode, &$content|
+view||$entities, $view_mode = 'full', $langcode = NULL, $page = NULL|
+__construct||$entityType|
+buildQuery||$ids, $conditions = array(), $revision_id = FALSE|
+load||$ids = array(), $conditions = array()|
+cacheGet||$ids, $conditions = array()|
+cacheGetByName||$names, $conditions = array()|
+applyConditions||$entities, $conditions = array()|
+cacheSet||$entities|
+attachLoad||&$queried_entities, $revision_id = FALSE|
+resetCache||array $ids = NULL|
+delete||$ids, DatabaseTransaction $transaction = NULL|
+invoke||$hook, $entity|
+save||$entity, DatabaseTransaction $transaction = NULL|
+export||$entity, $prefix = ''|
+view||$entities, $view_mode = 'full', $langcode = NULL, $page = NULL|
+__construct||array $values = array(), $entityType = NULL|
+setUp|||
+internalIdentifier|||
+identifier|||
+entityInfo|||
+entityType|||
+bundle|||
+label|||
+defaultLabel|||
+uri|||
+defaultUri|||
+hasStatus||$status|
+save|||
+delete|||
+export||$prefix = ''|
+view||$view_mode = 'full', $langcode = NULL, $page = NULL|
+buildContent||$view_mode = 'full', $langcode = NULL|
+getTranslation||$property, $langcode = NULL|
+isDefaultRevision|||
+__sleep|||
+__wakeup|||
+__construct||$entity_type, $entity_info|
+hook_menu|||
+hook_forms|||
+overviewForm||$form, &$form_state|
+overviewFormValidate||$form, &$form_state|
+overviewFormSubmit||$form, &$form_state|
+overviewTable||$conditions = array()|
+overviewTableHeaders||$conditions, $rows, $additional_header = array()|
+operationCount|||
+overviewTableRow||$conditions, $id, $entity, $additional_cols = array()|
+operationForm||$form, &$form_state, $entity, $op|
+operationFormValidate||$form, &$form_state|
+operationFormSubmit||$form, &$form_state|
+applyOperation||$op, $entity|
+entityFormSubmitBuildEntity||$form, &$form_state|
+hook_menu|||
+operationFormSubmit||$form, &$form_state|
+hook_menu|||
+entity_ui_overview_form||$form, &$form_state, $entity_type|
+entity_ui_operation_form||$form, &$form_state, $entity_type, $entity, $op|
+entity_ui_main_form_defaults||$form, &$form_state, $entity = NULL, $op = NULL|
+entity_ui_clone_entity||$entity_type, $entity|
+entity_ui_form_defaults||$form, &$form_state, $entity_type, $entity = NULL, $op = NULL|
+entity_ui_controller_form_validate||$form, &$form_state|
+entity_ui_controller_form_submit||$form, &$form_state|
+entity_ui_form_submit_build_entity||$form, &$form_state|
+entity_ui_validate_machine_name||$element, &$form_state|
+theme_entity_ui_overview_item||$variables|
+__construct||$type, $data = NULL, $info = array()|
+info|||
+type|||
+value||array $options = array()|
+raw|||
+dataAvailable|||
+set||$value|
+updateParent||$value|
+validate||$value|
+__toString|||
+clear|||
+optionsList||$op = 'edit'|
+label|||
+access||$op, $account = NULL|
+__sleep|||
+value||array $options = array()|
+__construct||$type, $data = NULL, $info = array()|
+spotInfo|||
+getPropertyInfo||$name = NULL|
+&refPropertyInfo|||
+language||$langcode = LANGUAGE_NONE|
+getPropertyLanguage|||
+get||$name|
+__get||$name|
+__set||$name, $value|
+getPropertyValue||$name, &$info|
+getPropertyRaw||$name, &$info|
+setProperty||$name, $value|
+propertyAccess||$name, $op, $account = NULL|
+__isset||$name|
+getIterator|||
+getIdentifier|||
+__sleep|||
+clear|||
+__construct||$type, $data = NULL, $info = array()|
+setUp|||
+setEntity||$data|
+spotInfo|||
+spotBundleInfo||$load = TRUE|
+getIdentifier|||
+getBundle|||
+value||array $options = array()|
+view||$view_mode = 'full', $langcode = NULL, $page = NULL|
+set||$value|
+clear|||
+type|||
+access||$op, $account = NULL|
+entityAccess||$op, $account = NULL|
+save|||
+delete|||
+entityInfo|||
+entityKey||$name|
+label|||
+__sleep|||
+__wakeup|||
+__construct||$type, $data = NULL, $info = array()|
+get||$delta|
+getPropertyValue||$delta|
+getPropertyRaw||$delta|
+setProperty||$delta, $value|
+propertyAccess||$delta, $op, $account = NULL|
+value||array $options = array()|
+set||$values|
+getIterator|||
+offsetGet||$delta|
+offsetExists||$delta|
+offsetSet||$delta, $value|
+offsetUnset||$delta|
+count|||
+validate||$value|
+label|||
+__construct||EntityMetadataWrapper $wrapper, array $keys|
+rewind|||
+current|||
+key|||
+next|||
+valid|||
+hasChildren|||
+getChildren|||
+__construct||&$array|
+&getArray|||
+offsetGet||$delta|
+offsetExists||$delta|
+offsetSet||$delta, $value|
+offsetUnset||$delta|
+count|||
+getIterator|||
+entity_features_get_controller||$type|
+__construct||$type|
+api|||
+export_options|||
+export||$data, &$export, $module_name = ''|
+export_render||$module, $data, $export = NULL|
+revert||$module = NULL|
+entity_features_api|||
+entity_features_export_options||$a1, $a2 = NULL|
+entity_features_export||$data, &$export, $module_name = '', $entity_type|
+entity_features_export_render||$module, $data, $export = NULL, $entity_type|
+entity_features_revert||$module = NULL, $entity_type|
+entity_i18n_controller||$type = NULL|
+entity_i18n_string_info|||
+entity_i18n_object_info|||
+entity_i18n_string_objects||$type|
+__construct||$type|
+hook_string_info|||
+hook_object_info|||
+menuBasePath|||
+menuWildcard|||
+translatableProperties|||
+hook_string_objects|||
+entity_token_types|||
+entity_token_types_chained||$type = NULL|
+_entity_token_map_to_token_type||$property_info|
+entity_token_token_info_alter||&$info|
+entity_token_tokens||$type, $tokens, array $data = array(), array $options = array()|
+_entity_token_wrap_data||$token_type, $type, $data, $options|
+_entity_token_get_token||$wrapper, $options|
+entity_metadata_user_entity_property_info|||
+entity_metadata_poll_entity_property_info_alter||&$info|
+entity_metadata_field_entity_property_info|||
+entity_metadata_field_default_property_callback||&$info, $entity_type, $field, $instance, $field_type|
+entity_metadata_field_text_property_callback||&$info, $entity_type, $field, $instance, $field_type|
+entity_metadata_field_term_reference_callback||&$info, $entity_type, $field, $instance, $field_type|
+entity_metadata_field_file_callback||&$info, $entity_type, $field, $instance, $field_type|
+entity_metadata_field_image_callback||&$info, $entity_type, $field, $instance, $field_type|
+entity_metadata_node_entity_property_info|||
+entity_metadata_node_entity_property_info_alter||&$info|
+entity_metadata_book_entity_property_info_alter||&$info|
+entity_metadata_system_entity_property_info|||
+entity_metadata_entity_get_properties||$entity, array $options, $name, $entity_type|
+entity_metadata_book_get_properties||$node, array $options, $name, $entity_type|
+entity_metadata_comment_get_properties||$comment, array $options, $name|
+entity_metadata_comment_setter||$comment, $name, $value|
+entity_metadata_comment_get_node_properties||$node, array $options, $name, $entity_type|
+entity_metadata_locale_get_languages||$data, array $options, $name|
+entity_metadata_locale_get_user_language||$account, array $options, $name|
+entity_metadata_status_options_list|||
+entity_metadata_node_get_properties||$node, array $options, $name, $entity_type|
+entity_metadata_node_revision_access||$op, $name, $entity = NULL, $account = NULL|
+entity_metadata_poll_node_get_properties||$node, array $options, $name|
+entity_metadata_statistics_node_get_properties||$node, array $options, $name|
+entity_metadata_statistics_properties_access||$op, $property, $entity = NULL, $account = NULL|
+entity_metadata_system_get_properties||$data = FALSE, array $options, $name|
+entity_metadata_system_get_page_properties||$data = array(), array $options, $name|
+entity_metadata_system_get_file_properties||$file, array $options, $name|
+entity_metadata_taxonomy_term_get_properties||$term, array $options, $name|
+entity_metadata_taxonomy_term_setter||$term, $name, $value|
+entity_metadata_taxonomy_vocabulary_get_properties||$vocabulary, array $options, $name|
+entity_metadata_user_get_properties||$account, array $options, $name, $entity_type|
+entity_metadata_user_set_properties||$account, $name, $value|
+entity_metadata_user_roles||$property_name = 'roles', $info = array(), $op = 'edit'|
+entity_metadata_user_status_options_list|||
+entity_metadata_language_list|||
+entity_metadata_field_property_get||$entity, array $options, $name, $entity_type, $info|
+entity_metadata_field_property_set||$entity, $name, $value, $langcode, $entity_type, $info|
+entity_metadata_field_options_list||$name, $info|
+entity_metadata_field_verbatim_get||$entity, array $options, $name, $entity_type, &$context|
+entity_metadata_field_verbatim_set||$entity, $name, $items, $langcode, $entity_type|
+entity_metadata_field_get_language||$entity_type, $entity, $field, $langcode = LANGUAGE_NONE, $fallback = FALSE|
+entity_metadata_field_text_get||$item, array $options, $name, $type, $context|
+entity_metadata_field_text_formats|||
+entity_metadata_field_file_get||$item|
+entity_metadata_field_file_set||&$item, $property_name, $value|
+entity_metadata_field_file_create_item||$property_name, $context|
+entity_metadata_field_file_validate_item||$items, $context|
+entity_metadata_no_hook_node_access||$op, $node = NULL, $account = NULL|
+entity_metadata_user_access||$op, $entity = NULL, $account = NULL, $entity_type|
+entity_metadata_user_properties_access||$op, $property, $entity = NULL, $account = NULL|
+entity_metadata_comment_access||$op, $entity = NULL, $account = NULL|
+entity_metadata_comment_properties_access||$op, $property, $entity = NULL, $account = NULL|
+entity_metadata_taxonomy_access||$op, $entity = NULL, $account = NULL, $entity_type|
+entity_metadata_file_access||$op, $file = NULL, $account = NULL, $entity_type|
+entity_metadata_field_access_callback||$op, $name, $entity = NULL, $account = NULL, $entity_type|
+entity_metadata_create_object||$values = array(), $entity_type|
+entity_metadata_create_comment||$values = array()|
+entity_metadata_create_node||$values = array()|
+entity_metadata_user_save||$account|
+entity_metadata_delete_file||$fid|
+entity_metadata_view_node||$entities, $view_mode = 'full', $langcode = NULL|
+entity_metadata_view_comment||$entities, $view_mode = 'full', $langcode = NULL|
+entity_metadata_view_single||$entities, $view_mode = 'full', $langcode = NULL, $entity_type|
+entity_metadata_form_node||$node|
+entity_metadata_form_comment||$comment|
+entity_metadata_form_user||$account|
+entity_metadata_form_taxonomy_term||$term|
+entity_metadata_form_taxonomy_vocabulary||$vocab|
+entity_metadata_form_entity_ui||$entity, $entity_type|
+entity_metadata_table_query||$entity_type, $property, $value, $limit|
+entity_metadata_field_query||$entity_type, $property, $value, $limit|
+entity_metadata_uri_file||$file|
+entity_metadata_locale_entity_property_info_alter||&$info|
+entity_metadata_taxonomy_entity_property_info|||
+entity_metadata_comment_entity_property_info|||
+entity_metadata_comment_entity_property_info_alter||&$info|
+entity_metadata_statistics_entity_property_info_alter||&$info|
