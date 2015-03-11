@@ -1,0 +1,986 @@
+# format=pipe
+rules_i18n_rules_ui_menu_alter||&$items, $base_path, $base_count|
+rules_i18n_entity_info_alter||&$info|
+rules_i18n_rules_config_insert||$rules_config|
+rules_i18n_rules_config_update||$rules_config, $original = NULL|
+rules_i18n_rules_config_delete||$rules_config|
+rules_i18n_rules_config_defaults_rebuild||$rules_configs, $originals|
+rules_i18n_rules_action_info|||
+rules_i18n_rules_integration_access|||
+rules_i18n_action_t||$text|
+rules_i18n_action_t_form_alter||&$form, &$form_state, $options, $element|
+rules_i18n_action_select||$data|
+rules_i18n_action_select_info_alter||&$element_info, $element|
+rules_i18n_rules_evaluator_info|||
+access|||
+prepare||$text, $var_info, $param_info = NULL|
+process||$value, $info, RulesState $state, RulesPlugin $element, $options = NULL|
+evaluate||$value, $options, RulesState $state|
+help||$var_info, $param_info = array()|
+hook_object_info|||
+menuWildcard|||
+menuBasePath|||
+build_properties|||
+buildElementProperties||$element, &$properties|
+rules_test_rules_event_info|||
+rules_test_rules_file_info|||
+rules_test_rules_condition_info|||
+rules_test_condition_true||$settings, $state, $element|
+rules_test_condition_false|||
+rules_test_condition_node_wrapped||$wrapper|
+rules_test_rules_action_info|||
+rules_test_action|||
+getInfo|||
+execute||$node|
+rules_test_rules_data_info|||
+rules_test_rules_data_info_alter||&$data_info|
+extractIdentifier||$data|
+load||$id|
+save|||
+rules_test_rules_plugin_info|||
+evaluate||RulesState $state|
+startWatching|||
+stopWatching|||
+isWatching|||
+rules_test_default_rules_configuration|||
+_rules_export_get_test_export|||
+rules_test_custom_node_save||$object|
+rules_test_custom_help|||
+rules_action_test_reference||$data|
+rules_condition_content_is_type||$node, $type|
+rules_condition_content_is_published||$node, $settings|
+rules_action_load_node||$nid, $vid = NULL|
+rules_action_delete_node||$node|
+rules_action_node_set_title||$arguments|
+rules_test_type_save||$node|
+rules_test_entity_property_info_alter||&$info|
+rules_test_get_referenced_entity||$node|
+rules_test_get_referenced_node||$node|
+rules_test_no_access||$op|
+rules_ui_form_ajax_reload_form||$form, $form_state|
+rules_ui_form_default_ajax||$effect = 'slide'|
+rules_ui_parameter_replace_submit||$form, &$form_state|
+rules_form_submit_rebuild||$form, &$form_state|
+rules_ui_form_edit_rules_config||$form, &$form_state, $rules_config, $base_path|
+rules_ui_form_rules_config_validate||$form, &$form_state|
+rules_ui_form_edit_rules_config_submit||$form, &$form_state|
+rules_ui_form_clone_rules_config||$form, &$form_state, $rules_config, $base_path|
+rules_ui_form_export_rules_config||$form, &$form_state, $rules_config, $base_path|
+rules_ui_form_execute_rules_config||$form, &$form_state, $rules_config, $base_path|
+rules_ui_form_execute_rules_config_submit||$form, &$form_state|
+rules_ui_confirm_operations||$op, $rules_config|
+rules_ui_form_rules_config_confirm_op||$form, &$form_state, $rules_config, $op, $base_path|
+rules_ui_confirm_operation_apply||$op, $rules_config|
+rules_ui_form_rules_config_confirm_op_submit||$form, &$form_state|
+rules_ui_add_element||$form, &$form_state, $rules_config, $plugin_name, RulesContainerPlugin $parent, $base_path|
+rules_ui_add_element_submit||$form, &$form_state|
+rules_ui_delete_element||$form, &$form_state, $rules_config, $rules_element, $base_path|
+rules_ui_delete_element_submit||$form, &$form_state|
+rules_ui_edit_element||$form, &$form_state, $rules_config, $element, $base_path|
+rules_ui_edit_element_validate||$form, &$form_state|
+rules_ui_edit_element_submit||$form, &$form_state|
+rules_ui_add_event_page||$form, &$form_state, RulesTriggerableInterface $rules_config, $base_path|
+rules_ui_add_event_page_submit||$form, &$form_state|
+rules_ui_add_event||$form, &$form_state, RulesReactionRule $rules_config, $base_path|
+rules_ui_add_event_validate||$form, $form_state|
+rules_ui_add_event_apply||$form, &$form_state|
+rules_ui_remove_event||$form, &$form_state, $rules_config, $event, $base_path|
+rules_ui_remove_event_submit||$form, &$form_state|
+rules_ui_import_form||$form, &$form_state, $base_path|
+rules_ui_import_form_validate||$form, &$form_state|
+rules_ui_import_form_submit||$form, &$form_state|
+rules_data_selection_process||$element, &$form_state, $form|
+rules_ui_form_data_selection_auto_completion||$parameter, $form_build_id, $string = ''|
+rules_ui_element_integer_validate||$element, &$form_state|
+rules_ui_element_decimal_validate||$element, &$form_state|
+rules_ui_element_ip_address_validate||$element, &$form_state|
+rules_ui_element_date_validate||$element, &$form_state|
+rules_ui_element_duration_process||$element, &$form_state|
+rules_ui_element_duration_multipliers|||
+rules_ui_element_duration_value||$element, $input = FALSE|
+rules_ui_element_duration_after_build||$element, &$form_state|
+rules_ui_element_fix_empty_after_build||$element, &$form_state|
+rules_ui_list_textarea_after_build||$element, &$form_state|
+rules_ui_list_textarea_pre_render||$element|
+rules_ui_element_integer_list_validate||$element, &$form_state|
+rules_ui_element_token_validate||$element|
+rules_ui_element_token_list_validate||$element, &$form_state|
+rules_ui_element_machine_name_validate||$element, &$form_state|
+rules_ui_element_variable_form_validate||$elements, &$form_state|
+rules_element_sort_helper||$a, $b|
+rules_form_after_build_restore_base_path||$form, &$form_state|
+rules_autocomplete_tags||$tags_typed = ''|
+__construct||RulesPlugin $config|
+index|||
+getUnIndexedElements||$element, &$unindexed = array()|
+lookup||$id|
+__construct||FacesExtendable $object|
+&getFormStateValues||$form, &$form_state|
+form||&$form, &$form_state, $options = array()|
+getParameterForm||$name, $info, $settings, &$mode|
+form_validate||$form, &$form_state|
+form_extract_values||$form, &$form_state|
+form_submit||$form, &$form_state|
+settingsForm||&$form, &$form_state|
+settingsFormPermissionMatrix|||
+settingsFormExtractValues||$form, &$form_state|
+settingsFormValidate||$form, &$form_state|
+settingsFormSubmit||$form, &$form_state|
+getVariableForm||$name = '', $info = array(), $provided = FALSE|
+getDataTypeClass||$data_type, &$parameter_info = array()|
+buildContent|||
+operations|||
+help|||
+overviewTable||$conditions = array(), $options = array()|
+path||$name, $op = NULL, RulesPlugin $element = NULL, $parameter = FALSE|
+defaultRedirect||RulesPlugin $element|
+getOptions||$item_type, $items = NULL|
+formDefaults||&$form, &$form_state|
+getTags|||
+form||&$form, &$form_state, $options = array()|
+form_extract_values||$form, &$form_state|
+form_validate||$form, &$form_state|
+form||&$form, &$form_state, $options = array(), $iterator = NULL|
+form_extract_values||$form, &$form_state|
+operations|||
+addOperations|||
+buildContent|||
+form||&$form, &$form_state, $options = array(), $iterator = NULL|
+form_extract_values||$form, &$form_state|
+form||&$form, &$form_state, $options = array(), $iterator = NULL|
+getInfo||$category = NULL|
+getItemGroup||$item_info, $in_category = FALSE|
+getCategory||$item_info, $key = NULL|
+getOptions||$item_type, $items = NULL|
+_rules_ui_sort_categories||$a, $b|
+theme_rules_elements||$variables|
+theme_rules_ui_variable_form||$variables|
+theme_rules_content_group||$variables|
+theme_rules_parameter_configuration||$variables|
+theme_rules_variable_view||$variables|
+theme_rules_data_selector_help||$variables|
+theme_rules_log||$variables|
+theme_rules_debug_element||$variables|
+theme_rules_autocomplete||$variables|
+theme_rules_settings_help||$variables|
+__construct||FacesExtendable $object|
+form||&$form, &$form_state, $options = array()|
+form_extract_values||$form, &$form_state|
+operations|||
+form||&$form, &$form_state, $options = array()|
+settingsForm||&$form, &$form_state|
+settingsFormExtractValues||$form, &$form_state|
+form||&$form, &$form_state, $options = array(), $iterator = NULL|
+form||&$form, &$form_state, $options = array()|
+form_extract_values||$form, &$form_state|
+form_validate||$form, &$form_state|
+buildContent|||
+config_menu||$base_path|
+overviewTable||$conditions = array(), $options = array()|
+overviewTableRow||$conditions, $name, $config, $options|
+getDefaultMode|||
+selectionForm||$name, $info, $settings, RulesPlugin $element|
+renderOptionsLabel||$value, $name, $info, RulesPlugin $element|
+getTypeInfo||RulesPlugin $element, $name|
+getDefaultMode|||
+inputForm||$name, $info, $settings, RulesPlugin $element|
+render||$value|
+inputForm||$name, $info, $settings, RulesPlugin $element|
+inputForm||$name, $info, $settings, RulesPlugin $element|
+render||$value|
+inputForm||$name, $info, $settings, RulesPlugin $element|
+inputForm||$name, $info, $settings, RulesPlugin $element|
+inputForm||$name, $info, $settings, RulesPlugin $element|
+getDefaultMode|||
+inputForm||$name, $info, $settings, RulesPlugin $element|
+render||$value|
+inputForm||$name, $info, $settings, RulesPlugin $element|
+render||$value|
+inputForm||$name, $info, $settings, RulesPlugin $element|
+render||$value|
+inputForm||$name, $info, $settings, RulesPlugin $element|
+getDefaultMode|||
+inputForm||$name, $info, $settings, RulesPlugin $element|
+render||$value|
+inputForm||$name, $info, $settings, RulesPlugin $element|
+inputForm||$name, $info, $settings, RulesPlugin $element|
+getDefaultMode|||
+inputForm||$name, $info, $settings, RulesPlugin $element|
+getDefaultMode|||
+getDefaultMode|||
+optionsList||RulesPlugin $element, $name|
+getDefaultMode|||
+optionsList||RulesPlugin $element, $name|
+inputForm||$name, $info, $settings, RulesPlugin $element|
+rules_path_file_info|||
+rules_path_action_info|||
+rules_path_dependencies|||
+rules_path_integration_access||$type, $name|
+rules_path_condition_info|||
+rules_action_path_alias||$source, $alias, $langcode = LANGUAGE_NONE|
+rules_action_node_path_alias||$node, $alias|
+rules_action_taxonomy_term_path_alias||$term, $alias|
+rules_condition_path_has_alias||$source, $langcode = LANGUAGE_NONE|
+rules_condition_path_alias_exists||$alias, $langcode = LANGUAGE_NONE|
+rules_path_default_cleaning_method||$path|
+rules_clean_path||$path|
+rules_path_clean_ctools||$path|
+rules_path_clean_pathauto||$path|
+rules_element_invoke_component||$arguments, RulesPlugin $element|
+prepare||$text, $var_info|
+evaluate||$text, $options, RulesState $state|
+gmstrtotime||$date|
+isFixedDateString||$date|
+prepare||$uri, $var_info|
+evaluate||$uri, $options, RulesState $state|
+form||$settings, $var_info|
+process||$value, $info, RulesState $state, RulesPlugin $element|
+applyOffset||$timestamp, $offset|
+form||$settings, $var_info|
+process||$value, $info, RulesState $state, RulesPlugin $element|
+setEntity||$data|
+validate||$value|
+rules_action_entity_fetch||$type, $id, $revision|
+rules_action_entity_fetch_info_alter||&$element_info, RulesAbstractPlugin $element|
+rules_action_entity_query||$type, $property, $value, $limit|
+rules_action_entity_query_info_alter||&$element_info, RulesAbstractPlugin $element|
+rules_action_entity_create||$args, $element|
+rules_action_entity_create_info_alter||&$element_info, RulesAbstractPlugin $element|
+rules_action_entity_save||$wrapper, $immediate = FALSE, $settings, $state, $element|
+rules_action_entity_delete||$wrapper, $settings, $state, $element|
+rules_condition_entity_is_new||$wrapper, $settings, $state, $element|
+rules_condition_entity_has_field||$wrapper, $field_name, $settings, $state|
+rules_condition_entity_is_of_type||$wrapper, $type|
+rules_condition_entity_is_of_bundle||$wrapper, $type, $bundles|
+rules_condition_entity_field_access||EntityDrupalWrapper $wrapper, $field_name, $op, $account = NULL|
+rules_action_drupal_message||$message, $status, $repeat|
+rules_action_drupal_goto||$url, $force = FALSE, $destination = FALSE|
+rules_action_breadcrumb_set||array $titles, array $paths|
+rules_action_mail||$to, $subject, $message, $from = NULL, $langcode, $settings, RulesState $state, RulesPlugin $element|
+rules_action_mail_to_users_of_role||$roles, $subject, $message, $from = NULL, $settings, RulesState $state, RulesPlugin $element|
+rules_mail||$key, &$message, $params|
+rules_action_block_ip||$ip_address = NULL|
+prepare||$text, $var_info|
+evaluate||$text, $options, RulesState $state|
+help||$var_info|
+_rules_system_token_map_type||$type|
+defaults|||
+getInfo|||
+execute||$node, $types|
+assertions|||
+getInfo|||
+execute||$node|
+getInfo|||
+execute||$node|
+getInfo|||
+execute||$node|
+rules_node_category_info|||
+rules_node_file_info|||
+rules_node_event_info|||
+rules_events_node_variables||$node_label, $update = FALSE|
+rules_node_action_info|||
+rules_node_integration_access||$type, $name|
+rules_node_admin_access|||
+getBundlePropertyLabel|||
+rules_condition_user_has_role||$account, $roles, $operation = 'AND'|
+rules_condition_user_is_blocked||$account|
+rules_action_user_add_role||$account, $roles|
+rules_action_user_remove_role||$account, $roles|
+rules_action_user_block||$account|
+rules_action_user_unblock||$account|
+rules_action_user_send_account_email||$account, $email_type|
+rules_entity_file_info|||
+rules_entity_category_info|||
+rules_entity_action_info|||
+rules_action_entity_createfetch_access||RulesAbstractPlugin $element|
+rules_action_entity_query_access||RulesAbstractPlugin $element|
+rules_action_entity_parameter_options_list||RulesPlugin $element, $param_name|
+rules_action_entity_savedelete_access||RulesAbstractPlugin $element|
+rules_action_entity_query_property_options_list||RulesAbstractPlugin $element|
+rules_action_entity_query_value_options_list||RulesAbstractPlugin $element|
+rules_entity_action_type_options||$element, $name = NULL|
+rules_entity_type_options||$key = NULL|
+rules_entity_bundle_options||RulesAbstractPlugin $element|
+rules_entity_action_access||$type, $name|
+rules_entity_condition_info|||
+rules_condition_entity_is_new_help|||
+rules_condition_entity_has_field_options||RulesAbstractPlugin $element|
+rules_condition_entity_field_access_op_options||RulesAbstractPlugin $element|
+rules_condition_entity_has_field_assertions||$element|
+rules_condition_entity_is_of_type_assertions||$element|
+rules_condition_entity_is_of_bundle_assertions||$element|
+rules_condition_entity_is_of_bundle_process||RulesAbstractPlugin $element|
+rules_condition_entity_is_of_bundle_form_alter||&$form, &$form_state, $options, RulesAbstractPlugin $element|
+rules_action_data_set||$wrapper, $value, $settings, $state, $element|
+rules_action_data_set_info_alter||&$element_info, $element|
+rules_action_data_calc||$input1, $op, $input2, $settings, $state, $element|
+rules_action_data_calc_info_alter||&$element_info, RulesPlugin $element|
+rules_action_data_list_add||$list, $item, $unique = FALSE, $pos = 'end', $settings, $state|
+rules_data_list_info_alter||&$element_info, RulesAbstractPlugin $element|
+rules_action_data_list_remove||$list, $item|
+rules_action_variable_add||$args, $element|
+rules_action_variable_add_info_alter||&$element_info, RulesAbstractPlugin $element|
+rules_action_data_convert||$arguments, RulesPlugin $element, $state|
+rules_action_data_convert_info_alter||&$element_info, RulesAbstractPlugin $element|
+rules_action_data_create||$args, $element|
+rules_action_data_create_info_alter||&$element_info, RulesAbstractPlugin $element|
+rules_action_data_create_array||$values = array(), $type|
+rules_condition_data_is||$data, $op, $value|
+rules_condition_data_is_info_alter||&$element_info, RulesAbstractPlugin $element|
+rules_condition_data_list_contains||$list, $item, $settings, $state|
+rules_condition_data_list_count_is||$list, $op = '==', $value|
+rules_condition_data_is_empty||$data|
+rules_data_text_comparison||$text, $text2, $op = 'contains'|
+rules_system_file_info|||
+rules_system_event_info|||
+rules_system_data_info|||
+_rules_system_watchdog_log_entry_info|||
+rules_system_action_info|||
+rules_action_mail_to_users_of_role_help|||
+rules_system_integration_access||$type, $name|
+rules_action_drupal_message_types|||
+rules_system_evaluator_info|||
+rules_data_category_info|||
+rules_data_file_info|||
+rules_data_action_info|||
+rules_action_data_convert_types_options||RulesPlugin $element, $param_name|
+rules_action_data_convert_rounding_behavior_options||RulesPlugin $element, $param_name|
+rules_action_data_set_access||RulesAbstractPlugin $element|
+rules_action_data_set_validate||RulesAbstractPlugin $element|
+rules_action_data_set_form_alter||&$form, &$form_state, $options, RulesAbstractPlugin $element|
+rules_action_data_calc_form_alter||&$form, &$form_state, $options, RulesAbstractPlugin $element|
+rules_action_create_type_validate||$element|
+rules_data_list_form_alter||&$form, &$form_state, $options, RulesAbstractPlugin $element|
+rules_action_type_form_alter||&$form, &$form_state, $options, RulesAbstractPlugin $element|
+rules_action_type_form_submit_rebuild||$form, &$form_state|
+rules_action_data_list_add_positions|||
+rules_data_action_variable_add_options|||
+rules_action_data_calc_operator_options||RulesPlugin $element, $param_name|
+rules_data_action_data_create_options|||
+rules_data_condition_info|||
+rules_condition_data_is_assertions||$element|
+rules_condition_data_is_form_alter||&$form, &$form_state, $options, RulesAbstractPlugin $element|
+rules_condition_data_is_help|||
+rules_condition_data_is_operator_options|||
+rules_data_text_comparison_operation_list|||
+rules_data_selector_options_list||RulesAbstractPlugin $element|
+rules_condition_data_list_count_is_operator_options|||
+rules_rules_core_category_info|||
+rules_rules_core_file_info|||
+rules_rules_core_data_info|||
+rules_rules_core_data_info_alter||&$data_info|
+rules_rules_core_evaluator_info|||
+rules_rules_core_data_processor_info|||
+rules_rules_core_condition_info|||
+rules_rules_core_action_info|||
+rules_element_invoke_component_operations||RulesPlugin $element|
+rules_element_invoke_component_validate||RulesPlugin $element|
+rules_element_invoke_component_features_export||&$export, &$pipe, $module_name = '', $element|
+rules_element_invoke_component_access_callback||$type, $name|
+rules_taxonomy_event_info|||
+rules_taxonomy_term_integration_access||$type, $name|
+rules_taxonomy_vocabulary_integration_access||$type, $name|
+getBundlePropertyLabel|||
+rules_events_entity_unchanged||$arguments, $name, $info|
+rules_entity_view||$entity, $type, $view_mode, $langcode|
+rules_entity_presave||$entity, $type|
+rules_entity_update||$entity, $type|
+rules_entity_insert||$entity, $type|
+rules_entity_delete||$entity, $type|
+rules_user_login||&$edit, $account|
+rules_user_logout||$account|
+rules_cron|||
+rules_watchdog||$log_entry|
+rules_system_log_get_message||$log_entry|
+rules_get_entity_view_modes||$name, $var_info|
+rules_php_file_info|||
+rules_php_evaluator_info|||
+rules_php_data_processor_info|||
+rules_php_action_info|||
+rules_execute_php_eval_form_alter||&$form, &$form_state|
+rules_execute_php_eval_process||RulesAbstractPlugin $element|
+rules_execute_php_eval_dependencies|||
+rules_php_integration_access|||
+rules_php_condition_info|||
+rules_php_evaluator_help||$var_info, $action_help = FALSE|
+rules_user_file_info|||
+rules_user_event_info|||
+rules_user_cancel_methods|||
+rules_user_integration_access||$type, $name|
+rules_user_condition_info|||
+rules_condition_user_has_role_help|||
+rules_user_condition_operations|||
+rules_user_action_info|||
+rules_user_role_change_access|||
+rules_user_roles_options_list||$element|
+rules_user_account_email_options_list|||
+access|||
+getUsedVars||$text, $var_info|
+prepare||$text, $var_info|
+evaluate||$text, $options, RulesState $state|
+help||$var_info|
+form||$settings, $var_info|
+access|||
+process||$value, $info, RulesState $state, RulesPlugin $element|
+rules_execute_php_eval||$code, $settings, $state, $element|
+rules_php_eval||$code, $arguments = array()|
+rules_php_eval_return||$code, $arguments = array()|
+rules_comment_event_info|||
+rules_comment_integration_access||$type, $name|
+getBundlePropertyLabel|||
+rules_scheduler_drush_command|||
+rules_scheduler_drush_help||$section|
+drush_rules_scheduler_tasks|||
+runTask|||
+get_value_options|||
+__construct||array $task|
+runTask|||
+afterTaskQueued|||
+getTask|||
+rules_scheduler_views_default_views|||
+rules_scheduler_views_data|||
+rules_scheduler_schedule_page|||
+rules_scheduler_form||$form, &$form_state|
+rules_scheduler_form_delete_by_config_submit||$form, &$form_state|
+rules_scheduler_delete_task||$form, &$form_state, $task|
+rules_scheduler_delete_task_submit||$form, &$form_state|
+rules_scheduler_schedule_form||$form, &$form_state, $rules_config, $base_path|
+rules_scheduler_schedule_form_submit||$form, &$form_state|
+rules_scheduler_cron|||
+rules_scheduler_cron_queue_info|||
+rules_scheduler_run_task||array $task|
+rules_scheduler_task_handler||array $task|
+rules_scheduler_rules_ui_menu_alter||&$items, $base_path, $base_count|
+rules_scheduler_menu|||
+rules_scheduler_task_load||$tid|
+rules_scheduler_task_delete||$tid|
+rules_scheduler_schedule_task||$task|
+rules_scheduler_queue_tasks|||
+rules_scheduler_rules_config_delete||$rules_config|
+rules_scheduler_views_api|||
+rules_scheduler_rules_action_info|||
+rules_scheduler_component_options_list|||
+rules_scheduler_action_schedule||$args, $element|
+rules_scheduler_action_schedule_info_alter||&$element_info, RulesPlugin $element|
+rules_scheduler_action_schedule_validate||RulesPlugin $element|
+rules_scheduler_action_schedule_help|||
+rules_scheduler_action_schedule_form_alter||&$form, &$form_state, $options, RulesAbstractPlugin $element|
+rules_scheduler_action_delete||$component_name = NULL, $task_identifier = NULL|
+rules_scheduler_action_delete_validate||$element|
+rules_scheduler_action_delete_help|||
+create||array $values = array()|
+attachLoad||&$queried_entities, $revision_id = FALSE|
+applyConditions||$entities, $conditions = array()|
+import||$export, &$error_msg = ''|
+save||$rules_config, DatabaseTransaction $transaction = NULL|
+storeTags||$rules_config|
+storeEvents||RulesTriggerableInterface $rules_config|
+storeDependencies||$rules_config|
+buildQuery||$ids, $conditions = array(), $revision_id = FALSE|
+delete||$ids, DatabaseTransaction $transaction = NULL|
+__construct|||
+setUp|||
+forceSetUp|||
+__call||$name, $arguments = array()|
+facesAs||$interface = NULL|
+rebuildCache||&$itemInfo, &$cache|
+itemFacesAs||&$itemInfo, $interface|
+setParent||RulesContainerPlugin $parent|
+root|||
+isRoot|||
+parentElement|||
+elementId|||
+elementMap|||
+elements||$mode = RecursiveIteratorIterator::SELF_FIRST|
+__clone|||
+depth|||
+execute|||
+compare||RulesPlugin $a, RulesPlugin $b|
+pluginParameterInfo|||
+parameterInfo||$optional = FALSE|
+pluginProvidesVariables|||
+providesVariables|||
+info|||
+__toString|||
+returnVariables||RulesState $state, $result = NULL|
+setUpState||array $args|
+setUpVariables|||
+availableVariables|||
+variableInfoAssertions|||
+getPluginName|||
+dependencies|||
+access|||
+processSettings||$force = FALSE|
+integrityCheck|||
+checkVarName||$name|
+checkParameterSettings|||
+getArgument||$name, $info, RulesState $state, $langcode = NULL|
+getExecutionArguments||RulesState $state|
+applyDataSelector||$selector|
+getArgumentInfo||$name|
+save||$name = NULL, $module = 'rules'|
+ensureNameExists|||
+__sleep|||
+optimize|||
+delete|||
+internalIdentifier|||
+identifier|||
+entityInfo|||
+entityType|||
+hasStatus||$status|
+destroy|||
+form||&$form, &$form_state, array $options = array()|
+form_validate||$form, &$form_state|
+form_submit||$form, &$form_state|
+label|||
+plugin|||
+pluginInfo|||
+import||array $export|
+importSettings||$export|
+importParameterSetting||$name, $export|
+export||$prefix = '', $php = FALSE|
+exportToArray|||
+exportSettings|||
+exportParameterSetting||$name, $info|
+returnExport||$export, $prefix = '', $php = FALSE|
+resetInternalCache|||
+__construct||$name = NULL, $settings = array()|
+setUp|||
+forceSetUp|||
+label|||
+access|||
+integrityCheck|||
+processSettings||$force = FALSE|
+pluginParameterInfo|||
+pluginProvidesVariables|||
+info|||
+variableInfoAssertions|||
+import||array $export|
+exportToArray|||
+dependencies|||
+executeByArgs||$args = array()|
+evaluate||RulesState $state|
+__sleep|||
+getPluginName|||
+getElementName|||
+rebuildCache||&$itemInfo, &$cache|
+loadBasicInclude|||
+includeFiles|||
+getIncludeFiles||$module, $all = TRUE|
+getFileName||$function, $includes|
+__construct||FacesExtendable $object|
+access|||
+validate|||
+process|||
+info_alter||&$element_info|
+dependencies|||
+form_alter||&$form, $form_state, $options|
+assertions|||
+execute|||
+getChildren|||
+hasChildren|||
+__construct||$variables = array()|
+&componentVariables|||
+getIterator|||
+integrityCheck|||
+dependencies|||
+parameterInfo||$optional = FALSE|
+availableVariables|||
+stateVariables||$element = NULL|
+variableInfoAssertions|||
+setUpVariables|||
+executeByArgs||$args = array()|
+access|||
+destroy|||
+__clone|||
+delete||$keep_children = TRUE|
+__sleep|||
+sortChildren||$deep = FALSE|
+exportChildren||$key = NULL|
+exportFlat|||
+exportToArray|||
+import||array $export|
+importChildren||$export, $key = NULL|
+resetInternalCache|||
+optimize|||
+__construct||$variables = array(), $providesVars = array()|
+action||$name, $settings = array()|
+evaluate||RulesState $state|
+pluginProvidesVariables|||
+providesVariables|||
+&componentProvidesVariables|||
+exportToArray|||
+import||array $export|
+condition||$name, $settings = array()|
+negate||$negate = TRUE|
+isNegated|||
+__sleep|||
+returnVariables||RulesState $state, $result = NULL|
+exportChildren||$key = NULL|
+importChildren||$export, $key = NULL|
+stateVariables||$element = NULL|
+logger|||
+__construct||$logLevel = self::WARN|
+__clone|||
+log||$msg, $args = array(), $logLevel = self::INFO, $scope = NULL, $path = NULL|
+checkLog||$logLevel = self::WARN|
+hasErrors||$logLevel = self::WARN|
+get|||
+render|||
+renderHelper||&$line = 0|
+clear|||
+__construct||$msg, array $args = array(), $element = NULL, $severity = RulesLog::WARN|
+__construct||$msg, $element = NULL|
+_rules_import_get_plugin||$key, $default = 'action'|
+__construct||FacesExtendable $object|
+getExtendable|||
+&property||$name|
+call||$name, array $args = array()|
+load_include||$args|
+__call||$name, $arguments = array()|
+extender||$class|
+facesAs||$interface = NULL|
+extendByClass||$interface, $className, array $includes = array()|
+extend||$interface, array $callbacks = array(), array $includes = array()|
+override||array $callbacks = array(), array $includes = array()|
+addIncludes||$methods, $includes|
+__sleep|||
+destroy|||
+&property||$name|
+call||$name, array $args = array()|
+rules_upgrade_form||$form, &$form_state|
+rules_upgrade_form_submit||$form, &$form_state|
+rules_upgrade_confirm_clear_form||$form, $form_state|
+rules_upgrade_confirm_clear_form_submit||$form, &$form_state|
+_rules_upgrade_fetch_item||$name, $table|
+_rules_upgrade_fetch_all_rules|||
+rules_upgrade_convert_rule||$name, $cfg_old|
+rules_upgrade_convert_rule_set||$name, $cfg_old|
+rules_upgrade_convert_element||array $element, RulesPlugin $target|
+rules_upgrade_plugin_factory||$element|
+= $element['#name'] .'_upgrade_map_name') || ||isset($element['#info']['base']|
+rules_upgrade_element_parameter_settings||$element, $target, $name, $new_name = NULL|
+rules_upgrade_element_variable_settings||$element, $target, $name, $new_name = NULL|
+rules_action_load_comment_upgrade_map_name||$element|
+rules_action_load_comment_upgrade||$element, $target|
+rules_condition_content_is_type_upgrade_map_name||$element|
+rules_condition_content_is_published_upgrade_map_name||$element|
+rules_condition_content_is_sticky_upgrade_map_name||$element|
+rules_condition_content_is_promoted_upgrade_map_name||$element|
+rules_condition_content_is_new_upgrade_map_name||$element|
+rules_condition_content_is_new_upgrade||$element, $target|
+rules_action_node_set_author_upgrade_map_name||$element|
+rules_action_node_set_author_upgrade||$element, $target|
+rules_action_node_load_author_upgrade_map_name||$element|
+rules_action_node_load_author_upgrade||$element, $target|
+rules_action_set_node_title_upgrade_map_name||$element|
+rules_action_set_node_title_upgrade||$element, $target|
+rules_action_add_node_upgrade_map_name||$element|
+rules_action_add_node_upgrade||$element, $target|
+rules_action_load_node_upgrade_map_name||$element|
+rules_action_load_node_upgrade||$element, $target|
+rules_action_delete_node_upgrade_map_name||$element|
+rules_action_delete_node_upgrade||$element, $target|
+rules_core_node_publish_action_upgrade_map_name||$element|
+rules_core_node_unpublish_action_upgrade_map_name||$element|
+rules_core_node_make_sticky_action_upgrade_map_name||$element|
+rules_core_node_make_unsticky_action_upgrade_map_name||$element|
+rules_core_node_promote_action_upgrade_map_name||$element|
+rules_core_node_unpromote_action_upgrade_map_name||$element|
+rules_condition_url_has_alias_upgrade_map_name||$element|
+rules_condition_url_has_alias_upgrade||$element, $target|
+rules_condition_alias_exists_upgrade_map_name||$element|
+rules_condition_alias_exists_upgrade||$element, $target|
+rules_action_path_alias_upgrade||$element, $target|
+rules_action_node_path_alias_upgrade||$element, $target|
+rules_condition_custom_php_upgrade_map_name||$element|
+rules_action_custom_php_upgrade_map_name||$element|
+rules_condition_text_compare_upgrade_map_name||$element|
+rules_condition_text_compare_upgrade||$element, $target|
+rules_condition_number_compare_upgrade_map_name||$element|
+rules_condition_number_compare_upgrade||$element, $target|
+rules_condition_check_boolean_upgrade_map_name||$element|
+rules_condition_check_boolean_upgrade||$element, $target|
+rules_action_invoke_set_upgrade_map_name||$element|
+rules_action_invoke_set_upgrade||$element, $target|
+rules_action_save_variable_upgrade_map_name||$element|
+rules_action_save_variable_upgrade||$element, $target|
+rules_action_set_breadcrumb_upgrade_map_name||$element|
+rules_action_mail_to_user_upgrade_map_name||$element|
+rules_action_mail_to_user_upgrade||$element, $target|
+rules_action_drupal_goto_upgrade_map_name||$element|
+rules_action_drupal_goto_upgrade||$element, $target|
+rules_action_watchdog_upgrade_map_name||$element|
+rules_action_taxonomy_load_term_upgrade_map_name||$element|
+rules_action_taxonomy_add_term_upgrade_map_name||$element|
+rules_action_taxonomy_delete_term_upgrade_map_name||$element|
+rules_action_taxonomy_term_assign_to_content_upgrade_map_name||$element|
+rules_action_taxonomy_term_remove_from_content_upgrade_map_name||$element|
+rules_action_taxonomy_load_vocab_upgrade_map_name||$element|
+rules_action_taxonomy_add_vocab_upgrade_map_name||$element|
+rules_condition_user_hasrole_upgrade_map_name||$element|
+rules_condition_user_hasrole_upgrade||$element, $target|
+rules_condition_user_comparison_upgrade_map_name||$element|
+rules_condition_user_comparison_upgrade||$element, $target|
+rules_action_user_addrole_upgrade_map_name||$element|
+rules_action_user_addrole_upgrade||$element, $target|
+rules_action_user_removerole_upgrade_map_name||$element|
+rules_action_user_removerole_upgrade||$element, $target|
+rules_action_load_user_upgrade_map_name||$element|
+rules_action_load_user_upgrade||$element, $target|
+rules_action_user_create_upgrade_map_name||$element|
+rules_action_user_create_upgrade||$element, $target|
+rules_core_user_block_user_action_upgrade_map_name||$element|
+rules_core_user_block_user_action_upgrade||$element, $target|
+__construct|||
+addVariable||$name, $data, $info|
+cleanUp|||
+block||$rules_config|
+unblock||$rules_config|
+isBlocked||$rule_config|
+varInfo||$name = NULL|
+isSavable||$wrapper|
+isEntity||$name|
+&get||$name|
+saveChanges||$selector, $wrapper, $immediate = FALSE|
+save||$selector, EntityMetadataWrapper $wrapper, $immediate|
+saveNow||$selector|
+mergeSaveVariables||RulesState $state, RulesPlugin $component, $settings|
+applyDataSelector||$selector, $langcode = LANGUAGE_NONE|
+__sleep |||
+__wakeup|||
+restoreBlocks|||
+defaultVariables||$key = NULL|
+typesMatch||$var_info, $param_info, $ancestors = TRUE|
+typeCalcAncestors||&$cache, $type|
+matchingDataSelector||$source, $param_info, $prefix = '', $recursions = 2, $suggestions = TRUE|
+addMetadataAssertions||$var_info, $assertions|
+applyMetadataAssertions||EntityMetadataWrapper $wrapper, $property_info|
+addSiteMetadata||EntityMetadataWrapper $wrapper, $property_info|
+__construct||$type, $data = NULL, $info = array()|
+setData||$data|
+getIdentifier|||
+value||array $options = array()|
+set||$value|
+clear|||
+__sleep|||
+__wakeup|||
+__construct||$event_name, $info|
+getSettings|||
+setSettings||array $settings|
+validate|||
+extractFormValues||array &$form, array &$form_state|
+availableVariables|||
+getEventName|||
+getEventInfo|||
+buildForm||array &$form_state|
+getEventNameSuffix|||
+summary|||
+getDefaults|||
+getSettings|||
+__construct||$event_name, $info|
+summary|||
+buildForm||array &$form_state|
+getBundlePropertyLabel|||
+extractFormValues||array &$form, array &$form_state|
+validate|||
+getEventNameSuffix|||
+getDefaults|||
+availableVariables|||
+executeCallback||array $args, RulesState $state = NULL|
+providesVariables|||
+negate||$negate = TRUE|
+isNegated|||
+executeCallback||array $args, RulesState $state = NULL|
+__sleep|||
+returnVariables||RulesState $state, $result = NULL|
+exportToArray|||
+import||array $export|
+label|||
+__construct||$variables = array(), $providesVars = array()|
+conditions|||
+conditionContainer|||
+__sleep|||
+actions|||
+condition||$name, $settings = array()|
+sortChildren||$deep = FALSE|
+evaluate||RulesState $state|
+fire||RulesState $state|
+integrityCheck|||
+access|||
+dependencies|||
+destroy|||
+getIterator|||
+stateVariables||$element = NULL|
+exportFlat|||
+exportToArray|||
+exportChildren||$key = NULL|
+import||array $export|
+importChildren||$export, $key = NULL|
+__clone|||
+variableInfoAssertions|||
+delete||$keep_children = FALSE|
+providesVariables|||
+resetInternalCache|||
+events|||
+removeEvent||$event|
+event||$event_name, array $settings = NULL|
+getEventSettings||$event_name|
+integrityCheck|||
+evaluate||RulesState $state|
+access|||
+dependencies|||
+providesVariables|||
+parameterInfo||$optional = FALSE|
+availableVariables|||
+__sleep|||
+exportChildren||$key = 'ON'|
+importChildren||$export, $key = 'ON'|
+optimize|||
+evaluate||RulesState $state|
+label|||
+evaluate||RulesState $state|
+label|||
+stateVariables||$element = NULL|
+__construct||$settings = array(), $variables = NULL|
+pluginParameterInfo|||
+integrityCheck|||
+listItemInfo|||
+evaluate||RulesState $state|
+stateVariables||$element = NULL|
+label|||
+exportChildren||$key = 'DO'|
+importChildren||$export, $key = 'DO'|
+exportSettings|||
+importSettings||$export|
+rule||$rule|
+exportChildren||$key = 'RULES'|
+importChildren||$export, $key = 'RULES'|
+__construct||$info = array()|
+executeByArgs||$args = array()|
+rebuildEventCache|||
+stateVariables||$element = NULL|
+save||$name = NULL, $module = 'rules'|
+__construct||$setting, $param_info, $var_info = array(), $processor = NULL|
+getPreparedValue|||
+editAccess|||
+prepareSetting||&$setting, $param_info, $var_info = array()|
+attachForm||&$form, $settings, $param_info, $var_info, $access_check = TRUE|
+processors||$param_info = NULL, $access_check = TRUE, $hook = 'data_processor_info'|
+_item_sort||$a, $b|
+getChainSettings|||
+dependencies|||
+unchain|||
+getSetting|||
+access|||
+form||$settings, $var_info|
+__construct||$setting, $param_info, $var_info = array(), $processor = NULL|
+process||$value, $info, RulesState $state, RulesPlugin $element, $options = NULL|
+getEvaluatorOptions||$info, $state, $element|
+prepareSetting||&$setting, $param_info, $var_info = array()|
+getPreparedValue|||
+attachForm||&$form, $settings, $param_info, $var_info, $access_check = TRUE|
+evaluators||$param_info = NULL, $access_check = TRUE|
+processors||$param_info = NULL, $access_check = TRUE, $hook = 'evaluator_info'|
+help||$variables|
+api|||
+export||$data, &$export, $module_name = ''|
+rules_features_abstract_default_features_export||&$export, &$pipe, $module_name = '', $element|
+rules_admin_reaction_overview||$form, &$form_state, $base_path|
+rules_admin_components_overview||$form, &$form_state, $base_path|
+rules_admin_settings||$form, &$form_state|
+rules_admin_settings_advanced||$form, &$form_state|
+rules_admin_settings_integrity_check_submit||$form, &$form_state|
+rules_admin_settings_cache_rebuild_submit||$form, &$form_state|
+rules_admin_add_reaction_rule||$form, &$form_state, $base_path|
+rules_ui_add_reaction_rule_validate||&$form, &$form_state|
+rules_ui_add_reaction_rule_submit||&$form, &$form_state|
+rules_admin_add_component||$form, &$form_state, $base_path|
+rules_admin_component_options|||
+rules_admin_add_component_create_submit||$form, &$form_state|
+rules_admin_add_component_validate||$form, &$form_state|
+rules_admin_add_component_submit||$form, &$form_state|
+rules_admin_menu|||
+rules_admin_form_alter||&$form, &$form_state, $form_id|
+rules_admin_system_info_alter||&$info, $file, $type|
+rules_core_modules|||
+_rules_rules_collect_items||$hook|
+rules_rules_file_info|||
+rules_rules_category_info|||
+rules_rules_action_info|||
+rules_rules_condition_info|||
+rules_rules_event_info|||
+rules_rules_data_info|||
+rules_rules_data_info_alter||&$items|
+rules_rules_evaluator_info|||
+rules_rules_data_processor_info|||
+rules_init|||
+rules_ui|||
+rules_action||$name, $settings = array()|
+rules_condition||$name, $settings = array()|
+rule||$variables = NULL, $provides = array()|
+rules_reaction_rule|||
+rules_or||$variables = NULL|
+rules_and||$variables = NULL|
+rules_loop||$settings = array(), $variables = NULL|
+rules_rule_set||$variables = array(), $provides = array()|
+rules_action_set||$variables = array(), $provides = array()|
+rules_log||$msg, $args = array(), $priority = RulesLog::INFO, RulesPlugin $element = NULL, $scope = NULL|
+rules_fetch_data||$hook|
+rules_discover_plugins||$class|
+_rules_discover_module||$class|
+&rules_get_cache||$cid = 'data'|
+_rules_rebuild_cache||&$cache|
+_rules_rebuild_component_cache|||
+rules_set_cache||$cid, $data|
+rules_flush_caches|||
+rules_clear_cache|||
+rules_import||$export, &$error_msg = ''|
+&rules_wrap_data||$data = NULL, $info, $force = FALSE|
+rules_unwrap_data||array $data, $info = array()|
+rules_get_event_info||$event_name|
+rules_get_event_base_name||$event_name|
+rules_get_event_handler||$event_name, array $settings = NULL|
+rules_plugin_factory||$plugin_name, $arg1 = NULL, $arg2 = NULL|
+rules_rules_plugin_info|||
+rules_entity_info|||
+rules_hook_info|||
+rules_config_load_multiple||$names = array(), $conditions = array()|
+rules_config_load||$name|
+rules_get_components||$label = FALSE, $type = NULL, $conditions = array()|
+rules_config_delete||array $ids|
+rules_config_update_dirty_flag||$rules_config, $update = TRUE|
+does the same as calling module_invoke_all|||
+rules_invoke_all|||
+rules_invoke_event|||
+rules_invoke_event_by_args||$event_name, $args = array()|
+rules_invoke_component|||
+rules_filter_array||$array, $key, $value|
+rules_update_array||array $array, array $update|
+rules_extract_property||$arrays, $key|
+rules_array_key||$array|
+rules_path_clean_replacement_values||&$replacements, $data = array(), $options = array()|
+rules_theme|||
+rules_permission|||
+rules_permissions_by_component||array $components = array()|
+rules_element_load||$element_id, $config_name|
+rules_get_title||$text, $element|
+rules_menu_add_element_title||$array|
+rules_debug_log_region|||
+rules_page_build||&$page|
+rules_debug_log_pre_render||$elements|
+rules_drupal_goto_alter||&$path, &$options, &$http_response_code|
+rules_show_debug_output|||
+rules_exit|||
+rules_element_info|||
+rules_modules_enabled||$modules|
+rules_modules_disabled||$modules|
+rules_config_access||$op, $rules_config = NULL, $account = NULL|
+rules_rules_config_access||$op, $rules_config = NULL, $account = NULL|
+rules_menu|||
+rules_external_help||$topic = NULL|
+rules_help||$path, $arg|
+rules_token_info|||
+rules_tokens||$type, $tokens, $data, $options = array()|
+rules_get_entity_metadata_wrapper_all_properties||RulesAbstractPlugin $element|
+rules_entity_metadata_wrapper_all_properties_callback||EntityMetadataWrapper $wrapper, $property_info|
