@@ -29,6 +29,8 @@ SUPPORTS
 16. Elysia cron
 17. Search API
 18. Profile2
+19. Migrate
+20. Rules
 
 TODO
 ----
