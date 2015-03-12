@@ -1,0 +1,84 @@
+# format=pipe
+entityPropertyInfo|||
+profile2_entity_property_info_alter||&$info|
+hook_menu|||
+profile2_type_form||$form, &$form_state, $profile_type, $op = 'edit'|
+profile2_type_form_submit||&$form, &$form_state|
+profile2_type_form_submit_delete||&$form, &$form_state|
+profile2_entity_info|||
+profile2_type_load||$type|
+profile2_permission|||
+profile2_get_types||$type_name = NULL|
+profile2_load||$pid, $reset = FALSE|
+profile2_load_multiple||$pids = array(), $conditions = array(), $reset = FALSE|
+profile2_load_by_user||$account, $type_name = NULL|
+profile2_profile2_delete||$profile|
+profile2_delete||Profile $profile|
+profile2_delete_multiple||array $pids|
+profile2_user_delete||$account|
+profile2_create||array $values|
+profile_create||array $values|
+profile2_save||Profile $profile|
+profile2_type_save||ProfileType $type|
+profile2_type_delete||ProfileType $type|
+profile2_profile2_type_delete||ProfileType $type|
+profile2_user_view||$account, $view_mode, $langcode|
+profile2_form_user_profile_form_alter||&$form, &$form_state|
+profile2_form_user_register_form_alter||&$form, &$form_state|
+profile2_attach_form||&$form, &$form_state|
+profile2_form_validate_handler||&$form, &$form_state|
+profile2_form_submit_handler||&$form, &$form_state|
+profile2_form_submit_build_profile||&$form, &$form_state|
+profile2_form_submit_cleanup||&$form, &$form_state|
+profile2_user_categories|||
+profile2_category_access||$account, $type_name|
+profile2_access||$op, $profile = NULL, $account = NULL|
+profile2_profile2_access||$op, $profile = NULL, $account = NULL|
+profile2_type_access||$op, $type = NULL, $account = NULL|
+profile2_theme|||
+__construct||$values = array()|
+user|||
+setUser||$account|
+type|||
+url|||
+path|||
+defaultUri|||
+defaultLabel|||
+buildContent||$view_mode = 'full', $langcode = NULL|
+save|||
+__construct||$values = array()|
+isLocked|||
+getTranslation||$property, $langcode = NULL|
+save|||
+profile2_view||$profile, $view_mode = 'full', $langcode = NULL, $page = NULL|
+profile2_form_field_ui_field_edit_form_alter||&$form, &$form_state|
+profile2_field_access||$op, $field, $entity_type, $profile = NULL, $account = NULL|
+profile2_field_extra_fields|||
+profile2_user_get_properties||$account, array $options, $name|
+profile2_page_menu|||
+profile2_by_uid_load||$uid, $type_name|
+profile2_page_get_base_path||$profile_type|
+profile2_page_forms||$form_id, $args|
+profile2_page_profile2_type_load||$types|
+profile2_page_entity_info_alter||&$entity_info|
+profile2_page_uri_callback||$profile|
+profile2_page_form_callback||$profile|
+profile2_page_title||$type_name, $profile2 = NULL|
+profile2_page_form_profile2_type_form_alter||&$form, &$form_state|
+profile2_page_profile2_type_insert||ProfileType $type|
+profile2_page_profile2_type_update||ProfileType $type|
+profile2_page_profile2_type_delete||$type|
+profile2_i18n_entity_info_alter||&$info|
+profile2_i18n_entity_property_info_alter||&$info|
+profile2_i18n_profile2_type_insert||$profile_type|
+profile2_i18n_profile2_type_update||$profile_type|
+profile2_i18n_profile2_type_delete||$profile_type|
+profile2_page_own||$base_path|
+profile2_page_view||$profile|
+profile2_form||$form, &$form_state, $profile|
+profile2_form_submit||$form, &$form_state|
+profile2_form_submit_delete||$form, &$form_state|
+profile2_page_delete_confirm_form||$form, &$form_state, $profile|
+profile2_page_delete_confirm_form_submit||$form, &$form_state|
+profile2_og_access_og_permission|||
+profile2_og_access_profile2_access||$op, $profile = NULL, $account = NULL|

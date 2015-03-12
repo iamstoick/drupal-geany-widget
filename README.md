@@ -26,6 +26,11 @@ SUPPORTS
 13. Libraries
 14. Diff
 15. Context
+16. Elysia cron
+17. Search API
+18. Profile2
+19. Migrate
+20. Rules
 
 TODO
 ----
