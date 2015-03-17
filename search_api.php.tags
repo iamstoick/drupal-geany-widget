@@ -1,0 +1,586 @@
+# format=pipe
+search_api_admin_overview|||
+theme_search_api_dropbutton||array &$variables|
+search_api_admin_add_server||array $form, array &$form_state|
+search_api_admin_add_server_ajax_callback||array $form, array &$form_state|
+search_api_admin_add_server_validate||array $form, array &$form_state|
+search_api_admin_add_server_submit||array $form, array &$form_state|
+search_api_admin_item_title||$object|
+search_api_admin_server_view||SearchApiServer $server, $action = NULL|
+theme_search_api_server||array $variables|
+search_api_server_status_form||array $form, array &$form_state, SearchApiServer $server|
+search_api_server_status_form_submit||array $form, array &$form_state|
+search_api_admin_server_edit||array $form, array &$form_state, SearchApiServer $server|
+search_api_admin_server_edit_validate||array $form, array &$form_state|
+search_api_admin_server_edit_submit||array $form, array &$form_state|
+search_api_admin_form_delete_submit||$form, &$form_state|
+search_api_admin_add_index||array $form, array &$form_state|
+search_api_admin_add_index_validate||array $form, array &$form_state|
+search_api_admin_add_index_submit||array $form, array &$form_state|
+search_api_admin_index_view||SearchApiIndex $index, $action = NULL|
+theme_search_api_index||array $variables|
+search_api_admin_index_status_form||array $form, array &$form_state, SearchApiIndex $index, array $status|
+search_api_admin_index_status_form_validate||array $form, array &$form_state|
+search_api_admin_index_status_form_submit||array $form, array &$form_state|
+search_api_admin_index_edit||array $form, array &$form_state, SearchApiIndex $index|
+search_api_admin_index_edit_submit||array $form, array &$form_state|
+search_api_admin_index_workflow||array $form, array &$form_state, SearchApiIndex $index|
+theme_search_api_admin_item_order||array $variables|
+search_api_admin_index_workflow_validate||array $form, array &$form_state|
+search_api_admin_index_workflow_submit||array $form, array &$form_state|
+search_api_admin_element_compare||$a, $b|
+search_api_admin_index_fields||array $form, array &$form_state, SearchApiIndex $index|
+_search_api_admin_get_fields||SearchApiIndex $index, EntityMetadataWrapper $wrapper|
+theme_search_api_admin_fields_table||$variables|
+search_api_admin_index_fields_submit||array $form, array &$form_state|
+search_api_admin_confirm||array $form, array &$form_state, $type, $action, Entity $entity|
+search_api_admin_confirm_submit||array $form, array &$form_state|
+search_api_test_menu|||
+search_api_test_insert_item||array $form, array &$form_state|
+search_api_test_insert_item_submit||array $form, array &$form_state|
+search_api_test_load||$id|
+search_api_test_view||$entity|
+search_api_test_touch||$entity|
+search_api_test_delete||$entity|
+search_api_test_entity_info|||
+search_api_test_entity_property_info|||
+search_api_test_uri||$entity|
+search_api_test_parent||$entity|
+search_api_test_list_callback||$data, array $options, $name|
+search_api_test_search_api_service_info|||
+configurationForm||array $form, array &$form_state|
+addIndex||SearchApiIndex $index|
+fieldsUpdated||SearchApiIndex $index|
+removeIndex||$index|
+indexItems||SearchApiIndex $index, array $items|
+preDelete|||
+deleteItems||$ids = 'all', SearchApiIndex $index = NULL|
+search||SearchApiQueryInterface $query|
+checkErrorState|||
+search_api_drush_command|||
+drush_search_api_list|||
+drush_search_api_enable||$index_id = NULL|
+drush_search_api_disable||$index_id = NULL|
+drush_search_api_status||$index_id = NULL|
+drush_search_api_index||$index_id = NULL, $limit = NULL, $batch_size = NULL|
+_drush_search_api_batch_indexing_create||SearchApiIndex $index, $limit = NULL, $batch_size = NULL|
+_search_api_drush_format_plural||$count, $singular, $plural, array $args = array(), array $options = array()|
+drush_search_api_reindex||$index_id = NULL|
+drush_search_api_clear||$index_id = NULL|
+drush_search_api_set_index_server||$index_id = NULL, $server_id = NULL|
+search_api_drush_get_index||$index_id = NULL|
+search_api_drush_get_server||$server_id = NULL|
+search_api_drush_static||$function|
+search_api_menu|||
+search_api_help||$path|
+search_api_hook_info|||
+search_api_theme|||
+search_api_permission|||
+search_api_cron|||
+search_api_entity_info|||
+search_api_entity_property_info|||
+search_api_search_api_server_insert||SearchApiServer $server|
+search_api_search_api_server_update||SearchApiServer $server|
+search_api_search_api_server_delete||SearchApiServer $server|
+search_api_search_api_index_insert||SearchApiIndex $index|
+search_api_search_api_index_update||SearchApiIndex $index|
+search_api_search_api_index_delete||SearchApiIndex $index|
+search_api_features_export_alter||&$export|
+search_api_system_info_alter||&$info, $file, $type|
+search_api_entity_insert||$entity, $type|
+search_api_entity_update||$entity, $type|
+search_api_entity_delete||$entity, $type|
+search_api_field_update_field||$field, $prior_field|
+search_api_flush_caches|||
+search_api_search_api_item_type_info|||
+search_api_modules_enabled|||
+search_api_modules_disabled|||
+search_api_search_api_alter_callback_info|||
+search_api_search_api_processor_info|||
+search_api_track_item_insert||$type, array $item_ids|
+search_api_track_item_change||$type, array $item_ids|
+search_api_track_item_queued||SearchApiIndex $index, array $item_ids|
+search_api_track_item_indexed||SearchApiIndex $index, array $item_ids|
+search_api_track_item_delete||$type, array $item_ids|
+search_api_server_tasks_check||SearchApiServer $server = NULL|
+search_api_server_tasks_add||SearchApiServer $server, $type, $index = NULL, $data = NULL|
+search_api_server_tasks_delete||array $ids = NULL, SearchApiServer $server = NULL, $index = NULL|
+search_api_index_recalculate_fields||$indexes = FALSE|
+_search_api_settings_equals||$setting1, $setting2|
+search_api_index_items||SearchApiIndex $index, $limit = -1|
+search_api_index_specific_items||SearchApiIndex $index, array $ids|
+&search_api_index_specific_items_delayed||SearchApiIndex $index = NULL, array $ids = array()|
+search_api_get_items_to_index||SearchApiIndex $index, $limit = -1|
+search_api_query||$id, array $options = array()|
+search_api_current_search||$search_id = NULL, SearchApiQuery $query = NULL, array $results = array()|
+search_api_field_types|||
+search_api_default_field_types|||
+search_api_get_data_type_info||$type = NULL|
+search_api_get_service_info||$id = NULL|
+search_api_get_item_type_info||$type = NULL|
+search_api_get_datasource_controller||$type|
+search_api_get_alter_callbacks|||
+search_api_get_processors|||
+search_api_search_api_query_alter||SearchApiQueryInterface $query|
+_search_api_query_add_node_access||$account, SearchApiQueryInterface $query, $type = 'node'|
+search_api_is_text_type||$type, array $allowed = array('text')|
+search_api_is_list_type||$type|
+search_api_list_nesting_level||$type|
+search_api_nest_type||$type, $nested_type|
+search_api_extract_inner_type||$type|
+search_api_index_update_datasource||SearchApiIndex $index, $table, $column = 'index_id'|
+search_api_extract_fields||EntityMetadataWrapper $wrapper, array $fields, array $value_options = array()|
+_search_api_add_option_values||&$value, array $options|
+_search_api_extract_entity_value||EntityMetadataWrapper $wrapper, $fulltext = FALSE|
+search_api_server_load||$id, $reset = FALSE|
+search_api_server_load_multiple||$ids = array(), $conditions = array(), $reset = FALSE|
+search_api_server_url||SearchApiServer $server|
+search_api_title_delete_page||Entity $entity|
+search_api_access_disable_page||Entity $entity|
+search_api_access_delete_page||Entity $entity|
+search_api_entity_access|||
+search_api_server_insert||array $values|
+search_api_server_edit||$id, array $fields|
+search_api_server_enable||$id|
+search_api_server_disable||$id|
+search_api_server_clear||$id|
+search_api_server_delete||$id|
+search_api_index_load||$id, $reset = FALSE|
+search_api_index_load_multiple||$ids = array(), $conditions = array(), $reset = FALSE|
+search_api_index_status||SearchApiIndex $index|
+search_api_index_url||SearchApiIndex $index|
+search_api_index_get_server||SearchApiIndex $index|
+search_api_status_options_list|||
+search_api_index_insert||array $values|
+search_api_index_edit||$id, array $fields|
+search_api_index_edit_fields||$id, array $fields|
+search_api_index_enable||$id|
+search_api_index_disable||$id|
+search_api_index_reindex||$id|
+_search_api_index_reindex||SearchApiIndex $index|
+search_api_index_clear||$id|
+search_api_index_delete||$id|
+search_api_index_options_list|||
+_search_api_index_queued_items|||
+_search_api_wrapper_add_all_properties||EntityMetadataWrapper $wrapper, array $property_info|
+_search_api_convert_custom_type||$callback, $value, $original_type, $type, $nesting_level|
+_search_api_get_items_on_server||SearchApiIndex $index|
+in theme_search_api_index|||
+_search_api_deep_copy||array $array|
+_search_api_batch_indexing_create||SearchApiIndex $index, $batch_size, $limit, $remaining, $drush = FALSE|
+_search_api_batch_indexing_callback||SearchApiIndex $index, $batch_size, $limit, $drush = FALSE, &$context|
+_search_api_batch_indexing_finished||$success, $results|
+__construct||array $values = array(), $entity_type = 'search_api_index'|
+postCreate|||
+postDelete|||
+queueItems|||
+dequeueItems|||
+save|||
+update||array $fields|
+reindex|||
+clear|||
+__sleep|||
+datasource|||
+getEntityType|||
+server||$reset = FALSE|
+query||$options = array()|
+index||array $items|
+dataAlter||array &$items|
+propertyInfoAlter||EntityMetadataWrapper $wrapper, array $property_info|
+getAlterCallbacks|||
+getProcessors|||
+preprocessIndexItems||array &$items|
+preprocessSearchQuery||SearchApiQuery $query|
+postprocessSearchResults||array &$response, SearchApiQuery $query|
+getFields||$only_indexed = TRUE, $get_additional = FALSE|
+getFulltextFields||$only_indexed = TRUE|
+getCacheId||$type = 'fields'|
+entityWrapper||$item = NULL, $alter = TRUE|
+loadItems||array $ids|
+resetCaches|||
+process||&$value|
+supportsIndex||SearchApiIndex $index|
+alterItems||array &$items|
+configurationForm|||
+hasBundles||array $entity_info|
+__construct||SearchApiIndex $index, array $options = array()|
+configurationForm|||
+configurationFormValidate||array $form, array &$values, array &$form_state|
+postprocessSearchResults||array &$response, SearchApiQuery $query|
+getFulltextFields||array &$results, $i, array $fulltext_fields, $load = TRUE|
+getKeywords||SearchApiQuery $query|
+flattenKeysArray||array $keys|
+createExcerpt||$text, array $keys|
+highlightField||$text, array $keys, $html = TRUE|
+flattenArrayValues||array $array, $glue = "\n\n"|
+__construct||array $values = array(), $entity_type = 'search_api_server'|
+update||array $fields|
+__sleep|||
+ensureProxy|||
+__call||$name, $arguments = array()|
+configurationForm||array $form, array &$form_state|
+configurationFormValidate||array $form, array &$values, array &$form_state|
+configurationFormSubmit||array $form, array &$values, array &$form_state|
+supportsFeature||$feature|
+viewSettings|||
+postCreate|||
+postUpdate|||
+preDelete|||
+addIndex||SearchApiIndex $index|
+fieldsUpdated||SearchApiIndex $index|
+removeIndex||$index|
+indexItems||SearchApiIndex $index, array $items|
+deleteItems||$ids = 'all', SearchApiIndex $index = NULL|
+query||SearchApiIndex $index, $options = array()|
+search||SearchApiQueryInterface $query|
+getExtraInformation|||
+supportsIndex||SearchApiIndex $index|
+configurationForm|||
+configurationFormSubmit||array $form, array &$values, array &$form_state|
+alterItems||array &$items|
+propertyInfo|||
+getHierarchicalFields|||
+extractHierarchy||EntityMetadataWrapper $wrapper, $property, array &$values|
+supportsIndex||SearchApiIndex $index|
+alterItems||array &$items|
+__construct||SearchApiIndex $index, array $options = array()|
+supportsIndex||SearchApiIndex $index|
+configurationForm|||
+configurationFormValidate||array $form, array &$values, array &$form_state|
+configurationFormSubmit||array $form, array &$values, array &$form_state|
+propertyInfo|||
+getIdFieldInfo|||
+loadItems||array $ids|
+getMetadataWrapper||$item = NULL, array $info = array()|
+getItemId||$item|
+getItemLabel||$item|
+getItemUrl||$item|
+startTracking||array $indexes|
+getAllItemIds|||
+__construct||SearchApiIndex $index, array $options = array()|
+supportsIndex||SearchApiIndex $index|
+configurationForm|||
+configurationFormSubmit||array $form, array &$values, array &$form_state|
+alterItems||array &$items|
+alterItems||array &$items|
+propertyInfo|||
+getIdFieldInfo|||
+loadItems||array $ids|
+getPropertyInfo|||
+getItemId||$item|
+getItemLabel||$item|
+getItemUrl||$item|
+startTracking||array $indexes|
+stopTracking||array $indexes|
+trackItemInsert||array $item_ids, array $indexes|
+trackItemChange||$item_ids, array $indexes, $dequeue = FALSE|
+trackItemIndexed||array $item_ids, SearchApiIndex $index|
+trackItemDelete||array $item_ids, array $indexes|
+getChangedItems||SearchApiIndex $index, $limit = -1|
+getIndexStatus||SearchApiIndex $index|
+supportsIndex||SearchApiIndex $index|
+propertyInfo|||
+alterItems||array &$items|
+getNode||$item|
+configurationFormSubmit||array $form, array &$values, array &$form_state|
+__construct||$type|
+getEntityType|||
+getMetadataWrapper||$item = NULL, array $info = array()|
+getPropertyInfo|||
+getItemId||$item|
+getItemLabel||$item|
+getItemUrl||$item|
+startTracking||array $indexes|
+getAllItemIds|||
+stopTracking||array $indexes|
+trackItemInsert||array $item_ids, array $indexes|
+trackItemChange||$item_ids, array $indexes, $dequeue = FALSE|
+trackItemQueued||$item_ids, SearchApiIndex $index|
+trackItemIndexed||array $item_ids, SearchApiIndex $index|
+trackItemDelete||array $item_ids, array $indexes|
+getChangedItems||SearchApiIndex $index, $limit = -1|
+getIndexStatus||SearchApiIndex $index|
+checkIndex||SearchApiIndex $index|
+__construct||SearchApiServer $server|
+configurationForm||array $form, array &$form_state|
+configurationFormValidate||array $form, array &$values, array &$form_state|
+configurationFormSubmit||array $form, array &$values, array &$form_state|
+supportsFeature||$feature|
+viewSettings|||
+getExtraInformation|||
+postCreate|||
+postUpdate|||
+preDelete|||
+addIndex||SearchApiIndex $index|
+fieldsUpdated||SearchApiIndex $index|
+removeIndex||$index|
+query||SearchApiIndex $index, $options = array()|
+supportsIndex||SearchApiIndex $index|
+configurationForm|||
+alterItems||array &$items|
+propertyInfo|||
+configurationForm|||
+configurationFormValidate||array $form, array &$values, array &$form_state|
+processFieldValue||&$value|
+process||&$value|
+prepare|||
+__construct||SearchApiIndex $index, array $options = array()|
+supportsIndex||SearchApiIndex $index|
+configurationForm|||
+configurationFormValidate||array $form, array &$values, array &$form_state|
+configurationFormSubmit||array $form, array &$values, array &$form_state|
+preprocessIndexItems||array &$items|
+preprocessSearchQuery||SearchApiQuery $query|
+postprocessSearchResults||array &$response, SearchApiQuery $query|
+processField||&$value, &$type|
+normalizeTokens||$tokens, $score = 1|
+implodeTokens||array $tokens|
+processKeys||&$keys|
+processFilters||array &$filters|
+testField||$name, array $field|
+testType||$type|
+processFieldValue||&$value|
+processKey||&$value|
+processFilterValue||&$value|
+process||&$value|
+__construct||SearchApiIndex $index, array $options = array()|
+configurationForm|||
+configurationFormValidate||array $form, array &$values, array &$form_state|
+processFieldValue||&$value|
+parseText||&$text, $active_tag = NULL, $boost = 1|
+supportsIndex||SearchApiIndex $index|
+getNode||$item|
+configurationFormSubmit||array $form, array &$values, array &$form_state|
+__construct||SearchApiIndex $index, array $options = array()|
+parseModes|||
+parseKeys||$keys, $mode|
+createFilter||$conjunction = 'AND', $tags = array()|
+keys||$keys = NULL|
+fields||array $fields|
+filter||SearchApiQueryFilterInterface $filter|
+condition||$field, $value, $operator = '='|
+sort||$field, $order = 'ASC'|
+range||$offset = NULL, $limit = NULL|
+execute|||
+addLanguages||array $languages|
+preExecute|||
+postExecute||array &$results|
+getIndex|||
+&getKeys|||
+getOriginalKeys|||
+&getFields|||
+getFilter|||
+&getSort|||
+getOption||$name, $default = NULL|
+setOption||$name, $value|
+&getOptions|||
+__sleep|||
+__wakeup|||
+__clone|||
+__toString|||
+__construct||$conjunction = 'AND', array $tags = array()|
+setConjunction||$conjunction|
+filter||SearchApiQueryFilterInterface $filter|
+condition||$field, $value, $operator = '='|
+getConjunction|||
+&getFilters|||
+hasTag||$tag|
+&getTags|||
+__clone|||
+__toString|||
+configurationForm|||
+configurationFormValidate||array $form, array &$values, array &$form_state|
+configurationFormSubmit||array $form, array &$values, array &$form_state|
+alterItems||array &$items|
+reduce||$a, $b|
+flattenArray||array $data|
+propertyInfo|||
+fieldDescription||array $field, array $index_fields|
+getTypes||$info = 'name'|
+formButtonSubmit||array $form, array &$form_state|
+_search_api_add_aggregation_field_submit||array $form, array &$form_state|
+_search_api_add_aggregation_field_ajax||array $form, array &$form_state|
+__construct||$message = NULL|
+process||&$value|
+configurationForm|||
+configurationFormValidate||array $form, array &$values, array &$form_state|
+process||&$value|
+preprocessSearchQuery||SearchApiQuery $query|
+postprocessSearchResults||array &$response, SearchApiQuery $query|
+getStopWords|||
+supportsIndex||SearchApiIndex $index|
+alterItems||array &$items|
+configurationForm|||
+search_api_rules_action_info|||
+_search_api_rules_access|||
+_search_api_rules_action_index||EntityDrupalWrapper $wrapper, SearchApiIndex $index = NULL, $index_immediately = TRUE|
+_search_api_rules_action_index_help|||
+getType|||
+execute||$query|
+addFacetFilter||$query_filter, $field, $filter|
+build|||
+__construct||FacetapiAdapter $adapter, array $facet|
+getType|||
+execute||$query|
+createRangeFilter||$value|
+replaceDateString||$matches|
+build|||
+getPath||$realm_name|
+getSearchPath|||
+initActiveFilters||$query|
+addFacet||array $facet, SearchApiQueryInterface $query|
+searchExecuted|||
+getCurrentSearch|||
+suppressOutput||$realm_name|
+getSearchKeys|||
+getResultCount|||
+settingsForm||&$form, &$form_state|
+search_api_facetapi_menu|||
+search_api_facetapi_facetapi_searcher_info|||
+search_api_facetapi_facetapi_facet_info||array $searcher_info|
+search_api_facetapi_facetapi_adapters|||
+search_api_facetapi_facetapi_query_types|||
+search_api_facetapi_search_api_query_alter||$query|
+search_api_facetapi_settings||$realm_name, SearchApiIndex $index|
+_search_api_facetapi_index_support_feature||SearchApiIndex $index, $feature = 'search_api_facets'|
+search_api_facetapi_get_taxonomy_hierarchy||array $values|
+search_api_facetapi_facet_map_callback||array $values, array $options = array()|
+_search_api_facetapi_facet_create_label||array $values, array $options|
+search_api_facetapi_form_search_api_admin_index_fields_alter||&$form, &$form_state|
+search_api_facetapi_search_api_admin_index_fields_submit||$form, &$form_state|
+search_api_facetapi_date_get_granularity||$filter|
+search_api_facetapi_date_get_granularity_format||$granularity|
+search_api_facetapi_map_date||array $values, array $options = array()|
+search_api_facetapi_format_timestamp||$timestamp, $precision = FACETAPI_DATE_YEAR|
+search_api_views_views_api|||
+search_api_views_search_api_index_insert|||
+search_api_views_search_api_index_update||SearchApiIndex $index|
+search_api_views_search_api_index_delete||SearchApiIndex $index|
+_search_api_views_index_unavailable||SearchApiIndex $index|
+query||$group_by = FALSE|
+uses_breadcrumb|||
+default_actions||$which = NULL|
+option_definition|||
+options_form||&$form, &$form_state|
+query||$group_by = FALSE|
+displays_exposed|||
+uses_exposed|||
+option_definition|||
+options_form||&$form, &$form_state|
+options_validate||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+options_summary||&$categories, &$options|
+getFieldOptions|||
+render_more_link|||
+render|||
+operator_options|||
+value_form||&$form, &$form_state|
+admin_summary|||
+query|||
+operator_options|||
+value_form||&$form, &$form_state|
+cache_set||$type|
+cache_get||$type|
+get_cache_key||$key_data = array()|
+get_results_key|||
+getSearchApiQuery|||
+operator_options|||
+query||$group_by = FALSE|
+getTimestamp||$value|
+fillValue|||
+abort|||
+title|||
+query||$group_by = FALSE|
+title|||
+fillValue|||
+option_definition|||
+options_form||&$form, &$form_state|
+query||$group_by = FALSE|
+get_value_options|||
+query|||
+option_definition|||
+options_form||&$form, &$form_state|
+query||$group_by = FALSE|
+getFulltextFields|||
+value_form||&$form, &$form_state|
+ids_to_strings||array $ids|
+validate_entity_strings||array &$form, array $values|
+show_operator_form||&$form, &$form_state|
+operator_options|||
+option_definition|||
+options_form||&$form, &$form_state|
+exposed_validate||&$form, &$form_state|
+query|||
+getFulltextFields|||
+has_extra_options|||
+option_definition|||
+extra_options_form||&$form, &$form_state|
+value_form||&$form, &$form_state|
+reduce_value_options||array $options|
+value_validate||$form, &$form_state|
+accept_exposed_input||$input|
+exposed_validate||&$form, &$form_state|
+validate_entity_strings||array &$form, array $values|
+expose_form||&$form, &$form_state|
+ids_to_strings||array $ids|
+get_wrapper|||
+get_value_options|||
+operator_options|||
+expose_options|||
+expose_form||&$form, &$form_state|
+option_definition|||
+reduce_value_options|||
+value_submit||$form, &$form_state|
+value_form||&$form, &$form_state|
+admin_summary|||
+query|||
+init||$base_table, $base_field, $options|
+addField||$field|
+add_selector_orderby||$selector, $order = 'ASC'|
+option_definition|||
+options_form||&$form, &$form_state|
+build||&$view|
+alter||&$view|
+execute||&$view|
+abort||$msg = NULL|
+addResults||array $results, $view|
+extractFields||EntityMetadataWrapper $wrapper, array $all_fields|
+get_result_entities||$results, $relationship = NULL, $field = NULL|
+get_result_wrappers||$results, $relationship = NULL, $field = NULL|
+getSearchApiQuery|||
+getSearchApiResults|||
+createFilter||$conjunction = 'AND', $tags = array()|
+keys||$keys = NULL|
+fields||array $fields|
+filter||SearchApiQueryFilterInterface $filter, $group = NULL|
+condition||$field, $value, $operator = '=', $group = NULL|
+sort||$field, $order = 'ASC'|
+range||$offset = NULL, $limit = NULL|
+getIndex|||
+&getKeys|||
+getOriginalKeys|||
+&getFields|||
+getFilter|||
+&getSort|||
+getOption||$name, $default = NULL|
+setOption||$name, $value|
+&getOptions|||
+option_definition|||
+has_extra_options|||
+extra_options_form||&$form, &$form_state|
+value_form||&$form, &$form_state|
+query|||
+operator_options|||
+option_definition|||
+value_form||&$form, &$form_state|
+value_validate||$form, &$form_state|
+accept_exposed_input||$input|
+exposed_validate||&$form, &$form_state|
+isMultiValued||array $options = array()|
+admin_summary|||
+query|||
+query|||
+search_api_views_views_data|||
+_search_api_views_add_handlers||$id, array $field, EntityMetadataWrapper $wrapper, array &$table|
+search_api_views_views_plugins|||
+_search_api_views_get_field_vocabulary||$field_info|

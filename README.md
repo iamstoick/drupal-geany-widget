@@ -27,6 +27,11 @@ SUPPORTS
 14. Diff
 15. Context
 16. Metatag
+17. Elysia cron
+18. Search API
+19. Profile2
+20. Migrate
+21. Rules
 
 TODO
 ----
@@ -35,4 +40,3 @@ TODO
 2. references
 3. scheduler
 4. transliteration
-5. context

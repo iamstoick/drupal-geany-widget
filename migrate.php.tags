@@ -1,0 +1,757 @@
+# format=pipe
+migrate_migrate_api|||
+migrate_ui_migrate_dashboard||$form, &$form_state|
+migrate_ui_migrate_group||$form, &$form_state, $group_name|
+_migrate_ui_migrate_operations|||
+migrate_ui_migrate_validate||$form, &$form_state|
+_migrate_ui_selected_migrations||$values|
+migrate_ui_migrate_submit||$form, &$form_state|
+migrate_ui_batch||$operation, $machine_name, $limit, $force = FALSE, &$context|
+migrate_ui_batch_finish||$success, $results, $operations|
+migrate_ui_capture_message||$message, $level|
+migrate_migration_info||$form, $form_state, $group_name, $migration_name|
+_migrate_ui_get_descendents||$migration_name, array $all_dependencies|
+migrate_ui_edit_mappings_submit||&$form, &$form_state|
+migrate_ui_edit_mappings_revert||&$form, &$form_state|
+theme_migrate_ui_field_mapping_form||$variables|
+theme_migrate_ui_field_mapping_dependencies||$variables|
+migrate_ui_messages||$group_name, $migration_name|
+migrate_ui_deregister_migration||$machine_name|
+migrate_ui_configure|||
+migrate_ui_configure_form||$form, &$form_state|
+migrate_ui_configure_register_submit||$form, &$form_state|
+migrate_ui_configure_deregister_submit||$form, &$form_state|
+migrate_ui_configure_settings_submit||$form, &$form_state|
+migrate_ui_configure_drush_submit||$form, &$form_state|
+migrate_ui_configure_submit||$form, &$form_state|
+migrate_ui_help||$path, $arg|
+migrate_ui_menu|||
+migrate_ui_migrate_group_title||$group_name|
+migrate_ui_migrate_migration_title||$migration_name|
+migrate_ui_theme|||
+migrate_ui_mail||$key, &$message, $params|
+migrate_ui_wizards|||
+migrate_ui_wizard||$form, &$form_state, $class_name = ''|
+migrate_ui_wizard_previous_submit||$form, &$form_state|
+migrate_ui_wizard_next_validate||$form, &$form_state|
+migrate_ui_wizard_next_submit||$form, &$form_state|
+migrate_ui_wizard_submit||$form, &$form_state|
+migrate_ui_wizard_migrate_submit||$form, &$form_state|
+getSteps|||
+getGroupName|||
+getExtender||$extender_class|
+__construct|||
+addExtender||$extender_class|
+addStep||$name, $form_method, MigrateUIStep $after = NULL, $context = NULL|
+removeStep||$name|
+gotoNextStep||&$form_state|
+gotoPreviousStep||&$form_state|
+form||&$form_state|
+formValidate||&$form_state|
+formSaveSettings|||
+formPerformImport|||
+addMigration||$machine_name, $class_name, $arguments|
+getName|||
+getFormMethod|||
+getFormValues|||
+setFormValues||$form_values|
+getContext|||
+__construct||$name, $form_method, $context = NULL|
+__construct||MigrateUIWizard $wizard, array $wizard_steps|
+addMigrationAlter||$machine_name, $class_name, &$arguments, $wizard|
+migrate_drush_command|||
+drush_migrate_get_options|||
+drush_migrate_invoke_process||$migrations = ''|
+drush_migrate_status||$name = NULL|
+drush_migrate_fields_destination||$args = NULL|
+drush_migrate_fields_source||$args = NULL|
+drush_migrate_mappings||$args = NULL|
+drush_migrate_messages||$migration_name|
+drush_migrate_analyze||$args = NULL|
+drush_migrate_audit||$args = NULL|
+drush_migrate_rollback||$args = NULL|
+_drush_migrate_notify|||
+drush_migrate_get_migrations||$args|
+drush_migrate_fields_destination_validate||$args = NULL|
+drush_migrate_fields_source_validate||$args = NULL|
+drush_migrate_mappings_validate||$args = NULL|
+drush_migrate_analyze_validate||$args = NULL|
+drush_migrate_audit_validate||$args = NULL|
+drush_migrate_import_validate||$args = NULL|
+drush_migrate_stop_validate||$args = NULL|
+drush_migrate_reset_status_validate||$args = NULL|
+drush_migrate_rollback_validate||$args = NULL|
+drush_migrate_validate_common||$args|
+drush_migrate_pre_migrate_import||$args = NULL|
+drush_migrate_import||$args = NULL|
+= drush_get_option||'file_function', '')|
+drush_migrate_stop||$args = NULL|
+drush_migrate_reset_status||$args = NULL|
+drush_migrate_deregister||$args = NULL|
+drush_migrate_deregister_migration||$machine_name|
+drush_migrate_auto_register||$args = NULL|
+drush_migrate_register||$args = NULL|
+drush_migrate_wipe|||
+drush_migrate_print_memory|||
+migrate_migrate_status_complete|||
+migrate_migrate_import_complete|||
+migrate_migrate_rollback_complete|||
+migrate_migrate_fields_destination_complete|||
+migrate_migrate_fields_source_complete|||
+migrate_migrate_mappings_complete|||
+migrate_migrate_reset_status_complete|||
+migrate_migrate_stop_complete|||
+drush_migrate_migrations|||
+migrate_migrations||$reset = NULL|
+migrate_handler_invoke_all||$destination, $method|
+_migrate_class_list||$parent_class|
+migrate_hook_info|||
+migrate_permission|||
+migrate_get_module_apis||$reset = FALSE|
+migrate_static_registration||$machine_names = array()|
+migrate_order_dependencies||$dependencies|
+migrate_visit_dependent||$dependencies, $name, &$list, &$visited|
+migrate_watchdog||$log_entry|
+migrate_memory_start||$name|
+migrate_memory_read||$name|
+migrate_memory_stop||$name|
+migrate_instrument_start||$name, $include_memory = FALSE|
+migrate_instrument_stop||$name|
+migrate_overview|||
+migrate_modules_enabled||$modules|
+migrate_module_implements_alter||&$implementation, $hook|
+mail||array $message|
+getName|||
+getTitle|||
+getArguments|||
+getDependencies|||
+groups|||
+__construct||$name, $dependencies = array(), $title = '', $arguments = array()|
+getInstance||$name, $dependencies = array()|
+register||$name, $title = NULL, array $arguments = array()|
+deregister||$name|
+deleteOrphans|||
+getSource|||
+setSource||MigrateSource $source|
+getDestination|||
+setDestination||MigrateDestination $destination|
+getMap|||
+setMap||MigrateMap $map|
+getSystemOfRecord|||
+setSystemOfRecord||$system_of_record|
+getDefaultRollbackAction|||
+setDefaultRollbackAction||$rollback_action|
+getStoredFieldMappings|||
+getCodedFieldMappings|||
+getFieldMappings|||
+getHighwaterField|||
+setHighwaterField||array $highwater_field|
+__construct||$arguments = array()|
+deregisterMigration||$machine_name|
+saveFieldMappings||$machine_name, array $field_mappings|
+loadFieldMappings|||
+removeFieldMapping||$destination_field, $source_field = NULL|
+addSimpleMappings||array $fields|
+addUnmigratedDestinations||array $fields, $issue_group = NULL, $warn_on_override = TRUE|
+addUnmigratedSources||array $fields, $issue_group = NULL, $warn_on_override = TRUE|
+isComplete|||
+beginProcess||$newStatus|
+endProcess|||
+preImport|||
+preRollback|||
+postImport|||
+postRollback|||
+rollback|||
+import|||
+analyze|||
+currentSourceKey|||
+prepareKey||$source_key, $row|
+prepareRow||$row|
+sourceCount||$refresh = FALSE|
+processedCount|||
+importedCount|||
+updateCount|||
+itemOptionExceeded|||
+errorCount|||
+messageCount|||
+prepareUpdate|||
+progressMessage||$result|
+checkStatus|||
+applyMappings|||
+handleSourceMigration||$source_migrations, $source_keys, $default = NULL, $migration = NULL|
+handleDedupe||$dedupe, $original|
+createStubWrapper||array $source_key, $migration = NULL|
+saveMessage||$message, $level = MigrationBase::MESSAGE_ERROR|
+queueMessage||$message, $level = MigrationBase::MESSAGE_ERROR|
+saveQueuedMessages|||
+setUpdate||array $source_key = NULL|
+__construct||$arguments|
+isDynamic|||
+getDestinationField|||
+getSourceField|||
+getMappingSource|||
+setMappingSource||$mapping_source|
+getDefaultValue|||
+getSeparator|||
+getSourceMigration|||
+getCallbacks|||
+getDedupe|||
+getArguments|||
+getDescription|||
+getIssueGroup|||
+getIssueNumber|||
+getIssuePriority|||
+__construct||$destination_field, $source_field|
+defaultValue||$default_value|
+separator||$separator|
+sourceMigration||$source_migration|
+callbacks||$callbacks|
+dedupe||$table, $column|
+arguments||$arguments|
+description||$text|
+issueGroup||$group|
+issueNumber||$number|
+issuePriority||$priority|
+getCreated|||
+getUpdated|||
+resetStats|||
+__construct|||
+getName|||
+getEmailAddress|||
+getGroup|||
+__construct||$name, $email_address, $group|
+contact||$subject, $text|
+currentMigration|||
+getMachineName|||
+getGroup|||
+getDescription|||
+setDescription||$description|
+getOption||$option_name|
+getItemLimit|||
+getTimeLimit|||
+getHardDependencies|||
+setHardDependencies||array $dependencies|
+addHardDependencies||array $dependencies|
+getSoftDependencies|||
+setSoftDependencies||array $dependencies|
+addSoftDependencies||array $dependencies|
+getDependencies|||
+setDisplayFunction||$display_function|
+getTeam|||
+setTeam||array $team|
+getIssuePattern|||
+setIssuePattern||$issue_pattern|
+getArguments|||
+setArguments||array $arguments|
+addArguments||array $arguments|
+getEnabled|||
+setEnabled||$enabled|
+getDisableHooks|||
+getMessageLevelName||$constant|
+__construct||$arguments = array()|
+staticInitialize|||
+deregisterMigration||$machine_name|
+generateMachineName|||
+machineFromClass||$class_name|
+getInstance||$machine_name, $class_name = NULL, array $arguments = array()|
+isDynamic|||
+saveMessage||$message, $level = MigrationBase::MESSAGE_ERROR|
+displayMessage||$message, $level = 'error'|
+errorHandler||$error_level, $message, $filename, $line, $context|
+handleException||$exception, $save = TRUE|
+getStatus|||
+getLastImported|||
+getHighwater|||
+saveHighwater||$highwater, $force = FALSE|
+getLastThroughput|||
+dependenciesComplete||$rollback = FALSE|
+incompleteDependencies|||
+beginProcess||$newStatus|
+endProcess|||
+stopProcess|||
+resetStatus|||
+processRollback||array $options = array()|
+processImport||array $options = array()|
+setBatchTimeLimit|||
+memoryExceeded|||
+timeExceeded|||
+timeOptionExceeded|||
+encrypt||$value|
+decrypt||$value|
+encryptArguments||array $arguments|
+decryptArguments||array $arguments|
+timestamp||$value|
+getDependencies|||
+getTypesHandled|||
+registerTypes||array $types|
+handlesType||$type|
+getCurrentKey|||
+getIgnored|||
+getProcessed|||
+resetStats|||
+count||$refresh = FALSE|
+__construct||$options = array()|
+current|||
+key|||
+valid|||
+rewind|||
+next|||
+prepareRow||$row|
+dataChanged||$row|
+hash||$row|
+getSourceKeyMap|||
+getTrackLastImported|||
+setTrackLastImported||$trackLastImported|
+getLevel|||
+getStatus|||
+migrate_example_baseball_field_default_fields|||
+migrate_example_baseball_node_info|||
+migrate_example_baseball_migrate_api|||
+__construct||$arguments|
+csvcolumns|||
+prepareRow||$row|
+generateMachineName||$class_name = NULL|
+fields|||
+migrate_example_beer_schema|||
+migrate_example_beer_install|||
+migrate_example_beer_uninstall|||
+migrate_example_beer_disable|||
+migrate_example_beer_schema_node|||
+migrate_example_beer_schema_topic|||
+migrate_example_beer_schema_topic_node|||
+migrate_example_beer_schema_comment|||
+migrate_example_beer_schema_account|||
+migrate_example_beer_schema_legacy_urls|||
+migrate_example_beer_content_type|||
+migrate_example_beer_tags|||
+migrate_example_beer_image|||
+migrate_example_beer_favs|||
+migrate_example_beer_gender|||
+migrate_example_beer_country|||
+migrate_example_beer_content_type_delete|||
+migrate_example_beer_data_node|||
+migrate_example_beer_data_account|||
+migrate_example_beer_data_comment|||
+migrate_example_beer_data_topic|||
+migrate_example_beer_data_topic_node|||
+migrate_example_beer_data_urls|||
+__construct|||
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+isComplete|||
+import|||
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+prepare||stdClass $account, stdClass $row|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+addTitlePrefix||$source_title|
+prepareRow||$current_row|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+isComplete|||
+import|||
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+__construct||$arguments|
+prepare||stdClass $account, stdClass $row|
+migrate_example_wine_schema|||
+migrate_example_wine_install|||
+migrate_example_wine_uninstall|||
+migrate_example_wine_disable|||
+migrate_example_wine_schema_wine|||
+migrate_example_wine_schema_updates|||
+migrate_example_wine_schema_producer|||
+migrate_example_wine_schema_categories|||
+migrate_example_wine_schema_vintages|||
+migrate_example_wine_schema_variety_updates|||
+migrate_example_wine_schema_category_wine|||
+migrate_example_wine_schema_category_producer|||
+migrate_example_wine_schema_comment|||
+migrate_example_wine_schema_comment_updates|||
+migrate_example_wine_schema_account|||
+migrate_example_wine_schema_account_updates|||
+migrate_example_wine_schema_blobs|||
+migrate_example_wine_schema_files|||
+migrate_example_wine_schema_table_source|||
+migrate_example_wine_schema_table_dest|||
+migrate_example_wine_content_types|||
+migrate_example_wine_categories|||
+migrate_example_wine_fields|||
+migrate_example_wine_content_type_delete|||
+migrate_example_wine_data_wine|||
+migrate_example_wine_data_updates|||
+migrate_example_wine_data_producer|||
+migrate_example_wine_data_account|||
+migrate_example_wine_data_account_updates|||
+migrate_example_wine_data_comment|||
+migrate_example_wine_data_comment_updates|||
+migrate_example_wine_data_categories|||
+migrate_example_wine_data_vintages|||
+migrate_example_wine_data_variety_updates|||
+migrate_example_wine_data_category_wine|||
+migrate_example_wine_data_category_producer|||
+migrate_example_wine_data_files|||
+migrate_example_wine_data_blobs|||
+migrate_example_wine_data_table_source|||
+migrate_example_migrate_api|||
+migrate_example_oracle_generate||$length|
+migrate_example_oracle_sample_data|||
+migrate_example_oracle_node_info|||
+__construct|||
+migrate_example_oracle_migrate_api|||
+migrate_example_oracle_field_default_fields|||
+getKeySchema|||
+__construct|||
+__toString|||
+fields||$migration = NULL|
+import||stdClass $menu_link, stdClass $row|
+prepare||$menu_link, stdClass $row|
+complete||$menu_link, stdClass $row|
+postImport|||
+rollback||$id|
+prepareRollback||$mlid|
+completeRollback||$mlid|
+postRollback|||
+getKeySchema|||
+options||$language, $text_format, $allow_duplicate_terms = FALSE|
+__construct||$bundle, array $options = array()|
+fields||$migration = NULL|
+rollback||array $key|
+import||stdClass $term, stdClass $row|
+findMatchingTerm||$term|
+getKeySchema|||
+options||$language, $text_format|
+__construct||$bundle, array $options = array()|
+fields||$migration = NULL|
+bulkRollback||array $cids|
+import||stdClass $comment, stdClass $row|
+preImport|||
+postImport|||
+preRollback|||
+postRollback|||
+disableStatistics|||
+enableStatistics|||
+__construct|||
+fields||$entity_type, $bundle, $migration = NULL|
+__construct|||
+fields||$entity_type, $bundle, $migration = NULL|
+prepare||$entity, stdClass $row|
+__construct||$arguments = array(), $default_file = NULL|
+fields|||
+createFileEntity||$destination, $owner|
+markForPreservation||$fid|
+processFile||$value, $owner|
+processFile||$value, $owner|
+__construct||$arguments = array(), $default_file = NULL|
+fields|||
+processFile||$value, $owner|
+__construct||$arguments = array(), $default_file = NULL|
+fields|||
+copyFile||$destination|
+urlencode||$filename|
+processFile||$value, $owner|
+copyFile||$destination|
+processFile||$value, $owner|
+setFileClass||$file_class|
+getKeySchema|||
+fields||$migration = NULL|
+rollback||array $fid|
+fileDelete||$file|
+import||stdClass $file, stdClass $row|
+getKeySchema|||
+options||$language, $text_format|
+__construct||$bundle, array $options = array()|
+fields||$migration = NULL|
+bulkRollback||array $nids|
+import||stdClass $node, stdClass $row|
+__construct||$bundle, array $options = array()|
+getKeySchema|||
+fields||$migration = NULL|
+bulkRollback||array $vids|
+import||stdClass $node, stdClass $row|
+__construct|||
+fields||$entity_type, $bundle, $migration = NULL|
+prepare||$entity, stdClass $row|
+complete||$entity, stdClass $row|
+getFieldLanguage||$entity, $field_info, array $arguments|
+__construct|||
+fields||$field_type, $field_instance|
+handlesType||$type|
+__construct|||
+__construct||$options = array()|
+prepare||$entity, array $field_info, array $instance, array $values|
+notNull||$value|
+__construct|||
+arguments||$summary = NULL, $format = NULL, $language = NULL|
+fields||$type, $instance, $migration = NULL|
+prepare||$entity, array $field_info, array $instance, array $values|
+__construct|||
+__construct|||
+fields||$type, $instance, $migration = NULL|
+prepare||$entity, array $field_info, array $instance, array $values|
+fields||$type, $instance, $migration = NULL|
+prepare||$entity, array $field_info, array $instance, array $values|
+destinationDir||$field_info, $instance|
+__construct|||
+fields||$type, $instance, $migration = NULL|
+buildFieldArray||$field_array, $arguments, $delta|
+__construct|||
+fields||$type, $instance, $migration = NULL|
+buildFieldArray||$field_array, $arguments, $delta|
+__construct|||
+notNull||$value|
+__construct|||
+notNull||$value|
+__construct||$table_name|
+getKeySchema||$table_name = NULL|
+__toString|||
+rollback||array $ids|
+import||stdClass $entity, stdClass $row|
+fields||$migration = NULL|
+prepare||$entity, stdClass $source_row|
+complete||$entity, stdClass $source_row|
+prepareRollback||array $ids|
+completeRollback||array $ids|
+__construct|||
+fields||$entity_type, $bundle, $migration = NULL|
+complete||$node, stdClass $row|
+__construct||$tableName, $keySchema|
+__toString|||
+bulkRollback||array $ids|
+import||stdClass $entity, stdClass $row|
+fields||$migration = NULL|
+__construct|||
+fields||$entity_type, $bundle, $migration = NULL|
+complete||$entity, stdClass $row|
+getKeySchema|||
+options||$language, $text_format, $md5_passwords|
+__construct||array $options = array()|
+fields||$migration = NULL|
+bulkRollback||array $uids|
+import||stdClass $account, stdClass $row|
+__construct|||
+getKeySchema||$dummy = NULL|
+rollback||array $id|
+import||stdClass $entity, stdClass $row|
+getEntityType|||
+getBundle|||
+getLanguage|||
+getTextFormat|||
+__construct||$entity_type, $bundle, array $options = array()|
+__toString|||
+prepareRollback||$entity_id|
+completeRollback||$entity_id|
+prepare||$entity, stdClass $source_row|
+complete||$entity, stdClass $source_row|
+getKeySchema|||
+__construct|||
+__toString|||
+fields||$migration = NULL|
+import||stdClass $block, stdClass $row|
+prepare||$block, stdClass $row|
+complete||$block, stdClass $row|
+bulkRollback||array $bids|
+prepareRollback||$bid|
+completeRollback||$bid|
+loadCustomBlock||$bid|
+saveCustomBlock||$block|
+deleteCustomBlock||$bid|
+deleteMultipleCustomBlocks||array $bids|
+getKeySchema|||
+__construct|||
+__toString|||
+fields||$migration = NULL|
+import||stdClass $menu, stdClass $row|
+prepare||$menu, stdClass $row|
+complete||$menu, stdClass $row|
+rollback||array $id|
+prepareRollback||$menu_name|
+completeRollback||$menu_name|
+getConnection|||
+options||$character_set = 'UTF8', $cache_counts = FALSE|
+__toString|||
+connect|||
+fields|||
+computeCount|||
+performRewind|||
+getNextRow|||
+__construct||$path, array $csvcolumns = array(), array $options = array(), array $fields = array()|
+__toString|||
+fields|||
+computeCount|||
+performRewind|||
+getNextRow|||
+getNextLine|||
+getMapTable|||
+getMessageTable|||
+getQualifiedMapTable|||
+getSourceKey|||
+getDestinationKey|||
+getConnection|||
+ensureTables|||
+getRowBySource||array $source_id|
+getRowByDestination||array $destination_id|
+getRowsNeedingUpdate||$count|
+lookupSourceID||array $destination_id|
+lookupDestinationID||array $source_id|
+saveMessage||$source_key, $message, $level = Migration::MESSAGE_ERROR|
+prepareUpdate|||
+processedCount|||
+importedCount|||
+updateCount|||
+errorCount|||
+messageCount|||
+delete||array $source_key, $messages_only = FALSE|
+deleteDestination||array $destination_key|
+setUpdate||array $source_key|
+deleteBulk||array $source_keys|
+clearMessages|||
+destroy|||
+getCurrentKey|||
+rewind|||
+current|||
+key|||
+next|||
+valid|||
+__construct|||
+__construct||MigrateItems $items_class, $fields = array(), $options = array()|
+__toString|||
+fields|||
+computeCount|||
+performRewind|||
+getNextRow|||
+hash||$row|
+__construct|||
+__construct|||
+__toString|||
+fields|||
+computeCount|||
+performRewind|||
+getNextRow|||
+hash||$row|
+options||$batch_size, $cache_counts|
+__toString|||
+connect|||
+fields|||
+computeCount|||
+performRewind|||
+getNextRow|||
+fields|||
+computeCount|||
+getNextRow|||
+performRewind|||
+__toString|||
+getMongoId||$document_id, $keys|
+getSourceKeyNameAndType|||
+&query|||
+setMapJoinable||$map_joinable|
+options||$map_joinable, $cache_counts|
+__toString|||
+fields|||
+computeCount|||
+performRewind|||
+getNextRow|||
+getNextBatch|||
+__construct||SelectQueryInterface $query, DatabaseConnection $connection|
+getString||$prefix = TRUE|
+__construct||$list_url, array $namespaces = array()|
+__toString|||
+getIdList|||
+getIDsFromXML||SimpleXMLElement $xml|
+computeCount|||
+registerNamespaces||SimpleXMLElement &$xml|
+__construct||$item_url, array $namespaces = array()|
+registerNamespaces||SimpleXMLElement &$xml|
+getItem||$id|
+constructItemUrl||$id|
+loadXmlUrl||$item_url|
+hash||$row|
+getXpath|||
+xpath||$xpath|
+applyMappings|||
+applyXpath||$data_row, $xpath|
+getItemXpath|||
+getIDXpath|||
+registerNamespaces||SimpleXMLElement &$xml|
+__toString|||
+&xml|||
+parseLibXMLError||LibXMLError $error|
+getIdList|||
+getIDsFromXML||SimpleXMLElement $xml|
+computeCount|||
+getAllItems|||
+getItemsFromXML||SimpleXMLElement $xml, $refresh = FALSE|
+getItemID||$item_xml|
+getElementValue||$item_xml, $xpath|
+getItem||$id|
+hash||$row|
+__construct||$xml_url, $element_query, $id_query|
+rewind|||
+next|||
+current|||
+key|||
+valid|||
+getReader|||
+registerNamespaces||SimpleXMLElement &$xml|
+__toString|||
+fields|||
+activeUrl|||
+computeCount|||
+performRewind|||
+getNextRow|||
+getNextSource|||
+hash||$row|
+__construct||$list_url, $http_options = array()|
+__toString|||
+getIdList|||
+getIDsFromJSON||array $data|
+computeCount|||
+__construct||$item_url, $http_options = array()|
+getItem||$id|
+constructItemUrl||$id|
+loadJSONUrl||$item_url|
+__construct||$json_url, $id_field|
+rewind|||
+getNonBlank|||
+next|||
+current|||
+key|||
+valid|||
+__toString|||
+fields|||
+activeUrl|||
+computeCount|||
+performRewind|||
+getNextRow|||
+getNextSource|||
+setContent||$content|
+getChunkIDs|||
+getChunk||$id|
+getChunkCount|||
+__construct||$list_dirs, $base_dir, $file_mask = NULL, $options = array(), MigrateContentParser $parser = NULL, $get_contents = TRUE|
+__toString|||
+getIdList|||
+getIDsFromFiles||array $files|
+computeCount|||
+__construct||$base_dir, $get_contents = TRUE, MigrateContentParser $parser = NULL|
+getItem||$id|
+loadFile||$item_uri|
