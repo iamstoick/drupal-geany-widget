@@ -26,13 +26,13 @@ SUPPORTS
 13. Libraries
 14. Diff
 15. Context
+16. Metatag
 
 TODO
 ----
 
 1. memcache
-2. metatag
-3. references
-4. scheduler
-5. transliteration
-6. context
+2. references
+3. scheduler
+4. transliteration
+5. context
