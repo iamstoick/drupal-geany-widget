@@ -1,0 +1,210 @@
+# format=pipe
+metatag_features_export||$data, &$export, $module_name = '', $type = 'metatag'|
+metatag_features_export_render||$module_name, $data, $export = NULL|
+metatag_features_revert||$module|
+metatag_features_export_options|||
+metatag_features_rebuild||$module|
+metatag_devel_form_devel_generate_content_form_alter||&$form, &$form_state, $form_id|
+metatag_devel_node_insert||$node|
+_metatag_config_sort||$a, $b|
+_metatag_config_overview_indent||$text, $instance|
+metatag_config_overview|||
+_metatag_config_instance_get_available_options|||
+metatag_config_add_form||$form, &$form_state|
+metatag_config_add_form_submit||$form, &$form_state|
+metatag_config_edit_form||$form, &$form_state, $config|
+metatag_config_edit_form_submit||$form, &$form_state|
+metatag_config_enable||$config|
+metatag_config_disable||$config|
+metatag_config_delete_form||$form, &$form_state, $config|
+metatag_config_delete_form_submit||$form, &$form_state|
+metatag_config_export_form||$config|
+metatag_bulk_revert_form|||
+metatag_bulk_revert_form_submit||$form, &$form_state|
+metatag_bulk_revert_batch_operation||$entity_type, $bundle, &$context|
+metatag_bulk_revert_batch_finished||$success, $results, $operations|
+__construct||array $info, array $data = NULL|
+getForm||array $options = array()|
+getValue||array $options = array()|
+getElement||array $options = array()|
+tidyValue||$value|
+getForm||array $options = array()|
+getValue||array $options = array()|
+getElement||array $options = array()|
+getElement||array $options = array()|
+__construct||array $info, array $data = NULL|
+getForm||array $options = array()|
+getValue||array $options = array()|
+getForm||array $options = array()|
+getValue||array $options = array()|
+metatag_twitter_cards_metatag_config_default_alter||array &$configs|
+metatag_twitter_cards_metatag_info|||
+metatag_twitter_cards_ctools_plugin_api||$owner, $api|
+metatag_twitter_cards_theme|||
+theme_metatag_twitter_cards||$variables|
+__construct|||
+example_migrate_migrate_api|||
+metatag_migrate_api|||
+__construct|||
+fields|||
+prepare||$entity, stdClass $row|
+metatag_metatag_config_default|||
+metatag_metatag_config_instance_info|||
+metatag_metatag_info|||
+metatag_i18n_string_info|||
+theme_metatag||$variables|
+theme_metatag_http_equiv||$variables|
+theme_metatag_link_rel||$variables|
+theme_metatag_link_rev||$variables|
+metatag_test_metatag_config_default|||
+metatag_test_metatag_config_default_alter||array &$configs|
+metatag_test_metatag_info|||
+metatag_test_ctools_plugin_api||$owner, $api|
+metatag_test_entity_info_alter||&$info|
+metatag_context_context_overview|||
+metatag_context_config_add_form||$form, &$form_state|
+metatag_context_edit_name_validate||$element, &$form_state|
+metatag_context_config_add_form_submit||$form, &$form_state|
+metatag_context_config_edit_form||$form, &$form_state, $context|
+metatag_context_config_edit_form_submit||$form, &$form_state|
+metatag_context_delete_form||$form, &$form_state, $context|
+metatag_context_delete_form_submit||$form, &$form_state|
+metatag_context_load_default_context|||
+metatag_context_menu|||
+metatag_context_context_plugins|||
+metatag_context_context_registry|||
+metatag_context_context_page_reaction|||
+metatag_context_page_build||&$page|
+metatag_context_preprocess_html||&$variables|
+metatag_context_ctools_plugin_api|||
+options_form||$context|
+execute|||
+metatag_context_context_default_contexts|||
+metatag_feeds_processor_targets_alter||&$targets, $entity_type, $bundle|
+metatag_feeds_set_target||$source, $entity, $target, $value|
+metatag_dc_ctools_plugin_api||$owner, $api|
+metatag_dc_theme|||
+theme_metatag_dc||$variables|
+metatag_dc_metatag_config_default_alter||array &$configs|
+metatag_dc_metatag_info|||
+_metatag_dc_dcmi_type_vocabulary_options|||
+metatag_help||$path, $arg|
+metatag_theme|||
+metatag_ctools_plugin_api||$owner, $api|
+metatag_hook_info|||
+metatag_permission|||
+metatag_menu|||
+metatag_flush_caches|||
+metatag_config_load_with_defaults||$instance, $include_global = TRUE|
+metatag_config_load||$instance|
+metatag_config_load_multiple||array $instances|
+metatag_config_save||$config|
+metatag_config_delete||$instance|
+metatag_config_cache_clear|||
+metatag_metatags_load||$entity_type, $entity_id|
+metatag_metatags_load_multiple||$entity_type, array $entity_ids, array $revision_ids = array()|
+metatag_metatags_save||$entity_type, $entity_id, $revision_id, $metatags, $langcode, $old_vid = NULL|
+metatag_metatags_delete||$entity_type, $entity_id, $revision_id = NULL, $langcode = NULL|
+metatag_metatags_delete_multiple||$entity_type, array $entity_ids, array $revision_ids = array(), $langcode = NULL|
+metatag_metatags_cache_clear||$entity_type, $entity_ids = NULL|
+metatag_entity_load||$entities, $entity_type|
+metatag_entity_insert||$entity, $entity_type|
+metatag_entity_update||$entity, $entity_type|
+metatag_entity_delete||$entity, $entity_type|
+metatag_field_attach_delete_revision||$entity_type, $entity|
+metatag_taxonomy_term_view_alter||&$build, &$entity_type|
+metatag_entity_view||$entity, $entity_type, $view_mode, $langcode, $force = FALSE|
+metatag_metatags_view||$instance, array $metatags = array(), array $options = array()|
+metatag_metatags_values||$instance, array $metatags = array(), array $options = array()|
+metatag_metatags_form||array &$form, $instance, array $metatags = array(), array $options = array()|
+metatag_metatags_form_submit||$form, &$form_state|
+metatag_field_extra_fields|||
+metatag_entity_has_metatags||$entity_type, $entity|
+metatag_entity_supports_metatags||$entity_type = NULL, $bundle = NULL|
+metatag_entity_info_alter||&$info|
+metatag_load_entity_from_path||$path|
+metatag_page_set_metatags||$instance, $metatags|
+metatag_page_get_metatags|||
+metatag_page_build||&$page|
+_metatag_entity_is_page||$entity_type, $entity|
+metatag_field_attach_rename_bundle||$entity_type, $bundle_old, $bundle_new|
+metatag_field_attach_delete_bundle||$entity_type, $bundle|
+metatag_field_attach_form||$entity_type, $entity, &$form, &$form_state, $langcode|
+metatag_form_alter||&$form, $form_state, $form_id|
+metatag_get_info||$type = NULL, $name = NULL|
+metatag_get_instance||$metatag, array $data = array()|
+metatag_get_value||$metatag, array $data, array $options = array()|
+metatag_set_preprocess_variable||$hook, $variable, $value|
+metatag_get_preprocess_variables||$hook|
+metatag_preprocess_html||&$variables|
+metatag_preprocess_maintenance_page||&$variables|
+metatag_html_head_alter||&$elements|
+metatag_metatag_get_form||$metatag, array $data = array(), array $options = array()|
+metatag_config_instance_info||$instance = NULL|
+metatag_filter_values_from_defaults||array &$values, array $defaults = array()|
+metatag_config_get_parent_instances||$instance, $include_global = TRUE|
+metatag_config_instance_label||$instance|
+metatag_config_title||$config|
+metatag_config_access||$op, $config = NULL|
+metatag_config_is_enabled||$instance, $include_defaults = FALSE, $include_global = TRUE|
+metatag_entity_get_language||$entity_type, $entity|
+metatag_features_api|||
+metatag_views_post_render||&$view, &$output, &$cache|
+metatag_ctools_render_alter||&$info, $page, $context|
+metatag_entity_translation_delete||$entity_type, $entity, $langcode|
+metatag_translate||$name, $string, $langcode = NULL, $update = FALSE|
+_metatag_isdefaultrevision||$entity|
+metatag_cache_default_cid_parts||array $cid_parts = array()|
+metatag_cache_set||$cid, $data|
+metatag_cache_get||$cid|
+metatag_is_error_page|||
+metatag_views_views_api|||
+metatag_views_ctools_plugin_api||$owner, $api|
+metatag_views_views_preview_info_alter||&$rows, $view|
+metatag_views_page_alter||&$page|
+metatag_views_views_display_has_metatags||views_plugin_display $display|
+metatag_views_metatag_config_instance_info|||
+metatag_views_metatag_config_default|||
+metatag_views_views_plugins|||
+has_metatags|||
+options_definition_alter||&$options|
+options_summary||&$categories, &$options|
+options_form||&$form, &$form_state|
+options_submit||&$form, &$form_state|
+metatag_views_token_info|||
+metatag_views_tokens||$type, $tokens, array $data = array(), array $options = array()|
+metatag_panels_page_manager_variant_operations_alter||&$operations, $handler|
+metatag_panels_form||$form, $form_state|
+metatag_panels_form_submit||$form, $form_state|
+metatag_panels_ctools_render_alter||$info, $page, $context|
+metatag_panels_page_build||&$page|
+metatag_token_info|||
+metatag_tokens||$type, $tokens, array $data = array(), array $options = array()|
+metatag_tokens_alter||array &$replacements, array $context|
+metatag_token_generate_array||$entity, $entity_type, $bundle|
+metatag_opengraph_metatag_config_default_alter||array &$configs|
+metatag_opengraph_metatag_info|||
+_metatag_opengraph_type_options|||
+metatag_opengraph_preprocess_html||&$variables|
+metatag_opengraph_ctools_plugin_api||$owner, $api|
+metatag_opengraph_theme|||
+theme_metatag_opengraph||$variables|
+entity_example_entity_info|||
+hook_metatag_config_default|||
+hook_metatag_config_default_alter||&$config|
+hook_metatag_config_delete||$entity_type, $entity_ids, $revision_ids, $langcode|
+hook_metatag_config_insert||$config|
+hook_metatag_config_instance_info|||
+hook_metatag_config_instance_info_alter||&$info|
+hook_metatag_config_load|||
+hook_metatag_config_load_presave|||
+hook_metatag_config_presave||$config|
+hook_metatag_config_update||$config|
+hook_metatag_info|||
+hook_metatag_info_alter||&$info|
+hook_metatag_load_entity_from_path_alter||&$path, $result|
+hook_metatag_metatags_view_alter||&$output, $instance|
+hook_metatag_page_cache_cid_parts_alter||&$cid_parts|
+hook_metatag_presave||&$metatags, $entity_type, $entity_id, $revision_id, $langcode|
+hook_metatag_token_types_alter||&$options|
+hook_metatag_pattern_alter||&$pattern, &$types|

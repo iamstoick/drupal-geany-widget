@@ -26,18 +26,17 @@ SUPPORTS
 13. Libraries
 14. Diff
 15. Context
-16. Elysia cron
-17. Search API
-18. Profile2
-19. Migrate
-20. Rules
+16. Metatag
+17. Elysia cron
+18. Search API
+19. Profile2
+20. Migrate
+21. Rules
 
 TODO
 ----
 
 1. memcache
-2. metatag
-3. references
-4. scheduler
-5. transliteration
-6. context
+2. references
+3. scheduler
+4. transliteration
