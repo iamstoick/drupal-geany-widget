@@ -34,6 +34,7 @@ SUPPORTS
 21. Rules
 22. Quicktabs
 23. Disqus
+24. Sharethis
 
 TODO
 ----
