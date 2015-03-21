@@ -33,6 +33,7 @@ SUPPORTS
 20. Migrate
 21. Rules
 22. Quicktabs
+23. Disqus
 
 TODO
 ----
