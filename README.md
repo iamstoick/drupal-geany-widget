@@ -32,6 +32,7 @@ SUPPORTS
 19. Profile2
 20. Migrate
 21. Rules
+22. Quicktabs
 
 TODO
 ----
