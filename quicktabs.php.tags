@@ -1,0 +1,125 @@
+# format=pipe
+getName|||
+getContents|||
+getSettings|||
+getTitle|||
+QuickSetRendererFactory||$name, $contents, $renderer, $settings|
+getContentRenderer||$tab|
+ajaxRenderContent||$type, $args|
+getDefaultSettings|||
+__construct||$name, $contents, $settings|
+getAjaxPath||$index, $type|
+translateString||$string, $type = 'tab', $index = 0|
+prepareContents|||
+getActiveTab|||
+__construct||$quickset|
+getTitle|||
+optionsForm||$qt|
+__construct||$item|
+getTitle|||
+getSettings|||
+factory||$name, $item|
+getType|||
+__construct||$item|
+getTitle|||
+getSettings|||
+render||$hide_empty = FALSE, $args = array()|
+getAjaxKeys|||
+quicktabs_help||$path, $arg|
+quicktabs_menu|||
+quicktabs_permission|||
+quicktabs_theme|||
+quicktabs_block_info|||
+quicktabs_block_view||$delta = ''|
+quicktabs_build_quicktabs||$name, $settings = array(), $custom_tabs = array()|
+quicktabs_ajax||$name, $index, $type|
+quicktabs_load||$name|
+quicktabs_load_multiple||$names = array()|
+quicktabs_save||$quicktab|
+quicktabs_update||$quicktab|
+quicktabs_delete||$machine_name|
+quicktabs_export||$qt, $indent = ''|
+quicktabs_i18n_string_info|||
+quicktabs_translate||$name, $string, $langcode = NULL, $textgroup = 'quicktabs'|
+quicktabs_i18n_update_strings||$names = array()|
+quicktabs_i18n_string_refresh||$group|
+quicktabs_ctools_plugin_type|||
+quicktabs_quicktabs_renderers|||
+quicktabs_quicktabs_contents|||
+quickset_renderer_factory||$name, $contents, $renderer, $settings|
+quick_content_factory||$name, $item|
+quicktabs_machine_name_exists||$machine_name|
+quicktabs_views_api|||
+theme_quicktabs_tab_access_denied||$variables|
+quicktabs_get_css||$style|
+_quicktabs_get_style_css||$style|
+theme_qt_ui_tabs_tabset||$vars|
+theme_qt_ui_tabs||$variables|
+theme_qt_quicktabs_tabset||$vars|
+theme_qt_quicktabs||$variables|
+theme_qt_accordion||$variables|
+quicktabs_views_plugins|||
+option_definition|||
+options_form||&$form, &$form_state|
+validate|||
+render|||
+quicktabs_list|||
+quicktabs_clone||$qt|
+quicktabs_form||$form, &$form_state, $formtype, $qt = NULL|
+_quicktabs_admin_main_form||$form_state, &$qt|
+_quicktabs_form||array $tab, $qt|
+theme_quicktabs_admin_form_tabs||$variables|
+quicktabs_ajax_callback||$form, $form_state|
+quicktabs_more_tabs_submit||$form, &$form_state|
+quicktabs_remove_tab_submit||$form, &$form_state|
+quicktabs_form_validate||$form, &$form_state|
+quicktabs_callback_element_validate||$element, &$form_state, $form|
+quicktabs_form_submit||$form, &$form_state|
+quicktabs_block_delete||$form, $form_state, $qt|
+quicktabs_block_delete_submit||$form, &$form_state|
+quicktabs_export_form||$form, &$form_state, $qt|
+quicktabs_get_blocks|||
+_quicktabs_replace_view_displays_callback||$form, $form_state|
+quicktabs_get_views|||
+_quicktabs_get_views_displays||$view_name|
+_quicktabs_convert_form_to_quicktabs||$form_state|
+getType|||
+optionsForm||$delta, $qt|
+render||$hide_empty = FALSE, $args = array()|
+getAjaxKeys|||
+accessBlock||$module, $delta|
+optionsForm||$qt|
+render|||
+add_attached|||
+render|||
+build_tablinks||$active_tab|
+add_attached|||
+construct_link_options||$tabkey|
+getType|||
+optionsForm||$delta, $qt|
+render||$hide_empty = FALSE, $args = array()|
+getAjaxKeys|||
+getType|||
+optionsForm||$delta, $qt|
+__construct||$item|
+render||$hide_empty = FALSE, $args = array()|
+getAjaxKeys|||
+getType|||
+__construct||$item|
+optionsForm||$delta, $qt|
+render||$hide_empty = FALSE, $args = array()|
+getAjaxKeys|||
+getType|||
+optionsForm||$delta, $qt|
+render||$hide_empty = FALSE, $args = array()|
+getAjaxKeys|||
+optionsForm||$qt|
+render|||
+build_tablinks||$active_tab|
+add_attached|||
+quicktabs_tabstyles_theme|||
+quicktabs_tabstyles_menu|||
+quicktabs_tabstyles_styles|||
+quicktabs_tabstyles_styles_submit||$form, &$form_state|
+theme_quicktabs_style_options||$variables|
+quicktabs_tabstyles_quicktabs_tabstyles|||

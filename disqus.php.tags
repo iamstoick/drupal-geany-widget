@@ -1,0 +1,38 @@
+# format=pipe
+disqus_help||$path, $arg|
+disqus_permission|||
+disqus_menu|||
+disqus_closewindow|||
+disqus_element_info|||
+disqus_element_post_render||$children, &$element|
+disqus_node_load||$nodes, $types|
+disqus_node_view||$node, $view_mode|
+disqus_node_delete||$node|
+disqus_node_insert||$node|
+disqus_node_update||$node|
+disqus_user_load||$users|
+disqus_user_view||$account, $view_mode, $langcode|
+disqus_block_info|||
+disqus_block_configure||$delta = ''|
+disqus_block_save||$delta = '', $edit = array()|
+disqus_block_view||$delta = ''|
+||widget|
+_disqus_block_content||$function, $options|
+disqus_form_alter||&$form, $form_state, $form_id|
+disqus_theme|||
+theme_disqus_noscript||$variables = array()|
+disqus_libraries_info|||
+disqus_api|||
+disqus||$user_api_key = NULL, $forum_api_key = NULL|
+disqus_views_api|||
+disqus_variable_info||$options|
+disqus_variable_group_info|||
+disqus_sso_disqus_settings||$account = NULL|
+disqus_sso_key_encode||$data|
+disqus_sso_user_data||$account = NULL|
+disqus_admin_settings|||
+disqus_admin_settings_submit||$form, &$form_state|
+disqus_views_data_alter||&$data|
+init||&$view, &$options|
+query|||
+render||$values|
