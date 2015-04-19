@@ -40,3 +40,8 @@ TODO
 2. references
 3. scheduler
 4. transliteration
+
+How to generate your own tags?
+------------------------------
+
+Here is the [geanyrator](https://github.com/geraldvillorente/geanyrator) script to export modules API into Geany usable format.
