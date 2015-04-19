@@ -1,0 +1,13 @@
+# format=pipe
+_select_option_sort_field_settings_form_alter||&$form, $form_state, $form_id|
+select_option_sort_field_settings_form_submit||$form, &$form_state|
+select_option_sort_permission|||
+select_option_sort_help||$path, $arg|
+select_option_sort_form_field_ui_field_edit_form_alter||&$form, &$form_state, $form_id|
+select_option_sort_form_alter||&$form, &$form_state, $form_id|
+select_option_sort_node_view_alter||&$build|
+select_option_sort_module_implements_alter||&$implementations, $hook|
+_select_option_sort_sort_elements||$order_by, $sort_order, $elements|
+_select_option_sort_check_field_exist||$field_name = NULL|
+_select_option_sort_get_database_records|||
+_select_option_sort_change_db_row||$action, $field_name, $order_by, $sort_order|

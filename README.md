@@ -32,6 +32,10 @@ SUPPORTS
 19. Profile2
 20. Migrate
 21. Rules
+22. Quicktabs
+23. Disqus
+24. Sharethis
+25. Select option sort
 
 TODO
 ----
